@@ -1,0 +1,86 @@
+// #pragma GCC target("avx2")
+#pragma GCC optimize("O3")
+#pragma GCC optimize("unroll-loops")
+#include <bits/stdc++.h>
+#include <atcoder/all>
+using namespace std;
+using namespace atcoder;
+using mint = modint998244353;
+// using mint = modint1000000007;
+using ll = long long;
+using ull = unsigned long long;
+using ld = long double;
+using pii = pair<int, int>;
+using pll = pair<ll, ll>;
+using T = tuple<int, int, int>;
+using G = vector<vector<int>>;
+#define rep(i, n) for (ll i = 0; i < (n); ++i)
+#define rep2(i, a, b) for (ll i = a; i < (b); ++i)
+#define rrep2(i, a, b) for (ll i = a-1; i >= (b); --i)
+#define rep3(i, a, b, c) for (ll i = a; i < (b); i+=c)
+#define rng(a) a.begin(),a.end()
+#define rrng(a) a.rbegin(),a.rend()
+#define popcount __builtin_popcount
+#define popcount_ll __builtin_popcountll
+#define fi first
+#define se second
+#define UNIQUE(v) sort(rng(v)), v.erase(unique(rng(v)), v.end())
+#define MIN(v) *min_element(rng(v))
+#define MAX(v) *max_element(rng(v))
+#define SUM(v) accumulate(rng(v),0)
+#define IN(v, x) (find(rng(v),x) != v.end())
+template<class T> bool chmin(T &a,T b){if(a>b){a=b;return 1;}else return 0;}
+template<class T> bool chmax(T &a,T b){if(a<b){a=b;return 1;}else return 0;}
+template<class T> void printv(vector<T> &v){rep(i,v.size())cout<<v[i]<<" \n"[i==v.size()-1];}
+template<class T> void printvv(vector<vector<T>> &v){rep(i,v.size())rep(j,v[i].size())cout<<v[i][j]<<" \n"[j==v[i].size()-1];cout<<endl;}
+const ll dx[] = {-1, 0, 1, 0};
+const ll dy[] = {0, 1, 0, -1};
+const ll dxx[] = {-1, -1, 0, 1, 1, 1, 0, -1};
+const ll dyy[] = {0, 1, 1, 1, 0, -1, -1, -1};
+const ll LINF = 7001002003004005006ll;
+const int INF = 1001001001;
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int n, L, d; cin >> n >> L >> d;
+    double p = 1.0/d;
+    int M = 1e6;
+    vector<double> dpx(M), dpy(M), dpx_s(M), dpy_s(M);
+    // dpx[0] = 1, dpx_s[1] = 1, 
+    dpy[0] = 1, dpy_s[1] = 1;
+    // rep2(i, 1, n+1){
+    //     int l = max(0LL, i-d);
+    //     dpx[i] += (dpx_s[i]-dpx_s[l])*p;
+    //     dpx_s[i+1] = dpx_s[i]+dpx[i];
+    // }
+    rep2(i, 1, L+d){
+        int l = max(0LL, i-d);
+        int r = min(i, (ll)L);
+        if (l < r) dpy[i] += (dpy_s[r]-dpy_s[l])*p;
+        dpy_s[i+1] = dpy_s[i]+dpy[i];
+    }
+    // printv(dpx);
+    // printv(dpy);
+    // printv(dpx_s);
+    // printv(dpy_s);
+    vector<double> dp_stay(M), dp(M), dp_s(M);
+    rep(i, L+1){
+        if (L+d <= n+1) continue;
+        dp_stay[i] = (dpy_s[L+d]-dpy_s[n+1]);
+    }
+    rep2(i, L+1, n+1){
+        dp_stay[i] = (dpy_s[i]-dpy_s[L]);
+        assert(dp_stay[i] >= 0);
+        if (L+d > n+1) dp_stay[i] += (dpy_s[L+d]-dpy_s[n+1]);
+    }
+    // printv(dp_stay);
+    rrep2(i, n+1, 0){
+        // int r = min((ll)n, i+d);
+        dp[i] = max(dp_stay[i], (dp_s[i+1]-dp_s[i+d+1])*p);
+        dp_s[i] = dp_s[i+1]+dp[i];
+    }
+    // printv(dp);
+    printf("%.016f\n", dp[0]);
+    return 0;
+}
