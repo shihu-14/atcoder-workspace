@@ -1,96 +1,80 @@
-// 木構造に関する操作 (未完成)
+// operations on Trees (Incomplete)
 struct Tree{
     struct Edge{
-        int to, cost;
+        int to, w;
         Edge() {}
-        Edge(int to, int cost) : to(to), cost(cost) {}
+        Edge(int _to, int _w) : to(_to), w(_w) {}
     };
     int n;
-    vector<int> deg;
-    vector<int> par, tour;
-    vector<ll> dist;
-    vector<ll> subNode;
+    vector<int> deg, par, euler_tour, subtree_nodes;
+    vector<ll> dist; 
     vector<pii> lr;
     vector<vector<Edge>> g;
-    Tree(int n): n(n), g(n), deg(n), par(n), dist(n), lr(n), subNode(n){}
+    Tree(int n): n(n), g(n), deg(n), par(n, -1), dist(n), lr(n), subtree_nodes(n){}
     void add_edge(int u, int v, int c){
         g[u].emplace_back(v, c);
         g[v].emplace_back(u, c);
         deg[u]++, deg[v]++;
     }
-    // 頂点startを根としたオイラーツアー、各頂点の根からの距離、親頂点を求める。
-    void setting(int start=0){
+    // solve EulerTour, depth, parent, and subtree size rooted at start
+    void build(int root=0){
         ll s = 0;
-        auto f = [&](auto f, int u, int p=-1) -> void {
+        auto dfs = [&](auto f, int u, int p=-1) -> void {
             dist[u] = s;
-            lr[u].fi = tour.size();
-            tour.emplace_back(u);
+            lr[u].fi = euler_tour.size();
+            euler_tour.emplace_back(u);
             for (auto [v, w]: g[u]){
-                if (v == p){
-                    par[u] = v;
-                }
+                if (v == p) par[u] = v;
                 else{
-                    s += w;
-                    f(f, v, u);
-                    subNode[u] += subNode[v];
-                    tour.emplace_back(u);
-                    s -= w;
+                    s += w; f(f, v, u); s -= w;
+                    euler_tour.emplace_back(u);
+                    subtree_nodes[u] += subtree_nodes[v];
                 }
             }
-            subNode[u]++;
-            lr[u].se = tour.size();
-            return;
-        };
-        f(f, start);
+            subtree_nodes[u]++;
+            lr[u].se = euler_tour.size();
+        }; dfs(dfs, root);
     }
-    // 木の直径を返す
-    int find_diameter(){
-        int from = 0, to = 0; ll max_dist = -LINF;
-        auto f = [&](auto f, int u, int p=-1, int s=0) -> void{
+    // calc diameter on tree
+    int diameter(){
+        int from = 0, to = 0; ll max_dist = 0;
+        auto dfs = [&](auto f, int u, int p=-1, int s=0) -> void{
             if (g[u].size() == 1 && p != -1){
-                if (max_dist < s){
-                    max_dist = s;
-                    to = u;
-                }
+                if (max_dist < s) max_dist = s, to = u;
                 return;
             }
-            for (auto [v, c]: g[u]) if (v != p){
-                f(f, v, u, s+c);
-            }   
+            for (auto [v, w]: g[u])if (v != p) f(f, v, u, s+w);
         };
-        f(f, from); from = to;
-        f(f, from);
+        dfs(dfs, from); from = to;
+        dfs(dfs, from);
         return max_dist;
     }
-    // 木の中心を返す(高々２つなので、１つの場合は片方は-1となる)
+    // find tree centers (at most 2, -1 if only one)
     pii find_center(){
         int res_n = n;
         vector<int> tmp_deg = deg;
-        vector<bool> used(n);
         queue<int> q;
-        rep(i, n) if (tmp_deg[i] == 1) q.emplace(i); // 次数が1の頂点でキューを初期化
+        rep(i, n) if (deg[i] == 1) q.emplace(i); // initialize queue with deg1 vertices
         while(res_n > 2){
             res_n -= q.size();
             queue<int> tmp_q;
             while(!q.empty()){
                 int u = q.front(); q.pop();
-                used[u] = true;
-                for (auto [v, c]: g[u]){ // 葉を取り除いたことで次数が1になった頂点をキューに入れる
+                for (auto [v, c]: g[u]){ // enqueue vertices that become deg1 after leaf removal
                     tmp_deg[v]--;
                     if (tmp_deg[v] == 1) tmp_q.emplace(v);
                 }
             }
             q = move(tmp_q);
         }
-        vector<int> res;
-        rep(i, n) if (!used[i]) res.emplace_back(i);
-        return (res.size() == 1 ? make_pair(res[0], -1) : make_pair(res[0], res[1]));
+        if (q.size() == 1) return {q.front(), -1};
+        else return {q.front(), q.back()};
     }
-    // 木の重心を１つ求める(本来は高々２つある)
+    // find a centroid of the tree
     int find_centroid(){
         int centroid = -1;
         vector<int> sv(n);
-        auto f = [&](auto f, int u, int p=-1) -> int{
+        auto dfs = [&](auto f, int u, int p=-1) -> int{
             int mx = 0;
             for (auto [v, c]: g[u]) if (v != p){
                 sv[u] += f(f, v, u);
@@ -100,8 +84,43 @@ struct Tree{
             chmax(mx, n-sv[u]);
             if (mx*2 <= n) centroid = u;
             return sv[u];
-        };
-        f(f, 0);
+        }; dfs(dfs, 0);
         return centroid;
+    }
+    // calc inversion count when rooted at a given vertex
+    vector<ll> inv_count(){
+        ll inv = 0;
+        { // calc inversion count when rooted at vertex '0'
+            fenwick_tree<int> fw(n);
+            auto dfs = [&](auto f, int u, int p=-1) -> void{
+                inv += fw.sum(u+1, n);
+                fw.add(u, 1);
+                for (auto [v, _]: g[u])if (v != p) f(f, v, u);
+                fw.add(u, -1);
+            }; dfs(dfs, 0);
+        }
+        vector<pii> sn(n);
+        { // u in subtree of v,  calc ([u < v], [u < par[v]])
+            fenwick_tree<int> fw(n);
+            auto dfs = [&](auto f, int u, int p=-1) -> void{
+                if (p != -1) sn[u].fi -= fw.sum(0, u), sn[u].se -= fw.sum(0, p);
+                fw.add(u, 1);
+                for (auto [v, _]: g[u]) if (v != p) f(f, v, u);
+                if (p != -1) sn[u].fi += fw.sum(0, u), sn[u].se += fw.sum(0, p);
+            }; dfs(dfs, 0);
+            rep(i, n) sn[i].fi = i-sn[i].fi;
+        }
+        vector<ll> res(n);
+        { // calc inversion count by updating inv along DFS order
+            auto dfs = [&](auto f, int u, int p=-1) -> void{
+                inv += sn[u].fi-sn[u].se;
+                res[u] = inv;
+                for (auto [v, _]: g[u]) if (v != p){
+                    f(f, v, u);
+                    inv -= sn[v].fi-sn[v].se;
+                }  
+            }; dfs(dfs, 0);
+        }
+        return res;
     }
 };
