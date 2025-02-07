@@ -43,73 +43,57 @@ const ll LINF = 7001002003004005006ll;
 const int INF = 1001001001;
 int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_distribution<int> dist(0, INF); return dist(mt);}
 
-struct AuxiliaryTree{
-    int n;
-    LCA lca;
-    vector<int> in, out;
-    AuxiliaryTree(int _n): n(_n), lca(n), in(n), out(n){}
-    void add_edge(int a, int b){lca.add_edge(a, b);} 
-    void build(int root=0){
-        lca.build(root);
-        int si = 0;
-        auto dfs = [&](auto f, int u, int p=-1) -> void{
-            in[u] = si++;
-            for (int v: lca.g[u]) if (v != p) f(f, v, u);   
-            out[u] = si;
-        };
-        dfs(dfs, root);
-    }
-    vector<pii> solve(vector<int> vs, int &root){ // return edges(parent, child)
-        sort(rng(vs), [&](int i, int j){return in[i] < in[j];});
-        int m = vs.size();
-        rep(i, m-1) vs.emplace_back(lca.lca(vs[i], vs[i+1]));
-        sort(rng(vs), [&](int i, int j){return in[i] < in[j];});
-        vs.erase(unique(rng(vs)), vs.end());
-        root = vs[0];
-        vector<pii> res; vector<int> stk;
-        for (int v: vs){
-            while(stk.size() && (out[stk.back()] <= in[v] || in[v] <= in[stk.back()])) stk.pop_back();
-            if (stk.size()) res.emplace_back(stk.back(), v);
-            stk.emplace_back(v);
-        }
-        return res;
-    }
-};
 
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     int n; cin >> n;
-    vector<int> a(n);
-    vector<vector<int>> c(n);
-    rep(i, n) cin >> a[i], a[i]--, c[a[i]].push_back(i);
-    AuxiliaryTree at(n);
+    G g(n);
     rep(i, n-1){
         int u, v; cin >> u >> v; u--, v--;
-        at.add_edge(u, v);
+        g[u].push_back(v);
+        g[v].push_back(u);
     }
-    at.build();
-    mint ans = 0;
-    G g(n);
-    rep(i, n){
-        if (c[i].size() == 0) continue;
-        int root;
-        auto edge = at.solve(c[i], root);
-        for (auto [u, v]: edge) g[u].push_back(v);
-        auto dfs = [&](auto f, int u, int p=-1) -> mint{
-            mint res = 1, sum;
-            for (auto v: g[u]) if (v != p){
-                auto x = f(f, v, u);
-                res *= x+1;
-                sum += x;
+    ll inv = 0;
+    {
+        fenwick_tree<int> fw(n);
+        auto dfs = [&](auto f, int u, int p=-1) -> void{
+            inv += fw.sum(u+1, n);
+            fw.add(u, 1);
+            for (auto v: g[u]){
+                if (v == p) continue;
+                f(f, v, u);
             }
-            if (a[u] != i) ans -= sum, res--;
-            ans += res;
-            return res;
+            fw.add(u, -1);
         };
-        dfs(dfs, root);
-        for (auto [u, v]: edge) g[u].pop_back();
+        dfs(dfs, 0);
     }
-    cout << ans.val() << endl;
+    vector<pii> sn(n);
+    {
+        fenwick_tree<int> fw(n);
+        auto dfs = [&](auto f, int u, int p=-1) -> void{
+            if (p != -1) sn[u].fi -= fw.sum(0, u), sn[u].se -= fw.sum(0, p);
+            fw.add(u, 1);
+            for (auto v: g[u]){
+                if (v == p) continue;
+                f(f, v, u);
+            }
+            if (p != -1) sn[u].fi += fw.sum(0, u), sn[u].se += fw.sum(0, p);
+        };
+        dfs(dfs, 0);
+    }
+    rep(i, n) sn[i].fi = i-sn[i].fi;
+    vector<ll> ans(n);
+    auto dfs = [&](auto f, int u, int p=-1) -> void{
+        inv += sn[u].fi-sn[u].se;
+        ans[u] = inv;
+        for (auto v: g[u]){
+            if (v == p) continue;
+            f(f, v, u);
+            inv -= sn[v].fi-sn[v].se;
+        }  
+    };
+    dfs(dfs, 0);
+    printv(ans);
     return 0;
 }

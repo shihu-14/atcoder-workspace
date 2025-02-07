@@ -66,7 +66,24 @@ struct Matrix{
         for(;b;b>>=1,a=(a*a)%mod) if(b&1) res = (res*a)%mod;
         return res;
     }
-    // Matrix& rotate90{
-        // 
-    // }
+    Matrix& rotate90(){
+        Matrix res(col, row);
+        rep(i,row)rep(j,col) res[j][row-1-i]=mat[i][j];
+        swap(row, col);
+        mat=res.mat;
+        return *this;
+    }
+    Matrix& rotate90(int sx, int sy, int n){
+        assert(row == col);
+        vector<vector<T>> t(n,vector<T>(n));
+        rep(i,n)rep(j,n) t[i][j]=mat[sx+i][sy+j];
+        rep(i,n)rep(j,n) mat[sx+j][sy+n-1-i]=t[i][j];
+        return *this;
+    }
+    Matrix& rotate180(){
+        Matrix r(row,col);
+        rep(i,row)rep(j,col)r[row-1-i][col-1-j]=mat[i][j];
+        mat=r.mat;
+        return *this;
+    }
 };

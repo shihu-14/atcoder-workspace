@@ -1,0 +1,39 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+      "*.html": "jinja-html",
+      "*.cpp ": "cpp",
+      "fstream": "cpp",
+      "istream": "cpp",
+      "__split_buffer": "cpp",
+      "deque": "cpp",
+      "list": "cpp",
+      "vector": "cpp",
+      "*.ipp": "cpp",
+      "*.tcc": "cpp",
+      "iosfwd": "cpp",
+      "ostream": "cpp",
+      "string": "cpp",
+      "format": "cpp",
+      "iostream": "cpp"
+    },
+    "terminal.integrated.enablePersistentSessions": true,
+    "multiCommand.commands": [
+        {
+          "command": "multiCommand.focusAndMaximizeTerminal",
+          "sequence": [
+            "workbench.action.terminal.focus",
+            "workbench.action.toggleMaximizedPanel",
+            "workbench.action.terminal.clear"
+          ]
+        },
+        {
+          "command": "multiCommand.restoreTerminal",
+          "sequence": [
+            "workbench.action.toggleMaximizedPanel",
+            "workbench.action.closePanel", 
+            "workbench.action.focusActiveEditorGroup"
+          ]
+        }
+      ],
+}
