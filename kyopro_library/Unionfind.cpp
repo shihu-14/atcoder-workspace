@@ -1,29 +1,23 @@
-// Union-find
 struct UnionFind {
-    vector<int> par, sz;
-    UnionFind(int n=0): par(n, -1), sz(n, 1) {}
-    // xの属する代表元を返す。
+    vector<int> d;
+    UnionFind(int n=0): d(n,-1) {}
     int find(int x) {
-        if(par[x] == -1) return x;
-        return par[x] = find(par[x]);
+        if(d[x] < 0) return x;
+        return d[x] = find(d[x]);
     }
-    // xとyが同じ連結成分かの判定
     bool same(int x, int y) {
         return find(x) == find(y);
     }
-    // xとyをマージする。すでに同じ連結成分ならfalseを返す。マージに成功すればtrueを返す。
-    // 新しい代表元は、サイズの大きい連結成分の代表元となる。
-    bool merge(int x, int y) {
+    bool merge(int x, int y) { // if merge successed, return true
         x = find(x);
         y = find(y);
         if (x == y) return false;
-        if (sz[x] < sz[y]) swap(x, y);
-        par[y] = x;
-        sz[x] += sz[y]; 
+        if (d[x] > d[y]) swap(x, y);
+        d[x] += d[y];
+        d[y] = x;
         return true;
     }
-    // xの属する連結成分のサイズを返す。
     int size(int x){
-        return sz[find(x)];
+        return -d[find(x)];
     }
 };

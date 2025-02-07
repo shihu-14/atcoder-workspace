@@ -42,74 +42,29 @@ const ll dyy[] = {0, 1, 1, 1, 0, -1, -1, -1};
 const ll LINF = 7001002003004005006ll;
 const int INF = 1001001001;
 int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_distribution<int> dist(0, INF); return dist(mt);}
-
-struct AuxiliaryTree{
-    int n;
-    LCA lca;
-    vector<int> in, out;
-    AuxiliaryTree(int _n): n(_n), lca(n), in(n), out(n){}
-    void add_edge(int a, int b){lca.add_edge(a, b);} 
-    void build(int root=0){
-        lca.build(root);
-        int si = 0;
-        auto dfs = [&](auto f, int u, int p=-1) -> void{
-            in[u] = si++;
-            for (int v: lca.g[u]) if (v != p) f(f, v, u);   
-            out[u] = si;
-        };
-        dfs(dfs, root);
-    }
-    vector<pii> solve(vector<int> vs, int &root){ // return edges(parent, child)
-        sort(rng(vs), [&](int i, int j){return in[i] < in[j];});
-        int m = vs.size();
-        rep(i, m-1) vs.emplace_back(lca.lca(vs[i], vs[i+1]));
-        sort(rng(vs), [&](int i, int j){return in[i] < in[j];});
-        vs.erase(unique(rng(vs)), vs.end());
-        root = vs[0];
-        vector<pii> res; vector<int> stk;
-        for (int v: vs){
-            while(stk.size() && (out[stk.back()] <= in[v] || in[v] <= in[stk.back()])) stk.pop_back();
-            if (stk.size()) res.emplace_back(stk.back(), v);
-            stk.emplace_back(v);
-        }
-        return res;
-    }
-};
-
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     int n; cin >> n;
-    vector<int> a(n);
-    vector<vector<int>> c(n);
-    rep(i, n) cin >> a[i], a[i]--, c[a[i]].push_back(i);
-    AuxiliaryTree at(n);
-    rep(i, n-1){
-        int u, v; cin >> u >> v; u--, v--;
-        at.add_edge(u, v);
-    }
-    at.build();
-    mint ans = 0;
-    G g(n);
+    int M = sqrt(n);
+    vector<mint> dp(n); dp[0] = 1;
+    vector<vector<mint>> dp2(M+1, vector<mint>(M));
     rep(i, n){
-        if (c[i].size() == 0) continue;
-        int root;
-        auto edge = at.solve(c[i], root);
-        for (auto [u, v]: edge) g[u].push_back(v);
-        auto dfs = [&](auto f, int u, int p=-1) -> mint{
-            mint res = 1, sum;
-            for (auto v: g[u]) if (v != p){
-                auto x = f(f, v, u);
-                res *= x+1;
-                sum += x;
+        int a; cin >> a;
+        rep2(j, 1, M+1){
+            dp[i] += dp2[j][i%j];
+        }
+        if (a <= M){
+            dp2[a][i%a] += dp[i];
+        }
+        else if (a > M){
+            rep3(j, i+a, n, a){
+                dp[j] += dp[i];
             }
-            if (a[u] != i) ans -= sum, res--;
-            ans += res;
-            return res;
-        };
-        dfs(dfs, root);
-        for (auto [u, v]: edge) g[u].pop_back();
+        }
     }
+    mint ans;
+    rep(i, n) ans += dp[i];
     cout << ans.val() << endl;
     return 0;
 }
