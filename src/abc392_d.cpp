@@ -46,20 +46,24 @@ int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    string s; cin >> s;
-    int n = s.size();
-    int k; cin >> k;
-    vector dp(n+1, vector<int>(n+1, INF));
-    rep(r, n+1)rrep2(l, r+1, 0){
-        chmin(dp[l][r], int(r-l));
-        rep2(x, l, r){
-            chmin(dp[l][r], dp[l][x]+dp[x][r]);
-            if (s[l] == 'o' && s[x] == 'f' && dp[l+1][x] == 0){
-                int res = max(dp[x+1][r]-k, 0);
-                chmin(dp[l][r], res);
-            }
+    int n; cin >> n;
+    vector<vector<int>> a(n, vector<int>(100000));
+    vector<ll> c(n);
+    rep(i, n){
+        int k; cin >> k; c[i] = k;
+        rep(j, k){
+            int av; cin >> av; av--;
+            a[i][av]++;
         }
     }
-    cout << dp[0][n] << endl;
+    double ans = 0;
+    rep(i, n)rep2(j, i+1, n){
+        ll res = 0;
+        rep(k, 100000){
+            res += (ll)a[i][k]*a[j][k];
+        }
+        chmax(ans, (double)res/(c[i]*c[j]));
+    }
+    printf("%.016f\n", ans);
     return 0;
 }

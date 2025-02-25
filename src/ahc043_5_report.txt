@@ -1,0 +1,300 @@
+処理中: 0000.txt → 0001.txt
+final-performance: 495017
+elapsed: 2881
+処理中: 0001.txt → 0002.txt
+final-performance: 241296
+elapsed: 2853
+処理中: 0002.txt → 0003.txt
+final-performance: 1775956
+elapsed: 2999
+処理中: 0003.txt → 0004.txt
+final-performance: 175627
+elapsed: 2854
+処理中: 0004.txt → 0005.txt
+final-performance: 114689
+elapsed: 2855
+処理中: 0005.txt → 0006.txt
+final-performance: 126485
+elapsed: 2855
+処理中: 0006.txt → 0007.txt
+final-performance: 2597862
+elapsed: 2983
+処理中: 0007.txt → 0008.txt
+final-performance: 4153761
+elapsed: 3086
+処理中: 0008.txt → 0009.txt
+final-performance: 53233
+elapsed: 2851
+処理中: 0009.txt → 0010.txt
+final-performance: 781633
+elapsed: 2867
+処理中: 0010.txt → 0011.txt
+final-performance: 161907
+elapsed: 2854
+処理中: 0011.txt → 0012.txt
+final-performance: 1277916
+elapsed: 2867
+処理中: 0012.txt → 0013.txt
+final-performance: 5833217
+elapsed: 3028
+処理中: 0013.txt → 0014.txt
+final-performance: 645241
+elapsed: 2867
+処理中: 0014.txt → 0015.txt
+final-performance: 202718
+elapsed: 2854
+処理中: 0015.txt → 0016.txt
+final-performance: 253455
+elapsed: 2853
+処理中: 0016.txt → 0017.txt
+final-performance: 954572
+elapsed: 2863
+処理中: 0017.txt → 0018.txt
+final-performance: 967352
+elapsed: 3050
+処理中: 0018.txt → 0019.txt
+final-performance: 2225597
+elapsed: 2885
+処理中: 0019.txt → 0020.txt
+final-performance: 1436722
+elapsed: 2953
+処理中: 0020.txt → 0021.txt
+final-performance: 257619
+elapsed: 2852
+処理中: 0021.txt → 0022.txt
+final-performance: 520602
+elapsed: 2860
+処理中: 0022.txt → 0023.txt
+final-performance: 61087
+elapsed: 2851
+処理中: 0023.txt → 0024.txt
+final-performance: 1158946
+elapsed: 2991
+処理中: 0024.txt → 0025.txt
+final-performance: 5980633
+elapsed: 2971
+処理中: 0025.txt → 0026.txt
+final-performance: 98115
+elapsed: 2855
+処理中: 0026.txt → 0027.txt
+final-performance: 2440703
+elapsed: 2891
+処理中: 0027.txt → 0028.txt
+final-performance: 307267
+elapsed: 2889
+処理中: 0028.txt → 0029.txt
+final-performance: 1409949
+elapsed: 3007
+処理中: 0029.txt → 0030.txt
+final-performance: 258293
+elapsed: 2851
+処理中: 0030.txt → 0031.txt
+final-performance: 629714
+elapsed: 2967
+処理中: 0031.txt → 0032.txt
+final-performance: 4490796
+elapsed: 2888
+処理中: 0032.txt → 0033.txt
+final-performance: 2420544
+elapsed: 3183
+処理中: 0033.txt → 0034.txt
+final-performance: 5696488
+elapsed: 3122
+処理中: 0034.txt → 0035.txt
+final-performance: 230206
+elapsed: 2857
+処理中: 0035.txt → 0036.txt
+final-performance: 228091
+elapsed: 2857
+処理中: 0036.txt → 0037.txt
+final-performance: 6655687
+elapsed: 3244
+処理中: 0037.txt → 0038.txt
+final-performance: 676787
+elapsed: 2857
+処理中: 0038.txt → 0039.txt
+final-performance: 336728
+elapsed: 2859
+処理中: 0039.txt → 0040.txt
+final-performance: 625521
+elapsed: 2916
+処理中: 0040.txt → 0041.txt
+final-performance: 48877
+elapsed: 2858
+処理中: 0041.txt → 0042.txt
+final-performance: 1026851
+elapsed: 2914
+処理中: 0042.txt → 0043.txt
+final-performance: 402097
+elapsed: 2888
+処理中: 0043.txt → 0044.txt
+final-performance: 7179902
+elapsed: 3221
+処理中: 0044.txt → 0045.txt
+final-performance: 4148305
+elapsed: 3010
+処理中: 0045.txt → 0046.txt
+final-performance: 156684
+elapsed: 2869
+処理中: 0046.txt → 0047.txt
+final-performance: 1434015
+elapsed: 2949
+処理中: 0047.txt → 0048.txt
+final-performance: 344275
+elapsed: 2906
+処理中: 0048.txt → 0049.txt
+final-performance: 5624333
+elapsed: 2955
+処理中: 0049.txt → 0050.txt
+final-performance: 548421
+elapsed: 2853
+処理中: 0050.txt → 0051.txt
+final-performance: 42775
+elapsed: 2851
+処理中: 0051.txt → 0052.txt
+final-performance: 355313
+elapsed: 2862
+処理中: 0052.txt → 0053.txt
+final-performance: 1042713
+elapsed: 2914
+処理中: 0053.txt → 0054.txt
+final-performance: 6157241
+elapsed: 3266
+処理中: 0054.txt → 0055.txt
+final-performance: 891050
+elapsed: 2917
+処理中: 0055.txt → 0056.txt
+final-performance: 688214
+elapsed: 2935
+処理中: 0056.txt → 0057.txt
+final-performance: 667047
+elapsed: 2957
+処理中: 0057.txt → 0058.txt
+final-performance: 159114
+elapsed: 2853
+処理中: 0058.txt → 0059.txt
+final-performance: 3571103
+elapsed: 3102
+処理中: 0059.txt → 0060.txt
+final-performance: 788165
+elapsed: 2920
+処理中: 0060.txt → 0061.txt
+final-performance: 810084
+elapsed: 2914
+処理中: 0061.txt → 0062.txt
+final-performance: 646999
+elapsed: 2905
+処理中: 0062.txt → 0063.txt
+final-performance: 89217
+elapsed: 2854
+処理中: 0063.txt → 0064.txt
+final-performance: 96695
+elapsed: 2852
+処理中: 0064.txt → 0065.txt
+final-performance: 288314
+elapsed: 2851
+処理中: 0065.txt → 0066.txt
+final-performance: 398057
+elapsed: 2855
+処理中: 0066.txt → 0067.txt
+final-performance: 1934123
+elapsed: 2878
+処理中: 0067.txt → 0068.txt
+final-performance: 171104
+elapsed: 2851
+処理中: 0068.txt → 0069.txt
+final-performance: 107232
+elapsed: 2853
+処理中: 0069.txt → 0070.txt
+final-performance: 282327
+elapsed: 2874
+処理中: 0070.txt → 0071.txt
+final-performance: 117105
+elapsed: 2852
+処理中: 0071.txt → 0072.txt
+final-performance: 721107
+elapsed: 2852
+処理中: 0072.txt → 0073.txt
+final-performance: 5699186
+elapsed: 2875
+処理中: 0073.txt → 0074.txt
+final-performance: 861835
+elapsed: 2948
+処理中: 0074.txt → 0075.txt
+final-performance: 149690
+elapsed: 2853
+処理中: 0075.txt → 0076.txt
+final-performance: 3301918
+elapsed: 2853
+処理中: 0076.txt → 0077.txt
+final-performance: 3913080
+elapsed: 2981
+処理中: 0077.txt → 0078.txt
+final-performance: 653868
+elapsed: 2893
+処理中: 0078.txt → 0079.txt
+final-performance: 303244
+elapsed: 2855
+処理中: 0079.txt → 0080.txt
+final-performance: 506007
+elapsed: 2930
+処理中: 0080.txt → 0081.txt
+final-performance: 3410381
+elapsed: 3016
+処理中: 0081.txt → 0082.txt
+final-performance: 780272
+elapsed: 2960
+処理中: 0082.txt → 0083.txt
+final-performance: 537155
+elapsed: 2902
+処理中: 0083.txt → 0084.txt
+final-performance: 293855
+elapsed: 2853
+処理中: 0084.txt → 0085.txt
+final-performance: 4176739
+elapsed: 3072
+処理中: 0085.txt → 0086.txt
+final-performance: 125888
+elapsed: 2917
+処理中: 0086.txt → 0087.txt
+final-performance: 74347
+elapsed: 2852
+処理中: 0087.txt → 0088.txt
+final-performance: 218024
+elapsed: 2851
+処理中: 0088.txt → 0089.txt
+final-performance: 87118
+elapsed: 2851
+処理中: 0089.txt → 0090.txt
+final-performance: 362980
+elapsed: 2885
+処理中: 0090.txt → 0091.txt
+final-performance: 1253018
+elapsed: 3076
+処理中: 0091.txt → 0092.txt
+final-performance: 158461
+elapsed: 2869
+処理中: 0092.txt → 0093.txt
+final-performance: 1344419
+elapsed: 2853
+処理中: 0093.txt → 0094.txt
+final-performance: 175598
+elapsed: 2851
+処理中: 0094.txt → 0095.txt
+final-performance: 1992099
+elapsed: 2940
+処理中: 0095.txt → 0096.txt
+final-performance: 4298718
+elapsed: 3368
+処理中: 0096.txt → 0097.txt
+final-performance: 767391
+elapsed: 3128
+処理中: 0097.txt → 0098.txt
+final-performance: 2416932
+elapsed: 2865
+処理中: 0098.txt → 0099.txt
+final-performance: 166229
+elapsed: 2859
+処理中: 0099.txt → 0100.txt
+final-performance: 3015325
+elapsed: 2933
