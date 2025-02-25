@@ -1,0 +1,810 @@
+処理中: 0000.txt → 0001.txt
+perf for SA: 668687
+num of station for SA: 33
+final-performance: 681702
+num of station: 33
+times: 183345
+update: 118
+elapsed: 2754
+処理中: 0001.txt → 0002.txt
+perf for SA: 229595
+num of station for SA: 11
+final-performance: 230514
+num of station: 11
+times: 877455
+update: 10
+elapsed: 2752
+処理中: 0002.txt → 0003.txt
+perf for SA: 3348415
+num of station for SA: 67
+final-performance: 3291860
+num of station: 67
+times: 47939
+update: 315
+elapsed: 2757
+処理中: 0003.txt → 0004.txt
+perf for SA: 49680
+num of station for SA: 2
+final-performance: 49680
+num of station: 2
+times: 3832577
+update: 0
+elapsed: 2751
+処理中: 0004.txt → 0005.txt
+perf for SA: 94336
+num of station for SA: 7
+final-performance: 97767
+num of station: 7
+times: 1516307
+update: 16
+elapsed: 2751
+処理中: 0005.txt → 0006.txt
+perf for SA: 99000
+num of station for SA: 4
+final-performance: 101330
+num of station: 4
+times: 1534568
+update: 1
+elapsed: 2751
+処理中: 0006.txt → 0007.txt
+perf for SA: 4781642
+num of station for SA: 70
+final-performance: 4701376
+num of station: 70
+times: 74245
+update: 298
+elapsed: 2755
+処理中: 0007.txt → 0008.txt
+perf for SA: 6511354
+num of station for SA: 76
+final-performance: 6551047
+num of station: 76
+times: 48645
+update: 294
+elapsed: 2756
+処理中: 0008.txt → 0009.txt
+perf for SA: 49838
+num of station for SA: 6
+final-performance: 53142
+num of station: 6
+times: 2022886
+update: 4
+elapsed: 2751
+処理中: 0009.txt → 0010.txt
+perf for SA: 1352519
+num of station for SA: 45
+final-performance: 1354992
+num of station: 45
+times: 159881
+update: 147
+elapsed: 2754
+処理中: 0010.txt → 0011.txt
+perf for SA: 136482
+num of station for SA: 7
+final-performance: 138759
+num of station: 7
+times: 1358578
+update: 8
+elapsed: 2752
+処理中: 0011.txt → 0012.txt
+perf for SA: 2430413
+num of station for SA: 68
+final-performance: 2364152
+num of station: 68
+times: 67883
+update: 321
+elapsed: 2755
+処理中: 0012.txt → 0013.txt
+perf for SA: 11106156
+num of station for SA: 87
+final-performance: 11187811
+num of station: 87
+times: 37845
+update: 394
+elapsed: 2757
+処理中: 0013.txt → 0014.txt
+perf for SA: 1328941
+num of station for SA: 47
+final-performance: 1352667
+num of station: 47
+times: 198939
+update: 257
+elapsed: 2754
+処理中: 0014.txt → 0015.txt
+perf for SA: 280651
+num of station for SA: 22
+final-performance: 281701
+num of station: 22
+times: 620309
+update: 29
+elapsed: 2752
+処理中: 0015.txt → 0016.txt
+perf for SA: 170724
+num of station for SA: 9
+final-performance: 173884
+num of station: 9
+times: 1440619
+update: 1
+elapsed: 2752
+処理中: 0016.txt → 0017.txt
+perf for SA: 1678290
+num of station for SA: 52
+final-performance: 1704776
+num of station: 52
+times: 109475
+update: 209
+elapsed: 2754
+処理中: 0017.txt → 0018.txt
+perf for SA: 1366296
+num of station for SA: 43
+final-performance: 1372746
+num of station: 43
+times: 166655
+update: 186
+elapsed: 2754
+処理中: 0018.txt → 0019.txt
+perf for SA: 3903288
+num of station for SA: 75
+final-performance: 3586904
+num of station: 75
+times: 52519
+update: 325
+elapsed: 2756
+処理中: 0019.txt → 0020.txt
+perf for SA: 2238148
+num of station for SA: 52
+final-performance: 2264382
+num of station: 52
+times: 108730
+update: 364
+elapsed: 2755
+処理中: 0020.txt → 0021.txt
+perf for SA: 324704
+num of station for SA: 21
+final-performance: 348604
+num of station: 21
+times: 575037
+update: 46
+elapsed: 2753
+処理中: 0021.txt → 0022.txt
+perf for SA: 749803
+num of station for SA: 36
+final-performance: 744759
+num of station: 36
+times: 231225
+update: 48
+elapsed: 2753
+処理中: 0022.txt → 0023.txt
+perf for SA: 249913
+num of station for SA: 17
+final-performance: 273492
+num of station: 17
+times: 852300
+update: 26
+elapsed: 2752
+処理中: 0023.txt → 0024.txt
+perf for SA: 2217943
+num of station for SA: 59
+final-performance: 2347523
+num of station: 59
+times: 114580
+update: 298
+elapsed: 2755
+処理中: 0024.txt → 0025.txt
+perf for SA: 9830972
+num of station for SA: 84
+final-performance: 9496983
+num of station: 84
+times: 42157
+update: 450
+elapsed: 2756
+処理中: 0025.txt → 0026.txt
+perf for SA: 70025
+num of station for SA: 3
+final-performance: 70475
+num of station: 3
+times: 1541856
+update: 0
+elapsed: 2751
+処理中: 0026.txt → 0027.txt
+perf for SA: 3035650
+num of station for SA: 65
+final-performance: 3038577
+num of station: 65
+times: 63201
+update: 333
+elapsed: 2755
+処理中: 0027.txt → 0028.txt
+perf for SA: 390801
+num of station for SA: 24
+final-performance: 409203
+num of station: 24
+times: 436781
+update: 36
+elapsed: 2753
+処理中: 0028.txt → 0029.txt
+perf for SA: 2376784
+num of station for SA: 60
+final-performance: 2320788
+num of station: 60
+times: 79899
+update: 215
+elapsed: 2755
+処理中: 0029.txt → 0030.txt
+perf for SA: 365674
+num of station for SA: 22
+final-performance: 366113
+num of station: 22
+times: 463130
+update: 14
+elapsed: 2753
+処理中: 0030.txt → 0031.txt
+perf for SA: 1173108
+num of station for SA: 53
+final-performance: 1125066
+num of station: 53
+times: 112137
+update: 295
+elapsed: 2755
+処理中: 0031.txt → 0032.txt
+perf for SA: 7728851
+num of station for SA: 80
+final-performance: 7446528
+num of station: 80
+times: 43035
+update: 454
+elapsed: 2756
+処理中: 0032.txt → 0033.txt
+perf for SA: 4467881
+num of station for SA: 79
+final-performance: 4446036
+num of station: 79
+times: 50567
+update: 419
+elapsed: 2756
+処理中: 0033.txt → 0034.txt
+perf for SA: 9914535
+num of station for SA: 80
+final-performance: 9514319
+num of station: 80
+times: 42963
+update: 377
+elapsed: 2756
+処理中: 0034.txt → 0035.txt
+perf for SA: 198564
+num of station for SA: 10
+final-performance: 196161
+num of station: 10
+times: 1156549
+update: 0
+elapsed: 2752
+処理中: 0035.txt → 0036.txt
+perf for SA: 383094
+num of station for SA: 31
+final-performance: 412800
+num of station: 31
+times: 302905
+update: 94
+elapsed: 2753
+処理中: 0036.txt → 0037.txt
+perf for SA: 11564012
+num of station for SA: 91
+final-performance: 11224665
+num of station: 91
+times: 33647
+update: 408
+elapsed: 2757
+処理中: 0037.txt → 0038.txt
+perf for SA: 639301
+num of station for SA: 28
+final-performance: 671560
+num of station: 28
+times: 379341
+update: 106
+elapsed: 2753
+処理中: 0038.txt → 0039.txt
+perf for SA: 716729
+num of station for SA: 37
+final-performance: 711805
+num of station: 37
+times: 248797
+update: 127
+elapsed: 2753
+処理中: 0039.txt → 0040.txt
+perf for SA: 1102881
+num of station for SA: 45
+final-performance: 1084475
+num of station: 45
+times: 142350
+update: 91
+elapsed: 2754
+処理中: 0040.txt → 0041.txt
+perf for SA: 41467
+num of station for SA: 4
+final-performance: 42715
+num of station: 4
+times: 2012416
+update: 2
+elapsed: 2751
+処理中: 0041.txt → 0042.txt
+perf for SA: 2284302
+num of station for SA: 55
+final-performance: 2456509
+num of station: 55
+times: 135967
+update: 265
+elapsed: 2754
+処理中: 0042.txt → 0043.txt
+perf for SA: 787214
+num of station for SA: 34
+final-performance: 802181
+num of station: 34
+times: 239605
+update: 92
+elapsed: 2753
+処理中: 0043.txt → 0044.txt
+perf for SA: 12962427
+num of station for SA: 87
+final-performance: 12489593
+num of station: 87
+times: 42801
+update: 429
+elapsed: 2756
+処理中: 0044.txt → 0045.txt
+perf for SA: 7211292
+num of station for SA: 81
+final-performance: 6851989
+num of station: 81
+times: 52757
+update: 495
+elapsed: 2756
+処理中: 0045.txt → 0046.txt
+perf for SA: 202428
+num of station for SA: 17
+final-performance: 217668
+num of station: 17
+times: 910433
+update: 12
+elapsed: 2752
+処理中: 0046.txt → 0047.txt
+perf for SA: 2723096
+num of station for SA: 62
+final-performance: 2790064
+num of station: 62
+times: 107712
+update: 336
+elapsed: 2755
+処理中: 0047.txt → 0048.txt
+perf for SA: 320322
+num of station for SA: 24
+final-performance: 330357
+num of station: 24
+times: 529757
+update: 35
+elapsed: 2753
+処理中: 0048.txt → 0049.txt
+perf for SA: 9756150
+num of station for SA: 90
+final-performance: 9830027
+num of station: 90
+times: 44577
+update: 500
+elapsed: 2757
+処理中: 0049.txt → 0050.txt
+perf for SA: 698233
+num of station for SA: 29
+final-performance: 696963
+num of station: 29
+times: 336467
+update: 48
+elapsed: 2753
+処理中: 0050.txt → 0051.txt
+perf for SA: 41340
+num of station for SA: 5
+final-performance: 47211
+num of station: 5
+times: 2140492
+update: 3
+elapsed: 2751
+処理中: 0051.txt → 0052.txt
+perf for SA: 543555
+num of station for SA: 22
+final-performance: 553395
+num of station: 22
+times: 491417
+update: 57
+elapsed: 2752
+処理中: 0052.txt → 0053.txt
+perf for SA: 1683590
+num of station for SA: 54
+final-performance: 1688411
+num of station: 54
+times: 139934
+update: 298
+elapsed: 2755
+処理中: 0053.txt → 0054.txt
+perf for SA: 12296143
+num of station for SA: 92
+final-performance: 12234428
+num of station: 92
+times: 40475
+update: 461
+elapsed: 2757
+処理中: 0054.txt → 0055.txt
+perf for SA: 1170441
+num of station for SA: 47
+final-performance: 1193896
+num of station: 47
+times: 165281
+update: 186
+elapsed: 2754
+処理中: 0055.txt → 0056.txt
+perf for SA: 725478
+num of station for SA: 38
+final-performance: 778156
+num of station: 38
+times: 258623
+update: 85
+elapsed: 2754
+処理中: 0056.txt → 0057.txt
+perf for SA: 1277902
+num of station for SA: 50
+final-performance: 1274265
+num of station: 50
+times: 137019
+update: 226
+elapsed: 2755
+処理中: 0057.txt → 0058.txt
+perf for SA: 105002
+num of station for SA: 8
+final-performance: 110400
+num of station: 8
+times: 1707148
+update: 2
+elapsed: 2752
+処理中: 0058.txt → 0059.txt
+perf for SA: 7286028
+num of station for SA: 84
+final-performance: 6715489
+num of station: 84
+times: 42333
+update: 335
+elapsed: 2756
+処理中: 0059.txt → 0060.txt
+perf for SA: 1341897
+num of station for SA: 50
+final-performance: 1358635
+num of station: 50
+times: 126759
+update: 184
+elapsed: 2754
+処理中: 0060.txt → 0061.txt
+perf for SA: 1345664
+num of station for SA: 50
+final-performance: 1305351
+num of station: 50
+times: 131679
+update: 203
+elapsed: 2755
+処理中: 0061.txt → 0062.txt
+perf for SA: 1122482
+num of station for SA: 42
+final-performance: 1090047
+num of station: 42
+times: 170701
+update: 141
+elapsed: 2754
+処理中: 0062.txt → 0063.txt
+perf for SA: 86728
+num of station for SA: 9
+final-performance: 95277
+num of station: 9
+times: 1698905
+update: 4
+elapsed: 2752
+処理中: 0063.txt → 0064.txt
+perf for SA: 60176
+num of station for SA: 6
+final-performance: 60928
+num of station: 6
+times: 1866228
+update: 6
+elapsed: 2751
+処理中: 0064.txt → 0065.txt
+perf for SA: 338400
+num of station for SA: 26
+final-performance: 358274
+num of station: 26
+times: 482763
+update: 55
+elapsed: 2753
+処理中: 0065.txt → 0066.txt
+perf for SA: 751660
+num of station for SA: 36
+final-performance: 759090
+num of station: 36
+times: 252616
+update: 102
+elapsed: 2754
+処理中: 0066.txt → 0067.txt
+perf for SA: 3569165
+num of station for SA: 74
+final-performance: 3573113
+num of station: 74
+times: 56309
+update: 300
+elapsed: 2756
+処理中: 0067.txt → 0068.txt
+perf for SA: 85542
+num of station for SA: 2
+final-performance: 85542
+num of station: 2
+times: 3998806
+update: 0
+elapsed: 2751
+処理中: 0068.txt → 0069.txt
+perf for SA: 98139
+num of station for SA: 4
+final-performance: 100818
+num of station: 4
+times: 1730840
+update: 0
+elapsed: 2751
+処理中: 0069.txt → 0070.txt
+perf for SA: 468949
+num of station for SA: 25
+final-performance: 473225
+num of station: 25
+times: 411802
+update: 58
+elapsed: 2753
+処理中: 0070.txt → 0071.txt
+perf for SA: 101483
+num of station for SA: 7
+final-performance: 102550
+num of station: 7
+times: 1473115
+update: 17
+elapsed: 2752
+処理中: 0071.txt → 0072.txt
+perf for SA: 1074528
+num of station for SA: 46
+final-performance: 1086169
+num of station: 46
+times: 145933
+update: 126
+elapsed: 2754
+処理中: 0072.txt → 0073.txt
+perf for SA: 9794106
+num of station for SA: 86
+final-performance: 10001760
+num of station: 86
+times: 39049
+update: 445
+elapsed: 2757
+処理中: 0073.txt → 0074.txt
+perf for SA: 1353148
+num of station for SA: 46
+final-performance: 1315618
+num of station: 46
+times: 144811
+update: 150
+elapsed: 2755
+処理中: 0074.txt → 0075.txt
+perf for SA: 101783
+num of station for SA: 5
+final-performance: 103137
+num of station: 5
+times: 1613694
+update: 0
+elapsed: 2752
+処理中: 0075.txt → 0076.txt
+perf for SA: 5623643
+num of station for SA: 79
+final-performance: 5390095
+num of station: 79
+times: 46841
+update: 495
+elapsed: 2756
+処理中: 0076.txt → 0077.txt
+perf for SA: 5334556
+num of station for SA: 82
+final-performance: 5455817
+num of station: 82
+times: 43643
+update: 401
+elapsed: 2756
+処理中: 0077.txt → 0078.txt
+perf for SA: 1158510
+num of station for SA: 41
+final-performance: 1261901
+num of station: 41
+times: 244426
+update: 254
+elapsed: 2754
+処理中: 0078.txt → 0079.txt
+perf for SA: 210623
+num of station for SA: 12
+final-performance: 216694
+num of station: 12
+times: 1008708
+update: 26
+elapsed: 2752
+処理中: 0079.txt → 0080.txt
+perf for SA: 787842
+num of station for SA: 45
+final-performance: 782088
+num of station: 45
+times: 158203
+update: 157
+elapsed: 2754
+処理中: 0080.txt → 0081.txt
+perf for SA: 7571200
+num of station for SA: 74
+final-performance: 7116357
+num of station: 74
+times: 53790
+update: 361
+elapsed: 2756
+処理中: 0081.txt → 0082.txt
+perf for SA: 1293149
+num of station for SA: 49
+final-performance: 1265979
+num of station: 49
+times: 141323
+update: 181
+elapsed: 2754
+処理中: 0082.txt → 0083.txt
+perf for SA: 706457
+num of station for SA: 30
+final-performance: 705072
+num of station: 30
+times: 353194
+update: 84
+elapsed: 2753
+処理中: 0083.txt → 0084.txt
+perf for SA: 519471
+num of station for SA: 29
+final-performance: 528777
+num of station: 29
+times: 324819
+update: 77
+elapsed: 2753
+処理中: 0084.txt → 0085.txt
+perf for SA: 7361597
+num of station for SA: 77
+final-performance: 7022275
+num of station: 77
+times: 51159
+update: 321
+elapsed: 2756
+処理中: 0085.txt → 0086.txt
+perf for SA: 439228
+num of station for SA: 32
+final-performance: 447655
+num of station: 32
+times: 280561
+update: 63
+elapsed: 2753
+処理中: 0086.txt → 0087.txt
+perf for SA: 94703
+num of station for SA: 6
+final-performance: 97032
+num of station: 6
+times: 1585004
+update: 1
+elapsed: 2752
+処理中: 0087.txt → 0088.txt
+perf for SA: 131529
+num of station for SA: 12
+final-performance: 147435
+num of station: 12
+times: 1331473
+update: 11
+elapsed: 2752
+処理中: 0088.txt → 0089.txt
+perf for SA: 62276
+num of station for SA: 3
+final-performance: 62696
+num of station: 3
+times: 2043465
+update: 0
+elapsed: 2752
+処理中: 0089.txt → 0090.txt
+perf for SA: 672341
+num of station for SA: 34
+final-performance: 756409
+num of station: 34
+times: 309331
+update: 148
+elapsed: 2753
+処理中: 0090.txt → 0091.txt
+perf for SA: 1988027
+num of station for SA: 55
+final-performance: 1906117
+num of station: 55
+times: 117609
+update: 204
+elapsed: 2755
+処理中: 0091.txt → 0092.txt
+perf for SA: 117478
+num of station for SA: 4
+final-performance: 118193
+num of station: 4
+times: 1737284
+update: 2
+elapsed: 2751
+処理中: 0092.txt → 0093.txt
+perf for SA: 1777464
+num of station for SA: 49
+final-performance: 1794166
+num of station: 49
+times: 119543
+update: 89
+elapsed: 2754
+処理中: 0093.txt → 0094.txt
+perf for SA: 171745
+num of station for SA: 9
+final-performance: 174961
+num of station: 9
+times: 1250482
+update: 5
+elapsed: 2752
+処理中: 0094.txt → 0095.txt
+perf for SA: 2676912
+num of station for SA: 55
+final-performance: 2668520
+num of station: 55
+times: 96169
+update: 229
+elapsed: 2755
+処理中: 0095.txt → 0096.txt
+perf for SA: 8224030
+num of station for SA: 78
+final-performance: 8021216
+num of station: 78
+times: 46843
+update: 264
+elapsed: 2756
+処理中: 0096.txt → 0097.txt
+perf for SA: 1286346
+num of station for SA: 52
+final-performance: 1310849
+num of station: 52
+times: 122033
+update: 285
+elapsed: 2755
+処理中: 0097.txt → 0098.txt
+perf for SA: 4774118
+num of station for SA: 70
+final-performance: 4673914
+num of station: 70
+times: 74631
+update: 379
+elapsed: 2756
+処理中: 0098.txt → 0099.txt
+perf for SA: 86347
+num of station for SA: 3
+final-performance: 87031
+num of station: 3
+times: 2004198
+update: 0
+elapsed: 2751
+処理中: 0099.txt → 0100.txt
+perf for SA: 5362343
+num of station for SA: 83
+final-performance: 5039262
+num of station: 83
+times: 53577
+update: 385
+elapsed: 2756
+
+
+
+135399324
+142675578
+140470546
+131263959
+121165454
+
+140424902
