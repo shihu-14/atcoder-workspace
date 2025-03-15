@@ -13,7 +13,7 @@ struct LCA{
         g[a].push_back(b);
         g[b].push_back(a);
     }
-    void build(int root){
+    void build(int root=0){
         auto dfs = [&](auto f, int u, int p=-1, int d=0) -> void{ // solve Euler Tour
             first_appear[u] = euler_tour.size();
             dist[u] = d;

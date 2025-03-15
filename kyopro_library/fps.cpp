@@ -34,6 +34,13 @@ struct fps : vm {
   }
   fps& operator/=(const fps& a) { int w = s; d *= ~a; return d.low_(w);}
   fps operator/(const fps& a) const { return fps(d) /= a;}
+  fps pow(int t) {
+    if (t == 1) return *this;
+    fps r = pow(t>>1);
+    (r *= r).low_(s);
+    if (t&1) (r *= *this).low_(s);
+    return r;
+  }
   fps integ() const {
     fps r;
     rep(i,s) r[i+1] = d[i]/(i+1);
