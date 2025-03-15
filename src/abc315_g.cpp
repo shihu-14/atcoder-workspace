@@ -3,13 +3,14 @@
 #pragma GCC optimize("unroll-loops")
 #include <bits/stdc++.h>
 #include <atcoder/all>
-// #include <boost/multiprecision/cpp_int.hpp>
+#include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
 using namespace atcoder;
 using mint = modint998244353;
 // using mint = modint1000000007;
 // using namespace boost::multiprecision;
 using ll = long long;
+using lll = __int128_t;
 using ull = unsigned long long;
 using ld = long double;
 using pii = pair<int, int>;
@@ -43,13 +44,53 @@ const ll LINF = 3001002003004005006ll;
 const int INF = 1001001001;
 int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_distribution<int> dist(0, INF); return dist(mt);}
 
+ll gcd(ll a, ll b){ return (b ? gcd(b, a%b) : a); }
+ll lcm(ll a, ll b){ return a/gcd(a, b)*b; }
+
+// ax+by=gとなるg=gcd(a, b), x, yを求める拡張gcd
+tuple<lll, lll, lll> extgcd(lll a, lll b) {
+    if (b == 0) return {a, 1, 0};
+    lll g, x, y;
+    tie(g, x, y) = extgcd(b, a%b);
+    return {g, y, x-a/b*y};
+}
+
+
+
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     ll n, A, B, C, X; cin >> n >> A >> B >> C >> X;
     ll ans = 0;
     rep2(i, 1, n+1){
-        
+        lll x = X-C*i;
+        if (x < A+B) break;
+        auto [g, x1, y1] = extgcd(A, B);
+        if (x%g) continue;
+        lll a = A/g, b = B/g, c = x/g;
+        x1 *= c, y1 *= c;
+        auto floor = [](lll a, lll b){
+            if (a < 0) a = -a, b = -b;
+            if (a > 0 && b > 0) return a/b;
+            else return (a-b-1)/b;
+        };
+        auto ceil = [](lll a, lll b){
+            if (a < 0) a = -a, b = -b;
+            if (a > 0 && b > 0) return (a+b-1)/b;
+            else return a/b;
+        };
+        lll l1, r1, l2, r2;
+        l1 = ceil(1-x1, b), r1 = floor(n-x1, b);
+        l2 = ceil(n-y1, -a), r2 = floor(1-y1, -a);
+        lll L = max(l1, l2), R = min(r1, r2);
+        ans += max((lll)0, R-L+1);
+        // if ((l1 <= l2 && r2 <= r1 ) || (l2 <= l1 && r1 <= r2)){
+        //     ans += min(r2-l2+1, r1-l1+1);
+        // }
+        // else{
+        //     ll res = max(0LL, min(r1-l2+1, r2-l1+1));
+        //     ans += res;
+        // }
     }
     cout << ans << endl;
     return 0;

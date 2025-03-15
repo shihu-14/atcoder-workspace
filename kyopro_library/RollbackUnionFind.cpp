@@ -1,6 +1,11 @@
+struct Upd {
+    int& a; int x;
+    Upd(int& a): a(a), x(a) {}
+}:
+
 struct RollbackUnionFind {
     vector<int> d, snap; // d: parent or -size
-    vector<pii> hist;
+    vector<Upd> hist;
     RollbackUnionFind(int n=0): d(n,-1) {}
     int find(int x) {
         if(d[x] < 0) return x;
@@ -28,9 +33,16 @@ struct RollbackUnionFind {
     }
     void rollback(){
         while (hist.size() > snap.back()){
-            auto [i, sz] = hist.back(); hist.pop_back();
-            d[i] = sz;
+            auto [a, x] = hist.back(); hist.pop_back();
+            a = x;
         }
         snap.pop_back();
     }
 };
+
+
+/* testcase
+
+abc302_Ex
+
+*/
