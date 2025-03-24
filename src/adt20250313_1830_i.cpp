@@ -69,25 +69,34 @@ int main(){
     }
     chmin(h2, h1);
     chmin(w2, w1);
-    ll max_sum = 0, max_x, max_y;
-    rep(i, h)rep(j, w){
-        if (i+h1 > h || j+w1 > w) continue;
-        if (max_sum < cs.query(i, j, i+h1, j+w1)){
-            max_sum = cs.query(i, j, i+h1, j+w1);
-            max_x = i;
-            max_y = j;
+    int L1 = h-h1+1, R1 = w-w1+1;
+    int L2 = h-h2+1, R2 = w-w2+1;
+    int L3 = h1-h2+1, R3 = w1-w2+1;
+    vector<vector<ll>> s(L2, vector<ll>(R2));
+    rep(i, L2)rep(j, R2) s[i][j] = cs.query(i, j, i+h2, j+w2);
+    vector<vector<ll>> g(L2, vector<ll>(R2-R3+1)), g2(L2-L3+1, vector<ll>(R2-R3+1));
+    rep(i, L2){
+        multiset<ll> mst;
+        rep(j, R3) mst.insert(s[i][j]);
+        g[i][0] = *mst.rbegin();
+        rep2(j, R3, R2){
+            mst.insert(s[i][j]);
+            mst.erase(mst.find(s[i][j-R3]));
+            g[i][j-R3+1] = *mst.rbegin();
         }
     }
-    cerr << max_sum << endl;
-    ll max_sum2 = 0;
-    rep2(i, max_x, h)rep2(j, max_y, w){
-        if (i+h2 > max_x+h1 || j+w2 > max_y+w1) continue;
-        cerr << i << " " << j << endl;
-        if (max_sum2 < cs.query(i, j, i+h2, j+w2)){
-            max_sum2 = cs.query(i, j, i+h2, j+w2);
+    rep(j, R2-R3+1){
+        multiset<ll> mst;
+        rep(i, L3) mst.insert(g[i][j]);
+        g2[0][j] = *mst.rbegin();
+        rep2(i, L3, L2){
+            mst.insert(g[i][j]);
+            mst.erase(mst.find(g[i-L3][j]));
+            g2[i-L3+1][j] = *mst.rbegin();
         }
     }
-    cerr << max_sum2 << endl;
-    cout << max_sum-max_sum2 << endl;
+    ll ans = 0;
+    rep(i, L1)rep(j, R1) chmax(ans, cs.query(i, j, i+h1, j+w1)-g2[i][j]);
+    cout << ans << endl;
     return 0;
 }

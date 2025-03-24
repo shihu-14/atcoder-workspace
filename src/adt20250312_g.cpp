@@ -51,16 +51,15 @@ int main(){
     string s, t; cin >> s >> t;
     vector<int> a(n), b(n);
     rep(i, n){
-        if (s[i] == '.') a[i] = 3;
-        else a[i] = s[i]-'A';
-        if (t[i] == '.') b[i] = 3;
-        else b[i] = t[i]-'A';
+        a[i] = s[i]-'A';
+        b[i] = t[i]-'A';
     }
     vector<vector<int>> res;
-    int times = 0;
     auto dfs = [&](auto f) -> bool{
-        times++;
         if (res.size() == n){
+            // if (res[0][0] == 0 && res[1][0] == 3 && res[2][0] == 2 && res[3][0] == 1){
+            //     printvv(res);                
+            // } 
             rep(j, n){
                 vector<int> cnt(3, 0);
                 rep(i, n){
@@ -77,11 +76,11 @@ int main(){
                         break;
                     }
                 }
-            }            
+            }       
             rep(j, n){
                 rep(i, n){
                     if (res[i][j] != 3){
-                        if (res[i][j] != b[i]) return false;
+                        if (res[i][j] != b[j]) return false;
                         break;
                     }
                 }
@@ -109,7 +108,12 @@ int main(){
             {
                 bool flag = true;
                 rep(i, n){
-                    if (id[i] != 3 && id[i] != a[res.size()]) flag = false;
+                    if (id[i] != 3){
+                        if (id[i] != a[res.size()]){
+                            flag = false;
+                        }
+                        break;
+                    }
                 }
                 if (!flag) continue;
             }
@@ -122,6 +126,5 @@ int main(){
     if (dfs(dfs) == false){
         cout << "No" << endl;
     }
-    cout << times << endl;
     return 0;
 }

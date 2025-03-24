@@ -50,21 +50,33 @@ int main(){
     int n; ll X; cin >> n >> X;
     vector<ll> a(n);
     rep(i, n) cin >> a[i];
+    vector<ll> b;
+    rep(i, n-1) b.emplace_back(a[i+1]/a[i]);
     reverse(rng(a));
-
-    auto f = [&](ll x) -> ll{
-        ll res = 0;
+    vector<ll> d;
+    {
+        ll x = X;
         rep(i, n){
-            res += x/a[i];
+            d.emplace_back(x/a[i]);
             x %= a[i];
         }
-        return res;
-    };
-
-    ll ans = LINF;
-    rep2(y, X, X+1000000){
-        chmin(ans, f(y-X)+f(y));
     }
-    cout << ans << endl;
+
+    reverse(rng(d));
+    vector dp(2, LINF); dp[0] = 0;
+    rep(i, n){
+        vector old(2, LINF); swap(dp, old);
+        rep(j, 2){
+            if (old[j] == LINF) continue;
+            rep(nj, 2){
+                ll c;
+                if (i == n-1) c = abs(j+d[i]);
+                else c = abs(j-nj*b[i]+d[i]);
+                chmin(dp[nj], old[j]+c);
+            }
+        }
+    }
+
+    cout << dp[0] << endl;
     return 0;
 }
