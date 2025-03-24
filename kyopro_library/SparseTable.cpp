@@ -27,3 +27,9 @@ struct SparseTable {
         return op(table[l][k], table[r-(1<<k)][k]);
     }
 };
+
+/* testcase
+
+abc262_f
+
+*/
