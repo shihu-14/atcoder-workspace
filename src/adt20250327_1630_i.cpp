@@ -6,8 +6,7 @@
 // #include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
 using namespace atcoder;
-using mint = modint;
-// using mint = modint998244353;
+using mint = modint998244353;
 // using mint = modint1000000007;
 // using namespace boost::multiprecision;
 using uint = unsigned int;
@@ -44,21 +43,34 @@ const ll dyy[] = {0, 1, 1, 1, 0, -1, -1, -1};
 const ll LINF = 3001002003004005006ll;
 const int INF = 1001001001;
 int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_distribution<int> dist(0, INF); return dist(mt);}
-
+int op(int a, int b) {return min(a, b);}
+int e(){return INF;}
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int n, m; cin >> n >> m;
-    mint::set_mod(m);
-    vector<mint> s(n+1, 1);
-    rep(i, n) s[i+1] = s[i]*n;
-    mint ans, tri, p=1;
-    rep(i, n){
-        ans += tri*p*s[n-i-1];
-        tri += i+1;
-        p *= n-i-1;
+    int n; cin >> n;
+    string s; cin >> s;
+    auto sa = suffix_array(s);
+    auto lcp = lcp_array(s, sa);
+    vector<ll> ans(n);
+    rep(i, n) ans[i] += n-i;
+    rep(t, 2){
+        ll sum = 0;
+        vector<pii> stk;
+        rep(i, n-1){
+            int ko = 1;
+            while(stk.size() && stk.back().fi >= lcp[i]){
+                ko += stk.back().se;
+                sum -= (ll)stk.back().fi*stk.back().se;
+                stk.pop_back();
+            }
+            sum += (ll)ko*lcp[i];
+            ans[sa[i+1]] += sum;
+            stk.emplace_back(lcp[i], ko);
+        }
+        reverse(rng(sa));
+        reverse(rng(lcp));
     }
-    ans *= n;
-    cout << ans.val() << endl;
+    rep(i, n) cout << ans[i] << endl;
     return 0;
 }

@@ -6,8 +6,7 @@
 // #include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
 using namespace atcoder;
-using mint = modint;
-// using mint = modint998244353;
+using mint = modint998244353;
 // using mint = modint1000000007;
 // using namespace boost::multiprecision;
 using uint = unsigned int;
@@ -44,21 +43,39 @@ const ll dyy[] = {0, 1, 1, 1, 0, -1, -1, -1};
 const ll LINF = 3001002003004005006ll;
 const int INF = 1001001001;
 int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_distribution<int> dist(0, INF); return dist(mt);}
-
+pii op(pii a, pii b){return min(a, b);}
+pii e() {return {INF, -1};}
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int n, m; cin >> n >> m;
-    mint::set_mod(m);
-    vector<mint> s(n+1, 1);
-    rep(i, n) s[i+1] = s[i]*n;
-    mint ans, tri, p=1;
-    rep(i, n){
-        ans += tri*p*s[n-i-1];
-        tri += i+1;
-        p *= n-i-1;
+    int n; cin >> n;
+    vector<int> p(n);
+    rep(i, n) cin >> p[i], p[i]--;
+    vector<pii> ans(n, {INF, -1});
+    {
+        segtree<pii, op, e> seg1(n), seg2(n);
+        rep(i, n){
+            auto e1 = seg1.prod(0, p[i]);
+            auto e2 = seg2.prod(p[i]+1, n);
+            if (e1.se != -1) chmin(ans[i], {e1.fi+(p[i]+i), e1.se});
+            if (e2.se != -1) chmin(ans[i], {e2.fi-(p[i]-i), e2.se});
+            seg1.set(p[i], {-(p[i]+i), i});
+            seg2.set(p[i], {p[i]-i, i});
+        }
     }
-    ans *= n;
-    cout << ans.val() << endl;
+    {
+        segtree<pii, op, e> seg1(n), seg2(n);
+        rrep2(i, n, 0){
+            auto e1 = seg1.prod(0, p[i]);
+            auto e2 = seg2.prod(p[i]+1, n);
+            if (e1.se != -1) chmin(ans[i], {e1.fi+(p[i]-i), e1.se});
+            if (e2.se != -1) chmin(ans[i], {e2.fi-(p[i]+i), e2.se});
+            seg1.set(p[i], {-(p[i]-i), i});
+            seg2.set(p[i], {p[i]+i, i});
+        }
+    }
+
+    rep(i, n) cout << ans[i].fi << " ";
+    cout << endl;
     return 0;
 }

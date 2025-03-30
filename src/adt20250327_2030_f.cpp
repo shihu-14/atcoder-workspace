@@ -6,8 +6,7 @@
 // #include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
 using namespace atcoder;
-using mint = modint;
-// using mint = modint998244353;
+using mint = modint998244353;
 // using mint = modint1000000007;
 // using namespace boost::multiprecision;
 using uint = unsigned int;
@@ -44,21 +43,41 @@ const ll dyy[] = {0, 1, 1, 1, 0, -1, -1, -1};
 const ll LINF = 3001002003004005006ll;
 const int INF = 1001001001;
 int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_distribution<int> dist(0, INF); return dist(mt);}
-
+int n;
+pii rotate(ll x, ll y, ll t){
+    int nx = x, ny = y;
+    while(t--){
+        int tx = ny, ty = n-nx-1;
+        nx = tx, ny = ty;
+    }
+    return {nx, ny};
+}
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int n, m; cin >> n >> m;
-    mint::set_mod(m);
-    vector<mint> s(n+1, 1);
-    rep(i, n) s[i+1] = s[i]*n;
-    mint ans, tri, p=1;
-    rep(i, n){
-        ans += tri*p*s[n-i-1];
-        tri += i+1;
-        p *= n-i-1;
+    cin >> n;
+    vector<vector<char>> a(n, vector<char>(n)), ans(n, vector<char>(n));
+    rep(i, n) rep(j, n) cin >> a[i][j];
+    vector<vector<bool>> used(n, vector<bool>(n));
+    rep(t, n/2){
+        rep2(i, t, n-t){
+            auto [ni, nj] = rotate(i, t, (t+1)%4);
+            ans[ni][nj] = a[i][t];
+            tie(ni, nj) = rotate(i, n-1-t, (t+1)%4);
+            ans[ni][nj] = a[i][n-1-t];
+        }
+        rep2(j, t+1, n-t-1){
+            auto [ni, nj] = rotate(t, j, (t+1)%4);
+            ans[ni][nj] = a[t][j];
+            tie(ni, nj) = rotate(n-1-t, j, (t+1)%4);
+            ans[ni][nj] = a[n-1-t][j];
+        }
     }
-    ans *= n;
-    cout << ans.val() << endl;
+    rep(i, n){
+        rep(j, n){
+            cout << ans[i][j];
+        }
+        cout << endl;
+    }
     return 0;
 }

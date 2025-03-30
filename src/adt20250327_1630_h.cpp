@@ -6,8 +6,7 @@
 // #include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
 using namespace atcoder;
-using mint = modint;
-// using mint = modint998244353;
+using mint = modint998244353;
 // using mint = modint1000000007;
 // using namespace boost::multiprecision;
 using uint = unsigned int;
@@ -48,17 +47,52 @@ int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int n, m; cin >> n >> m;
-    mint::set_mod(m);
-    vector<mint> s(n+1, 1);
-    rep(i, n) s[i+1] = s[i]*n;
-    mint ans, tri, p=1;
+    int n, q; ll x; cin >> n >> q >> x;
+    ll sum = 0;
+    vector<ll> a(2*n), s(2*n+1);
     rep(i, n){
-        ans += tri*p*s[n-i-1];
-        tri += i+1;
-        p *= n-i-1;
+        cin >> a[i];
+        sum += a[i];
+        a[i+n] = a[i];
     }
-    ans *= n;
-    cout << ans.val() << endl;
+    rep(i, 2*n) s[i+1] = s[i]+a[i];
+    vector<pii> vs;
+    vector<int> used(n, -1);
+    int si = 0, ei = 0, sz = 0;
+    {
+        int now = si;
+        while(1){
+            ll r = x;
+            ll k = r/sum*n;
+            r %= sum;
+            int it = lower_bound(rng(s), s[now]+r) - s.begin();
+            k += it-now;
+            int to = it%n;
+            if (used[to] != -1){
+                vs.emplace_back(now, k);
+                sz = vs.size()-used[to];
+                ei = used[to];
+                break;
+            }
+            used[now] = vs.size();
+            vs.emplace_back(now, k);
+            // printf("now: %d, to: %d, k: %d, used[now]: %d\n", now, to, k, used[now]);
+            now = to;
+        }
+        // printf("size: %d, ei: %d\n", sz, ei);
+    }
+
+
+    rep(qi, q){
+        ll k; cin >> k; k--;
+        if (k < ei){
+            cout << vs[k].se << "\n";
+            continue;
+        }
+        k -= ei;
+        k %= sz;
+        cout << vs[ei+k].se << "\n";
+    }
+    cout.flush();
     return 0;
 }

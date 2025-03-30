@@ -6,8 +6,7 @@
 // #include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
 using namespace atcoder;
-using mint = modint;
-// using mint = modint998244353;
+using mint = modint998244353;
 // using mint = modint1000000007;
 // using namespace boost::multiprecision;
 using uint = unsigned int;
@@ -48,17 +47,18 @@ int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int n, m; cin >> n >> m;
-    mint::set_mod(m);
-    vector<mint> s(n+1, 1);
-    rep(i, n) s[i+1] = s[i]*n;
-    mint ans, tri, p=1;
+    string s, t; cin >> s >> t;
+    int n = s.size(), m = t.size();
+    vector<int> c(n);
+    rep(i, n) c[i] = s[i]-'a';
+    int si = 0;
     rep(i, n){
-        ans += tri*p*s[n-i-1];
-        tri += i+1;
-        p *= n-i-1;
+        if (t[si]-'A' == c[i]) si++;
+        if (si == m) break;
     }
-    ans *= n;
-    cout << ans.val() << endl;
+    if (si == m || si == m-1 && t.back() == 'X'){
+        cout << "Yes" << endl;
+    }
+    else cout << "No" << endl;
     return 0;
 }

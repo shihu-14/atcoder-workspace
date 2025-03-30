@@ -6,8 +6,7 @@
 // #include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
 using namespace atcoder;
-using mint = modint;
-// using mint = modint998244353;
+using mint = modint998244353;
 // using mint = modint1000000007;
 // using namespace boost::multiprecision;
 using uint = unsigned int;
@@ -44,21 +43,44 @@ const ll dyy[] = {0, 1, 1, 1, 0, -1, -1, -1};
 const ll LINF = 3001002003004005006ll;
 const int INF = 1001001001;
 int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_distribution<int> dist(0, INF); return dist(mt);}
+// a^x
+template <typename T>
+T power(T a, ll n){
+    T res = 1;
+    for (;n; n>>=1, a=a*a) if(n&1) res*=a;
+    return res;
+}
+// floor(a^(1/n))
+ll power2(ll a, ll n){
+    assert(n >= 1);
+    auto f = [&](ll w) -> bool{
+        ll res = 1;
+        rep(i, n){
+            if (res > a/w) return false;
+            res *= w;
+        }
+        return res <= a;
+    };
+    ll ac = 0, wa = a+1;
+    while(wa-ac>1){
+        ll wj = (ac+wa)/2;
+        if (f(wj)) ac = wj;
+        else wa = wj;
+    }
+    return ac;
+}
 
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int n, m; cin >> n >> m;
-    mint::set_mod(m);
-    vector<mint> s(n+1, 1);
-    rep(i, n) s[i+1] = s[i]*n;
-    mint ans, tri, p=1;
-    rep(i, n){
-        ans += tri*p*s[n-i-1];
-        tri += i+1;
-        p *= n-i-1;
-    }
-    ans *= n;
-    cout << ans.val() << endl;
+    string s; cin >> s;
+    int d = s.size();
+    ll n = stoll(s);
+    mint t = power(mint(10), d);
+    mint x = power(t, n);
+    x--;
+    x *= n;
+    x /= t-1;
+    cout << x.val() << endl;
     return 0;
 }

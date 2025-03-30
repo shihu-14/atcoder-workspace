@@ -6,8 +6,7 @@
 // #include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
 using namespace atcoder;
-using mint = modint;
-// using mint = modint998244353;
+using mint = modint998244353;
 // using mint = modint1000000007;
 // using namespace boost::multiprecision;
 using uint = unsigned int;
@@ -48,17 +47,34 @@ int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int n, m; cin >> n >> m;
-    mint::set_mod(m);
-    vector<mint> s(n+1, 1);
-    rep(i, n) s[i+1] = s[i]*n;
-    mint ans, tri, p=1;
-    rep(i, n){
-        ans += tri*p*s[n-i-1];
-        tri += i+1;
-        p *= n-i-1;
+    int n; cin >> n;
+    int n2 = 1<<n;
+    vector<pii> a;
+    rep2(i, 1, n2){
+        int v; cin >> v;
+        a.emplace_back(v, i);
     }
-    ans *= n;
-    cout << ans.val() << endl;
+    sort(rng(a));
+    vector<int> m(n);
+    ll ans = 0;
+    int cnt = 0;
+    rep(i, n2){
+        if (cnt == n) break;
+        auto [c, b] = a[i];
+        rep(j, n){
+            if (b>>j&1) b ^= m[j];
+        }
+        if (b == 0) continue;
+        ans += c;
+        cnt++;
+        rep(j, n){
+            if (b>>j&1){
+                m[j] = b;
+                rep(j2, n) if (j2 != j && m[j2]>>j&1) m[j2] ^= m[j];
+                break;
+            }
+        }
+    }
+    cout << ans << endl;
     return 0;
 }
