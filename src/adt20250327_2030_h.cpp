@@ -6,8 +6,7 @@
 // #include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
 using namespace atcoder;
-using mint = modint;
-// using mint = modint998244353;
+using mint = modint998244353;
 // using mint = modint1000000007;
 // using namespace boost::multiprecision;
 using uint = unsigned int;
@@ -49,16 +48,41 @@ int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     int n, m; cin >> n >> m;
-    mint::set_mod(m);
-    vector<mint> s(n+1, 1);
-    rep(i, n) s[i+1] = s[i]*n;
-    mint ans, tri, p=1;
-    rep(i, n){
-        ans += tri*p*s[n-i-1];
-        tri += i+1;
-        p *= n-i-1;
+    vector<T3> edges;
+    vector<vector<ll>> dist(n, vector<ll>(n, LINF));
+    rep(i, m){
+        int u, v; ll w; cin >> u >> v >> w; u--, v--;
+        edges.emplace_back(u, v, w);
+        chmin(dist[u][v], w);
+        chmin(dist[v][u], w);
     }
-    ans *= n;
-    cout << ans.val() << endl;
+    rep(i, n) dist[i][i] = 0;
+    rep(k, n)rep(i, n)rep(j, n){
+        chmin(dist[i][j], dist[i][k]+dist[k][j]);
+    }
+    int q; cin >> q;
+    rep(qi, q){
+        int k; cin >> k;
+        vector<int> a(k);
+        rep(i, k) cin >> a[i], a[i]--;
+        ll ans = LINF;
+        do{
+            rep(i, 1<<k){
+                ll res = 0;
+                int pre = 0;
+                rep(j, k){
+                    auto [u, v, w] = edges[a[j]];
+                    if (i>>j&1) swap(u, v);
+                    res += dist[pre][u];
+                    res += w;
+                    pre = v;
+                }
+                res += dist[pre][n-1];
+                chmin(ans, res);
+            }
+        } while(next_permutation(rng(a)));
+        cout << ans << "\n";
+    }
+    cout.flush();
     return 0;
 }

@@ -6,8 +6,7 @@
 // #include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
 using namespace atcoder;
-using mint = modint;
-// using mint = modint998244353;
+using mint = modint998244353;
 // using mint = modint1000000007;
 // using namespace boost::multiprecision;
 using uint = unsigned int;
@@ -48,17 +47,43 @@ int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int n, m; cin >> n >> m;
-    mint::set_mod(m);
-    vector<mint> s(n+1, 1);
-    rep(i, n) s[i+1] = s[i]*n;
-    mint ans, tri, p=1;
+    int n; cin >> n;
+    string s, t; cin >> s >> t;
+
+    vector g(26, vector<bool>(26, false));
+    scc_graph g2(26);
+    set<pii> st;
     rep(i, n){
-        ans += tri*p*s[n-i-1];
-        tri += i+1;
-        p *= n-i-1;
+        g2.add_edge(s[i]-'a', t[i]-'a');
+        if (s[i] != t[i]) st.emplace(s[i]-'a', t[i]-'a');
+        g[s[i]-'a'][t[i]-'a'] = true;
     }
-    ans *= n;
-    cout << ans.val() << endl;
+
+    auto scc = g2.scc();
+    int ans = st.size();
+    for (auto vec: scc){
+        if (vec.size() >= 2){
+            ans++;
+            for (auto v: vec){
+                rep(c, 26){
+                    if (find(rng(vec), c) != vec.end()) continue;
+                    if (g[v][c]){
+                        cout << -1 << endl;
+                        return 0;
+                    }
+                }
+            }
+        }
+        else if (g[vec[0]][vec[0]]){
+            rep(c, 26){
+                if (c == vec[0]) continue;
+                if (g[vec[0]][c]){
+                    cout << -1 << endl;
+                    return 0;
+                }
+            }
+        }
+    }
+    cout << ans << endl;
     return 0;
 }

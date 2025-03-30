@@ -6,8 +6,7 @@
 // #include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
 using namespace atcoder;
-using mint = modint;
-// using mint = modint998244353;
+using mint = modint998244353;
 // using mint = modint1000000007;
 // using namespace boost::multiprecision;
 using uint = unsigned int;
@@ -44,21 +43,53 @@ const ll dyy[] = {0, 1, 1, 1, 0, -1, -1, -1};
 const ll LINF = 3001002003004005006ll;
 const int INF = 1001001001;
 int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_distribution<int> dist(0, INF); return dist(mt);}
+struct combination{
+    vector<mint> fact, factinv;
+    combination(int n): fact(n+1), factinv(n+1){
+        fact[0] = 1;
+        for(int i=1; i<=n; i++) fact[i] = fact[i-1]*i;
+        factinv[n] = fact[n].inv();
+        for(int i=n; i>0; i--) factinv[i-1] = factinv[i]*i;
+    }
+    mint operator()(int n, int k){
+        if(n < 0 || k < 0 || k > n) return 0;
+        return fact[n]*factinv[k]*factinv[n-k];
+    }
+
+    mint power(mint a, ll b){
+        mint res = 1;
+        for(; b; b>>=1, a*=a) if(b&1) res *= a;
+        return res;
+    }
+};
 
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int n, m; cin >> n >> m;
-    mint::set_mod(m);
-    vector<mint> s(n+1, 1);
-    rep(i, n) s[i+1] = s[i]*n;
-    mint ans, tri, p=1;
-    rep(i, n){
-        ans += tri*p*s[n-i-1];
-        tri += i+1;
-        p *= n-i-1;
+    int n, k; cin >> n >> k;
+    vector<ll> a(n);
+    rep(i, n) cin >> a[i];
+    combination C(k+1);
+    vector<mint> s(n+1);
+    rep(i, n) s[i+1] = s[i]+a[i];
+
+    vector<vector<mint>> s2(n+1, vector<mint>(k+1, 1));
+    rep(i, n+1){
+        rep2(j, 1, k+1) s2[i][j] = s2[i][j-1] * s[i];
     }
-    ans *= n;
+
+    vector<vector<mint>> s3(k+1, vector<mint>(n+1));
+    rep(i, k+1){
+        s3[i][0] = s2[0][i];
+        rep2(j, 1, n+1) s3[i][j] = s3[i][j-1] + s2[j][i];
+    }
+    mint ans;
+    int minus = 1;
+    rep(i, k+1){
+        rep2(j, 1, n+1) ans += minus*C(k, i)*s2[j][k-i]*s3[i][j-1];
+        minus *= -1;
+    }
+    
     cout << ans.val() << endl;
     return 0;
 }

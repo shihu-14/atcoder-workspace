@@ -6,8 +6,7 @@
 // #include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
 using namespace atcoder;
-using mint = modint;
-// using mint = modint998244353;
+using mint = modint998244353;
 // using mint = modint1000000007;
 // using namespace boost::multiprecision;
 using uint = unsigned int;
@@ -48,17 +47,41 @@ int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int n, m; cin >> n >> m;
-    mint::set_mod(m);
-    vector<mint> s(n+1, 1);
-    rep(i, n) s[i+1] = s[i]*n;
-    mint ans, tri, p=1;
-    rep(i, n){
-        ans += tri*p*s[n-i-1];
-        tri += i+1;
-        p *= n-i-1;
+    int h, w; cin >> h >> w;
+    vector<vector<int>> a(h, vector<int>(w));
+    rep(i, h)rep(j, w) cin >> a[i][j];
+    
+    vector dp(2, vector<int>(2, INF));
+    dp[0][0] = 0, dp[1][0] = 1;
+    rep(i, h){
+        vector old(2, vector<int>(2, INF)); swap(dp, old);
+        rep(p1, 2)rep(p2, 2){
+            rep(p0, 2){
+                if (old[p1][p2] == INF) continue;
+                bool flag = true;
+                rep(k, w){
+                    bool ok = false;
+                    rep(t, 4){
+                        int nx = i+dx[t], ny = k+dy[t];
+                        if (nx<0 || nx>=h || ny<0 || ny>=w) continue;
+                        int now = a[nx][ny];
+                        if (t == 0) now ^= p2;
+                        else if (t == 1 || t == 3) now ^= p1;
+                        else now ^= p0;
+                        if (now == a[i][k]^p1) ok = true;
+                    }
+                    if (ok) continue;
+                    flag = false;
+                    break;
+                }
+                if (flag){
+                    chmin(dp[p0][p1], old[p1][p2]+(int)p0);
+                }
+            }
+        }
     }
-    ans *= n;
-    cout << ans.val() << endl;
+    int ans = INF;
+    rep(i, 2)rep(j, 2) chmin(ans, dp[i][j]);
+    cout << (ans == INF ? -1 : ans) << endl;
     return 0;
 }

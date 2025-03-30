@@ -6,8 +6,7 @@
 // #include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
 using namespace atcoder;
-using mint = modint;
-// using mint = modint998244353;
+using mint = modint998244353;
 // using mint = modint1000000007;
 // using namespace boost::multiprecision;
 using uint = unsigned int;
@@ -44,21 +43,36 @@ const ll dyy[] = {0, 1, 1, 1, 0, -1, -1, -1};
 const ll LINF = 3001002003004005006ll;
 const int INF = 1001001001;
 int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_distribution<int> dist(0, INF); return dist(mt);}
-
+void solve(){
+    int n; cin >> n;
+    vector<int> a(2*n);
+    rep(i, 2*n) cin >> a[i], a[i]--;
+    vector<vector<int>> b(n);
+    rep(i, 2*n){
+        b[a[i]].push_back(i);
+    }
+    vector<map<int, int>> mp(n);
+    rep(i, n){
+        mp[i][b[i][0]] = b[i][1];
+        mp[i][b[i][1]] = b[i][0];
+    }
+    int ans = 0;
+    rep(i, 2*n-1){
+        if (a[i] == a[i+1]) continue;
+        int ni = mp[a[i]][i], nii = mp[a[i+1]][i+1];
+        if (ni > nii) swap(ni, nii);
+        if (i+2 == ni && a[i+1] == a[ni]) continue;
+        if (nii+1 == i && a[i] == a[nii]) continue;
+        if (((a[i] == a[ni] && a[i+1] == a[nii]) || (a[i] == a[nii] && a[i+1] == a[ni])) && abs(ni-nii) == 1) ans++;
+    }
+    cout << ans/2 << endl;
+}
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int n, m; cin >> n >> m;
-    mint::set_mod(m);
-    vector<mint> s(n+1, 1);
-    rep(i, n) s[i+1] = s[i]*n;
-    mint ans, tri, p=1;
-    rep(i, n){
-        ans += tri*p*s[n-i-1];
-        tri += i+1;
-        p *= n-i-1;
+    int t; cin >> t;
+    while(t--){
+        solve();
     }
-    ans *= n;
-    cout << ans.val() << endl;
     return 0;
 }
