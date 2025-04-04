@@ -1,4 +1,4 @@
-const int MX = 200010;
+// const int MX = 200010;
 // add,delの演算の定義
 struct D {
   int n; ll d; vector<int>& a; vector<int> cnt; // 必要に応じてデータ構造を追加。

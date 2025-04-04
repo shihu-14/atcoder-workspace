@@ -47,77 +47,16 @@ int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-
-    int N; cin >> N;
-    string S, T; cin >> S >> T;
-
-    // 1. 不可能判定
-    //   S[i] = S[j] なら T[i] = T[j] でなければ -1
-    //   O(N) で走査できるように，
-    //   位置リストをまとめる or 直接照合 など方法はいろいろ
-    {
-        // たとえば，各文字ごとに出現 indices を集め，
-        // そこですべて T の値が同じかを確認する
-        // (ここでは簡単に map で)
-        static const int ALPH = 26;
-        vector<vector<int>> pos(ALPH);
-        for(int i=0;i<N;i++){
-            pos[S[i]-'a'].push_back(i);
+    double lx = 0.0, ly = 0.0, rx = 1.0, ry = 1.0; // {0.0, 1.0, 0.0, 1.0};
+    int split_num = 5;
+    double dx = (rx-lx)/split_num;
+    double dy = (ry-ly)/split_num;
+    rep(j, split_num){
+        rep(k, split_num){
+            printf("(%02f, %02f) ", lx + dx*(j+0.5), ly + dy*(k+0.5));
         }
-        for(int c=0;c<ALPH;c++){
-            // 同じ文字 c を持つ全 i について，
-            // T[i] が全て一致しているか？
-            if(pos[c].empty()) continue;
-            char firstT = T[pos[c][0]];
-            for(int idx : pos[c]){
-                if(T[idx] != firstT){
-                    cout << -1 << "\n";
-                    return 0;
-                }
-            }
-        }
+        printf("\n");
     }
-
-    // 2. グラフ構築 (x->y) (x != y) のみ
-    //    26頂点 (0~25)
-    atcoder::scc_graph graph(26);
-    set<pair<int,int>> edges;  // 重複防止
-    for(int i=0;i<N;i++){
-        int x = S[i]-'a';
-        int y = T[i]-'a';
-        if(x != y){
-            edges.insert({x,y});
-        }
-    }
-    for(auto &e : edges){
-        graph.add_edge(e.first, e.second);
-    }
-
-    // 3. SCC 分解して，サイクル数を数える
-    //   scc() はトポ順に強連結成分を返す
-    auto scc = graph.scc();
-
-    int cyc = 0;
-    for(auto &comp : scc){
-        if(comp.size() == 1){
-            // 頂点 v の自己ループがあるかを判定
-            // すなわち (v->v) があればサイクル扱い
-            int v = comp[0];
-            // edges の中に (v->v) があるか？
-            // あるいは元の g[v] に v があるかでもよい
-            // ここでは set を使うなら
-            if(edges.count({v,v})){
-                cyc++;
-            }
-        } else {
-            // サイズ 2 以上は必ずサイクル
-            cyc++;
-        }
-    }
-
-    // 4. 答え = 変換辺の総数 + サイクル成分数
-    int ans = (int)edges.size() + cyc;
-    cout << ans << "\n";
-
+    
     return 0;
 }

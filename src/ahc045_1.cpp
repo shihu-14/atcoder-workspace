@@ -72,45 +72,56 @@ void pull_gravity(int i1, int i2){
 }
 
 vector<int> k_means(){
-    random_device rd; mt19937 gen(rd()); 
-    uniform_int_distribution<int> dist(0, m-1);
+    
     vector<int> group_id(n), group_size(m);
+    vector<double> central_x(m), central_y(m);
     { // init
-        rep(i, n){
-            int j = dist(gen);
-            group_id[i] = j;
-            group_size[j]++;
+        random_device rd; mt19937 gen(rd()); 
+        uniform_int_distribution<int> dist(0, 10000);
+        rep(i, m){
+            central_x[i] = dist(gen);
+            central_y[i] = dist(gen);
         }
     }
-    while(1){
-        vector<double> central_x(m), central_y(m);
-        rep(i, n){
-            auto [x, y] = p[i];
-            central_x[group_id[i]] += x;
-            central_y[group_id[i]] += y;
-        }
-        rep(i, m){
-            central_x[i] /= group_size[i];
-            central_y[i] /= group_size[i];
-        }
+    int max_iter = 200000, iter = 0;
+    while(iter++ < max_iter){
         bool flag = true;
-        rep(i, n) group_size[i] = 0;
         rep(i, n){
             auto [x, y] = p[i];
-            double min_dist = LINF, min_id = -1;
+            double min_dist = LINF; 
+            int min_id = -1;
             rep(j, m){
-                double d = sqrt((x-central_x[j])*(x-central_x[j]) + (y-central_y[j])*(y-central_y[j]));
+                double d = (x-central_x[j])*(x-central_x[j]) + (y-central_y[j])*(y-central_y[j]);
                 if (d < min_dist){
                     min_dist = d;
                     min_id = j;
                 }
             }
+            assert(min_id != -1);
             if (min_id != group_id[i]) flag = false;
             group_id[i] = min_id;
-            group_size[min_id]++;
         }
         if (flag) break;
+        vector<double> new_central_x(m), new_central_y(m);
+        vector<int> new_group_size(m);
+        rep(i, n){
+            auto [x, y] = p[i];
+            new_central_x[group_id[i]] += x;
+            new_central_y[group_id[i]] += y;
+            new_group_size[group_id[i]] += 1.0;
+        }
+        rep(i, m){
+            if (new_group_size[i] == 0){
+                continue;
+            }
+            new_central_x[i] /= new_group_size[i];
+            new_central_y[i] /= new_group_size[i];
+            central_x[i] = new_central_x[i];
+            central_y[i] = new_central_y[i];
+            group_size[i] = new_group_size[i];
+        }
     }
+    cerr <<  iter << endl;
     return group_id;
 }
 void arrange(vector<int> &group_id){
@@ -140,7 +151,9 @@ void arrange(vector<int> &group_id){
 
 vector<pii> krauskal(vector<int> vs, double &sum_w){
     vector<pii> res;
+    sum_w = 0;
     int sz = vs.size();
+    if (sz <= 1) return res;
     dsu uf(vs.size());
     vector<tuple<double, int, int>> edges;
     rep(i, sz)rep2(j, i+1, sz){
@@ -163,11 +176,14 @@ int main(){
     cin.tie(nullptr);
     auto start = std::chrono::high_resolution_clock::now();
     int q; cin >> n >> m >> q >> L >> W;
+    Gi.resize(m);
+    bounding_box.resize(n);
+    p.resize(n);
     rep(i, m) cin >> Gi[i];
     rep(i, n){
         double lx, rx, ly, ry; cin >> lx >> rx >> ly >> ry;
-        bounding_box.emplace_back(lx, rx, ly, ry);
-        p.emplace_back((lx+rx)/2, (ly+ry)/2);
+        bounding_box[i] = {lx, rx, ly, ry};
+        p[i] = {(lx+rx)/2.0, (ly+ry)/2.0};
     }
     random_device rd; mt19937 gen(rd()); 
     uniform_int_distribution<int> dist(0, n-1);
@@ -185,10 +201,10 @@ int main(){
         cout << "? " << L << " ";
         for (int j: vs) cout << j << " ";
         cout << endl;
-        vector<pii> edges;
+        // vector<pii> edges;
         rep(i, L-1){
             int u, v; cin >> u >> v;
-            edges.emplace_back(u, v);
+            // edges.emplace_back(u, v);
             pull_gravity(u, v);
         }
     }
@@ -203,11 +219,10 @@ int main(){
         rep(i, m) krauskal(groups[i], sum_dist[i]);
         rep(i, m) score += sum_dist[i];
     }
-
     vector<int> final_group_id(n);
     double final_score = LINF;
     int times = 0, update = 0;
-
+    cerr << "first-score: " << score << endl;
     while(1){
         auto end = std::chrono::high_resolution_clock::now();
         auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
@@ -238,19 +253,21 @@ int main(){
         score -= sum_dist[group_id[i1]];
         score -= sum_dist[group_id[i2]];
         score += tmp_sum1+tmp_sum2;
-        int tmp2 = groups[group_id[i1]].back();
-        int tmp1 = groups[group_id[i2]].back();
+        sum_dist[group_id[i1]] = tmp_sum1;
+        sum_dist[group_id[i2]] = tmp_sum2;
         groups[group_id[i1]].pop_back();
         groups[group_id[i2]].pop_back();
-        groups[group_id[i1]].emplace_back(tmp1);
-        groups[group_id[i2]].emplace_back(tmp2);
+        groups[group_id[i1]].emplace_back(i1);
+        groups[group_id[i2]].emplace_back(i2);
     }
-
 
     { // debug
         cerr << "score: " << final_score << endl;
         cerr << "times: " << times << endl;
         cerr << "update: " << update << endl;
+        auto end = std::chrono::high_resolution_clock::now();
+        auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+        cerr << "elapsed: " << elapsed.count() << endl;
     }
     { // ans-output
         cout << "!" << endl;

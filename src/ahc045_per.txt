@@ -1,0 +1,501 @@
+Running test case 0000...
+    Finished `release` profile [optimized] target(s) in 0.12s
+     Running `target/release/tester ../src/a.out`
+12
+first-score: 501643
+score: 392355
+times: 38735
+update: 303
+elapsed: 1901
+Score = 527377
+Running test case 0001...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+18
+first-score: 332146
+score: 327794
+times: 6678
+update: 54
+elapsed: 1901
+Score = 539225
+Running test case 0002...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+10
+first-score: 341314
+score: 335374
+times: 2232
+update: 28
+elapsed: 1902
+Score = 479744
+Running test case 0003...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+9
+first-score: 624738
+score: 358003
+times: 61900
+update: 672
+elapsed: 1901
+Score = 399109
+Running test case 0004...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+10
+first-score: 501847
+score: 364041
+times: 41351
+update: 429
+elapsed: 1901
+Score = 551793
+Running test case 0005...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+8
+first-score: 564838
+score: 333424
+times: 70556
+update: 586
+elapsed: 1901
+Score = 559201
+Running test case 0006...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+1
+first-score: 177636
+score: 3.001e+18
+times: 72312993
+update: 0
+elapsed: 1901
+Score = 403494
+Running test case 0007...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+37
+first-score: 246337
+score: 249484
+times: 830
+update: 13
+elapsed: 1901
+Score = 570535
+Running test case 0008...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+12
+first-score: 249970
+score: 250947
+times: 530
+update: 12
+elapsed: 1902
+Score = 322969
+Running test case 0009...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+11
+first-score: 395056
+score: 361327
+times: 12552
+update: 97
+elapsed: 1901
+Score = 620673
+Running test case 0010...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+14
+first-score: 189902
+score: 188259
+times: 509
+update: 5
+elapsed: 2002
+Score = 345369
+Running test case 0011...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+13
+first-score: 317984
+score: 309768
+times: 5242
+update: 48
+elapsed: 1901
+Score = 554389
+Running test case 0012...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+23
+first-score: 289124
+score: 288629
+times: 2874
+update: 27
+elapsed: 1902
+Score = 418683
+Running test case 0013...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+13
+first-score: 562653
+score: 374738
+times: 45043
+update: 449
+elapsed: 1901
+Score = 533834
+Running test case 0014...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+7
+first-score: 565719
+score: 274834
+times: 115038
+update: 903
+elapsed: 1901
+Score = 504561
+Running test case 0015...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+9
+first-score: 636671
+score: 189994
+times: 195864
+update: 1586
+elapsed: 1901
+Score = 358555
+Running test case 0016...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+18
+first-score: 316561
+score: 307676
+times: 4350
+update: 42
+elapsed: 1901
+Score = 453372
+Running test case 0017...
+    Finished `release` profile [optimized] target(s) in 0.06s
+     Running `target/release/tester ../src/a.out`
+14
+first-score: 328048
+score: 312183
+times: 7031
+update: 69
+elapsed: 1901
+Score = 571547
+Running test case 0018...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+8
+first-score: 209047
+score: 209664
+times: 57
+update: 7
+elapsed: 1967
+Score = 474442
+Running test case 0019...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+6
+first-score: 707437
+score: 85402.5
+times: 900009
+update: 3608
+elapsed: 1901
+Score = 247615
+Running test case 0020...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+25
+first-score: 213858
+score: 213424
+times: 88
+update: 5
+elapsed: 1924
+Score = 311991
+Running test case 0021...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+27
+first-score: 312107
+score: 307010
+times: 2755
+update: 37
+elapsed: 1901
+Score = 368512
+Running test case 0022...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+21
+first-score: 294343
+score: 287740
+times: 1543
+update: 21
+elapsed: 1901
+Score = 366662
+Running test case 0023...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+22
+first-score: 245051
+score: 252233
+times: 372
+update: 7
+elapsed: 1901
+Score = 429922
+Running test case 0024...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+12
+first-score: 523567
+score: 364880
+times: 37519
+update: 378
+elapsed: 1901
+Score = 501938
+Running test case 0025...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+11
+first-score: 317108
+score: 317555
+times: 2134
+update: 27
+elapsed: 1903
+Score = 655986
+Running test case 0026...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+7
+first-score: 589025
+score: 319824
+times: 86043
+update: 679
+elapsed: 1901
+Score = 521619
+Running test case 0027...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+17
+first-score: 266905
+score: 256702
+times: 2779
+update: 26
+elapsed: 1901
+Score = 461242
+Running test case 0028...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+8
+first-score: 680364
+score: 264418
+times: 169440
+update: 1207
+elapsed: 1901
+Score = 403238
+Running test case 0029...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+10
+first-score: 538350
+score: 346825
+times: 71861
+update: 529
+elapsed: 1901
+Score = 512983
+Running test case 0030...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+7
+first-score: 685592
+score: 195915
+times: 209876
+update: 1736
+elapsed: 1901
+Score = 350239
+Running test case 0031...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+18
+first-score: 338608
+score: 316670
+times: 8442
+update: 68
+elapsed: 1901
+Score = 529893
+Running test case 0032...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+9
+first-score: 504316
+score: 357097
+times: 45710
+update: 385
+elapsed: 1901
+Score = 437895
+Running test case 0033...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+15
+first-score: 217782
+score: 217755
+times: 122
+update: 2
+elapsed: 1924
+Score = 338966
+Running test case 0034...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+6
+first-score: 620669
+score: 80941.7
+times: 814034
+update: 3388
+elapsed: 1901
+Score = 208588
+Running test case 0035...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+11
+first-score: 224565
+score: 222718
+times: 58
+update: 6
+elapsed: 1948
+Score = 284394
+Running test case 0036...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+11
+first-score: 341074
+score: 321244
+times: 4834
+update: 56
+elapsed: 1901
+Score = 390675
+Running test case 0037...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+7
+first-score: 772729
+score: 182845
+times: 269995
+update: 1952
+elapsed: 1901
+Score = 308403
+Running test case 0038...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+25
+first-score: 339454
+score: 327206
+times: 7912
+update: 64
+elapsed: 1901
+Score = 435076
+Running test case 0039...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+8
+first-score: 508201
+score: 363391
+times: 40103
+update: 412
+elapsed: 1901
+Score = 420723
+Running test case 0040...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+10
+first-score: 494862
+score: 341992
+times: 64058
+update: 451
+elapsed: 1901
+Score = 494070
+Running test case 0041...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+26
+first-score: 237086
+score: 237295
+times: 195
+update: 5
+elapsed: 1906
+Score = 418205
+Running test case 0042...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+10
+first-score: 720331
+score: 150350
+times: 334345
+update: 2068
+elapsed: 1901
+Score = 312312
+Running test case 0043...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+17
+first-score: 348679
+score: 328905
+times: 11513
+update: 75
+elapsed: 1901
+Score = 549683
+Running test case 0044...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+17
+first-score: 404675
+score: 346738
+times: 18963
+update: 182
+elapsed: 1901
+Score = 576275
+Running test case 0045...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+11
+first-score: 454197
+score: 380049
+times: 23653
+update: 176
+elapsed: 1901
+Score = 488465
+Running test case 0046...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+17
+first-score: 263787
+score: 261864
+times: 678
+update: 9
+elapsed: 1901
+Score = 570433
+Running test case 0047...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+13
+first-score: 574954
+score: 333422
+times: 90901
+update: 684
+elapsed: 1901
+Score = 473152
+Running test case 0048...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+25
+first-score: 298646
+score: 297038
+times: 4001
+update: 37
+elapsed: 1901
+Score = 568338
+Running test case 0049...
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/tester ../src/a.out`
+20
+first-score: 282326
+score: 281157
+times: 1555
+update: 19
+elapsed: 1901
+Score = 433446
+eiichi@kiharaeiichinoMacBook-Pro tools % 
