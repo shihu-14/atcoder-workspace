@@ -2,6 +2,7 @@
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
       "*.html": "jinja-html",
+      "*.cpp": "cpp",
       "*.cpp ": "cpp",
       "fstream": "cpp",
       "istream": "cpp",
@@ -99,7 +100,18 @@
       "memory": "cpp",
       "functional": "cpp",
       "utility": "cpp",
-      "expected": "cpp"
+      "expected": "cpp",
+      "strstream": "cpp",
+      "stop_token": "cpp",
+      "thread": "cpp",
+      "atomic": "cpp",
+      "bit": "cpp",
+      "compare": "cpp",
+      "concepts": "cpp",
+      "exception": "cpp",
+      "iterator": "cpp",
+      "memory_resource": "cpp",
+      "system_error": "cpp"
     },
     "terminal.integrated.enablePersistentSessions": true,
     "multiCommand.commands": [
