@@ -36,7 +36,7 @@ struct Tree{
         }; dfs(dfs, root);
     }
     // calc diameter on tree
-    int diameter(){
+    tuple<int, int, int> diameter(){
         int from = 0, to = 0; ll max_dist = 0;
         auto dfs = [&](auto f, int u, int p=-1, int s=0) -> void{
             if (g[u].size() == 1 && p != -1){
@@ -45,9 +45,10 @@ struct Tree{
             }
             for (auto [v, w]: g[u])if (v != p) f(f, v, u, s+w);
         };
-        dfs(dfs, from); from = to;
         dfs(dfs, from);
-        return max_dist;
+        from = to; max_dist = 0;
+        dfs(dfs, from);
+        return {max_dist, from, to};
     }
     // find tree centers (at most 2, -1 if only one)
     pii find_center(){
