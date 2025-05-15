@@ -111,7 +111,10 @@
       "exception": "cpp",
       "iterator": "cpp",
       "memory_resource": "cpp",
-      "system_error": "cpp"
+      "system_error": "cpp",
+      "coroutine": "cpp",
+      "numeric": "cpp",
+      "stdfloat": "cpp"
     },
     "terminal.integrated.enablePersistentSessions": true,
     "multiCommand.commands": [
