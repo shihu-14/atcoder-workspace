@@ -82,7 +82,7 @@ using G = vector<vector<int>>;
 #define IN(v, x) (find(rng(v),x) != v.end())
 template<class T> bool chmin(T &a,T b){if(a>b){a=b;return 1;}else return 0;}
 template<class T> bool chmax(T &a,T b){if(a<b){a=b;return 1;}else return 0;}
-template<class T> void printv(vector<T> &v){rep(i,v.size())cout<<v[i]<<" \n"[i==v.size()-1];}
+template<class T> void printv(vector<T> &v){rep(i,v.size())cout<<v[i].fi<<","<<v[i].se<<" \n"[i==v.size()-1];}
 template<class T> void printvv(vector<vector<T>> &v){rep(i,v.size())rep(j,v[i].size())cout<<v[i][j]<<" \n"[j==v[i].size()-1];cout<<endl;}
 const ll dx[] = {-1, 0, 1, 0};
 const ll dy[] = {0, 1, 0, -1};
@@ -94,6 +94,61 @@ const int INF = 1001001001;
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-
+    int n; cin >> n;
+    vector<int> a(n);
+    rep(i, n) cin >> a[i];
+    {
+        int t = 60;
+        double ac = 0, wa = INF;
+        while(t--){
+            auto f = [&](double w) -> bool{
+                vector<double> a2(n);
+                rep(i, n) a2[i] = a[i]-w;
+                vector<double> dp(2, -LINF); dp[1] = 0;
+                rep(i, n){
+                    vector<double> old(2, -LINF); swap(dp, old);
+                    rep(j, 2){
+                        if (j == 1) chmax(dp[0], old[j]);
+                        chmax(dp[1], old[j]+a2[i]);
+                    }
+                }
+                return max(dp[0], dp[1]) >= 0;
+            };
+            double wj = (ac+wa)/2;
+            if (f(wj)) ac = wj;
+            else wa = wj;
+        }
+        printf("%.016f\n", ac);
+    }
+    {
+        int ac = 0, wa = INF;
+        while(wa-ac>1){
+            auto f = [&](int w) -> bool{
+                vector<int> a2(n);
+                int one = 0, zero = 0;
+                rep(i, n){
+                    if (a[i] < w) continue;
+                    one++;
+                    a2[i]++;
+                }
+                int cnt = 0;
+                rep(i, n){
+                    if (a2[i]){
+                        zero += cnt/2;
+                        cnt = 0;
+                    }
+                    else{
+                        cnt++;
+                    }
+                }
+                zero += cnt/2;
+                return one > zero;
+            };
+            int wj = (ac+wa)/2;
+            if (f(wj)) ac = wj;
+            else wa = wj;
+        }
+        printf("%d\n", ac);
+    }
     return 0;
 }

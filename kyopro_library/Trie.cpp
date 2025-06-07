@@ -1,8 +1,8 @@
 // Trie木
 struct Trie {
-    struct Node { // Edit here
-        map<char, int> to; // 行き先
-        int cnt; // 頂点に対する重み
+    struct Node { // Edit here (Define information for each node)
+        unordered_map<char, int> to; // next node
+        int cnt; // Node weight
     };
     vector<Node> g;
     Trie(): g(1) {}
@@ -16,6 +16,9 @@ struct Trie {
             }
             v = g[v].to[c];
         }
-        g[v].cnt++; // Edit here
+        // Edit here (processing for v)
+        g[v].cnt++;
+        // return v; // void -> int
     }
+    // Edit here (DFS on the trie)
 };
