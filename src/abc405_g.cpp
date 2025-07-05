@@ -91,9 +91,95 @@ const ll dyy[] = {0, 1, 1, 1, 0, -1, -1, -1};
 const ll LINF = 3001002003004005006ll;
 const int INF = 1001001001;
 
+const int MX = 200010;
+// add,delの演算の定義
+struct D {
+    int n, M; vector<int> &a, cnt1, cnt1m; // 必要に応じてデータ構造を追加。
+    vector<mint> fact, factinv, cnt2, cnt2m;
+    D(vector<int>& a): n(a.size()), a(a), M(sqrt(n)+1), cnt1m(n/M+1), cnt2m(n/M+1,1), cnt1(n), cnt2(n,1), fact(n+1, 1), factinv(n+1, 1){
+        rep(i, n) fact[i+1] = fact[i]*(i+1);
+        rep(i, n+1) factinv[i] = fact[i].inv();
+    }
+    // 適宜、補助関数を定義。
+    
+    void add(int i) {
+      // ここに処理を加える
+      int v = a[i], j = v/M;
+      cnt1[v]++;
+      cnt1m[j]++;
+      cnt2[v] *= cnt1[v];
+      cnt2m[j] *= factinv[cnt1[v]-1];
+      cnt2m[j] *= fact[cnt1[v]];
+    }
+    void del(int i){
+      // ここに処理を加える
+      int v = a[i], j = v/M;
+      cnt1[v]--;
+      cnt1m[j]--;
+      cnt2[v] = fact[cnt1[v]];
+      cnt2m[j] *= factinv[cnt1[v]+1];
+      cnt2m[j] *= fact[cnt1[v]];
+    }
+    mint get(int x) {
+        int tot = 0;
+        mint res = 1;
+        for (int i=0, si=0; i<x;){
+            if (i+M <= x){
+                tot += cnt1m[si];
+                res *= cnt2m[si];
+                i += M;
+                si++;
+            }
+            else{
+                tot += cnt1[i];
+                res *= cnt2[i];
+                i++;
+            }
+        }
+        return fact[tot]/res;
+    }
+  };
+  // Mo's Algorithmのためのデータの加工と実行。クエリは[l, r)
+  template<class T=long long>
+  vector<T> Mo(vector<pair<int,int>>& query, D& d, vector<int> x) {
+    int Q = query.size(); 
+    vector<T> res(Q); // クエリに対する答えを保持
+    int W = d.n/(sqrt(Q)+1)+1; // 0除算防止の+1
+    vector<int> id(Q); iota(id.begin(), id.end(), 0); // 何番目のクエリかを保持
+    vector<int> Wid(Q); for(int i=0; i<Q; ++i) Wid[i] = query[i].first/W; // あるクエリがどの縦区分に属するかを保持
+    sort(id.begin(), id.end(), [&](int i, int j) { // 実行クエリをソートするための基準を決定
+      if (Wid[i] != Wid[j]) return Wid[i] < Wid[j]; // 区分が異なるなら昇順。
+      if (Wid[i]&1) return query[i].second > query[j].second; // 区分が同じで奇数番目であれば、rが降順になるように
+      else return query[i].second < query[j].second; // 偶数番目ならば昇順になるようにする。(区分を跨ぐ時に最小のコストで移動するため)
+    });
+    int l = 0, r = 0;
+    for (int i : id) {
+      auto [nl, nr] = query[i];
+      while (r < nr) d.add(r++);
+      while (l > nl) d.add(--l);
+      while (l < nl) d.del(l++);
+      while (r > nr) d.del(--r);
+      res[i] = d.get(x[i]);
+    }
+    return res;
+  }
+  
+
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    
+    int n, q; cin >> n >> q;
+    vector<int> a(n);
+    rep(i, n) cin >> a[i], a[i]--;
+    vector<pii> query;
+    vector<int> X(q);
+    rep(qi, q){
+        int l, r, x; cin >> l >> r >> x; l--; x--;
+        query.emplace_back(l, r);
+        X[qi] = x;
+    }
+    D d(a);
+    auto ans = Mo<mint>(query, d, X);
+    rep(i, q) cout << ans[i].val() << endl;
     return 0;
 }

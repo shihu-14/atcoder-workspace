@@ -91,6 +91,16 @@ const int INF = 1001001001;
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-
+    int n; cin >> n;
+    vector<int> a(n);
+    rep(i, n) cin >> a[i];
+    sort(rrng(a));
+    int ans = 0;
+    rep(i, n){
+        if (a[i] >= i+1){
+            ans = i+1;
+        }
+    }
+    cout << ans << endl;
     return 0;
 }

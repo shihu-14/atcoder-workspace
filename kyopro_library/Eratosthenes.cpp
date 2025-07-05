@@ -12,7 +12,7 @@ struct Eratosthenes{
             }
         }
     }
-    // N以下の自然数xの素因数分解を返す関数。p^a -> {p, a}, O(logx))
+    // N以下の自然数xの素因数分解を返す関数。p^a -> {p, a}, O(logx)
     vector<pair<int, int>> factorize1(int x){
         assert(x <= N);
         vector<pair<int,int>> res;

@@ -91,6 +91,14 @@ const int INF = 1001001001;
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    
+    int n; cin >> n;
+    string s, t; cin >> s >> t;
+    rep(i, n){
+        if (s[i] == 'o' && s[i] == t[i]){
+            cout << "Yes" << endl;
+            return 0;
+        }
+    }
+    cout << "No" << endl;
     return 0;
 }

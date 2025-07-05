@@ -1,11 +1,56 @@
-// #pragma GCC target("avx2")
-#pragma GCC optimize("O3")
-#pragma GCC optimize("unroll-loops")
-#include <bits/stdc++.h>
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <sstream>
+#include <cstdio>
+#include <cstdlib>
+#include <cmath>
+#include <cstring>
+#include <climits>
+#include <cfloat>
+#include <cassert>
+#include <ctime>
+#include <cctype>
+#include <cwctype>
+#include <cstdint>
+#include <type_traits>
+#include <initializer_list>
+#include <utility>
+#include <bitset>
+#include <vector>
+#include <deque>
+#include <list>
+#include <stack>
+#include <queue>
+#include <set>
+#include <map>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+#include <algorithm>
+#include <functional>
+#include <numeric>
+#include <iterator>
+#include <tuple>
+#include <array>
+#include <new>
+#include <memory>
+#include <limits>
+#include <random>
+#include <exception>
+#include <stdexcept>
+#include <regex>
+#include <complex>
+#include <chrono>
+#include <future>
+#include <thread>
+#include <mutex>
+#include <atomic>
 #include <atcoder/all>
 // #include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
 using namespace atcoder;
+// using mint = modint;
 using mint = modint998244353;
 // using mint = modint1000000007;
 // using namespace boost::multiprecision;
@@ -42,11 +87,40 @@ const ll dxx[] = {-1, -1, 0, 1, 1, 1, 0, -1};
 const ll dyy[] = {0, 1, 1, 1, 0, -1, -1, -1};
 const ll LINF = 3001002003004005006ll;
 const int INF = 1001001001;
-int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_distribution<int> dist(0, INF); return dist(mt);}
 
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    
+    int h, w; cin >> h >> w;
+    vector<string> s(h);
+    rep(i, h) cin >> s[i];
+    vector<int> b(h);
+    rep(i, h){
+        int v = 0;
+        rep(j, w){
+            if (s[i][j] == '1') v |= 1<<j;
+        }
+        b[i] = v;
+    }
+    vector dp(1<<w, vector<vector<int>>(w+1, vector<int>(w+1, 0)));
+    rep(i, h) dp[b[i]][0][0] += 1;
+    rep(j, w+1)rep(k, w+1){
+        rep(i, 1<<w){
+            if (dp[i][j][k] == 0) continue;
+            if (j+1<=w){
+                dp[i][j+1][k] += dp[i][j][k];
+                if (k+1 <= w) dp[i^(1<<j)][j+1][k+1] += dp[i][j][k];
+            }
+        }
+    }
+    ll ans = h*w;
+    rep(i, 1<<w){
+        ll res = 0;
+        rep(j, w+1){
+            res += dp[i][w][j]*min(j, w-j);
+        }
+        chmin(ans, res);
+    }
+    cout << ans << endl;
     return 0;
 }

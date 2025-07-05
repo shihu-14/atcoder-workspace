@@ -1,7 +1,51 @@
-// #pragma GCC target("avx2")
-#pragma GCC optimize("O3")
-#pragma GCC optimize("unroll-loops")
-#include <bits/stdc++.h>
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <sstream>
+#include <cstdio>
+#include <cstdlib>
+#include <cmath>
+#include <cstring>
+#include <climits>
+#include <cfloat>
+#include <cassert>
+#include <ctime>
+#include <cctype>
+#include <cwctype>
+#include <cstdint>
+#include <type_traits>
+#include <initializer_list>
+#include <utility>
+#include <bitset>
+#include <vector>
+#include <deque>
+#include <list>
+#include <stack>
+#include <queue>
+#include <set>
+#include <map>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+#include <algorithm>
+#include <functional>
+#include <numeric>
+#include <iterator>
+#include <tuple>
+#include <array>
+#include <new>
+#include <memory>
+#include <limits>
+#include <random>
+#include <exception>
+#include <stdexcept>
+#include <regex>
+#include <complex>
+#include <chrono>
+#include <future>
+#include <thread>
+#include <mutex>
+#include <atomic>
 #include <atcoder/all>
 // #include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
@@ -43,11 +87,46 @@ const ll dxx[] = {-1, -1, 0, 1, 1, 1, 0, -1};
 const ll dyy[] = {0, 1, 1, 1, 0, -1, -1, -1};
 const ll LINF = 3001002003004005006ll;
 const int INF = 1001001001;
-int rand(){static random_device rd; static mt19937 mt(rd()); static uniform_int_distribution<int> dist(0, INF); return dist(mt);}
 
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    
+    int n; cin >> n;
+    vector<pll> sv, gv;
+    rep(i, n){
+        ll x, y; cin >> x >> y;
+        sv.emplace_back(x, y);
+    }
+    rep(i, n){
+        ll x, y; cin >> x >> y;
+        gv.emplace_back(x, y);
+    }
+    vector<vector<double>> dist(n, vector<double>(n, LINF));
+    vector<double> vs;
+    rep(i, n)rep(j, n){
+        dist[i][j] = hypot(sv[i].fi-gv[j].fi, sv[i].se-gv[j].se);
+        vs.emplace_back(dist[i][j]);
+    }
+    sort(rng(vs));
+    double wa = -1, ac = vs.size()-1;
+    while(ac-wa>1){
+        int wj = (wa+ac)/2;
+        int s = 2*n, t = s+1;
+        mf_graph<int> g(t+1);
+        rep(i, n) g.add_edge(s, i, 1);
+        rep(i, n) g.add_edge(i+n, t, 1);
+        rep(i, n)rep(j, n){
+            if (dist[i][j] > vs[wj]) continue;
+            g.add_edge(i, j+n, 1);
+        }
+        int res = g.flow(s, t);
+        if (res == n){
+            ac = wj;
+        }
+        else{
+            wa = wj;
+        }
+    }
+    printf("%.016f\n", vs[ac]);
     return 0;
 }

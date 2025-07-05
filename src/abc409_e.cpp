@@ -91,6 +91,27 @@ const int INF = 1001001001;
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-
+    int n; cin >> n;
+    vector<ll> x(n);
+    rep(i, n) cin >> x[i];
+    vector<vector<pll>> g(n);
+    rep(i, n-1){
+        int u, v, w; cin >> u >> v >> w; u--, v--;
+        g[u].push_back({v, w});
+        g[v].push_back({u, w});
+    }
+    ll ans = 0;
+    auto dfs = [&](auto f, int u, int p=-1) -> ll{
+        ll res = x[u];
+        for (auto [v, w]: g[u]){
+            if (v == p) continue;
+            ll s = f(f, v, u);
+            ans += abs(s)*w;
+            res += s;
+        }
+        return res;
+    };
+    dfs(dfs, 0);
+    cout << ans << endl;
     return 0;
 }

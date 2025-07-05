@@ -91,6 +91,22 @@ const int INF = 1001001001;
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-
+    int n, l; cin >> n >> l;
+    vector<int> d(n-1), s(n);
+    rep(i, n-1){
+        cin >> d[i];
+    }
+    if (l%3){
+        cout << 0 << endl;
+        return 0;
+    }
+    rep(i, n-1) s[i+1] = (s[i]+d[i])%l;
+    vector<ll> a(l);
+    rep(i, n) a[s[i]]++;
+    ll ans = 0;
+    rep(i, l/3){
+        ans += a[i]*(a[(i+l/3)%l])*(a[(i+2*l/3)%l]);
+    }
+    cout << ans << endl;
     return 0;
 }
