@@ -94,28 +94,31 @@ const int INF = 1001001001;
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int n; cin >> n;
-    vector<ll> c(n), a(n);
-    rep2(i, 1, n) cin >> c[i];
-    rep2(i, 1, n) cin >> a[i];
-    
-    ll ans = 0;
-    rrep2(i, n, 1){
-        if (a[i] == 0) continue;
-        ans++;
-        int l = i-c[i], ni = -1;
-        rrep2(j, i, l){
-            if (a[j]){
-                ni = j;
-                break;
+    int n, t, m, k; cin >> n >> t >> m >> k;
+    vector<vector<double>> memo(t, vector<double>(k+1));
+    vector<vector<bool>> used(t, vector<bool>(k+1));
+    auto dfs = [&](auto f, int i, int j) -> double{
+        if (i == t){
+            return j == k;
+        }
+        if (used[i][j]) return memo[i][j];
+        double res = 0;
+        vector<vector<double>> dp(m+1, vector<double>(m+1, 0));
+        rep(i2, m)rep(j2, m){
+            rep2(c, 1, m+1){
+                if (j2+c > m) break;
+                chmax(dp[i2+1][j2+c], dp[i2][j2]+f(f, i+1, min(k, j+(int)c)));
             }
         }
-        if (ni == -1){
-            ni = l;
+        rep(i2, m+1){
+            if (i2 > n) break;
+            chmax(res, dp[i2][m]+f(f, i+1, j)*(n-i2));
         }
-        a[ni] += a[i];
-        a[i] = 0;
-    }
-    cout << ans << endl;
+        res /= n;
+        used[i][j] = true;
+        return memo[i][j] = res;
+    };
+    double ans = dfs(dfs, 0, 0);
+    printf("%.016f\n", ans);
     return 0;
 }

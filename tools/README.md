@@ -17,7 +17,7 @@ You can update to the latest compiler by executing the following command.
 rustup update
 ```
 
-For those who are not familiar with the Rust language environment, we have prepared a [pre-compiled binary for Windows](https://img.atcoder.jp/ahc045/jOO09LxU_windows.zip).
+For those who are not familiar with the Rust language environment, we have prepared a [pre-compiled binary for Windows](https://img.atcoder.jp/ahc048/lI5DXOAV_windows.zip).
 The following examples assume that you will be working in the directory where this README is located.
 
 ## Input Generation
@@ -37,47 +37,9 @@ If you use the command prompt instead of WSL, use `gen.exe` instead of `./gen.ex
 The following options are available.
 
 - `--dir=in2` Change the destination of the input files to the specified one instead of `in`.
-- `--M=10` Fix the $M$ value of the generated inputs to the specified one.
-- `--L=10` Fix the $L$ value of the generated inputs to the specified one.
-- `--W=1000` Fix the $W$ value of the generated inputs to the specified one.
-
-## Local Tester
-Let `in.txt` be an input file, `out.txt` be a file to which output of your program will be written, and `cmd` be a command to run your program.
-You can test your program by executing the following command.
-```
-cargo run -r --bin tester cmd < in.txt > out.txt
-```
-The above command outputs the score to standard error.
-You can specify arguments to your program by 
-```
-cargo run -r --bin tester cmd arg1 arg2 ... < in.txt > out.txt
-```
-
-If you use the precompiled binary for Windows, replace `cargo run -r --bin tester` with `./tester.exe`.
-You can visualize the contents of the output file by pasting it into the [visualizer](https://img.atcoder.jp/ahc045/jOO09LxU.html?lang=en).
-
-### Examples
-When executing a binary `a.out` which has been compiled in C++, etc. 
-```
-cargo run -r --bin tester ./a.out < in.txt > out.txt
-```
-
-When executing a program `main.py` using python3.
-```
-cargo run -r --bin tester python3 main.py < in.txt > out.txt
-```
-
-### When using Powershell on Windows
-Because you cannot use `<` in the above examples, please execute as follows.
-```
-cat in.txt | cargo run -r --bin tester cmd > out.txt
-```
-
-For some execution commands, you may need to specify the full path, as in the following example.
-```
-cat in.txt | cargo run -r --bin tester C:\Users\myname\AppData\Local\Microsoft\WindowsApps\python3.exe main.py > out.txt
-```
-You can check the full path of a command by executing `gcm python3`.
+- `--K=4` Fix the $K$ value of the generated inputs to the specified one.
+- `--T=3000` Fix the $T$ value of the generated inputs to the specified one.
+- `--D=10` Fix the $D$ value of the generated inputs to the specified one.
 
 
 ## Visualization
@@ -94,7 +56,7 @@ When using the precompiled binary for Windows,
 The above command writes a visualization result to `vis.html`.
 It also outputs the score to standard output.
 
-You can also use a [web visualizer](https://img.atcoder.jp/ahc045/jOO09LxU.html?lang=en) which is more rich in features.
+You can also use a [web visualizer](https://img.atcoder.jp/ahc048/lI5DXOAV.html?lang=en) which is more rich in features.
 
 # 使い方
 
@@ -107,7 +69,7 @@ https://www.rust-lang.org/ja を参考に各自インストールして下さい
 rustup update
 ```
 
-Rust言語の環境構築が面倒な方向けに、[Windows用のコンパイル済みバイナリ](https://img.atcoder.jp/ahc045/jOO09LxU_windows.zip)も用意してあります。
+Rust言語の環境構築が面倒な方向けに、[Windows用のコンパイル済みバイナリ](https://img.atcoder.jp/ahc048/lI5DXOAV_windows.zip)も用意してあります。
 以下の実行例では、このREADMEが置かれているディレクトリに移動して作業することを想定しています。
 
 ## 入力生成
@@ -126,49 +88,9 @@ WSLではなくコマンドプロンプトを使用する場合は `./gen.exe` �
 以下のオプションが使用可能です
 
 - `--dir=in2` 入力ファイルの出力先を `in` ではなく、指定されたものに変更
-- `--M=10` 生成される入力の $M$ の値を指定されたものに固定
-- `--L=10` 生成される入力の $L$ の値を指定されたものに固定
-- `--W=1000` 生成される入力の $W$ の値を指定されたものに固定
-
-## ローカルテスタ
-入力ファイル名を`in.txt`、出力結果を書き出す先のファイル名を`out.txt`、あなたのプログラムの実行コマンドを`cmd`としたとき、以下のコマンドを実行します。
-
-```
-cargo run -r --bin tester cmd < in.txt > out.txt
-```
-実行が終わると、スコアが標準エラーに出力されます。
-引数が必要な場合には
-```
-cargo run -r --bin tester cmd arg1 arg2 ... < in.txt > out.txt
-```
-のようにします。
-
-Windows用のコンパイル済バイナリを使用する場合は `cargo run -r --bin tester` の部分を `./tester.exe` に置き換えて下さい。
-出力された`out.txt`の中身を[ビジュアライザ](https://img.atcoder.jp/ahc045/jOO09LxU.html?lang=ja)に貼り付けると、ビジュアライズが可能です。
-
-### 例
-C++などでコンパイル済みの `a.out` というバイナリを実行する場合
-```
-cargo run -r --bin tester ./a.out < in.txt > out.txt
-```
-
-python3 で `main.py` というプログラムを実行する場合
-```
-cargo run -r --bin tester python3 main.py < in.txt > out.txt
-```
-
-### Windows で Powershell を使用する場合
-上記の `<` が使えないため、以下のように実行して下さい。
-```
-cat in.txt | cargo run -r --bin tester cmd > out.txt
-```
-
-実行コマンドによっては以下の例のようにフルパスで指定する必要がある場合があります。
-```
-cat in.txt | cargo run -r --bin tester C:\Users\myname\AppData\Local\Microsoft\WindowsApps\python3.exe main.py > out.txt
-```
-コマンドのフルパスは `gcm python3` というコマンドを実行することで確認出来ます。
-
+- `--K=4` 生成される入力の $K$ の値を指定されたものに固定
+- `--T=3000` 生成される入力の $T$ の値を指定されたものに固定
+- `--D=10` 生成される入力の $D$ の値を指定されたものに固定
 
 ## ビジュアライザ
 入力ファイル名を`in.txt`、出力ファイル名を`out.txt`としたとき、以下のコマンドを実行します。
@@ -183,4 +105,4 @@ Windows用のコンパイル済バイナリを使用する場合は以下のよ�
 出力のビジュアライズ結果は `vis.html` というファイルに書き出されます。
 標準出力にはスコアを出力します。
 
-より機能が豊富な[ウェブ版のビジュアライザ](https://img.atcoder.jp/ahc045/jOO09LxU.html?lang=ja)も利用可能です。
+より機能が豊富な[ウェブ版のビジュアライザ](https://img.atcoder.jp/ahc048/lI5DXOAV.html?lang=ja)も利用可能です。

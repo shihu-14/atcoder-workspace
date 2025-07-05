@@ -8,7 +8,7 @@ struct Bell{
     void build(){
         vector<vector<int>> groups;
         auto op = [&](){
-            // Edit here 
+            // Edit below
             ll xor_sum = 0;
             rep(i, groups.size()){
                 ll s = 0;

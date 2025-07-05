@@ -60,7 +60,7 @@ using ull = unsigned long long;
 using ld = long double;
 using pii = pair<int, int>;
 using pll = pair<ll, ll>;
-using T3 = tuple<double, double, double>;
+using T3 = tuple<int, int, int>;
 using G = vector<vector<int>>;
 #define rep(i, n) for (ll i = 0; i < (n); ++i)
 #define rep2(i, a, b) for (ll i = a; i < (b); ++i)
@@ -88,34 +88,97 @@ const ll dyy[] = {0, 1, 1, 1, 0, -1, -1, -1};
 const ll LINF = 3001002003004005006ll;
 const int INF = 1001001001;
 
+/* ----- color utilities ----- */
+struct Color{double c,m,y;};
+inline double d2(const Color&a,const Color&b){
+    double dc=a.c-b.c,dm=a.m-b.m,dy=a.y-b.y;
+    return dc*dc+dm*dm+dy*dy;
+}
+inline Color add(const Color&a,const Color&b){return {a.c+b.c,a.m+b.m,a.y+b.y};}
+inline Color div2(const Color&a){return {a.c*0.5,a.m*0.5,a.y*0.5};}
+inline Color div3(const Color&a){return {a.c/3.0,a.m/3.0,a.y/3.0};}
+
+/* ----- chosen config ----- */
+struct Chosen{array<int,3> k{};int cnt=1;};
+
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int n, k, h, t, d; cin >> n >> k >> h >> t >> d;
-    vector<T3> col_own;
-    rep(i, k){
-        double c, m, y; cin >> c >> m >> y;
-        col_own.emplace_back(c, m, y);
-    }
-    vector<vector<int>> col_table(1<<k);
-    vector<pair<T3, int>> col_pool;
-    rep(i, 1<<k){
-        rep(j, k){
-            if (i>>j&1) col_table[i].emplace_back(j);
+
+    /* --- input --- */
+    int N,K,H,T_lim,D;
+    if(!(cin>>N>>K>>H>>T_lim>>D)) return 0;   // N=20  H=1000
+    vector<Color> tube(K),target(H);
+    rep(i,K)cin>>tube[i].c>>tube[i].m>>tube[i].y;
+    rep(i,H)cin>>target[i].c>>target[i].m>>target[i].y;
+
+    /* --- decide max tubes per colour (2 or 3) --- */
+    int k_max=min(3,T_lim/(2*H));      // each tube adds 1 turn
+    if(k_max<2)k_max=2;
+
+    /* --- exhaustive best choice per colour --- */
+    vector<Chosen> choose(H);
+    rep(idx,H){
+        double bestS=1e100; Chosen best;
+        /* k=1 */
+        rep(k1,K){
+            double s=1e4*d2(tube[k1],target[idx]);
+            if(s<bestS){bestS=s; best={{{(int)k1,-1,-1}},1};}
         }
-        double tmp_c = 0, tmp_m = 0, tmp_y = 0;
-        for (auto j: col_table[i]){
-            tmp_c += col_own[j][0];
-            tmp_m += col_own[j][1];
-            tmp_y += col_own[j][2];
+        /* k=2 equal */
+        rep(k1,K) rep2(k2,k1+1,K){
+            Color mix=div2(add(tube[k1],tube[k2]));
+            double s=D+1e4*d2(mix,target[idx]);
+            if(s<bestS){bestS=s; best={{(int)k1,(int)k2,-1},2};}
         }
-        tmp_c /= col_table[i].size();
-        tmp_m /= col_table[i].size();
-        tmp_y /= col_table[i].size();
-        col_pool.emplace_back(tmp_c, tmp_m, tmp_y);
+        /* k=3 equal */
+        if(k_max==3){
+            rep(k1,K) rep2(k2,k1+1,K) rep2(k3,k2+1,K){
+                Color mix=div3(add(add(tube[k1],tube[k2]),tube[k3]));
+                double s=2*D+1e4*d2(mix,target[idx]);
+                if(s<bestS){bestS=s; best={{(int)k1,(int)k2,(int)k3},3};}
+            }
+        }
+        choose[idx]=best;
     }
-    sort(rng(col_pool), [](auto a, auto b){
-        return 
-    });
+
+    /* --- wall pattern (horizontal wells幅 = k_max) --- */
+    int G=k_max;
+    rep(i,N){
+        rep(j,N-1){
+            cout<<((j%G==G-1)?1:0)<<(j==N-2?'\n':' ');
+        }
+    }
+    rep(i,N-1){
+        rep(j,N) cout<<1<<(j==N-1?'\n':' ');
+    }
+
+    /* --- operations --- */
+    vector<string> ops; ops.reserve((G+2)*H);
+    const int groupsPerRow = N/G;          // 10 (G=2)  or 6 (G=3)
+    ll gid=0, totalGroups = 1LL*groupsPerRow*N;   // 200 or 120
+
+    rep(idx,H){
+        /* wrap 行番号を N でラップ */
+        int row = (gid/groupsPerRow) % N;
+        int col = (gid%groupsPerRow)*G;
+        ++gid; if(gid==totalGroups) gid=0;        // ぐるぐる回す
+
+        const auto& c = choose[idx];
+
+        /* add */
+        rep(t,c.cnt){
+            stringstream ss; ss<<"1 "<<row<<' '<<col<<' '<<c.k[t];
+            ops.push_back(ss.str());
+        }
+        /* take 1 g */
+        { stringstream ss; ss<<"2 "<<row<<' '<<col; ops.push_back(ss.str()); }
+        /* discard */
+        rep(t,c.cnt-1){
+            stringstream ss; ss<<"3 "<<row<<' '<<col; ops.push_back(ss.str());
+        }
+    }
+    if((int)ops.size()>T_lim) ops.resize(T_lim);
+    for(auto&s:ops) cout<<s<<'\n';
     return 0;
 }

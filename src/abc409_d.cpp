@@ -88,9 +88,46 @@ const ll dyy[] = {0, 1, 1, 1, 0, -1, -1, -1};
 const ll LINF = 3001002003004005006ll;
 const int INF = 1001001001;
 
+void solve(){
+    int n; cin >> n;
+    string s; cin >> s;
+    int L = -1;
+    {
+        rep(i, n-1){
+            if (s[i] > s[i+1]){
+                L = i;
+                break;
+            }
+        }
+    }
+    if (L == -1){
+        cout << s << "\n";
+        return;
+    }
+
+    int R = L+1;
+    {
+        rep2(i, L+1, n-1){
+            if (s[i+1] > s[L]){
+                break;
+            }
+            R++;
+        }
+    }
+    string ans;
+    ans += s.substr(0, L);
+    ans += s.substr(L+1, R-L);
+    ans += s[L];
+    ans += s.substr(R+1);
+    cout << ans << "\n";
+    return;
+}
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-
+    int t; cin >> t;
+    while(t--){
+        solve();
+    }
     return 0;
 }

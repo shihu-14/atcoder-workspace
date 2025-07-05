@@ -5,8 +5,8 @@ import subprocess
 executable = "./src/a.out"
 
 # 入力フォルダと出力フォルダの定義（カレントディレクトリ基準）
-input_dir = "./in4"
-output_dir = "./out"
+input_dir = "./in"
+output_dir = "./out2"
 
 # 出力フォルダを作成（存在しない場合）
 os.makedirs(output_dir, exist_ok=True)

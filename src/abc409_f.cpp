@@ -60,7 +60,7 @@ using ull = unsigned long long;
 using ld = long double;
 using pii = pair<int, int>;
 using pll = pair<ll, ll>;
-using T3 = tuple<int, int, int>;
+using T3 = tuple<ll, ll, ll>;
 using G = vector<vector<int>>;
 #define rep(i, n) for (ll i = 0; i < (n); ++i)
 #define rep2(i, a, b) for (ll i = a; i < (b); ++i)
@@ -91,6 +91,60 @@ const int INF = 1001001001;
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-
+    int n, q; cin >> n >> q;
+    vector<pll> p;
+    rep(i, n){
+        ll x, y; cin >> x >> y;
+        p.emplace_back(x, y);
+    }
+    dsu uf(n+q);
+    priority_queue<T3, vector<T3>, greater<T3>> pq;
+    rep(i, n)rep2(j, i+1, n){
+        auto [x1, y1] = p[i];
+        auto [x2, y2] = p[j];
+        pq.emplace(abs(x1-x2)+abs(y1-y2), i, j);
+    }
+    int cnt = n, vs = n;
+    rep(qi, q){
+        int type; cin >> type;
+        if (type == 1){
+            ll a, b; cin >> a >> b;
+            vs++;
+            cnt++;
+            p.emplace_back(a, b);
+            rep(i, vs){
+                pq.emplace(abs(a-p[i].fi)+abs(b-p[i].se), i, vs-1);
+            }
+        }
+        else if (type == 2){
+            if (cnt == 1){
+                cout << -1 << "\n";
+                continue;
+            }
+            ll min_d = LINF;
+            while(pq.size()){
+                auto [d, i, j] = pq.top(); pq.pop();
+                if (uf.same(i, j)) continue;
+                uf.merge(i, j);
+                cnt--;
+                min_d = d;
+                break;
+            }
+            while(pq.size()){
+                auto [d, i, j] = pq.top();
+                if (d != min_d) break;
+                pq.pop();
+                if (uf.same(i, j)) continue;
+                uf.merge(i, j);
+                cnt--;
+            }
+            cout << min_d << "\n";
+        }
+        else{
+            int u, v; cin >> u >> v; u--, v--;
+            if (uf.same(u, v)) cout << "Yes" << "\n";
+            else cout << "No" << "\n";
+        }  
+    }
     return 0;
 }
