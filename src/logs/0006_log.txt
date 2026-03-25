@@ -1,0 +1,26 @@
+build_elapsed=0.071976
+candidate idx=0 family=0 mode=0 score=15990280916569
+candidate idx=1 family=0 mode=1 score=15989482071204
+candidate idx=2 family=0 mode=2 score=16010365860429
+candidate idx=3 family=0 mode=3 score=16011164422771
+candidate idx=4 family=1 mode=0 score=15992576102489
+candidate idx=5 family=1 mode=1 score=15992611694304
+candidate idx=6 family=1 mode=2 score=16008073332332
+candidate idx=7 family=1 mode=3 score=16008037733789
+chosen_restarts=3 6
+restart=0 candidate_idx=3 family=0 mode=3 init_score=16011164422771 final_score=16294167189326 budget=1.666352 phase_switch_local=0.749934 iter=1496194 best_updates_p1=30378 best_updates_p2=13331
+ restart=0 phase=1 twoopt_attempts=634997 accepted=145825 accept_rate=0.229647 no_candidate=293188 no_candidate_rate=0.461716 avg_candidate_count=0.823205 avg_acc_delta_real=1875596.742397
+ restart=0 phase=1 choose_best=187899 choose_topk=85577 choose_random=68333 real_improve=74245 real_worse=71580
+ restart=0 phase=1 lns_attempts=40843 accepted=40843 accept_rate=1.000000 no_feasible=0 avg_feasible_perm=4.591999 avg_acc_delta_real=7725.540852
+ restart=0 phase=2 twoopt_attempts=804024 accepted=30504 accept_rate=0.037939 no_candidate=395855 no_candidate_rate=0.492342 avg_candidate_count=0.795232 avg_acc_delta_real=299957.612772
+ restart=0 phase=2 choose_best=285819 choose_topk=81497 choose_random=40853 real_improve=18162 real_worse=12342
+ restart=0 phase=2 lns_attempts=16330 accepted=16329 accept_rate=0.999939 no_feasible=1 avg_feasible_perm=4.156522 avg_acc_delta_real=1741.093147
+restart=1 candidate_idx=6 family=1 mode=2 init_score=16008073332332 final_score=16265763131401 budget=1.209665 phase_switch_local=0.544540 iter=842032 best_updates_p1=19731 best_updates_p2=15049
+ restart=1 phase=1 twoopt_attempts=334944 accepted=78017 accept_rate=0.232926 no_candidate=157597 no_candidate_rate=0.470517 avg_candidate_count=0.804481 avg_acc_delta_real=2837934.750618
+ restart=1 phase=1 choose_best=97443 choose_topk=44431 choose_random=35473 real_improve=40648 real_worse=37369
+ restart=1 phase=1 lns_attempts=21408 accepted=21408 accept_rate=1.000000 no_feasible=0 avg_feasible_perm=4.855661 avg_acc_delta_real=8742.725944
+ restart=1 phase=2 twoopt_attempts=475953 accepted=24354 accept_rate=0.051169 no_candidate=227638 no_candidate_rate=0.478278 avg_candidate_count=0.807908 avg_acc_delta_real=1480291.786401
+ restart=1 phase=2 choose_best=173825 choose_topk=49440 choose_random=25050 real_improve=16321 real_worse=8033
+ restart=1 phase=2 lns_attempts=9727 accepted=9727 accept_rate=1.000000 no_feasible=0 avg_feasible_perm=4.381001 avg_acc_delta_real=4570.081937
+final_best_score=16294167189326
+valid=1

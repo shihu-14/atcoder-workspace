@@ -1,45 +1,61 @@
+
 import os
 import subprocess
 
-# 実行可能ファイルのパス
-executable = "./src/a.out"
+EXE = "./src/a.out"
+INPUT_DIR = "./in"
+LOG_PATH = "./ahc054_log.txt"
+TIMEOUT_SEC = 10.0  # 必要に応じて調整
 
-# 入力フォルダの定義（カレントディレクトリ基準）
-input_dir = "./in3"
+total = 0
+error_count = 0
 
-# 出力の合計値を保持する変数
-total_output_value = 0
+with open(LOG_PATH, "w", encoding="utf-8") as log:
+    for filename in sorted(os.listdir(INPUT_DIR)):
+        if not filename.endswith(".txt"):
+            continue
 
-# inフォルダ内の全テキストファイルを処理
-for filename in sorted(os.listdir(input_dir)):  # ファイルをソートして順番に処理
-    if filename.endswith(".txt"):  # .txt ファイルのみ処理
+        ipath = os.path.join(INPUT_DIR, filename)
+        print(f"処理中: {filename}", file=log, flush=True)
+
         try:
-            input_path = os.path.join(input_dir, filename)
-
-            # 標準出力に現在処理中のファイルを表示
-            print(f"処理中: {filename}")
-
-            # a.out を呼び出し、入力を渡して出力を取得
-            result = subprocess.run(
-                [executable],
-                stdin=open(input_path, "r"),
-                stdout=subprocess.PIPE,  # 出力を取得
-                universal_newlines=True,
-                check=True
-            )
-
-            # a.out の出力（stdout）を整数に変換して加算
-            output_str = result.stdout.strip()
-            if output_str:  # 何か出力がある場合のみ処理
-                output_value = int(output_str)
-                total_output_value += output_value
-
-        except ValueError:
-            print(f"スキップ: ファイル名 {filename} または出力 '{result.stdout.strip()}' が整数に変換できません。")
-        except subprocess.CalledProcessError as e:
-            print(f"エラー: {filename} を処理中に異常終了。メッセージ: {e}")
+            with open(ipath, "r") as fin:
+                r = subprocess.run(
+                    [EXE],
+                    stdin=fin,
+                    stdout=subprocess.PIPE,
+                    stderr=log,          # 子プロセスstderrはログへ直行
+                    text=True,
+                    timeout=TIMEOUT_SEC,
+                )
+        except subprocess.TimeoutExpired:
+            print(f"タイムアウト: {filename} (> {TIMEOUT_SEC}s)", file=log, flush=True)
+            error_count += 1
+            continue
         except Exception as e:
-            print(f"例外発生: {e}")
+            print(f"起動失敗: {filename} ({e})", file=log, flush=True)
+            error_count += 1
+            continue
 
-# 最終的な合計値を出力
-print(f"---\n合計出力値: {total_output_value}")
+        out = (r.stdout or "").strip()
+        if not out:
+            print(f"スキップ: 出力なし ({filename})", file=log, flush=True)
+            error_count += 1
+            continue
+
+        try:
+            tokens = out.split()
+            if len(tokens) != 1:
+                raise ValueError("複数のトークン")
+            total += int(tokens[0])
+        except Exception as e:
+            print(f"スキップ: {filename} の出力を整数に変換不可: '{out}' ({e})", file=log, flush=True)
+            error_count += 1
+            continue
+
+        if r.returncode != 0:
+            print(f"警告: {filename} returncode={r.returncode}", file=log, flush=True)
+
+# 合計とエラー件数は標準出力（各1行）
+print(total)
+print(error_count)

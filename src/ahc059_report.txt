@@ -1,0 +1,29 @@
+// --- 焼きなましパラメータ設定 (指数冷却用) ---
+    double start_temp = 100.0; // 変更: 高温スタート
+    double end_temp = 0.1;    // 変更: 十分低い値
+    double time_limit = 1950.0; 
+
+    int iter = 0;
+    
+    // 近傍選択確率の閾値 (Phaseごと)
+    const int prob_thresholds[3][2] = {
+        {70, 95}, 
+        {40, 80}, 
+        {5, 95}  
+    };
+
+
+
+double start_temp = 400.0; 
+    double end_temp = 0.1;     
+    double time_limit = 1980.0; 
+
+    int iter = 0;
+    
+    // Phase thresholds (Regraft, Flip)
+    const int prob_thresholds[3][2] = {
+        {80, 85}, 
+        {40, 60}, 
+        {5, 95}   
+    };
+
