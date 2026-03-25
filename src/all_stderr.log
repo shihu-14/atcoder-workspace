@@ -1,0 +1,342 @@
+=== All Test Logs (Run at Sat Mar 14 19:01:56 2026) ===
+
+--- Case: 0000 (Time: 3.249s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=250508219578 stage8_best_score=254721181992
+expand8to4_bonus=1237655770 fallback=0 expand_score=1020122383738
+stage4_init_score=1020122383738 stage4_best_score=1043968572521
+expand4to2_bonus=1269204284 fallback=0 expand_score=4177143494368
+stage2_init_score=4177143494368 stage2_best_score=4316422476514
+expand2to1_bonus=1335446391 fallback=0 expand_score=17267025352447
+stage1_init_score=17267025352447 stage1_best_score=18192599472235 elapsed=2.860179
+[stage8] iter=74943 2opt acc=1564/47163 valid=24680 imp=866 worse=698 no=22483 avgCand=1.608509 or1 acc=2398/13661 valid=12753 imp=1370 worse=1028 no=908 avgCand=2.775425 or2 acc=390/7494 valid=5992 imp=251 worse=139 no=1502 avgCand=1.723632 or3 acc=95/3599 valid=1582 imp=65 worse=30 no=2017 avgCand=1.317320 or4 acc=31/1487 valid=446 imp=22 worse=9 no=1041 avgCand=1.201794 repair acc=57/1539 valid=1539 imp=57 worse=0 no=0 avgCand=1.000000 repair_no_improve=1482 removable_fail=2479
+[stage4] iter=418131 2opt acc=30848/217839 valid=106258 imp=15055 worse=15793 no=111581 avgCand=1.573369 or1 acc=36754/83498 valid=82327 imp=18604 worse=18150 no=1171 avgCand=2.715415 or2 acc=13003/49766 valid=41002 imp=5961 worse=7042 no=8764 avgCand=1.732891 or3 acc=5493/33749 valid=18197 imp=2450 worse=3043 no=15552 avgCand=1.255592 or4 acc=1971/16653 valid=6087 imp=916 worse=1055 no=10566 avgCand=1.223263 repair acc=3432/16626 valid=16626 imp=3432 worse=0 no=0 avgCand=1.000000 repair_no_improve=13194 removable_fail=9342
+[stage2] iter=510427 2opt acc=35238/229784 valid=122516 imp=16875 worse=18363 no=107268 avgCand=1.603954 or1 acc=47003/112443 valid=111436 imp=24291 worse=22711 no=1007 avgCand=2.791423 or2 acc=17378/71067 valid=60098 imp=8154 worse=9224 no=10969 avgCand=1.762654 or3 acc=7463/45910 valid=26166 imp=3401 worse=4062 no=19744 avgCand=1.269969 or4 acc=3232/25590 valid=10755 imp=1447 worse=1785 no=14835 avgCand=1.214877 repair acc=5614/25633 valid=25633 imp=5614 worse=0 no=0 avgCand=1.000000 repair_no_improve=20019 removable_fail=7827
+[stage1] iter=831816 2opt acc=73116/349502 valid=191606 imp=34789 worse=38327 no=157896 avgCand=1.565217 or1 acc=79148/149912 valid=149203 imp=42767 worse=36381 no=709 avgCand=2.858314 or2 acc=39181/116451 valid=99998 imp=19117 worse=20064 no=16453 avgCand=1.717544 or3 acc=21643/91639 valid=54000 imp=10100 worse=11542 no=37639 avgCand=1.258333 or4 acc=10846/58091 valid=25902 imp=5056 worse=5790 no=32189 avgCand=1.209714 repair acc=16625/66221 valid=66221 imp=16625 worse=0 no=0 avgCand=1.000000 repair_no_improve=49596 removable_fail=11716
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0001 (Time: 2.875s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=249714194840 stage8_best_score=252944261652
+expand8to4_bonus=1234398507 fallback=0 expand_score=1013011445115
+stage4_init_score=1013011445115 stage4_best_score=1037189009050
+expand4to2_bonus=1268956594 fallback=0 expand_score=4150024992794
+stage2_init_score=4150024992794 stage2_best_score=4272613759286
+expand2to1_bonus=1333310278 fallback=0 expand_score=17091788347422
+stage1_init_score=17091788347422 stage1_best_score=17904563146684 elapsed=2.860205
+[stage8] iter=78454 2opt acc=1674/49295 valid=27579 imp=926 worse=748 no=21716 avgCand=1.704884 or1 acc=1797/14184 valid=13306 imp=990 worse=807 no=878 avgCand=2.769728 or2 acc=296/7875 valid=6150 imp=186 worse=110 no=1725 avgCand=1.703740 or3 acc=88/3986 valid=2013 imp=51 worse=37 no=1973 avgCand=1.417288 or4 acc=47/1547 valid=546 imp=32 worse=15 no=1001 avgCand=1.313187 repair acc=62/1567 valid=1567 imp=62 worse=0 no=0 avgCand=1.000000 repair_no_improve=1505 removable_fail=2141
+[stage4] iter=417567 2opt acc=33144/217773 valid=112864 imp=15962 worse=17182 no=104909 avgCand=1.623875 or1 acc=36532/83539 valid=81831 imp=18648 worse=17884 no=1708 avgCand=2.749716 or2 acc=12936/50002 valid=41139 imp=5965 worse=6971 no=8863 avgCand=1.734996 or3 acc=5902/33248 valid=18254 imp=2648 worse=3254 no=14994 avgCand=1.281746 or4 acc=2221/16538 valid=6682 imp=949 worse=1272 no=9856 avgCand=1.233463 repair acc=3630/16467 valid=16467 imp=3630 worse=0 no=0 avgCand=1.000000 repair_no_improve=12837 removable_fail=9019
+[stage2] iter=555543 2opt acc=34846/251139 valid=128469 imp=16661 worse=18184 no=122670 avgCand=1.582452 or1 acc=50299/121654 valid=120742 imp=25794 worse=24505 no=912 avgCand=2.843642 or2 acc=18883/77572 valid=66877 imp=8926 worse=9957 no=10695 avgCand=1.749122 or3 acc=8169/50216 valid=29088 imp=3627 worse=4542 no=21128 avgCand=1.257460 or4 acc=3326/27473 valid=11871 imp=1489 worse=1837 no=15602 avgCand=1.187684 repair acc=5839/27489 valid=27489 imp=5839 worse=0 no=0 avgCand=1.000000 repair_no_improve=21650 removable_fail=9009
+[stage1] iter=1035653 2opt acc=82920/435325 valid=226055 imp=39424 worse=43496 no=209270 avgCand=1.567849 or1 acc=92428/185930 valid=184847 imp=48903 worse=43525 no=1083 avgCand=2.865970 or2 acc=45581/145070 valid=125725 imp=21802 worse=23779 no=19345 avgCand=1.715776 or3 acc=24883/113789 valid=68195 imp=11548 worse=13335 no=45594 avgCand=1.256162 or4 acc=12545/73027 valid=32751 imp=5757 worse=6788 no=40276 avgCand=1.207688 repair acc=19625/82512 valid=82512 imp=19625 worse=0 no=0 avgCand=1.000000 repair_no_improve=62887 removable_fail=14902
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0002 (Time: 2.873s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=250317476372 stage8_best_score=254370657505
+expand8to4_bonus=1232070037 fallback=0 expand_score=1018714700057
+stage4_init_score=1018714700057 stage4_best_score=1042500327159
+expand4to2_bonus=1267927824 fallback=0 expand_score=4171269236460
+stage2_init_score=4171269236460 stage2_best_score=4305858219444
+expand2to1_bonus=1336194785 fallback=0 expand_score=17224769072561
+stage1_init_score=17224769072561 stage1_best_score=18061246575360 elapsed=2.860174
+[stage8] iter=108213 2opt acc=4169/68298 valid=33280 imp=2153 worse=2016 no=35018 avgCand=1.627344 or1 acc=4025/19443 valid=18216 imp=2098 worse=1927 no=1227 avgCand=2.727712 or2 acc=795/10686 valid=7767 imp=414 worse=381 no=2919 avgCand=1.743917 or3 acc=187/5457 valid=2480 imp=104 worse=83 no=2977 avgCand=1.247581 or4 acc=46/2169 valid=652 imp=26 worse=20 no=1517 avgCand=1.228528 repair acc=149/2160 valid=2160 imp=149 worse=0 no=0 avgCand=1.000000 repair_no_improve=2011 removable_fail=3697
+[stage4] iter=418637 2opt acc=31772/217867 valid=113318 imp=15511 worse=16261 no=104549 avgCand=1.612639 or1 acc=33652/83558 valid=81747 imp=17005 worse=16647 no=1811 avgCand=2.733972 or2 acc=12181/50296 valid=42292 imp=5648 worse=6533 no=8004 avgCand=1.741677 or3 acc=5571/33560 valid=18786 imp=2480 worse=3090 no=14774 avgCand=1.260673 or4 acc=2097/16805 valid=6767 imp=901 worse=1196 no=10038 avgCand=1.248559 repair acc=3393/16551 valid=16551 imp=3393 worse=0 no=0 avgCand=1.000000 repair_no_improve=13158 removable_fail=9156
+[stage2] iter=521728 2opt acc=33827/234864 valid=117086 imp=16127 worse=17700 no=117778 avgCand=1.572015 or1 acc=46519/114689 valid=113706 imp=24014 worse=22505 no=983 avgCand=2.789114 or2 acc=17031/73133 valid=61867 imp=8041 worse=8990 no=11266 avgCand=1.746763 or3 acc=7582/46998 valid=27409 imp=3423 worse=4159 no=19589 avgCand=1.282207 or4 acc=3302/26111 valid=11453 imp=1515 worse=1787 no=14658 avgCand=1.200035 repair acc=5679/25933 valid=25933 imp=5679 worse=0 no=0 avgCand=1.000000 repair_no_improve=20254 removable_fail=7920
+[stage1] iter=961147 2opt acc=77743/403766 valid=212745 imp=36733 worse=41010 no=191021 avgCand=1.558871 or1 acc=86360/172278 valid=171438 imp=45842 worse=40518 no=840 avgCand=2.846341 or2 acc=42849/134607 valid=116643 imp=20509 worse=22340 no=17964 avgCand=1.716768 or3 acc=23654/106158 valid=63435 imp=10922 worse=12732 no=42723 avgCand=1.256688 or4 acc=11473/67271 valid=29405 imp=5354 worse=6119 no=37866 avgCand=1.213059 repair acc=18685/77067 valid=77067 imp=18685 worse=0 no=0 avgCand=1.000000 repair_no_improve=58382 removable_fail=13704
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0003 (Time: 2.871s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=249807887639 stage8_best_score=255151552583
+expand8to4_bonus=1235325799 fallback=0 expand_score=1021841536131
+stage4_init_score=1021841536131 stage4_best_score=1044505781264
+expand4to2_bonus=1262819833 fallback=0 expand_score=4179285944889
+stage2_init_score=4179285944889 stage2_best_score=4312792040362
+expand2to1_bonus=1339333357 fallback=0 expand_score=17252507494805
+stage1_init_score=17252507494805 stage1_best_score=18122117587636 elapsed=2.860144
+[stage8] iter=113688 2opt acc=3240/71621 valid=34515 imp=1683 worse=1557 no=37106 avgCand=1.538519 or1 acc=4147/20505 valid=19534 imp=2219 worse=1928 no=971 avgCand=2.717262 or2 acc=757/11434 valid=8259 imp=403 worse=354 no=3175 avgCand=1.742221 or3 acc=295/5617 valid=2476 imp=138 worse=157 no=3141 avgCand=1.241922 or4 acc=89/2253 valid=678 imp=45 worse=44 no=1575 avgCand=1.187316 repair acc=110/2258 valid=2258 imp=110 worse=0 no=0 avgCand=1.000000 repair_no_improve=2148 removable_fail=3238
+[stage4] iter=416130 2opt acc=33643/216216 valid=107907 imp=16254 worse=17389 no=108309 avgCand=1.591111 or1 acc=35840/82930 valid=82052 imp=18078 worse=17762 no=878 avgCand=2.773522 or2 acc=11890/50117 valid=41429 imp=5478 worse=6412 no=8688 avgCand=1.749572 or3 acc=5321/33442 valid=19261 imp=2397 worse=2924 no=14181 avgCand=1.264265 or4 acc=2098/16647 valid=6717 imp=897 worse=1201 no=9930 avgCand=1.175376 repair acc=3869/16778 valid=16778 imp=3869 worse=0 no=0 avgCand=1.000000 repair_no_improve=12909 removable_fail=8415
+[stage2] iter=516422 2opt acc=35831/232505 valid=120718 imp=17064 worse=18767 no=111787 avgCand=1.588976 or1 acc=46640/113870 valid=112962 imp=24187 worse=22450 no=908 avgCand=2.794276 or2 acc=17643/72067 valid=61474 imp=8226 worse=9417 no=10593 avgCand=1.751684 or3 acc=7786/46584 valid=26850 imp=3488 worse=4298 no=19734 avgCand=1.251881 or4 acc=3208/25983 valid=10912 imp=1460 worse=1748 no=15071 avgCand=1.243860 repair acc=5823/25413 valid=25413 imp=5823 worse=0 no=0 avgCand=1.000000 repair_no_improve=19590 removable_fail=7721
+[stage1] iter=994084 2opt acc=80656/417120 valid=222488 imp=38134 worse=42521 no=194632 avgCand=1.571896 or1 acc=90356/179280 valid=178396 imp=48035 worse=42321 no=884 avgCand=2.864207 or2 acc=44368/138999 valid=120208 imp=21419 worse=22949 no=18791 avgCand=1.723038 or3 acc=24346/109486 valid=65214 imp=11267 worse=13079 no=44272 avgCand=1.251188 or4 acc=11957/69993 valid=30769 imp=5564 worse=6393 no=39224 avgCand=1.211317 repair acc=19187/79206 valid=79206 imp=19187 worse=0 no=0 avgCand=1.000000 repair_no_improve=60019 removable_fail=14879
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0004 (Time: 2.873s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=250178395383 stage8_best_score=253967897534
+expand8to4_bonus=1242621914 fallback=0 expand_score=1017114212050
+stage4_init_score=1017114212050 stage4_best_score=1039723719885
+expand4to2_bonus=1263478256 fallback=0 expand_score=4160158357796
+stage2_init_score=4160158357796 stage2_best_score=4284045617870
+expand2to1_bonus=1333911491 fallback=0 expand_score=17137516382971
+stage1_init_score=17137516382971 stage1_best_score=17928795296165 elapsed=2.860159
+[stage8] iter=123405 2opt acc=3534/77894 valid=41287 imp=1795 worse=1739 no=36607 avgCand=1.695037 or1 acc=6341/21971 valid=20899 imp=3207 worse=3134 no=1072 avgCand=2.560027 or2 acc=1293/12290 valid=8922 imp=633 worse=660 no=3368 avgCand=1.820220 or3 acc=263/6275 valid=2588 imp=129 worse=134 no=3687 avgCand=1.459428 or4 acc=73/2466 valid=829 imp=34 worse=39 no=1637 avgCand=1.427021 repair acc=178/2509 valid=2509 imp=178 worse=0 no=0 avgCand=1.000000 repair_no_improve=2331 removable_fail=4541
+[stage4] iter=421649 2opt acc=29873/219062 valid=118728 imp=14319 worse=15554 no=100334 avgCand=1.648828 or1 acc=35833/84495 valid=83321 imp=18024 worse=17809 no=1174 avgCand=2.755824 or2 acc=12092/50415 valid=42995 imp=5631 worse=6461 no=7420 avgCand=1.779858 or3 acc=5655/33691 valid=17964 imp=2516 worse=3139 no=15727 avgCand=1.300267 or4 acc=2091/17190 valid=6731 imp=942 worse=1149 no=10459 avgCand=1.270094 repair acc=3474/16796 valid=16796 imp=3474 worse=0 no=0 avgCand=1.000000 repair_no_improve=13322 removable_fail=10122
+[stage2] iter=562127 2opt acc=36348/253108 valid=133235 imp=17252 worse=19096 no=119873 avgCand=1.583690 or1 acc=49797/123748 valid=122823 imp=25674 worse=24123 no=925 avgCand=2.789233 or2 acc=18150/78383 valid=66621 imp=8486 worse=9664 no=11762 avgCand=1.716516 or3 acc=8400/50982 valid=29278 imp=3772 worse=4628 no=21704 avgCand=1.251042 or4 acc=3453/28001 valid=12188 imp=1540 worse=1913 no=15813 avgCand=1.213489 repair acc=6107/27905 valid=27905 imp=6107 worse=0 no=0 avgCand=1.000000 repair_no_improve=21798 removable_fail=8093
+[stage1] iter=996616 2opt acc=77477/419001 valid=219588 imp=36666 worse=40811 no=199413 avgCand=1.573328 or1 acc=90203/179359 valid=178436 imp=47975 worse=42228 no=923 avgCand=2.851162 or2 acc=44128/139065 valid=120755 imp=21221 worse=22907 no=18310 avgCand=1.720260 or3 acc=24380/109757 valid=65849 imp=11338 worse=13042 no=43908 avgCand=1.258273 or4 acc=11944/69252 valid=30892 imp=5568 worse=6376 no=38360 avgCand=1.215622 repair acc=18597/80182 valid=80182 imp=18597 worse=0 no=0 avgCand=1.000000 repair_no_improve=61585 removable_fail=14234
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0005 (Time: 2.873s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=249883822312 stage8_best_score=255663992704
+expand8to4_bonus=1234045597 fallback=0 expand_score=1023890016413
+stage4_init_score=1023890016413 stage4_best_score=1046373969399
+expand4to2_bonus=1264115042 fallback=0 expand_score=4186759992638
+stage2_init_score=4186759992638 stage2_best_score=4328114421327
+expand2to1_bonus=1330787657 fallback=0 expand_score=17313788472965
+stage1_init_score=17313788472965 stage1_best_score=18220244614278 elapsed=2.860160
+[stage8] iter=105609 2opt acc=3428/66717 valid=35664 imp=1730 worse=1698 no=31053 avgCand=1.810958 or1 acc=4388/18825 valid=17565 imp=2365 worse=2023 no=1260 avgCand=2.643439 or2 acc=1025/10551 valid=7603 imp=493 worse=532 no=2948 avgCand=1.711430 or3 acc=381/5253 valid=2177 imp=176 worse=205 no=3076 avgCand=1.257694 or4 acc=73/2153 valid=748 imp=44 worse=29 no=1405 avgCand=1.292781 repair acc=158/2110 valid=2110 imp=158 worse=0 no=0 avgCand=1.000000 repair_no_improve=1952 removable_fail=2817
+[stage4] iter=323553 2opt acc=24103/168117 valid=90969 imp=11715 worse=12388 no=77148 avgCand=1.614077 or1 acc=26597/64967 valid=63624 imp=13533 worse=13064 no=1343 avgCand=2.698919 or2 acc=9238/38821 valid=32158 imp=4286 worse=4952 no=6663 avgCand=1.748212 or3 acc=4016/25842 valid=14457 imp=1781 worse=2235 no=11385 avgCand=1.272671 or4 acc=1567/12944 valid=5339 imp=714 worse=853 no=7605 avgCand=1.236561 repair acc=2528/12862 valid=12862 imp=2528 worse=0 no=0 avgCand=1.000000 repair_no_improve=10334 removable_fail=6416
+[stage2] iter=504290 2opt acc=31762/227097 valid=115594 imp=15212 worse=16550 no=111503 avgCand=1.592981 or1 acc=44333/111016 valid=110076 imp=23164 worse=21169 no=940 avgCand=2.795023 or2 acc=16456/70561 valid=60147 imp=7794 worse=8662 no=10414 avgCand=1.732206 or3 acc=7488/45343 valid=26770 imp=3456 worse=4032 no=18573 avgCand=1.262719 or4 acc=3246/25113 valid=10797 imp=1466 worse=1780 no=14316 avgCand=1.248124 repair acc=4895/25160 valid=25160 imp=4895 worse=0 no=0 avgCand=1.000000 repair_no_improve=20265 removable_fail=7728
+[stage1] iter=929525 2opt acc=76384/390556 valid=209991 imp=35855 worse=40529 no=180565 avgCand=1.563510 or1 acc=83569/167266 valid=166465 imp=44874 worse=38695 no=801 avgCand=2.855802 or2 acc=41553/130393 valid=113023 imp=20269 worse=21284 no=17370 avgCand=1.726365 or3 acc=22582/102238 valid=60944 imp=10446 worse=12136 no=41294 avgCand=1.252002 or4 acc=11100/65126 valid=28732 imp=5195 worse=5904 no=36394 avgCand=1.210880 repair acc=17273/73946 valid=73946 imp=17273 worse=0 no=0 avgCand=1.000000 repair_no_improve=56673 removable_fail=13628
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0006 (Time: 2.878s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=249751018293 stage8_best_score=254794567240
+expand8to4_bonus=1234379540 fallback=0 expand_score=1020412648500
+stage4_init_score=1020412648500 stage4_best_score=1044462508473
+expand4to2_bonus=1264959618 fallback=0 expand_score=4179114993510
+stage2_init_score=4179114993510 stage2_best_score=4309693660286
+expand2to1_bonus=1334181419 fallback=0 expand_score=17240108822563
+stage1_init_score=17240108822563 stage1_best_score=18133362781417 elapsed=2.860155
+[stage8] iter=108599 2opt acc=4164/68349 valid=33173 imp=2125 worse=2039 no=35176 avgCand=1.921563 or1 acc=4683/19576 valid=18886 imp=2455 worse=2228 no=690 avgCand=2.904480 or2 acc=990/10829 valid=8330 imp=486 worse=504 no=2499 avgCand=1.896158 or3 acc=300/5462 valid=2480 imp=147 worse=153 no=2982 avgCand=1.276613 or4 acc=96/2165 valid=616 imp=43 worse=53 no=1549 avgCand=1.206169 repair acc=213/2218 valid=2218 imp=213 worse=0 no=0 avgCand=1.000000 repair_no_improve=2005 removable_fail=3357
+[stage4] iter=412167 2opt acc=34055/214660 valid=111919 imp=16476 worse=17579 no=102741 avgCand=1.617098 or1 acc=34932/82641 valid=81381 imp=17823 worse=17109 no=1260 avgCand=2.755311 or2 acc=11765/49438 valid=40379 imp=5371 worse=6394 no=9059 avgCand=1.738131 or3 acc=5561/32496 valid=18147 imp=2484 worse=3077 no=14349 avgCand=1.259327 or4 acc=1982/16543 valid=6377 imp=872 worse=1110 no=10166 avgCand=1.245727 repair acc=3353/16389 valid=16389 imp=3353 worse=0 no=0 avgCand=1.000000 repair_no_improve=13036 removable_fail=8320
+[stage2] iter=515844 2opt acc=33176/232247 valid=119953 imp=15934 worse=17242 no=112294 avgCand=1.591198 or1 acc=46478/112930 valid=112072 imp=23937 worse=22541 no=858 avgCand=2.799968 or2 acc=17355/72644 valid=61721 imp=8206 worse=9149 no=10923 avgCand=1.736297 or3 acc=7617/46464 valid=26683 imp=3473 worse=4144 no=19781 avgCand=1.268860 or4 acc=3230/25963 valid=10975 imp=1414 worse=1816 no=14988 avgCand=1.225148 repair acc=5425/25596 valid=25596 imp=5425 worse=0 no=0 avgCand=1.000000 repair_no_improve=20171 removable_fail=7741
+[stage1] iter=957607 2opt acc=79025/402601 valid=215897 imp=37341 worse=41684 no=186704 avgCand=1.550957 or1 acc=86487/172193 valid=171209 imp=46263 worse=40211 no=984 avgCand=2.865819 or2 acc=42363/133451 valid=114990 imp=20384 worse=21968 no=18461 avgCand=1.721002 or3 acc=23634/105363 valid=62879 imp=11014 worse=12618 no=42484 avgCand=1.246283 or4 acc=11620/66892 valid=29710 imp=5435 worse=6185 no=37182 avgCand=1.206597 repair acc=18319/77107 valid=77107 imp=18319 worse=0 no=0 avgCand=1.000000 repair_no_improve=58788 removable_fail=13524
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0007 (Time: 2.875s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=250052161963 stage8_best_score=252642279326
+expand8to4_bonus=1236880541 fallback=0 expand_score=1011805997845
+stage4_init_score=1011805997845 stage4_best_score=1043117721062
+expand4to2_bonus=1268744747 fallback=0 expand_score=4173739628995
+stage2_init_score=4173739628995 stage2_best_score=4308107950467
+expand2to1_bonus=1333893150 fallback=0 expand_score=17233765695018
+stage1_init_score=17233765695018 stage1_best_score=18105979752677 elapsed=2.860192
+[stage8] iter=95244 2opt acc=2629/60259 valid=37107 imp=1334 worse=1295 no=23152 avgCand=2.031342 or1 acc=2652/16959 valid=16063 imp=1380 worse=1272 no=896 avgCand=2.758638 or2 acc=447/9499 valid=7345 imp=228 worse=219 no=2154 avgCand=1.766099 or3 acc=100/4723 valid=2197 imp=55 worse=45 no=2526 avgCand=1.309513 or4 acc=31/1918 valid=591 imp=23 worse=8 no=1327 avgCand=1.221658 repair acc=199/1886 valid=1886 imp=199 worse=0 no=0 avgCand=1.000000 repair_no_improve=1687 removable_fail=2917
+[stage4] iter=408916 2opt acc=32785/212367 valid=111783 imp=15909 worse=16876 no=100584 avgCand=1.679504 or1 acc=35847/81617 valid=80438 imp=18241 worse=17606 no=1179 avgCand=2.780328 or2 acc=12894/49444 valid=41479 imp=6035 worse=6859 no=7965 avgCand=1.779214 or3 acc=5990/32797 valid=17934 imp=2660 worse=3330 no=14863 avgCand=1.307015 or4 acc=2381/16465 valid=7688 imp=1084 worse=1297 no=8777 avgCand=1.251951 repair acc=3304/16226 valid=16226 imp=3304 worse=0 no=0 avgCand=1.000000 repair_no_improve=12922 removable_fail=7407
+[stage2] iter=526058 2opt acc=36556/236771 valid=126119 imp=17597 worse=18959 no=110652 avgCand=1.595224 or1 acc=48014/115534 valid=114842 imp=24670 worse=23344 no=692 avgCand=2.846833 or2 acc=18095/73823 valid=63502 imp=8598 worse=9497 no=10321 avgCand=1.733410 or3 acc=8051/47354 valid=27490 imp=3669 worse=4382 no=19864 avgCand=1.254165 or4 acc=3587/26352 valid=11577 imp=1634 worse=1953 no=14775 avgCand=1.201520 repair acc=5383/26224 valid=26224 imp=5383 worse=0 no=0 avgCand=1.000000 repair_no_improve=20841 removable_fail=7818
+[stage1] iter=980256 2opt acc=80949/411405 valid=218995 imp=38175 worse=42774 no=192410 avgCand=1.562908 or1 acc=89197/176663 valid=175783 imp=47245 worse=41950 no=880 avgCand=2.860140 or2 acc=44044/136986 valid=118429 imp=21246 worse=22798 no=18557 avgCand=1.716674 or3 acc=24210/107797 valid=64691 imp=11244 worse=12963 no=43106 avgCand=1.259155 or4 acc=11981/68671 valid=30601 imp=5640 worse=6341 no=38070 avgCand=1.218294 repair acc=18815/78734 valid=78734 imp=18815 worse=0 no=0 avgCand=1.000000 repair_no_improve=59919 removable_fail=14246
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0008 (Time: 2.876s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=249893685404 stage8_best_score=253814223461
+expand8to4_bonus=1241838799 fallback=0 expand_score=1016498732643
+stage4_init_score=1016498732643 stage4_best_score=1046380401337
+expand4to2_bonus=1268167897 fallback=0 expand_score=4186789773245
+stage2_init_score=4186789773245 stage2_best_score=4330808278312
+expand2to1_bonus=1331776293 fallback=0 expand_score=17324564889541
+stage1_init_score=17324564889541 stage1_best_score=18294423207818 elapsed=2.860134
+[stage8] iter=117126 2opt acc=3925/73838 valid=28395 imp=1989 worse=1936 no=45443 avgCand=1.628773 or1 acc=5032/21110 valid=19759 imp=2648 worse=2384 no=1351 avgCand=2.831115 or2 acc=929/11635 valid=8358 imp=473 worse=456 no=3277 avgCand=1.770160 or3 acc=239/5899 valid=1915 imp=129 worse=110 no=3984 avgCand=1.341514 or4 acc=60/2268 valid=491 imp=28 worse=32 no=1777 avgCand=1.378819 repair acc=177/2376 valid=2376 imp=177 worse=0 no=0 avgCand=1.000000 repair_no_improve=2199 removable_fail=4405
+[stage4] iter=334484 2opt acc=28151/173874 valid=92593 imp=13553 worse=14598 no=81281 avgCand=1.600618 or1 acc=32247/66765 valid=66003 imp=16537 worse=15710 no=762 avgCand=2.833386 or2 acc=12032/40342 valid=34227 imp=5596 worse=6436 no=6115 avgCand=1.795249 or3 acc=5389/26975 valid=14975 imp=2413 worse=2976 no=12000 avgCand=1.312187 or4 acc=1919/13321 valid=5621 imp=849 worse=1070 no=7700 avgCand=1.296566 repair acc=3196/13207 valid=13207 imp=3196 worse=0 no=0 avgCand=1.000000 repair_no_improve=10011 removable_fail=7269
+[stage2] iter=493837 2opt acc=34054/221888 valid=118386 imp=16298 worse=17756 no=103502 avgCand=1.595290 or1 acc=45109/108933 valid=107914 imp=23502 worse=21607 no=1019 avgCand=2.804029 or2 acc=16592/69219 valid=59525 imp=7834 worse=8758 no=9694 avgCand=1.731861 or3 acc=7518/44703 valid=26028 imp=3488 worse=4030 no=18675 avgCand=1.260796 or4 acc=3234/24451 valid=10737 imp=1489 worse=1745 no=13714 avgCand=1.222502 repair acc=5079/24643 valid=24643 imp=5079 worse=0 no=0 avgCand=1.000000 repair_no_improve=19564 removable_fail=7330
+[stage1] iter=932557 2opt acc=75946/390745 valid=207935 imp=35659 worse=40287 no=182810 avgCand=1.568606 or1 acc=84341/167749 valid=166861 imp=45312 worse=39029 no=888 avgCand=2.854849 or2 acc=42127/131082 valid=113350 imp=20361 worse=21765 no=17732 avgCand=1.728390 or3 acc=23584/102296 valid=61516 imp=10750 worse=12834 no=40780 avgCand=1.255852 or4 acc=11366/65747 valid=29583 imp=5335 worse=6031 no=36164 avgCand=1.208667 repair acc=17654/74938 valid=74938 imp=17654 worse=0 no=0 avgCand=1.000000 repair_no_improve=57284 removable_fail=13388
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0009 (Time: 2.873s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=250171924446 stage8_best_score=254510936424
+expand8to4_bonus=1237232093 fallback=0 expand_score=1019280977789
+stage4_init_score=1019280977789 stage4_best_score=1044231259946
+expand4to2_bonus=1266209609 fallback=0 expand_score=4178191249393
+stage2_init_score=4178191249393 stage2_best_score=4310807130190
+expand2to1_bonus=1334619448 fallback=0 expand_score=17244563140208
+stage1_init_score=17244563140208 stage1_best_score=18293140268320 elapsed=2.860127
+[stage8] iter=118572 2opt acc=5071/74641 valid=37608 imp=2558 worse=2513 no=37033 avgCand=1.733993 or1 acc=5042/21375 valid=20272 imp=2654 worse=2388 no=1103 avgCand=2.737372 or2 acc=1018/11877 valid=8694 imp=505 worse=513 no=3183 avgCand=1.705659 or3 acc=360/5887 valid=2721 imp=167 worse=193 no=3166 avgCand=1.404998 or4 acc=97/2442 valid=895 imp=48 worse=49 no=1547 avgCand=1.204469 repair acc=211/2350 valid=2350 imp=211 worse=0 no=0 avgCand=1.000000 repair_no_improve=2139 removable_fail=3214
+[stage4] iter=410253 2opt acc=31209/213253 valid=112261 imp=15071 worse=16138 no=100992 avgCand=1.525454 or1 acc=34137/82039 valid=80836 imp=17415 worse=16722 no=1203 avgCand=2.774321 or2 acc=11316/49199 valid=41397 imp=5193 worse=6123 no=7802 avgCand=1.725270 or3 acc=5510/32846 valid=17301 imp=2514 worse=2996 no=15545 avgCand=1.277730 or4 acc=1994/16392 valid=6814 imp=901 worse=1093 no=9578 avgCand=1.268858 repair acc=3346/16524 valid=16524 imp=3346 worse=0 no=0 avgCand=1.000000 repair_no_improve=13178 removable_fail=8966
+[stage2] iter=507913 2opt acc=34039/228659 valid=122065 imp=16092 worse=17947 no=106594 avgCand=1.607480 or1 acc=45015/111715 valid=110829 imp=23322 worse=21693 no=886 avgCand=2.765116 or2 acc=16428/70983 valid=60351 imp=7769 worse=8659 no=10632 avgCand=1.740187 or3 acc=7343/45801 valid=26499 imp=3257 worse=4086 no=19302 avgCand=1.277444 or4 acc=3226/25360 valid=11306 imp=1463 worse=1763 no=14054 avgCand=1.208739 repair acc=5576/25395 valid=25395 imp=5576 worse=0 no=0 avgCand=1.000000 repair_no_improve=19819 removable_fail=7321
+[stage1] iter=930008 2opt acc=75956/390600 valid=198392 imp=36624 worse=39332 no=192208 avgCand=1.555315 or1 acc=86278/167535 valid=166739 imp=47503 worse=38774 no=796 avgCand=2.844434 or2 acc=43521/130277 valid=112802 imp=21939 worse=21579 no=17475 avgCand=1.710617 or3 acc=23606/102001 valid=61130 imp=11335 worse=12271 no=40871 avgCand=1.250793 or4 acc=11516/65328 valid=28548 imp=5536 worse=5980 no=36780 avgCand=1.201275 repair acc=18459/74267 valid=74267 imp=18459 worse=0 no=0 avgCand=1.000000 repair_no_improve=55808 removable_fail=13580
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0010 (Time: 2.872s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=250327248384 stage8_best_score=255105485601
+expand8to4_bonus=1234223084 fallback=0 expand_score=1021656165488
+stage4_init_score=1021656165488 stage4_best_score=1044478447232
+expand4to2_bonus=1262960177 fallback=0 expand_score=4179176749105
+stage2_init_score=4179176749105 stage2_best_score=4307319265470
+expand2to1_bonus=1333467202 fallback=0 expand_score=17230610529082
+stage1_init_score=17230610529082 stage1_best_score=18099928354296 elapsed=2.860144
+[stage8] iter=118708 2opt acc=5033/74927 valid=34279 imp=2512 worse=2521 no=40648 avgCand=1.600455 or1 acc=5528/21320 valid=20750 imp=2856 worse=2672 no=570 avgCand=2.729012 or2 acc=1058/11734 valid=8571 imp=540 worse=518 no=3163 avgCand=1.740987 or3 acc=260/5881 valid=2792 imp=135 worse=125 no=3089 avgCand=1.254298 or4 acc=130/2453 valid=797 imp=60 worse=70 no=1656 avgCand=1.085320 repair acc=267/2393 valid=2393 imp=267 worse=0 no=0 avgCand=1.000000 repair_no_improve=2126 removable_fail=2673
+[stage4] iter=435179 2opt acc=35133/226455 valid=110027 imp=16953 worse=18180 no=116428 avgCand=1.518064 or1 acc=38207/86912 valid=85677 imp=19387 worse=18820 no=1235 avgCand=2.721874 or2 acc=13243/52311 valid=44101 imp=6094 worse=7149 no=8210 avgCand=1.757693 or3 acc=5744/34771 valid=19607 imp=2561 worse=3183 no=15164 avgCand=1.254552 or4 acc=2034/17440 valid=7259 imp=917 worse=1117 no=10181 avgCand=1.268494 repair acc=3830/17290 valid=17290 imp=3830 worse=0 no=0 avgCand=1.000000 repair_no_improve=13460 removable_fail=9307
+[stage2] iter=512222 2opt acc=33525/230902 valid=116571 imp=16018 worse=17507 no=114331 avgCand=1.571480 or1 acc=45608/112419 valid=111475 imp=23609 worse=21999 no=944 avgCand=2.780686 or2 acc=17196/71480 valid=61407 imp=8034 worse=9162 no=10073 avgCand=1.749003 or3 acc=7467/46319 valid=26731 imp=3408 worse=4059 no=19588 avgCand=1.269762 or4 acc=3302/25583 valid=10825 imp=1516 worse=1786 no=14758 avgCand=1.212564 repair acc=5546/25519 valid=25519 imp=5546 worse=0 no=0 avgCand=1.000000 repair_no_improve=19973 removable_fail=7487
+[stage1] iter=1014698 2opt acc=82012/425388 valid=222485 imp=38697 worse=43315 no=202903 avgCand=1.567220 or1 acc=92519/183188 valid=182373 imp=49354 worse=43164 no=815 avgCand=2.853092 or2 acc=45620/142273 valid=122579 imp=22026 worse=23590 no=19694 avgCand=1.711092 or3 acc=25398/111832 valid=66389 imp=11660 worse=13737 no=45443 avgCand=1.251472 or4 acc=12481/70967 valid=31190 imp=5882 worse=6599 no=39777 avgCand=1.205354 repair acc=19367/81050 valid=81050 imp=19367 worse=0 no=0 avgCand=1.000000 repair_no_improve=61683 removable_fail=14824
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0011 (Time: 2.878s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=250561851215 stage8_best_score=254266855934
+expand8to4_bonus=1244073043 fallback=0 expand_score=1018311496779
+stage4_init_score=1018311496779 stage4_best_score=1042543451623
+expand4to2_bonus=1265838685 fallback=0 expand_score=4171439645177
+stage2_init_score=4171439645177 stage2_best_score=4296983430048
+expand2to1_bonus=1331009438 fallback=0 expand_score=17189264729630
+stage1_init_score=17189264729630 stage1_best_score=18047246371845 elapsed=2.860123
+[stage8] iter=95711 2opt acc=2419/60371 valid=36809 imp=1272 worse=1147 no=23562 avgCand=1.603005 or1 acc=3164/17200 valid=15751 imp=1653 worse=1511 no=1449 avgCand=2.984699 or2 acc=484/9664 valid=7389 imp=271 worse=213 no=2275 avgCand=1.792529 or3 acc=200/4720 valid=1877 imp=103 worse=97 no=2843 avgCand=1.278103 or4 acc=47/1835 valid=632 imp=24 worse=23 no=1203 avgCand=1.330696 repair acc=117/1921 valid=1921 imp=117 worse=0 no=0 avgCand=1.000000 repair_no_improve=1804 removable_fail=3453
+[stage4] iter=363832 2opt acc=28278/189117 valid=105504 imp=13724 worse=14554 no=83613 avgCand=1.600271 or1 acc=30020/72474 valid=71408 imp=15377 worse=14643 no=1066 avgCand=2.849135 or2 acc=10354/43918 valid=37217 imp=4835 worse=5519 no=6701 avgCand=1.736061 or3 acc=4754/29362 valid=16848 imp=2084 worse=2670 no=12514 avgCand=1.310185 or4 acc=1629/14549 valid=6064 imp=733 worse=896 no=8485 avgCand=1.229881 repair acc=2625/14412 valid=14412 imp=2625 worse=0 no=0 avgCand=1.000000 repair_no_improve=11787 removable_fail=8148
+[stage2] iter=505704 2opt acc=31875/227833 valid=119001 imp=15283 worse=16592 no=108832 avgCand=1.585793 or1 acc=44548/110960 valid=110169 imp=23034 worse=21514 no=791 avgCand=2.787926 or2 acc=16378/70767 valid=60471 imp=7735 worse=8643 no=10296 avgCand=1.711581 or3 acc=7212/45516 valid=26404 imp=3335 worse=3877 no=19112 avgCand=1.276019 or4 acc=3198/25467 valid=11029 imp=1507 worse=1691 no=14438 avgCand=1.222776 repair acc=5085/25161 valid=25161 imp=5085 worse=0 no=0 avgCand=1.000000 repair_no_improve=20076 removable_fail=7567
+[stage1] iter=1026135 2opt acc=83146/430626 valid=229836 imp=39122 worse=44024 no=200790 avgCand=1.577673 or1 acc=93259/185425 valid=184531 imp=49353 worse=43906 no=894 avgCand=2.844964 or2 acc=45782/143543 valid=123853 imp=21935 worse=23847 no=19690 avgCand=1.707008 or3 acc=25007/112551 valid=67345 imp=11533 worse=13474 no=45206 avgCand=1.248883 or4 acc=12187/71518 valid=31646 imp=5709 worse=6478 no=39872 avgCand=1.202774 repair acc=19591/82472 valid=82472 imp=19591 worse=0 no=0 avgCand=1.000000 repair_no_improve=62881 removable_fail=14901
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0012 (Time: 2.872s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=249988940410 stage8_best_score=254061528425
+expand8to4_bonus=1239372763 fallback=0 expand_score=1017485486463
+stage4_init_score=1017485486463 stage4_best_score=1040525112303
+expand4to2_bonus=1264602747 fallback=0 expand_score=4163365051959
+stage2_init_score=4163365051959 stage2_best_score=4311738004260
+expand2to1_bonus=1332687768 fallback=0 expand_score=17248284704808
+stage1_init_score=17248284704808 stage1_best_score=18202138285839 elapsed=2.860155
+[stage8] iter=99979 2opt acc=2136/63049 valid=31232 imp=1129 worse=1007 no=31817 avgCand=1.802126 or1 acc=3436/18050 valid=16999 imp=1807 worse=1629 no=1051 avgCand=2.635155 or2 acc=656/9845 valid=7350 imp=338 worse=318 no=2495 avgCand=1.673741 or3 acc=202/5037 valid=2104 imp=106 worse=96 no=2933 avgCand=1.332700 or4 acc=59/2016 valid=785 imp=37 worse=22 no=1231 avgCand=1.419108 repair acc=137/1982 valid=1982 imp=137 worse=0 no=0 avgCand=1.000000 repair_no_improve=1845 removable_fail=3784
+[stage4] iter=419713 2opt acc=30363/218762 valid=108468 imp=14584 worse=15779 no=110294 avgCand=1.613831 or1 acc=34143/83594 valid=81780 imp=17347 worse=16796 no=1814 avgCand=2.788958 or2 acc=12433/50429 valid=42311 imp=5684 worse=6749 no=8118 avgCand=1.782539 or3 acc=5907/33392 valid=18942 imp=2618 worse=3289 no=14450 avgCand=1.284553 or4 acc=2196/16895 valid=6678 imp=959 worse=1237 no=10217 avgCand=1.268344 repair acc=3332/16641 valid=16641 imp=3332 worse=0 no=0 avgCand=1.000000 repair_no_improve=13309 removable_fail=8554
+[stage2] iter=505016 2opt acc=33586/226985 valid=117808 imp=16167 worse=17419 no=109177 avgCand=1.604186 or1 acc=46733/111325 valid=110340 imp=24367 worse=22366 no=985 avgCand=2.802193 or2 acc=17120/70588 valid=60362 imp=8211 worse=8909 no=10226 avgCand=1.739290 or3 acc=7603/45632 valid=26513 imp=3498 worse=4105 no=19119 avgCand=1.248821 or4 acc=3286/25275 valid=10689 imp=1470 worse=1816 no=14586 avgCand=1.224436 repair acc=5046/25211 valid=25211 imp=5046 worse=0 no=0 avgCand=1.000000 repair_no_improve=20165 removable_fail=7598
+[stage1] iter=943085 2opt acc=76657/396279 valid=209694 imp=36637 worse=40020 no=186585 avgCand=1.570169 or1 acc=84954/169853 valid=169028 imp=45901 worse=39053 no=825 avgCand=2.854367 or2 acc=41968/131762 valid=113780 imp=20637 worse=21331 no=17982 avgCand=1.714036 or3 acc=23058/104094 valid=61946 imp=10913 worse=12143 no=42148 avgCand=1.248442 or4 acc=11027/65608 valid=28434 imp=5280 worse=5747 no=37174 avgCand=1.212879 repair acc=17515/75489 valid=75489 imp=17515 worse=0 no=0 avgCand=1.000000 repair_no_improve=57974 removable_fail=13911
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0013 (Time: 2.873s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=249848608603 stage8_best_score=253758153567
+expand8to4_bonus=1232458178 fallback=0 expand_score=1016265072446
+stage4_init_score=1016265072446 stage4_best_score=1036602006270
+expand4to2_bonus=1266968446 fallback=0 expand_score=4147674993526
+stage2_init_score=4147674993526 stage2_best_score=4282486521443
+expand2to1_bonus=1333804927 fallback=0 expand_score=17131279890699
+stage1_init_score=17131279890699 stage1_best_score=17988966563546 elapsed=2.860157
+[stage8] iter=108778 2opt acc=4464/68593 valid=42584 imp=2280 worse=2184 no=26009 avgCand=1.656843 or1 acc=4708/19444 valid=18217 imp=2444 worse=2264 no=1227 avgCand=2.759840 or2 acc=1010/10884 valid=8235 imp=507 worse=503 no=2649 avgCand=1.757984 or3 acc=213/5480 valid=2418 imp=112 worse=101 no=3062 avgCand=1.161704 or4 acc=73/2221 valid=607 imp=36 worse=37 no=1614 avgCand=1.164745 repair acc=159/2156 valid=2156 imp=159 worse=0 no=0 avgCand=1.000000 repair_no_improve=1997 removable_fail=3587
+[stage4] iter=430606 2opt acc=30454/223782 valid=123249 imp=14746 worse=15708 no=100533 avgCand=1.706399 or1 acc=37159/85840 valid=84498 imp=18965 worse=18194 no=1342 avgCand=2.780397 or2 acc=13104/51942 valid=43294 imp=6042 worse=7062 no=8648 avgCand=1.788931 or3 acc=6142/34760 valid=18774 imp=2772 worse=3370 no=15986 avgCand=1.290029 or4 acc=2378/17245 valid=7171 imp=1078 worse=1300 no=10074 avgCand=1.279738 repair acc=3138/17037 valid=17037 imp=3138 worse=0 no=0 avgCand=1.000000 repair_no_improve=13899 removable_fail=9588
+[stage2] iter=546504 2opt acc=34473/246279 valid=131640 imp=16499 worse=17974 no=114639 avgCand=1.602871 or1 acc=47351/119644 valid=118854 imp=24759 worse=22592 no=790 avgCand=2.798778 or2 acc=17736/76486 valid=65611 imp=8476 worse=9260 no=10875 avgCand=1.712015 or3 acc=7848/49452 valid=27842 imp=3528 worse=4320 no=21610 avgCand=1.248114 or4 acc=3370/27286 valid=11379 imp=1554 worse=1816 no=15907 avgCand=1.193426 repair acc=5645/27357 valid=27357 imp=5645 worse=0 no=0 avgCand=1.000000 repair_no_improve=21712 removable_fail=8533
+[stage1] iter=1050720 2opt acc=83459/441255 valid=235096 imp=39287 worse=44172 no=206159 avgCand=1.563332 or1 acc=93755/189011 valid=187995 imp=49797 worse=43958 no=1016 avgCand=2.857895 or2 acc=46266/146841 valid=126957 imp=22303 worse=23963 no=19884 avgCand=1.730066 or3 acc=25211/115757 valid=69349 imp=11665 worse=13546 no=46408 avgCand=1.256399 or4 acc=12371/73717 valid=32839 imp=5872 worse=6499 no=40878 avgCand=1.211334 repair acc=19854/84139 valid=84139 imp=19854 worse=0 no=0 avgCand=1.000000 repair_no_improve=64285 removable_fail=15578
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0014 (Time: 2.872s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=250649664269 stage8_best_score=253281591250
+expand8to4_bonus=1238992886 fallback=0 expand_score=1014365357886
+stage4_init_score=1014365357886 stage4_best_score=1042875896055
+expand4to2_bonus=1265350274 fallback=0 expand_score=4172768934494
+stage2_init_score=4172768934494 stage2_best_score=4305036894891
+expand2to1_bonus=1335606957 fallback=0 expand_score=17221483186521
+stage1_init_score=17221483186521 stage1_best_score=18115434130111 elapsed=2.860127
+[stage8] iter=132574 2opt acc=3811/83949 valid=40343 imp=1925 worse=1886 no=43606 avgCand=1.667253 or1 acc=5587/23525 valid=22430 imp=2820 worse=2767 no=1095 avgCand=2.653366 or2 acc=1420/13234 valid=10189 imp=685 worse=735 no=3045 avgCand=1.596820 or3 acc=389/6567 valid=2961 imp=192 worse=197 no=3606 avgCand=1.369132 or4 acc=103/2603 valid=823 imp=44 worse=59 no=1780 avgCand=1.268530 repair acc=243/2696 valid=2696 imp=243 worse=0 no=0 avgCand=1.000000 repair_no_improve=2453 removable_fail=3969
+[stage4] iter=439859 2opt acc=33464/228408 valid=110187 imp=16135 worse=17329 no=118221 avgCand=1.569604 or1 acc=37842/88074 valid=86748 imp=19319 worse=18523 no=1326 avgCand=2.630504 or2 acc=13457/52686 valid=43699 imp=6276 worse=7181 no=8987 avgCand=1.754640 or3 acc=5961/35360 valid=19375 imp=2682 worse=3279 no=15985 avgCand=1.277213 or4 acc=2178/17562 valid=7128 imp=981 worse=1197 no=10434 avgCand=1.236813 repair acc=3676/17769 valid=17769 imp=3676 worse=0 no=0 avgCand=1.000000 repair_no_improve=14093 removable_fail=9302
+[stage2] iter=444634 2opt acc=25904/200802 valid=99658 imp=12437 worse=13467 no=101144 avgCand=1.556413 or1 acc=36142/97696 valid=96918 imp=19031 worse=17111 no=778 avgCand=2.786479 or2 acc=12892/62105 valid=53470 imp=6163 worse=6729 no=8635 avgCand=1.735310 or3 acc=5661/39752 valid=22466 imp=2632 worse=3029 no=17286 avgCand=1.248509 or4 acc=2504/22182 valid=9225 imp=1138 worse=1366 no=12957 avgCand=1.220596 repair acc=4288/22097 valid=22097 imp=4288 worse=0 no=0 avgCand=1.000000 repair_no_improve=17809 removable_fail=6289
+[stage1] iter=1049384 2opt acc=83649/441337 valid=223796 imp=39484 worse=44165 no=217541 avgCand=1.565055 or1 acc=93317/188526 valid=187550 imp=49759 worse=43558 no=976 avgCand=2.869971 or2 acc=46536/147044 valid=127155 imp=22206 worse=24330 no=19889 avgCand=1.726161 or3 acc=25577/115375 valid=68812 imp=11902 worse=13675 no=46563 avgCand=1.248634 or4 acc=12776/73738 valid=32528 imp=6001 worse=6775 no=41210 avgCand=1.212709 repair acc=19906/83364 valid=83364 imp=19906 worse=0 no=0 avgCand=1.000000 repair_no_improve=63458 removable_fail=15314
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0015 (Time: 2.872s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=250098428707 stage8_best_score=253709368569
+expand8to4_bonus=1244106286 fallback=0 expand_score=1016081580562
+stage4_init_score=1016081580562 stage4_best_score=1043215971026
+expand4to2_bonus=1266162489 fallback=0 expand_score=4174130046593
+stage2_init_score=4174130046593 stage2_best_score=4311903669701
+expand2to1_bonus=1334102130 fallback=0 expand_score=17248948780934
+stage1_init_score=17248948780934 stage1_best_score=18162445350631 elapsed=2.860163
+[stage8] iter=110468 2opt acc=3674/69578 valid=35536 imp=1865 worse=1809 no=34042 avgCand=1.901930 or1 acc=4940/20130 valid=19001 imp=2542 worse=2398 no=1129 avgCand=2.705121 or2 acc=897/11001 valid=8065 imp=458 worse=439 no=2936 avgCand=1.752263 or3 acc=216/5432 valid=2379 imp=97 worse=119 no=3053 avgCand=1.334174 or4 acc=76/2169 valid=608 imp=44 worse=32 no=1561 avgCand=1.240132 repair acc=124/2158 valid=2158 imp=124 worse=0 no=0 avgCand=1.000000 repair_no_improve=2034 removable_fail=4006
+[stage4] iter=421864 2opt acc=29771/219297 valid=111654 imp=14315 worse=15456 no=107643 avgCand=1.594300 or1 acc=35404/84399 valid=83212 imp=18089 worse=17315 no=1187 avgCand=2.729763 or2 acc=11887/50683 valid=42391 imp=5485 worse=6402 no=8292 avgCand=1.791324 or3 acc=5254/33881 valid=18744 imp=2353 worse=2901 no=15137 avgCand=1.285158 or4 acc=1981/16875 valid=6872 imp=922 worse=1059 no=10003 avgCand=1.256403 repair acc=2979/16729 valid=16729 imp=2979 worse=0 no=0 avgCand=1.000000 repair_no_improve=13750 removable_fail=9734
+[stage2] iter=525864 2opt acc=31911/236345 valid=117779 imp=15230 worse=16681 no=118566 avgCand=1.587083 or1 acc=47546/115974 valid=115029 imp=24548 worse=22998 no=945 avgCand=2.802980 or2 acc=17508/73651 valid=62842 imp=8371 worse=9137 no=10809 avgCand=1.749212 or3 acc=8247/47723 valid=27948 imp=3733 worse=4514 no=19775 avgCand=1.250787 or4 acc=3527/26155 valid=11417 imp=1604 worse=1923 no=14738 avgCand=1.214680 repair acc=5294/26016 valid=26016 imp=5294 worse=0 no=0 avgCand=1.000000 repair_no_improve=20722 removable_fail=7828
+[stage1] iter=937066 2opt acc=76537/393133 valid=207612 imp=36096 worse=40441 no=185521 avgCand=1.569399 or1 acc=85106/168851 valid=167949 imp=45822 worse=39284 no=902 avgCand=2.858755 or2 acc=42247/131211 valid=113562 imp=20572 worse=21674 no=17649 avgCand=1.725780 or3 acc=23393/102942 valid=61930 imp=11046 worse=12347 no=41012 avgCand=1.256370 or4 acc=11450/65684 valid=29378 imp=5415 worse=6035 no=36306 avgCand=1.210838 repair acc=18050/75245 valid=75245 imp=18050 worse=0 no=0 avgCand=1.000000 repair_no_improve=57195 removable_fail=14068
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0016 (Time: 2.873s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=250190971103 stage8_best_score=253997150854
+expand8to4_bonus=1234728360 fallback=0 expand_score=1017223331776
+stage4_init_score=1017223331776 stage4_best_score=1038785219049
+expand4to2_bonus=1259961078 fallback=0 expand_score=4156400837274
+stage2_init_score=4156400837274 stage2_best_score=4284451519090
+expand2to1_bonus=1333174244 fallback=0 expand_score=17139139250604
+stage1_init_score=17139139250604 stage1_best_score=17956538343704 elapsed=2.860166
+[stage8] iter=125598 2opt acc=4032/79452 valid=38818 imp=2066 worse=1966 no=40634 avgCand=1.852337 or1 acc=5993/22528 valid=21764 imp=3106 worse=2887 no=764 avgCand=2.839689 or2 acc=1054/12394 valid=9871 imp=536 worse=518 no=2523 avgCand=1.744099 or3 acc=355/6181 valid=3195 imp=176 worse=179 no=2986 avgCand=1.218779 or4 acc=92/2478 valid=863 imp=39 worse=53 no=1615 avgCand=1.264195 repair acc=157/2565 valid=2565 imp=157 worse=0 no=0 avgCand=1.000000 repair_no_improve=2408 removable_fail=3590
+[stage4] iter=437900 2opt acc=32190/227999 valid=113847 imp=15472 worse=16718 no=114152 avgCand=1.589089 or1 acc=37034/87518 valid=86148 imp=18888 worse=18146 no=1370 avgCand=2.701653 or2 acc=13674/52681 valid=43162 imp=6365 worse=7309 no=9519 avgCand=1.731176 or3 acc=6119/34986 valid=19235 imp=2780 worse=3339 no=15751 avgCand=1.288744 or4 acc=2373/17635 valid=7854 imp=1028 worse=1345 no=9781 avgCand=1.239623 repair acc=3621/17081 valid=17081 imp=3621 worse=0 no=0 avgCand=1.000000 repair_no_improve=13460 removable_fail=9117
+[stage2] iter=548624 2opt acc=35436/246555 valid=122762 imp=16949 worse=18487 no=123793 avgCand=1.596039 or1 acc=48162/120805 valid=119709 imp=25064 worse=23096 no=1096 avgCand=2.808419 or2 acc=17553/76543 valid=65077 imp=8259 worse=9294 no=11466 avgCand=1.742828 or3 acc=7754/49692 valid=29125 imp=3572 worse=4176 no=20567 avgCand=1.278592 or4 acc=3402/27479 valid=11854 imp=1539 worse=1863 no=15625 avgCand=1.208200 repair acc=5706/27550 valid=27550 imp=5706 worse=0 no=0 avgCand=1.000000 repair_no_improve=21844 removable_fail=8692
+[stage1] iter=1036123 2opt acc=86249/435288 valid=225769 imp=40547 worse=45702 no=209519 avgCand=1.570158 or1 acc=94874/186185 valid=185291 imp=50144 worse=44730 no=894 avgCand=2.857597 or2 acc=46781/145357 valid=125811 imp=22536 worse=24245 no=19546 avgCand=1.716702 or3 acc=25996/113925 valid=67269 imp=11991 worse=14005 no=46656 avgCand=1.263138 or4 acc=12811/72600 valid=31891 imp=5959 worse=6850 no=40709 avgCand=1.211658 repair acc=20811/82768 valid=82768 imp=20811 worse=0 no=0 avgCand=1.000000 repair_no_improve=61957 removable_fail=15040
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0017 (Time: 2.874s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=250292723891 stage8_best_score=253423721084
+expand8to4_bonus=1237067868 fallback=0 expand_score=1014931952204
+stage4_init_score=1014931952204 stage4_best_score=1044060774043
+expand4to2_bonus=1270907056 fallback=0 expand_score=4177514003228
+stage2_init_score=4177514003228 stage2_best_score=4325545279742
+expand2to1_bonus=1337246828 fallback=0 expand_score=17303518365796
+stage1_init_score=17303518365796 stage1_best_score=18236905392369 elapsed=2.860157
+[stage8] iter=118139 2opt acc=3833/74658 valid=35364 imp=1976 worse=1857 no=39294 avgCand=1.939600 or1 acc=4629/21104 valid=19792 imp=2417 worse=2212 no=1312 avgCand=2.631215 or2 acc=775/11605 valid=8412 imp=381 worse=394 no=3193 avgCand=1.586186 or3 acc=257/5938 valid=2780 imp=127 worse=130 no=3158 avgCand=1.188129 or4 acc=57/2434 valid=797 imp=27 worse=30 no=1637 avgCand=1.293601 repair acc=166/2400 valid=2400 imp=166 worse=0 no=0 avgCand=1.000000 repair_no_improve=2234 removable_fail=4716
+[stage4] iter=398387 2opt acc=27789/207209 valid=109425 imp=13425 worse=14364 no=97784 avgCand=1.672497 or1 acc=32090/79710 valid=77964 imp=16495 worse=15595 no=1746 avgCand=2.709879 or2 acc=10665/47762 valid=40368 imp=4977 worse=5688 no=7394 avgCand=1.760900 or3 acc=5031/32040 valid=17407 imp=2257 worse=2774 no=14633 avgCand=1.264434 or4 acc=2001/15688 valid=6156 imp=911 worse=1090 no=9532 avgCand=1.257635 repair acc=2736/15978 valid=15978 imp=2736 worse=0 no=0 avgCand=1.000000 repair_no_improve=13242 removable_fail=8856
+[stage2] iter=478424 2opt acc=32241/215777 valid=112269 imp=15550 worse=16691 no=103508 avgCand=1.580766 or1 acc=42920/105373 valid=104567 imp=22514 worse=20406 no=806 avgCand=2.807215 or2 acc=15792/66754 valid=57196 imp=7449 worse=8342 no=9558 avgCand=1.715120 or3 acc=7003/42824 valid=25237 imp=3264 worse=3739 no=17587 avgCand=1.265919 or4 acc=3026/23773 valid=10232 imp=1410 worse=1616 no=13541 avgCand=1.254300 repair acc=5279/23923 valid=23923 imp=5279 worse=0 no=0 avgCand=1.000000 repair_no_improve=18644 removable_fail=6811
+[stage1] iter=886791 2opt acc=73789/372563 valid=193992 imp=34951 worse=38838 no=178571 avgCand=1.576251 or1 acc=81281/159445 valid=158540 imp=43318 worse=37963 no=905 avgCand=2.855488 or2 acc=39962/123561 valid=106790 imp=19524 worse=20438 no=16771 avgCand=1.709851 or3 acc=22137/97849 valid=58563 imp=10336 worse=11794 no=39286 avgCand=1.254188 or4 acc=10821/62061 valid=27574 imp=5120 worse=5701 no=34487 avgCand=1.220824 repair acc=17371/71312 valid=71312 imp=17371 worse=0 no=0 avgCand=1.000000 repair_no_improve=53941 removable_fail=12656
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0018 (Time: 2.873s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=250770189036 stage8_best_score=254715719998
+expand8to4_bonus=1237485416 fallback=0 expand_score=1020100365408
+stage4_init_score=1020100365408 stage4_best_score=1042932818487
+expand4to2_bonus=1262606014 fallback=0 expand_score=4172993879962
+stage2_init_score=4172993879962 stage2_best_score=4287186617777
+expand2to1_bonus=1335574895 fallback=0 expand_score=17150082046003
+stage1_init_score=17150082046003 stage1_best_score=18198601696497 elapsed=2.860139
+[stage8] iter=98213 2opt acc=3382/61798 valid=39106 imp=1728 worse=1654 no=22692 avgCand=1.762338 or1 acc=3258/17924 valid=16932 imp=1727 worse=1531 no=992 avgCand=2.785141 or2 acc=704/9655 valid=7087 imp=354 worse=350 no=2568 avgCand=1.753633 or3 acc=236/4837 valid=1864 imp=128 worse=108 no=2973 avgCand=1.346567 or4 acc=65/2020 valid=503 imp=41 worse=24 no=1517 avgCand=1.326044 repair acc=140/1979 valid=1979 imp=140 worse=0 no=0 avgCand=1.000000 repair_no_improve=1839 removable_fail=3353
+[stage4] iter=435369 2opt acc=34015/226245 valid=115357 imp=16182 worse=17833 no=110888 avgCand=1.597484 or1 acc=38101/87340 valid=86034 imp=19416 worse=18685 no=1306 avgCand=2.843329 or2 acc=13127/52270 valid=43499 imp=6214 worse=6913 no=8771 avgCand=1.739396 or3 acc=5962/34796 valid=19572 imp=2641 worse=3321 no=15224 avgCand=1.271153 or4 acc=2277/17600 valid=7663 imp=1034 worse=1243 no=9937 avgCand=1.176432 repair acc=3621/17118 valid=17118 imp=3621 worse=0 no=0 avgCand=1.000000 repair_no_improve=13497 removable_fail=8888
+[stage2] iter=558572 2opt acc=37986/251675 valid=135540 imp=17959 worse=20027 no=116135 avgCand=1.614188 or1 acc=51182/122677 valid=121764 imp=26414 worse=24768 no=913 avgCand=2.788123 or2 acc=18792/78117 valid=67411 imp=8837 worse=9955 no=10706 avgCand=1.702289 or3 acc=8308/50496 valid=29360 imp=3704 worse=4604 no=21136 avgCand=1.248808 or4 acc=3569/27812 valid=12041 imp=1606 worse=1963 no=15771 avgCand=1.200066 repair acc=5848/27795 valid=27795 imp=5848 worse=0 no=0 avgCand=1.000000 repair_no_improve=21947 removable_fail=7981
+[stage1] iter=1015779 2opt acc=82592/426502 valid=217359 imp=39208 worse=43383 no=209143 avgCand=1.559572 or1 acc=93431/182592 valid=181687 imp=50495 worse=42936 no=905 avgCand=2.858972 or2 acc=47298/142385 valid=123124 imp=23180 worse=24118 no=19261 avgCand=1.711348 or3 acc=26181/112029 valid=67066 imp=12466 worse=13715 no=44963 avgCand=1.255823 or4 acc=12830/71232 valid=31799 imp=6035 worse=6795 no=39433 avgCand=1.206830 repair acc=19601/81039 valid=81039 imp=19601 worse=0 no=0 avgCand=1.000000 repair_no_improve=61438 removable_fail=15100
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+
+--- Case: 0019 (Time: 2.873s) ---
+time_stage8_end=0.050000 time_stage4_end=0.240000 time_stage2_end=0.720000 time_limit=2.860000
+stage8_init_score=250267396287 stage8_best_score=253563797401
+expand8to4_bonus=1237235517 fallback=0 expand_score=1015492425121
+stage4_init_score=1015492425121 stage4_best_score=1034490948804
+expand4to2_bonus=1265956728 fallback=0 expand_score=4139229751944
+stage2_init_score=4139229751944 stage2_best_score=4234776711798
+expand2to1_bonus=1339962754 fallback=0 expand_score=16940446809946
+stage1_init_score=16940446809946 stage1_best_score=17604438862377 elapsed=2.860180
+[stage8] iter=117445 2opt acc=2627/73982 valid=41010 imp=1400 worse=1227 no=32972 avgCand=1.797366 or1 acc=4803/21255 valid=19748 imp=2490 worse=2313 no=1507 avgCand=2.621025 or2 acc=738/11629 valid=8387 imp=394 worse=344 no=3242 avgCand=1.641946 or3 acc=211/5876 valid=2404 imp=99 worse=112 no=3472 avgCand=1.316556 or4 acc=61/2339 valid=719 imp=37 worse=24 no=1620 avgCand=1.335188 repair acc=117/2364 valid=2364 imp=117 worse=0 no=0 avgCand=1.000000 repair_no_improve=2247 removable_fail=4736
+[stage4] iter=443276 2opt acc=33000/230432 valid=108283 imp=15919 worse=17081 no=122149 avgCand=1.568446 or1 acc=36522/88761 valid=85933 imp=18317 worse=18205 no=2828 avgCand=2.634681 or2 acc=12034/52982 valid=44907 imp=5568 worse=6466 no=8075 avgCand=1.728506 or3 acc=5712/35513 valid=18822 imp=2575 worse=3137 no=16691 avgCand=1.276166 or4 acc=2156/17788 valid=6772 imp=972 worse=1184 no=11016 avgCand=1.288541 repair acc=3860/17800 valid=17800 imp=3860 worse=0 no=0 avgCand=1.000000 repair_no_improve=13940 removable_fail=9328
+[stage2] iter=605760 2opt acc=37597/272846 valid=128532 imp=17892 worse=19705 no=144314 avgCand=1.551077 or1 acc=54538/132971 valid=131974 imp=27766 worse=26759 no=997 avgCand=2.800355 or2 acc=19455/84609 valid=72424 imp=8976 worse=10479 no=12185 avgCand=1.735115 or3 acc=8744/54700 valid=32198 imp=3851 worse=4893 no=22502 avgCand=1.259737 or4 acc=3671/30322 valid=12333 imp=1661 worse=2010 no=17989 avgCand=1.207654 repair acc=6780/30312 valid=30312 imp=6780 worse=0 no=0 avgCand=1.000000 repair_no_improve=23532 removable_fail=8931
+[stage1] iter=1166015 2opt acc=93231/489594 valid=241125 imp=43736 worse=49495 no=248469 avgCand=1.550586 or1 acc=104970/209886 valid=208872 imp=54945 worse=50025 no=1014 avgCand=2.850133 or2 acc=52232/163565 valid=141239 imp=24867 worse=27365 no=22326 avgCand=1.720722 or3 acc=28819/127903 valid=76643 imp=13239 worse=15580 no=51260 avgCand=1.257714 or4 acc=14171/81798 valid=35951 imp=6590 worse=7581 no=45847 avgCand=1.216183 repair acc=23838/93269 valid=93269 imp=23838 worse=0 no=0 avgCand=1.000000 repair_no_improve=69431 removable_fail=17067
+valid_stage8=1 valid_stage4=1 valid_stage2=1 valid_stage1=1
+
+========================================
+

@@ -1,0 +1,4047 @@
+T.T...T.T...T...T...BB..T..T
+T.TTT....TT..TT..TBBTTBRB.TT
+T..TTT.T..T.TT..TBTTRGTRTB.T
+TT...T...TTT...TBTRRRTTRTB.T
+T..TT.TT.T...TT.BTRTTRRRTBTT
+TTTT.....T.T.T.TBTRTRRTTB..T
+T....TT.T...T..TBTRRRTTB.T.T
+T.TT..T...T...T..BTTTB.TTT.T
+T...T..T.TT.T...TTBBBT.T..TT
+TTT..T..TTT.TT.T...T.T..T.TT
+TTTT..T...T...TT.TT...T...TT
+TTT..T..TT..T....T..T...TTTT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 10297
+debug_update: 171
+debug_elapsed: 1901
+debug_score: 14.7636
+------------detailed information------------
+debug_times[0]: 1542
+debug_times[1]: 2215
+debug_times[2]: 2420
+debug_times[3]: 4120
+debug_op_times[op = 0]: 1472
+debug_op_times[op = 1]: 1989
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2669
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 4167
+debug_trees_rate: 0.399408 / 0.4
+debug_curve_rate: 0.450422 / 0.45
+debug_spread_rate: 0.997537 / 1
+debug_sg: 51
+debug_loop: 1
+debug_vis_rate: 4.29383 / 4.8
+system_score (n=26) : 1531
+処理中: 0002.txt
+TTTTTTTTTTTTTTTTTTTTTTT
+TT....T..T.STT..TTT...T
+T...T...T.T..TT..T..T.T
+T.TT.T.....T...T...T..T
+TTT...TT.T.TT.T..TT..TT
+T..TT....T..T...T..TTTT
+TT.T..T.TT.....T..TT..T
+T...T..T...T.T...T...TT
+T.T...TTT.TTT.T.TTTT..T
+T.TT.T..T.T...T...T..TT
+T.T...T...T.T..TT...T.T
+TTTT...T.T.T.T....T...T
+TT...T..T..T.TT.T..T.TT
+TT.T.TT...TT..TT..TT..T
+TTT...TTT..TT..T.T..TTT
+T...T.T..TT..T...TT...T
+T.T.TTT.TTTT.TTT....T.T
+TTT....B.TT..T...TT..TT
+T...TTBTB...T..TT..T.TT
+TT.T.TRRTB.T..T.T....TT
+T....BTRRTBT.T....T.T.T
+T.TTT.BTRGTB..TT.T....T
+TTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 15515
+debug_update: 147
+debug_elapsed: 1901
+debug_score: 12.349
+------------detailed information------------
+debug_times[0]: 2647
+debug_times[1]: 3457
+debug_times[2]: 3504
+debug_times[3]: 5907
+debug_op_times[op = 0]: 2279
+debug_op_times[op = 1]: 3208
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 3829
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 6199
+debug_trees_rate: 0.399093 / 0.4
+debug_curve_rate: 0.48749 / 0.45
+debug_spread_rate: 1 / 1
+debug_sg: 44
+debug_loop: 0
+debug_vis_rate: 4.26038 / 4.8
+system_score (n=21) : 210
+処理中: 0003.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T...T.....TT...T.ST..T.T.T..TT....T
+T..T...T.TTTT.T...T..T....T.TTTT..T
+TT...T.T...T...T....TTTTT...TT...TT
+T..TT.TTTT.T.T...T.T...T..TTT..T..T
+TTT....T.T.T.T.TTT...T....T...T.T.T
+T...TT...T.TT.TTT..TT.T..T..TTT...T
+TT..T..T...T..TT.BBB.T..T.TT...T.TT
+T..T....T....TT.BTTTB.TT...T.T...TT
+T.T..TT.T.T.T..BTRRRTB..T..T..T.T.T
+T.T.T....T..T.TBTRTRTBTT.T..T...T.T
+TT...T.T..T.T.TBTRTRRTBT.....T.T..T
+T..T..T..T....TBTRRTGTB...TTTT...TT
+T.TTT.T.T.TT.T..TTRRTBT.T.T..TT.TTT
+TTT.TT.T....T.T..BTRRR...TT.....TTT
+T...T....TT.T....TTTTB.T.T..T..T..T
+T..T.T.TTT.....T.T.BBT.T...T.T...TT
+TT...TT..T.TTT..TTTT...T.T...TT.T.T
+T.T.T..T..TT....T.T..T..TT..TT...TT
+TT...T.TT...T.T.T..T..TTT..TT..T..T
+TTTT....T.T...T.T..TTTT...TTT.T..TT
+TT.T.T....TT.T...T.T....T.T..TT...T
+T....TTTT..TT..TT...TT.TT...TT..T.T
+T.T.T..T..TT...T.TT.T.TT..T.T..TT.T
+T.T..T...T...T...T.......T.T..T..TT
+TTTT..T...T.T.T..T.TTT.T.T..T.T...T
+TT..T...T.TTT...TT....T..T..TTT.T.T
+T.T...T..TTT..T.TT..TT..T.T..T..T.T
+T....TTT....T.T....T.T.T.....T.T..T
+TT.T.T...T.T...TT.TT.T.T.T.T.T...TT
+T..TT.T.TTTTTT..T.....T..TT.....T.T
+T.TTT...T....T.T..T.T....T..T.T...T
+T...T.T..T..T...TT...TT.T..TT..T.TT
+T.T.TT.....TT.T...T...TTT....T.T.TT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 6093
+debug_update: 221
+debug_elapsed: 1901
+debug_score: 5.62429
+------------detailed information------------
+debug_times[0]: 799
+debug_times[1]: 1348
+debug_times[2]: 1461
+debug_times[3]: 2485
+debug_op_times[op = 0]: 849
+debug_op_times[op = 1]: 1125
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1538
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2581
+debug_trees_rate: 0.400367 / 0.4
+debug_curve_rate: 0.456648 / 0.45
+debug_spread_rate: 0.995406 / 1
+debug_sg: 80
+debug_loop: 3
+debug_vis_rate: 4.56923 / 4.8
+system_score (n=33) : 3738
+処理中: 0004.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+TTTTT..T...T..T.STT....TT..T...TT
+T.TT..T....T...T..T.TT..T.T.TT.TT
+T....TT.TTT.T....TTT.TT...T.....T
+T.T.TT...T....T.TTTT....T..T.TT.T
+T..T...T.T...T....T.T..TTT.....TT
+TT...T.T...TT..TT.T.T.TT..T.TT..T
+T..TT..TT.T...T..TT..TTT....T.TTT
+T.T...T.T...TTT....T...T.T.T..T.T
+TT..T...T..T..T..T..TT..TT...T..T
+T...BTBTTT......T..T.T.TTTTT..T.T
+T.TBTTTT.T..T..T.....T....T..T..T
+T.BTRRRTB..T.T.TT.T.....TTTT...TT
+TTTTRTRRTBT...T...TTTTT....TT.T.T
+TTBTRGTRTB..TT...T..T..T.T.T....T
+T..BTTBRT.....TT.TT...T..T...T..T
+TT.TBBT.T.TT.TT..TTT..T.T..T..TTT
+TT.TT...T..T...TT.T.T....T.T...TT
+T....T....TT.T.T.....TTT..T..T..T
+T.TT...T.TT.T...TT.T..TT.T..TTT.T
+T..TT.TT.T...TT....T.T..T..TT...T
+T.T..T..T..T....T.TTT..T.TTT.T..T
+TT..TT...TT.T.T.T.....T...T...TTT
+T......T......T..TT.T...TT..T...T
+T.T..TTTT.T.T.T.T.T.TTT...T.TT..T
+TT.T...TT.T.T..T...T....TT...T.TT
+TT...T.T.TTT.T...T..TT.T...T..T.T
+T..TTT...TT..TT.TTTTTT...TT.....T
+T.TTT.T.TT..T.T.....TTT..T.T.T.TT
+T.....T....T....TT..T..T.T..T...T
+T.TTT..TTT..T.TTT..TT.....T...T.T
+TTT...T.....T...TT.T..T...T..TT.T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 6852
+debug_update: 206
+debug_elapsed: 1901
+debug_score: 4.28656
+------------detailed information------------
+debug_times[0]: 1035
+debug_times[1]: 1517
+debug_times[2]: 1564
+debug_times[3]: 2736
+debug_op_times[op = 0]: 997
+debug_op_times[op = 1]: 1346
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1720
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2789
+debug_trees_rate: 0.400624 / 0.4
+debug_curve_rate: 0.456927 / 0.45
+debug_spread_rate: 1 / 1
+debug_sg: 38
+debug_loop: 1
+debug_vis_rate: 4.63194 / 4.8
+system_score (n=31) : 378
+処理中: 0005.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T..TBTTTB.TTT...TSTT.T.TT...T....TT
+TT.BTRRRTBT...T...TT.T..TTT....T..T
+T.TBTRTRRTB.T.TT...TTT....T..T..TTT
+T..BTRGTRTTTTTT..T..T..T....T.T...T
+T.T.BTTTRTB..T..T....TTT.T.T..T.T.T
+TT.T.BTTRTBTT..T..TT.T...T..T....TT
+TT...TRRRTB...T..TT..T..T...TT.T..T
+T..T..BTTB.TT..TT..TT..T..TTT.T..TT
+T.T.T..BBT..TT.T...T..TTT.T....TTTT
+TT....T...TT...T.T...TTT..TT.TT...T
+TT.T.TTT..T.TT..TTT..T...T.T....T.T
+T...TTTT.....TT....TT..T...TT.T.T.T
+T.T..T..T.TT.T.TT.TT..T...TT...TTTT
+T.TTT...TTTT.......TT.TTT.T..T...TT
+T.T...T.T...TTT.TT.TTTT....TT...T.T
+TTT.T..T..T.T..T.T....TT.T....T...T
+T..T..T.TTT...T...T..T....T.TTTT.TT
+T.T..T....TTT...T.TT..T.TTT..T..T.T
+T.T....TT.....T.T....TT...TTTT.T..T
+T..TTT..TT..TT.T.T.T....T..T....T.T
+T.T...T..TT..T....T.T..T.T.T.TT...T
+T..T.T..T..T...TT...T.TT...T...T.TT
+TT....T...TTT.T...T....TTT..T..TTTT
+T..T...TTT..T...T..TTT.T..T..T....T
+T...TT....T..T.T...TT.T...T....T..T
+T.T.T.T..T..TT.T.T.T...TT...T.TT.TT
+TT...T.T...T.TTTT....T...T.TTT.TT.T
+T..T...TTTT.....T.T.TT..T...T...T.T
+T.T..T..T..TT.T....TT.T..TT...T...T
+T..T..T.T.T...T.T.T....TTT..T..T.TT
+TTT..T.T...T.T..TT...T...TT...T...T
+T...TT...T.T..T....T.TT.T..T.T...TT
+T.T....TT......TT.T..T..TT...TT...T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 5993
+debug_update: 200
+debug_elapsed: 1901
+debug_score: 10.669
+------------detailed information------------
+debug_times[0]: 863
+debug_times[1]: 1312
+debug_times[2]: 1337
+debug_times[3]: 2481
+debug_op_times[op = 0]: 804
+debug_op_times[op = 1]: 1163
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1601
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2425
+debug_trees_rate: 0.400367 / 0.4
+debug_curve_rate: 0.450121 / 0.45
+debug_spread_rate: 0.98928 / 1
+debug_sg: 52
+debug_loop: 3
+debug_vis_rate: 4.39628 / 4.8
+system_score (n=33) : 3984
+処理中: 0006.txt
+TTTTTTTTTTTTTTTTTTTTTT
+T..T.T...T.S.TT...T.TT
+T.TT...T.T.T....TT..TT
+T...TT..TT..T.T....T.T
+TT.T..T....T...T..T..T
+T...T.TT.TT..T..T....T
+T.T....T.T..TT.T...TTT
+T..T.T....TT..T..T...T
+TT..TTT.T...T...T..T.T
+T..T.T...TT..TTT....TT
+T.T..T.T..TT.T...TT..T
+T..T...TT..TTT.T..T.TT
+TT..TT..T.T.T..TT.TTTT
+TTT.TTT..T....T.T...TT
+TT...T.T.T.TBT...TT..T
+T..T.T...TBTTB.TTT..TT
+TT..TT..TTTRRRT.T...TT
+T.T.TTT.BTRRTB..T.TTTT
+T...T..TBTRTGTBTT...TT
+TT.T..T.BTRRRTBT..T..T
+TT...TTT.BTTTB....T..T
+TTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 18442
+debug_update: 130
+debug_elapsed: 1901
+debug_score: 16.8702
+------------detailed information------------
+debug_times[0]: 3239
+debug_times[1]: 3998
+debug_times[2]: 4212
+debug_times[3]: 6993
+debug_op_times[op = 0]: 2718
+debug_op_times[op = 1]: 3785
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 4621
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 7318
+debug_trees_rate: 0.4025 / 0.4
+debug_curve_rate: 0.507501 / 0.45
+debug_spread_rate: 1 / 1
+debug_sg: 50
+debug_loop: 0
+debug_vis_rate: 4.03766 / 4.8
+system_score (n=20) : 1184
+処理中: 0007.txt
+TTTTTTTTTTTTTTTTTTTTTTTTT
+TT.T..T..T..ST...T...T..T
+T....T....TT...T.T.T...TT
+T.TT...TT.T..TTT..T...TTT
+T...T.TT..T.TT..T...T...T
+TT.T...TT..TT..TTT.T.TT.T
+T...TT.T.T.T..T..T...T..T
+T.T..TT...T..TTT..T.TT.TT
+T..TTT..T..T...TT....TT.T
+TT.BBBBBT...TT...T.T....T
+T.BTTTTTBTT..TTT.T.T..TTT
+TBTRRRRRTBT.T....T..T...T
+TBTRTTTRTBT...T.T.T..T..T
+TTRRTRRRTB.TTTT...T.T..TT
+TTRTGRTTB.....TT.T...TT.T
+TBRBTTBB.T.TT......T.T..T
+T..TBB.T..T.T..TT.TT...TT
+TT.....TTT....T.T..TTT..T
+TTT.TTT..T.T.T...TT...T.T
+TTTT..TT...TTT.TT...T..TT
+TTT..T...T..T...T.T..T.TT
+T...T..T..T...T...TTTT..T
+T.T..T.TT..TTT...T...TT.T
+T..T...TTT...T.T...T...TT
+TTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 13099
+debug_update: 187
+debug_elapsed: 1901
+debug_score: 18.5628
+------------detailed information------------
+debug_times[0]: 2110
+debug_times[1]: 2942
+debug_times[2]: 3060
+debug_times[3]: 4987
+debug_op_times[op = 0]: 1882
+debug_op_times[op = 1]: 2701
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 3214
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 5302
+debug_trees_rate: 0.398866 / 0.4
+debug_curve_rate: 0.450884 / 0.45
+debug_spread_rate: 0.996855 / 1
+debug_sg: 63
+debug_loop: 0
+debug_vis_rate: 4.16088 / 4.8
+system_score (n=23) : 1571
+処理中: 0008.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T...TT...T.T...S..T....T..T..T
+T.TT...T....T.T.T..T.T..T...TT
+T....TT.T.T..TT.T.T...T..T...T
+TTTTT.T.TT..T.T..T...T.T...T.T
+T...T.T....T...T..TT....T.T..T
+T.T....T.T..TT....TTT..TTTTTTT
+T..TTTT...T....TT...TT...TT..T
+T....T.T...T..T..TT...TT.T...T
+TT.T....TTTT..T..T..T.T....TTT
+TTTT.T..T....T.T..T.TT..TT..TT
+TT....T...T.T..TT.T...T...TT.T
+TT..TTTT.T..TT..T..TT...TTT..T
+T..TT.TT.T...TT..T.T.T..T...TT
+TT....TT..T.....TT.BBBBT..TT.T
+TTT..T..T..TTT..TTBTTTTB.T...T
+TT..T.T..TT.TT.T.BTRRRRTB...TT
+TTT....T..T..T..TBTRTTRRTTT..T
+T...TT...T.T...TTBTRRRTRRTBT.T
+T..TT..TTT.T.T....BTTRGTRTB..T
+T.T..T..T...T..T.T.BBTTBRTT.TT
+TTT...T...T.TT.T..T.TBBT.TT..T
+T...T.T.T.T..T..TTTTTT......TT
+T.T..T...TTT..T....T.TT.TT.T.T
+T.TT...T..T.T.T..T......T....T
+TT...T..T...T.TT.TT..T.T.TTTTT
+T.T.T.T.T.T..T....TTTT....T.TT
+T.T...T..T.T.T.TT...T.T.T....T
+T...TTTTT....T.T.TT...T.T.TT.T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 8423
+debug_update: 170
+debug_elapsed: 1901
+debug_score: 8.37978
+------------detailed information------------
+debug_times[0]: 1270
+debug_times[1]: 1866
+debug_times[2]: 1902
+debug_times[3]: 3385
+debug_op_times[op = 0]: 1236
+debug_op_times[op = 1]: 1671
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2115
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 3401
+debug_trees_rate: 0.40051 / 0.4
+debug_curve_rate: 0.462841 / 0.45
+debug_spread_rate: 0.997872 / 1
+debug_sg: 61
+debug_loop: 0
+debug_vis_rate: 4.46695 / 4.8
+system_score (n=28) : 3181
+処理中: 0009.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+TTT...T...T....ST..T.....T..TT
+TT..T...T.T.T.T.T.T...TT.T...T
+T..T...T..T..TT....T.TTT..TT.T
+T.T..TT..T.T..TTTT...T..T.T..T
+T..TTT...T...T.T..T.T..TT...TT
+TT.T..TT...T....T.T...T.T.T.TT
+TT...TT.T.T...TT....T...T.T..T
+TTT...T..TT.TT...T.T.T.T..TTTT
+T...T...T.T..T...T...T..T....T
+T.T..TTT...T..T.T..T..T..TTT.T
+T..TT....T...T.T..T.T..T.T.T.T
+T.T...TT.TT.T....T..TTT..T...T
+TTT.T...T..T..T.T..T..T.TT.T.T
+T....TT.T...T.TTT.T..T.T..T..T
+T..TTT....T.T...T...T...T....T
+T..T...T..T.TT.TT.T...T.T.TTTT
+T.T..T.T.TTT..TTTT..T.T.T...TT
+TTT.T...T.T..T..TTTT.T....TTTT
+T..TT.T....T..T..T.BBBBTT.TT.T
+TT...T..TT..T..T..BTTTTBT....T
+T..T..T..TT.T...TBTRRRRTBT..TT
+T.TTTT.TTT..TTT..BTRTTRRTB.TTT
+T.T....TTTT....T.BTRRRTRRTB..T
+T...TT...TTTT.T..TBTTRGTRTBT.T
+TT...TTT...T..T.T..BBTTBRB..TT
+TTT.T....T...T..T..T.BB.T.T..T
+TTTTT.T.T.T...T.T.T.T.T.T..T.T
+TT.TT..T....T..T..T...TT..T..T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 8396
+debug_update: 210
+debug_elapsed: 1901
+debug_score: 12.0732
+------------detailed information------------
+debug_times[0]: 1265
+debug_times[1]: 1790
+debug_times[2]: 1952
+debug_times[3]: 3389
+debug_op_times[op = 0]: 1191
+debug_op_times[op = 1]: 1649
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2132
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 3424
+debug_trees_rate: 0.397959 / 0.4
+debug_curve_rate: 0.450862 / 0.45
+debug_spread_rate: 0.993644 / 1
+debug_sg: 64
+debug_loop: 0
+debug_vis_rate: 4.36034 / 4.8
+system_score (n=28) : 2204
+処理中: 0010.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T.TT.TT....TBTSTTB..TTT....T
+T.T..T..TT.BTRRRRTBTT...TT.T
+T......TT..BTRTTRTB.T.T...TT
+TT.TT.TTT.TBTRRTRTBT...TT..T
+T....T..T..TBTRTRR.T.T.T..TT
+T.T.T....T.BTRRTTB.TTTT..T.T
+T..T..TT..TBTRTRGTBT....T..T
+TTT..T.T...BTRRRTB...TT...TT
+T....T...T.TBTTTT.T.T.TT...T
+T..T..TTTT..TBBB...T..T..T.T
+T.TTTT...TTTTT.T.T...TT.T..T
+T...T..T..T.TTT...TT...T..TT
+TTT...TTTT...TTT.T..T...TT.T
+T.T.T..T...T.....TT..T.T...T
+T...T...TTT...T.T..T.....TTT
+TT.T..T..TT.T..T.T...TTT...T
+T..TTT..T.T.T.TT..TTT..TTTTT
+T.TT..T....TT...T...T...T..T
+T.T..T.T.T....T...T...T.TT.T
+T.T.T.....TT.T.TT..T.T..T..T
+TT....T.T.T..T...T..T.TT..TT
+T..TT..TT..T....TTT.T.T..T.T
+T...TT...T.TT.T...TT....TT.T
+T.T..TT..TTTTT..T....T.TT..T
+TT.T...T..TTT..T...T.T.TT.TT
+TT...T..T..T..T..T..T.....TT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 10179
+debug_update: 185
+debug_elapsed: 1901
+debug_score: 10.4527
+------------detailed information------------
+debug_times[0]: 1697
+debug_times[1]: 2243
+debug_times[2]: 2294
+debug_times[3]: 3945
+debug_op_times[op = 0]: 1480
+debug_op_times[op = 1]: 2108
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2572
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 4019
+debug_trees_rate: 0.400888 / 0.4
+debug_curve_rate: 0.480926 / 0.45
+debug_spread_rate: 0.992593 / 1
+debug_sg: 14
+debug_loop: 0
+debug_vis_rate: 4.31343 / 4.8
+system_score (n=26) : 14
+処理中: 0011.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T.TT...TT.T.T.S.....T.....TT
+T..TT.TT...T..TT..T....T.T.T
+TT..T.TT.T.TT.T..TTTT.T...TT
+T..T...TTT....TT.....T..T..T
+TT...T....T.TTT.T..T..T.T.TT
+T.TT..TT.T.TT...T.TT...TT..T
+T...TTT.....TT.BBBBTBT...T.T
+TT.T....T.T...BTTTTTTB.TTT.T
+TT...T..T..TTBTRRRRRRTB...TT
+TTT.T.T.T.T..TTRTTTTRTBT.T.T
+T.T...TT...T.BTRTTRRRTB.T..T
+T...TT...T...BTRTGRTTBT...TT
+T.TTTTT.TT.TT.BRBTTBB.T.T..T
+T.T..T.TTTT...TT.BB.TTT..TTT
+TTTT....T...TTTT..T.T..T...T
+T....T.T.T....T..TT...T.T..T
+T.TTT.T....TTT..T...TT....TT
+T.T....T.TT...TTT..TT.T.T.TT
+T....T....TT.T..T.T.T..T...T
+TT.T..T.T....T.T.....T...T.T
+T.T....T.TTTT..T.TTT..T...TT
+T.T.TT.T...TT.T...T..T.TT..T
+T...T....T..T...T.T.TT..TT.T
+TT.T.T.TT..TTTT..T....T..TTT
+T.T....T..TT..TT.T.T...T...T
+T.....T..TT.T.....T..T...T.T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 10079
+debug_update: 164
+debug_elapsed: 1901
+debug_score: 6.82752
+------------detailed information------------
+debug_times[0]: 1683
+debug_times[1]: 2228
+debug_times[2]: 2295
+debug_times[3]: 3873
+debug_op_times[op = 0]: 1394
+debug_op_times[op = 1]: 2034
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2540
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 4111
+debug_trees_rate: 0.399408 / 0.4
+debug_curve_rate: 0.452966 / 0.45
+debug_spread_rate: 0.992611 / 1
+debug_sg: 46
+debug_loop: 0
+debug_vis_rate: 4.52854 / 4.8
+system_score (n=26) : 1838
+処理中: 0012.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTT
+T.T..BTTTTTT.S.T..TTT.T...T
+T..TBTRRRTBTT...T..T...T.TT
+TT..BTRTRTB...T..T...TT...T
+T.TBTRRTRTBT.TT....T.TT.T.T
+T..BTGTRRTB.T..T..T...TT..T
+TTT.BTTRTBT..T..TT.TT...T.T
+T..TRRRRTB..TTT.T.....T...T
+T...BTTTB.T.T.....TT.TTT.TT
+T.TT.BBBT..T...TT.T...T...T
+T...T.T..T.T....TT..T.T.T.T
+TTT..T..T..TT.T...T.TT...TT
+TT..TT...TT....T.T..T..T..T
+T..TT..T....TT..T..T..TTT.T
+TT...TT..T.TT..T....TTTT..T
+T..T...T..T..TTT.TT.T..T.TT
+T.T..T..T...T....TTTT.TT..T
+T..TTTTT...T..TT...T...TTTT
+TT.T.T...TT.T...TT..TT...TT
+TTT...TTTT....TT.T.....T.TT
+T.TTT..T...T.TT....T.TT...T
+T..T.T...T.TTT..T.TT..T.T.T
+TT....T...T..TT..T..TT...TT
+TTT.T..TT..T...T..T....TT.T
+TT...T....T.TT..T..TT.T...T
+T..T..T.T...TTT...TT....TTT
+TTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 10654
+debug_update: 166
+debug_elapsed: 1901
+debug_score: 17.0656
+------------detailed information------------
+debug_times[0]: 1689
+debug_times[1]: 2359
+debug_times[2]: 2431
+debug_times[3]: 4175
+debug_op_times[op = 0]: 1597
+debug_op_times[op = 1]: 2060
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2620
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 4377
+debug_trees_rate: 0.4 / 0.4
+debug_curve_rate: 0.476944 / 0.45
+debug_spread_rate: 1 / 1
+debug_sg: 60
+debug_loop: 0
+debug_vis_rate: 4.14133 / 4.8
+system_score (n=25) : 1988
+処理中: 0013.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T...T...TT...T...ST..T...T.T.TT..T
+T.T.T..T.TT.TT.TT.T.TT.T...T..T.TT
+T.T...T..T..T....T...T..T.T.T.T..T
+TTT.T.T.T..TT.T.TTTT..TT....T.BBBT
+T....T....TTT.T..T..T.T..T.T.BTTTT
+T..T..TT.TT.TTTT...T....T.T.BTRRRT
+TTTT...T.TT.T..TT.T..TT..T.BTRRTRT
+TT...TT......T....T...T...TBTRTGRT
+T..T....T..T.T.T.T.T..TTT...BRBTTT
+TT..T..T..TT.TTT...TTT....TT.T.BBT
+T...T.T..T....T..T...T.T.T..TT.T.T
+TT.T...TT.T.TT..TT.TTT..T.T..T.TTT
+T.T..TT.....T..T..T..T.T..TT..TT.T
+T..TT.T..T.TTT..T...T......TT....T
+TT.TT...TT.TT.T...TT.TTT.TT.TT.T.T
+T.....T...T...TT.T...T....T....TTT
+T.TTTT.TT.T.TT...TT.T...T..T.TT..T
+T.TTT..T......TT.......T..T....T.T
+TTT.TT..T.TTT...T..TTTT.T...TT...T
+TT....T....TTT..TT...T..TT...T..TT
+T..T.T...TT..TT.TT..T....TTTT.TT.T
+T.TT...TT....T.....T.T.T.T.T.....T
+TT..TT..T..T...T.T.TTT..T....T.T.T
+T..T.TTT.TT..TTTT.T.T..T..T.T.T..T
+T.....TT..T.T.T...T...T.T..T....TT
+T.TTT.T.T...T...T...TT..TT.T.T..TT
+T.T...T..TT.TT.TTT.TT..TT..T..T.TT
+TT..T.TT.....TT.T....T...T..TT...T
+T...T...T...T.T..TTT...T...TTT.T.T
+T..T..T.T.TT...T..TT..T.T.TT..T..T
+T.T..T....T..T....T..TT...TT..T.TT
+TTT..T.T....TT..T...T...T....T...T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 6104
+debug_update: 197
+debug_elapsed: 1901
+debug_score: 7.53181
+------------detailed information------------
+debug_times[0]: 877
+debug_times[1]: 1340
+debug_times[2]: 1370
+debug_times[3]: 2517
+debug_op_times[op = 0]: 897
+debug_op_times[op = 1]: 1194
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1514
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2499
+debug_trees_rate: 0.399414 / 0.4
+debug_curve_rate: 0.45473 / 0.45
+debug_spread_rate: 0.996748 / 1
+debug_sg: 63
+debug_loop: 0
+debug_vis_rate: 4.51713 / 4.8
+system_score (n=32) : 3293
+処理中: 0014.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T.....TTT...TTTS..T..T.TTT...T
+T..TT.T..T..T..TT...T..T.T.T.T
+TTTT....T..TT.T...TT...T...T.T
+TTT..TT...T....TT..T..T..T.T.T
+T..T..T.TT..TT...T...T..T...TT
+TT...T.T...T.TTT.T.TT.T.T.T..T
+T...T...T.T...T.....T...TT.T.T
+TTT.T.T.T...TTT.T.T...TT....TT
+T.....TT.T..TTT.T..TT..T..T..T
+T.TTT.....TTT....TT.TT.T.T..TT
+T..T..T..T..T..T..T....T.TT..T
+TT..T..TT.....TTT..TTBBBB.TT.T
+TT.T.T....TTT...T...TTTTTBT..T
+T....T.T...T.T...TTBTRRRRTBT.T
+T.T.T.T.T.T..T.T.T.BTRTTRRTB.T
+TTT...T...T.TTT.TT.BTRRRTRRTBT
+T..TTT..T.......T..TBTTRGTRTBT
+TT.T..TT...T.TT..TTT.BBTTBRBTT
+T....T...T..TTT.....TT.BB.T.TT
+T.TTT..TTT.T..TTT.T.......T.TT
+T.....T...TT.T....TTT.T..T...T
+T.TT.T..T.....T.TTTT.TTT..TT.T
+T.T...T.TT.TT.T...T...T.TT...T
+TT..T..TT.TTT...T.T.T...T..T.T
+T..T..T.T..T.T.T..T..T.T..T..T
+TT.T.T..TT....TTT....T.TTTT.TT
+T..T...T..T.T...TT.TT...T.T..T
+T.T..T..T...T......T..T.T....T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 8529
+debug_update: 213
+debug_elapsed: 1901
+debug_score: 4.47811
+------------detailed information------------
+debug_times[0]: 1416
+debug_times[1]: 1918
+debug_times[2]: 1856
+debug_times[3]: 3339
+debug_op_times[op = 0]: 1223
+debug_op_times[op = 1]: 1721
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2099
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 3486
+debug_trees_rate: 0.395408 / 0.4
+debug_curve_rate: 0.458392 / 0.45
+debug_spread_rate: 0.99789 / 1
+debug_sg: 65
+debug_loop: 0
+debug_vis_rate: 4.59831 / 4.8
+system_score (n=28) : 3129
+処理中: 0015.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T...T..TT..TT..TT.S.T...T.TT....TT..T
+T.TT..TT..T...TT..TT..TT..T.T.TT...TT
+T....T..T...T..TT....TT..T....T..TT.T
+TT.T.T.T.TT.T...T...T.TT...T.T..T...T
+T.T.......TT.TT..T..T....TT..T.T...TT
+TT..TTT.T.......T..TTT.TT..T.....TT.T
+T.T...TT.T.TT..T..T.....T...T.T.TT..T
+T.....TT..TT....T...T.T...T..T..TT.TT
+T.TTBT....T...T..T..T.T..T....TT....T
+T..BTTTTT...TT.T.TTT..T...TT.T....TTT
+TTBTRRR..T....T.T...TT..T.T...T.T...T
+TTTRRTB.T.TT..T...TTT.T.T.T.T....TT.T
+TTRRTGTBT...T.T.T.......T.TT.T.T.T..T
+TTRTRRTB.......T..T.T.TT...T..T...TTT
+TTRTRTBT.T.T.T....TTT...TT.TT...TT.TT
+TTRRRTB...TT.T.TT..TTTT...T...T.....T
+TBTTTB..TT..T.TTTT...T..T..TT..T....T
+T.BBBT.TTT.T..T...T.T..T.T.T..T.T.T.T
+TT.T.T.....T....T..TTT...T..TT..T..TT
+T...TTT.T.TT..T..T..T..T...TT...TTT.T
+T.TTT...TT.TTT...TT.T..T.TTT..T.....T
+T..T..TTTT...T.TT..T.TT..T...TTT...TT
+TT..T...TTTT....TTTT....T.TT..T..TT.T
+T...TTT....T.T.T..T...T.....TT..T..TT
+TTT..T.T.T.TTT..T..T.TT.T.T.T..T...TT
+TT.T..T.T.....T.TT..T..TTT.......T.TT
+TT.T.TT...TT.TT....T.T...T.TTTT..T..T
+T..T...TTTTT...T.T.T..T..T...T..T..TT
+T.T.TT.TTT.TTTT.TT...TTT.T.T.TT..T.TT
+T..T...T...T..T...T.T..T...T.T.T.T..T
+TT...T...T..T..TT.T...T..T..T..T..TTT
+T...TTT...T.TT.T....T.....T...T.T...T
+T.TT..T.T..T....TT.T.TT.TT..T.T....TT
+T..T.T.T..T..TT....T.TT.T.TTT.T.TT..T
+TT....TTT....T..T....T....T...T.T..TT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 5110
+debug_update: 222
+debug_elapsed: 1901
+debug_score: 1.4246
+------------detailed information------------
+debug_times[0]: 692
+debug_times[1]: 1157
+debug_times[2]: 1181
+debug_times[3]: 2080
+debug_op_times[op = 0]: 694
+debug_op_times[op = 1]: 963
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1328
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2125
+debug_trees_rate: 0.4 / 0.4
+debug_curve_rate: 0.453214 / 0.45
+debug_spread_rate: 0.989116 / 1
+debug_sg: 61
+debug_loop: 1
+debug_vis_rate: 4.69464 / 4.8
+system_score (n=35) : 4167
+処理中: 0016.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+TT.TT...TTT..TTTS...TT...T.T...TT
+T....TT..TTT...T..T....T..TT.T..T
+T.T..T.T..T..T...TT.TTT..T....TTT
+TTT.TT....T.T..TTT...TTT...TT...T
+T...TTT.T...TTT....T...TT.T..T.TT
+T..T.T.T.T..T...TT.TTTT....T..T.T
+TT.T...T..TT..T.TTT..T..TTT..TT.T
+T...T.T.....TT........TT....T...T
+T.T.....T.T.T..T..TTT.T.TTT...TTT
+T..T.TT..T....T..T..T.....TT.T.TT
+TT.T.T..TT.T...T...T..T.T....T..T
+T.TT.TTT..T...T.TT..TTT.T..TTTT.T
+T....T...T..T.....T...T.T.T..T..T
+T.T.T..T.TTTTT.TT.TTTT.T....T..TT
+T..T..TTT...T..T...T.T...TT.T..TT
+T.T....T.T.T....T..T..TT..T..T.TT
+T...TT.....TTTT.T..T....TT.T....T
+TT.T.TT.T.TT...T..T.TTT......TT.T
+T...TT..TTT.T.T.T...TT..T..TT..TT
+TTT...TT.T..T.T...T...TT.T....TTT
+T..TT.TT...TT..T.T.T...TB..TT..TT
+T.T...TTT..T.T...T...T.BTT...T..T
+T...TT..T.TT...TT..T..TTGTT.T..TT
+T.T...T...T.T..T..TTBRTRRTB.T...T
+T..T..TTT....TT.T..BTRRRTB.T..TTT
+TT...T..TT.T...T..T.TTTTB...TT..T
+T.TT...TT..T.T.T.T..TTBB.TT.....T
+T..TTT...T..T..T..TT.TT.T..TT.T.T
+T......T....T.T..T.....T.T.T...TT
+TT.T..TT..TT...T...T.T...T..TT.TT
+T...T..T..T...TTT.TTT..T...TT...T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 6617
+debug_update: 202
+debug_elapsed: 1901
+debug_score: 5.68456
+------------detailed information------------
+debug_times[0]: 954
+debug_times[1]: 1482
+debug_times[2]: 1476
+debug_times[3]: 2705
+debug_op_times[op = 0]: 936
+debug_op_times[op = 1]: 1294
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1697
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2690
+debug_trees_rate: 0.400624 / 0.4
+debug_curve_rate: 0.454555 / 0.45
+debug_spread_rate: 0.994792 / 1
+debug_sg: 46
+debug_loop: 1
+debug_vis_rate: 4.57068 / 4.8
+system_score (n=31) : 350
+処理中: 0017.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T...T.T.T....TS.T....T.....T
+T.T....TT.T..TT..T.T.T..TT.T
+TTTT.T....T.T.T.T...T..TT..T
+TTT..T.TT..T....T.T...T..TTT
+T...TTT..T...T.T...T.TTT...T
+TT.T...T.T.T.T...T.TTTT..T.T
+T..T.T...T..TTT..T..TT..T..T
+T.T.TTT....TT..TTT...T.T..TT
+TT...TT.T.TT...T..TT.T..T..T
+TTTT..T..T...T..T.T....TTTTT
+TT...T.T..TT..TT....T.TTT..T
+T...TTTT..T..T...T.T..T...TT
+T.T...T..T..T..TT..TT..T.T.T
+T..TT..T..T.T.T.TT...T...T.T
+TT.T..TT....TT....T.T..T...T
+T..T..T..T.T...TT..T..T...TT
+TTBBT...T....TT..T..TT..T..T
+TTTTBT.TT.T.T...T..T..TTTTTT
+TRRRTBT...TT..T..T..T.TT...T
+TRTGTB.TT.....T.TTTT.....T.T
+TRRTB.T..TT.TTT.T....TTT..TT
+TTRRRT..TTTTT.....T.T..TT.TT
+TBTTB....T..T.TT.T....T..T.T
+T.BB.TTT.T.T..TT..TTT...T..T
+T.T.TT.T....T...T.T..T.T...T
+T.T....TT.T...T.T...TT...T.T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 10236
+debug_update: 156
+debug_elapsed: 1901
+debug_score: 12.9292
+------------detailed information------------
+debug_times[0]: 1466
+debug_times[1]: 2300
+debug_times[2]: 2356
+debug_times[3]: 4114
+debug_op_times[op = 0]: 1400
+debug_op_times[op = 1]: 1893
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2633
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 4310
+debug_trees_rate: 0.399408 / 0.4
+debug_curve_rate: 0.460436 / 0.45
+debug_spread_rate: 0.992611 / 1
+debug_sg: 72
+debug_loop: 0
+debug_vis_rate: 4.30025 / 4.8
+system_score (n=26) : 160
+処理中: 0018.txt
+TTTTTTTTTTTTTTTTTTTTTT
+TTT.T...TTTS..T...T.TT
+TT....T.TT..T...TT..TT
+T..T.T.TT..T.T.T...T.T
+T..T....T.T....T.TT..T
+TT..T.T..T..TTT.....TT
+T.T.TT.BBB.TT...T.T..T
+T...T.BTTTB...T.T..T.T
+T.TT.BTRRRTT.T.T.T..TT
+TT.TTTTRTRRTBT..T.T..T
+T...BTRRTTRTB..T..T.TT
+T.T.BTGTRRRTT...T..T.T
+TT..TBTRRTTB..T.TT...T
+TT.T.RRRTBB.T..T..T.TT
+TT...BTTB.TTTT...T...T
+T.TT.TTTT....T.TTT.T.T
+T....TT.T.TT..T...TT.T
+TT.T.......T.T..T....T
+TT..T.TT.TT...TT..T.TT
+TTT..TT..T..TT...T...T
+TTTT...T..T....TT..TTT
+TTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 17470
+debug_update: 101
+debug_elapsed: 1901
+debug_score: 11.8792
+------------detailed information------------
+debug_times[0]: 2893
+debug_times[1]: 3843
+debug_times[2]: 4038
+debug_times[3]: 6696
+debug_op_times[op = 0]: 2550
+debug_op_times[op = 1]: 3560
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 4297
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 7063
+debug_trees_rate: 0.4 / 0.4
+debug_curve_rate: 0.511817 / 0.45
+debug_spread_rate: 0.995833 / 1
+debug_sg: 57
+debug_loop: 0
+debug_vis_rate: 4.17992 / 4.8
+
+_score (n=20) : 379
+処理中: 0019.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T.T...TT.T.T....T....ST.....T.T...T...TT.T
+T...TTT....T.T..T..T....T..T.....T..T..T.T
+T.T...TTTT....T..TT...TT.T.T.T..T.T.BBB..T
+TTTTT.T...T.T.TT..T.T..T..TTT..T...BTTTBTT
+TTT....T.....T..T.TTTT.T.T..T...TTBTRRRTTT
+TTTT.T..T.T...T.....T....TT...T...BTGTRTTT
+T..T..T..T.TT.TT..TT..T.TTT..T....TBTRRTBT
+T..T.TT.TT...T...TT..TT.T..T.T..T.TBTRTB.T
+TT..T...T..T.T.T..T.TT....T.TTT.T..BTRTBTT
+TTT....T..T..T..T.T..T.T.T..T..T..TRRRTBTT
+T.T..T..T..T..TT...T..T.TT....TT.TTTTTBT.T
+T..T.T.TTT..TT.T.T...T..TT.T.T...TT.BTT.TT
+TT...T.TTT.T...TT....T..T..T....T..T.T.TTT
+TTT.T...T.....T...TT...T..T..TT.TT....T.TT
+T.T..TTT..TT.....T.T...T.TTTTTT....TT....T
+T....T..T..TTT.T...TT.T.....T..TTTT.T.TT.T
+TTT.TTT....T.T..T.T.TT.TT.TT..T.TT.T.....T
+TT.....T.TT.....T.T..T..T....T..T....T.T.T
+T..TTT....T.T.TT..TT.....TT.T..T.TT.TT..TT
+T.TT.T.TT..TTTT..T...TT....T...T.TT...T..T
+T..T..TTT.T.T...T.TT.TTT..TT..T..T.T.T..TT
+TT.TT...T....TT...T...TT..T.T..T....T.T..T
+TT...TT....T..TT.TT.T...T.T.TT.TTTT.....TT
+TTT.T..TTT..T.T.T...TT..TTT.....T.T.T.T..T
+T...T....T...T.T...T.TT..T....T.T.T..T...T
+T...T.T....TT..TTT.T..TT.T.T...T......TT.T
+TT...T..TT.T..T.T....T.T....T....T.TT...TT
+T..T..T...T.T...TTT.TT....TT..TT.T...TT..T
+T.T..T....T.TT.TTT...TTTT..T.T..TT..TTT..T
+T..T...T..T......TTT.TT..T.T..T...T...TT.T
+TTTTT.T...T.T.TT...TT.......T..T..T..TTTTT
+T..T...TT....T...TTT..TTT..T.TT.T...TTTTTT
+TT..T....T.TT.....T...TTT.TT...T..T...TT.T
+TTT...TTTT.T.T.T.......T.T...T...T.T..T.TT
+T....T..TT....T.T.T.TTTT.TT.T.TT..T.T....T
+TTT...T.....T....T.T..TT..TT....TT....TT.T
+T.T.T.T..TT..T.T.T...T..T.T...T..TTTTT...T
+TT..T.TT...T..T...T.T...T...T..TT...T..TTT
+T..T...T...T...TT....T.....T.T....T.T...TT
+T.T.....TT..T....T...TT.T..T...T..T...T..T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 3961
+debug_update: 217
+debug_elapsed: 1901
+debug_score: -2.53492
+------------detailed information------------
+debug_times[0]: 556
+debug_times[1]: 894
+debug_times[2]: 849
+debug_times[3]: 1662
+debug_op_times[op = 0]: 541
+debug_op_times[op = 1]: 789
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1043
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 1588
+debug_trees_rate: 0.39875 / 0.4
+debug_curve_rate: 0.450851 / 0.45
+debug_spread_rate: 0.984407 / 1
+debug_sg: 150
+debug_loop: 3
+debug_vis_rate: 4.80993 / 4.8
+system_score (n=40) : 1312
+処理中: 0020.txt
+
+TT..TT...TT.T..T.T...TT..T..TT
+T..T...T.T......TTTT...TTT...T
+TT....TT...T.TT...T..TT.T..T.T
+T..TT.T.T.T.T...T.T.T...T.T..T
+TT..T...TTT....TTTT...T..T..TT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 8487
+debug_update: 196
+debug_elapsed: 1901
+debug_score: 11.9098
+------------detailed information------------
+debug_times[0]: 1254
+debug_times[1]: 1921
+debug_times[2]: 1886
+debug_times[3]: 3426
+debug_op_times[op = 0]: 1199
+debug_op_times[op = 1]: 1676
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2224
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 3388
+debug_trees_rate: 0.40051 / 0.4
+debug_curve_rate: 0.455498 / 0.45
+debug_spread_rate: 1 / 1
+debug_sg: 51
+debug_loop: 2
+debug_vis_rate: 4.38298 / 4.8
+system_score (n=28) : 3325
+処理中: 0021.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTT
+TTT...T.T....ST...T....T..T
+T.T.TTT...TT.T.T.BBBTT...TT
+T...T...T.TT.T..BTTTB.T.TTT
+T.T...TT.TT..TTBTRRRTB..T.T
+TT.T.TT...T.T..BTRTRTBT...T
+T..T..T.T.....TBTRTRRTBT.TT
+T...TT...TTTTT.BTRRTGTBT..T
+T.T..T.T.T..TTT.BTRRTBTT.TT
+TT...T..T..T....TBTRRR...TT
+T.TT...T..T...TT.TBTTBT.TTT
+T...T.T..T.T.T..T.TBBTT..TT
+TT.TTT..T....TT.....TT.TTTT
+T...TTT...TTT..T.T.T.T...TT
+T.T..T.TT.T..T...T.....T..T
+T.T...T.T.T.T..TT.T.TT.TTTT
+TT.TT.....T..T.T..T..T....T
+TT.T..TTTTTT...T.TTT..T.T.T
+T...T.....TT..T..T..TT...TT
+T.T..T.TT...T.T.T..TTT.T..T
+TT.T.T..TTT.T....T...TT...T
+TT.T..TT..T...TT...TT...T.T
+T...T...T...TT..T.T..T.T..T
+T.TT..T.T..T...T....TT.T.TT
+T..T.TT...T..T...TT...T...T
+TT...T...T..T..T...T.T..TTT
+TTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 11346
+debug_update: 176
+debug_elapsed: 1901
+debug_score: 11.3766
+------------detailed information------------
+debug_times[0]: 1722
+debug_times[1]: 2621
+debug_times[2]: 2542
+debug_times[3]: 4461
+debug_op_times[op = 0]: 1638
+debug_op_times[op = 1]: 2268
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2829
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 4611
+debug_trees_rate: 0.4 / 0.4
+debug_curve_rate: 0.460312 / 0.45
+debug_spread_rate: 0.984 / 1
+debug_sg: 51
+debug_loop: 0
+debug_vis_rate: 4.31707 / 4.8
+system_score (n=25) : 2035
+処理中: 0022.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTT
+TT.T...T...T.STT..T.T..T.T
+T..T.TT..T..T....T...T...T
+T.T...TT..TT..TTTT.T...TTT
+T...T.T.T...T..T...TT.TT.T
+T.T.TT....T..T...T.T..T..T
+TTT....T...T.T....TT.T..TT
+TT.T.TT.TT.TT..TT...TT.T.T
+TT.T.T..T..TTT...TT..T...T
+TT.T...TT.TTT..TT...T..TTT
+T..TTT.T......T...T...T..T
+T.T...TT.T.TT.T.TT..T..T.T
+T.TT.....TTT...T...T.T...T
+T....T..T..T.TT.T..T...TTT
+TT..T.T..T...T...T..T.T.TT
+TTTT....T...T..TT....T...T
+T....T.T..T..T..T.TT...T.T
+T.TT..T..T.T..T..T...T.TTT
+TT...TTTT...TTTT...TTT..TT
+T..TTTT...T..TT..T.T..T..T
+TT..TT..TT..T.TTTT...TTTBT
+T....TT..T.T...T...TTT.BTT
+T.T.T..T..T..T.T.T....BTGT
+TT...T...TTTT...T..TBRTRRT
+T..T...TTTT...T...TBTRRRTT
+TTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 11526
+debug_update: 190
+debug_elapsed: 1901
+debug_score: 16.2246
+------------detailed information------------
+debug_times[0]: 1870
+debug_times[1]: 2494
+debug_times[2]: 2600
+debug_times[3]: 4562
+debug_op_times[op = 0]: 1654
+debug_op_times[op = 1]: 2314
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2865
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 4693
+debug_trees_rate: 0.399306 / 0.4
+debug_curve_rate: 0.459824 / 0.45
+debug_spread_rate: 0.99711 / 1
+debug_sg: 42
+debug_loop: 0
+debug_vis_rate: 4.21159 / 4.8
+system_score (n=24) : 1228
+処理中: 0023.txt
+TTTTTTTTTTTTTTTTTTTTTTTT
+T.T..TTT.BBBS..T.T...TTT
+T..T...TBTTTBT.T...T..TT
+TT.T.T.BTRRRTB.T.T..TT.T
+T...T..BTGTRTT....T.T..T
+TTT..TT.BTTRTBT.T..T..TT
+T...T..TRRRRTBT..TT..TTT
+T.T...T.BTTTB.TT..TT..TT
+T..T.T...BTB.T...T.TT..T
+TT.T.T.T....T..T...T..TT
+T..T...TTT.TTT..TT..T.TT
+T.T.T.TT...T.T.T..TT...T
+TT.TTT.T.TTT....T..T.T.T
+T...T..T.....TT.TT...TTT
+T.T..T..TT.TTT....T.TT.T
+TTTT...T...T..T..TT..T.T
+TTT..T...TT.T...T..T...T
+TTT.T.T.T...T.T...T..TTT
+T...T..T..T...TTT...TT.T
+TT.T.T..T.TT.TTT...T...T
+T.T....T...T..T..T..T.TT
+T...T.T..T..T..T..TT...T
+TT.TT...T..TT...T....TTT
+TTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 13979
+debug_update: 171
+debug_elapsed: 1901
+debug_score: 16.9287
+------------detailed information------------
+debug_times[0]: 2157
+debug_times[1]: 3086
+debug_times[2]: 3155
+debug_times[3]: 5581
+debug_op_times[op = 0]: 1945
+debug_op_times[op = 1]: 2842
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 3526
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 5666
+debug_trees_rate: 0.400826 / 0.4
+debug_curve_rate: 0.445842 / 0.45
+debug_spread_rate: 0.996552 / 1
+debug_sg: 44
+debug_loop: 0
+debug_vis_rate: 4.20415 / 4.8
+system_score (n=22) : 1532
+処理中: 0024.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+TT..T...T..T..T.S.TTT..T..T..TTTT
+TTT...T...T..TT.TT.TTT.....T....T
+T.TT..T.TT..TTT....T...TTT..T.T.T
+T...TT..T.T.T.TT.TT..T...T.TT..TT
+TT.....T..T...T..T..T..TT..T..T.T
+T..TT..T.T..T...T.TT..T.T..T.T..T
+TTTTT.TT..TT.T..T....T..T.T....TT
+T..T..TT..T....TTTTTT...T...TT..T
+T..T.T...T..T.TT..T.TTT..T.T.T..T
+TT......TT..TT..T.T.....T..T.T.TT
+T.T.T.T.T.T...T...T.T..T.TT.....T
+T..TT..T...T.T..TT...T....T.T.TTT
+TT..T.T..T.T..T..T.T.TT.T.T.T...T
+T.T.BB.T.TT....T..T...T.....TT..T
+T.BBTTB.....TT.TT...TTT.TT.T..T.T
+TBTTRRR.T..T...TTT.T....T...T...T
+TTRRRTBT.TT.T....TT..T.T.T.T.T.TT
+TTRTTGTB..T..TTT......TT.T...T..T
+TTRTRRTBT...T....TTTT..T...T.TT.T
+TTRTRTBT..T...T.TT...T.T.TTTTT..T
+TTRRRTB..TTTT..T...TT.T...T..T.TT
+TBTTTBT.T...TT...T.T....T.....TTT
+T.BBB.T.TT..T..TT.TT.TTT..T.T...T
+TT.TT.TT...T.T..T.T..T...T...TT.T
+TT..T..T.TT...T.T...T..TT..T.TT.T
+TT.T.T......TT...TT..T.TT...T...T
+TTT....T..T...TT...T.T..TTT.T..TT
+T...T.T.T..TT..T.T..TTT.T.T..TTTT
+T.TT..T.T..TT....T.T..T....T.T..T
+T..T.T...TTT..TTT...T..T.T..T.T.T
+T..T...T..T..TT...T..T...TT.....T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 6520
+debug_update: 189
+debug_elapsed: 1901
+debug_score: 10.4256
+------------detailed information------------
+debug_times[0]: 989
+debug_times[1]: 1429
+debug_times[2]: 1447
+debug_times[3]: 2655
+debug_op_times[op = 0]: 943
+debug_op_times[op = 1]: 1197
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1687
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2693
+debug_trees_rate: 0.399584 / 0.4
+debug_curve_rate: 0.453786 / 0.45
+debug_spread_rate: 1 / 1
+debug_sg: 44
+debug_loop: 1
+debug_vis_rate: 4.43847 / 4.8
+system_score (n=31) : 2432
+処理中: 0025.txt
+TTTTTTTTTTTTTTTTTTTTTT
+T..TT...T.TS.T...T..TT
+T.T...T....T..TT.TT.TT
+T...TTTT.T..T.T..T..TT
+TT.TT.T..TTT....T..T.T
+T..T...TT.T..T.TTT...T
+T.TT.T..T..T.T.T...TTT
+T...TTT..BBBB.T..TT..T
+TTT..TT.BTTTTB....T..T
+TT..T..BTRRRRTBTT...TT
+T.T...BTRRTTRTB.TT.TTT
+T..TTBTRRTRRRTBT.T..TT
+TT...BTRTGRTTB.T..T..T
+TTT.T.BRBTTBBT..T..T.T
+T...TT.T.BBT..T.TT...T
+T.T..TT...T..T...T.T.T
+T..T..TTT...T.TT.T..TT
+TT..T..T.TTT...T.TTT.T
+TTT..TTT...T.T....T..T
+T...T.T..T...TT.T...TT
+T..TT...TTT.T...T.T..T
+TTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 16913
+debug_update: 142
+debug_elapsed: 1901
+debug_score: 12.5681
+------------detailed information------------
+debug_times[0]: 2812
+debug_times[1]: 3904
+debug_times[2]: 4004
+debug_times[3]: 6193
+debug_op_times[op = 0]: 2451
+debug_op_times[op = 1]: 3465
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 4189
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 6808
+debug_trees_rate: 0.4 / 0.4
+debug_curve_rate: 0.521819 / 0.45
+debug_spread_rate: 1 / 1
+debug_sg: 39
+debug_loop: 0
+debug_vis_rate: 4.14167 / 4.8
+system_score (n=20) : 1013
+処理中: 0026.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T....TBBT..T...TTST.....T.T...T...T
+T..TBTTTBT...TT.....T.T..T..T.T.T.T
+TT.BTRRRTB..TT..TTT..T..T.T.T....TT
+T..BTRTRGTBT...T...TTT.....T...T.TT
+TTTBTRTTTB.T.T...TT..T.T.T..T..T..T
+T..BTRRRRRT.TT..TT..T..TT.TT..T.T.T
+T.T.BTTTTB.....TT..T.....T...T....T
+T..T.BBBBTTTT.T..T...TT.T..TT.TTTTT
+TTTT.T.T..T...T.TTT.TT...T.T...T.TT
+TT..T.T...TTT.T.T..T.T......TT....T
+TT.TT...TTT..T....T....TT.T.TT..T.T
+T...T.T...T....T..T..T.T..T.T..T..T
+T.T.T..TT...TTT.T...T...T.TTTTT...T
+TT..TTT..TTT..T..TT..TT.TT...T..TTT
+T..TT.....T..T.T....TT.....T..T...T
+T.TT..T.T...T..T.T.T..TT.TTT..T.T.T
+T....T.T..TTTT..T...T.TT....T...T.T
+TT.T....TT...TT.....T...TT...T.TTTT
+TTT..T...TTT.T...TTT..T....T.TT..TT
+T..TT.T...TT...TTTT.TTT..T..T...T.T
+T.T.T..TT.T.TT..T.....TTTTT...T...T
+T....T....T.T..T..T.T..TT...T..TT.T
+TT.TT..T.T....T....T.T....T..TT...T
+TT.T..T..T.TT..T..T....T.T..T..T.TT
+T..T.T.TTT..TT..TT.TTTT.T..T..TT..T
+T.T.....T.T...T...T...T...TT.T..T.T
+T...T.T...T.T..TT....TT.T....T..TTT
+T.TTT.T.TT...TTTT..TTTT..T.T...T..T
+T..TTT.....T...T..TTTT...TTTT....TT
+TTT....TTTTTTT.T.T.TT..T..TT.TT.T.T
+T..T.T.TT.T...T..T.T..T.T....T....T
+TT....TT....T.TTT...T...T.TT..TTT.T
+TT.TT....T.TT.T...T....T..T..T....T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 5966
+debug_update: 199
+debug_elapsed: 1901
+debug_score: 7.79223
+------------detailed information------------
+debug_times[0]: 792
+debug_times[1]: 1413
+debug_times[2]: 1392
+debug_times[3]: 2369
+debug_op_times[op = 0]: 849
+debug_op_times[op = 1]: 1100
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1547
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2470
+debug_trees_rate: 0.401286 / 0.4
+debug_curve_rate: 0.453009 / 0.45
+debug_spread_rate: 0.990798 / 1
+debug_sg: 26
+debug_loop: 0
+debug_vis_rate: 4.48607 / 4.8
+system_score (n=33) : 2264
+処理中: 0027.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTT
+TTTTT.T..T.BBSBTT..TT.T..T
+TTTT....T.BTTTTB..TT..T.TT
+TTTT.T.T.BTRRRRTBTT..T...T
+TTT...T.BTRRTTRTB..T...T.T
+T.T.T.TBTRRTRRRTT.T...T..T
+T..T...BTRTGRTTBT...T.TTTT
+TT..TT.TBRBTTBB..T.T..T..T
+T..T.T....TBBT.T..TT.T..TT
+T.T....TT.....T..TT...T..T
+T.T.T.T..TT.T..T..T.T..T.T
+T...TTTT....T.T.T...TT...T
+TT.TT.T.T.T..T..TT.TT...TT
+T..T..T...TTT..T....TTT..T
+TT...T..T.....T..TT..T..TT
+TTT.T..TTTT.T.TT...T..TT.T
+T...T.TTT..T...T.T..T..T.T
+T.TT.T.T..T.T....T.T.TT..T
+TTT....T.T...TT.T.T..TT.TT
+T.T.T.TT...T......T.T....T
+T...T...TTT..TTT.T....TTTT
+TTT..TT....T..TT....T.T..T
+T..T..T..T..T...T.TT...T.T
+TT...T.T.T....T.TT...T...T
+T..TTT...TTT.T...T..T...TT
+TTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 11230
+debug_update: 161
+debug_elapsed: 1901
+debug_score: 13.2918
+------------detailed information------------
+debug_times[0]: 1827
+debug_times[1]: 2515
+debug_times[2]: 2568
+debug_times[3]: 4320
+debug_op_times[op = 0]: 1677
+debug_op_times[op = 1]: 2233
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2850
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 4470
+debug_trees_rate: 0.399306 / 0.4
+debug_curve_rate: 0.492225 / 0.45
+debug_spread_rate: 1 / 1
+debug_sg: 33
+debug_loop: 0
+debug_vis_rate: 4.21387 / 4.8
+system_score (n=24) : 955
+処理中: 0028.txt
+TTTTTTTTTTTTTTTTTTTTTTTTT
+T....TT...T.S.T....TT...T
+TT.T..T.T.TBBBB.T..T...TT
+TT.T.T..T.BTTTTB.TT..TTTT
+T..T..TT.BTRRRRTB...T..TT
+T.T.T...BTRRTTRTBTT...TTT
+T..TT.TBTRRTRRRTB..T..T.T
+TTT..T.BTRTGRTTB.TT..T..T
+T...T.T.BRBTTBB.TT..T..TT
+T.TTT..T.TTBB.T...TT..TTT
+T....T...T.T.TTT..T..TT.T
+TT.T.TTT.T.TT..TT...T...T
+T.T...T.......TT.T....T.T
+T...T...T.T.T......T...TT
+TTTT.TT..TTT..T.T.T.T.TTT
+T....T.TT....T..TT.....TT
+TT.T......T.T..TTT.T.T..T
+T...T.T.TT...TTT...TT.T.T
+T.T..TTT...T.TT...T...TTT
+T..T.T..T.T...TTT...T.T.T
+TT..T..TTT..T.T...T..T..T
+TTT..T..T...TTT.TT.T...TT
+T...T.T...T..T..T..TT.TTT
+T.T...T.TTTT..T...TT..T.T
+TTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 12783
+debug_update: 164
+debug_elapsed: 1901
+debug_score: 9.59021
+------------detailed information------------
+debug_times[0]: 2069
+debug_times[1]: 2891
+debug_times[2]: 3018
+debug_times[3]: 4805
+debug_op_times[op = 0]: 1873
+debug_op_times[op = 1]: 2512
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 3166
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 5232
+debug_trees_rate: 0.398866 / 0.4
+debug_curve_rate: 0.516433 / 0.45
+debug_spread_rate: 0.993711 / 1
+debug_sg: 51
+debug_loop: 0
+debug_vis_rate: 4.22785 / 4.8
+system_score (n=23) : 665
+処理中: 0029.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T...T.T..TT.....T.ST.T...T.T..T..T.TT
+T.T.....T...TTT..T..T.T..T...T.T...TT
+T.TT.T.T.TT..TTT.BBBB.T.TT.T.T..T.TTT
+T.TT..T...T.T.TTBTTTTB......T.T.T.T.T
+T..TT...T.T...TBTRRRRTBTT.T..TT.....T
+TT.T.....TTT.TBTRRTTRTBT..TT.....TT.T
+TTT.TT.T..T.TBTRRTRRRTBTTT...TTT..TTT
+T.T....TT...TBTRTGRTTBT...T.T..TT.T.T
+T..TT.T..T.T..BRBTTTBT..T.T.....T...T
+T.T...T.T..TT.T..BB.T....T..T.T..TT.T
+T...TT...T.....T..T...TT.T.T..TT.T.TT
+TT...T.TTTT.TT.TT..T.TTT..T..T..T...T
+T.TTT..TT...TT...T..TT....TT....TTT.T
+T..TTT..TT.T.T....T..TTTTT..T..T....T
+T.T..TT..T....TTT.T.T...TTT......TT.T
+T.T.TTTT...T.T..T.T...T...TT..T.TT.TT
+T...T.T.T..T...TTT..T..T..T..T...T.TT
+TT.........T.TT.TT.TTT.T..T.T..T...TT
+T..T...TT...T.T...T...T.TT..T..TT.T.T
+T..TTT..T.TT....T.T.T.T....TT...TTT.T
+T.TTT.T..TT..T...T..T.T.T..T..T.T...T
+T.T...TTTT..T.TT...T...T.TT..T...T.TT
+T..TT...T..TT.TTTT...T..T.T..T..T...T
+T.T...TT..T....TT...T..T...TTTT...T.T
+T..T.T.T.T..TT..TTT..T...TT..T..T..TT
+TT.T....T..T..T...T.TTTT..TT...T.T..T
+T.....T.T.TT..T.T...TT...T...T.T.T..T
+T.T.T..TTT..T...T.TT.TT.TT.T.TTT..T.T
+T..T...T.T...TTT...T...T...T.T..T...T
+TT..T..T.T.T..T.T...T..T.T.TTT.TT.TTT
+TT.T..T...T......TT...T...TT...T....T
+T.TT......T.TTTT.T.T...T.TT.TT.T.T..T
+T.T..T..T.....TT.....T....T....T.T.TT
+T...T.TT.T.TT.TTT.T.T...T...T.T.TTT.T
+TTT....T....T..T..T.T.T...T.T.......T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 5002
+debug_update: 245
+debug_elapsed: 1901
+debug_score: -0.412265
+------------detailed information------------
+debug_times[0]: 672
+debug_times[1]: 1093
+debug_times[2]: 1124
+debug_times[3]: 2113
+debug_op_times[op = 0]: 689
+debug_op_times[op = 1]: 909
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1325
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2079
+debug_trees_rate: 0.4 / 0.4
+debug_curve_rate: 0.453445 / 0.45
+debug_spread_rate: 0.990476 / 1
+debug_sg: 140
+debug_loop: 2
+debug_vis_rate: 4.76099 / 4.8
+system_score (n=35) : 5416
+処理中: 0030.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+TT..T.T..T..T..T...ST...T..T.T....T..T
+T..T....TTT..T...T.T.T....T..TT.T....T
+T.T..TT..TTT...TTTT...T.T...TTT.T.T.TT
+T...T..T...T.T..T..T.TTTT..T.....T...T
+T..T..T.....T.T...TT..TT.T...T.T.T.T.T
+TTT..TT.T.T.....T.T.T..T..T.TT....TT.T
+TT..TT..TTTT..T..T..T.TT.....TT.T...TT
+T..T...TTTT.T..T...T....TT.T....T.T..T
+T...T.TT..T..T..T.T..T.....TT.T..TTT.T
+T.T....TT...T.TT.T.T.T.T.T.TT.TTTTTT.T
+T.TTTT....TT...T..T.T..T.T.TT....T.T.T
+T..T...TTT.T..TT...T...T..TT.TT..T...T
+TTTT.TTT.....T..TT....T.T...T..T..T.TT
+TTT..TTT..T.TT..T.T.T....TT.T..T..T..T
+TTT...T..T.....TT.TT.T.T...T....T.TT.T
+T.TTT...TT.T..T....T...T.TT...T..TT..T
+T...T.TTT.T..T.T.T.T.T..T..T.T...TT..T
+T...T...T.T.T...TT..T.T......TT.T.TT.T
+TTT...TTT.....T...T..T..TT....T....T.T
+TT...T..TT..TTT..TTT.TTTT..T..TTT..TTT
+TTTT...T.TTT..T.T.TT...TT...TTT..T..TT
+TT...TTT..T.T.....TTT.....TT..TT...TTT
+T..TT...T....T.TT....T.T..T..T.T..TTTT
+TT....T....TTTTT.T.TTTT..T...T.T.....T
+T.TT.T...TTTTTTT.T.TT...T..TT....T.T.T
+T....T.T...T...T....T.T...T...T.TT.TTT
+TT.T..T.TT..T.T..T.T.T..TT..T.TT.BBB.T
+TT..T.T...T...T.T...T..TT..T..TTBTTTBT
+T..TT...TT.TTTTT..T..T...T.T.T.BTRRRTT
+T...T..TT..T....T..TTTTT..TT.TBTRRTRTT
+T.T..TT...T.TTT...T....T...T.TBTRTRRTT
+TT.....T.....T.T.TT..T...TT...BTRTGTBT
+T...T..TT..T....T..T.TT.T...T.TBRBTB.T
+T.T..T....T.T.....T...T.T...T....TB..T
+TTT..TT..TT...T.TT....T..T...T.T.T...T
+T...T.TT..T..T.....T.TTT.T.T..T....T.T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 4849
+debug_update: 197
+debug_elapsed: 1901
+debug_score: 1.90965
+------------detailed information------------
+debug_times[0]: 648
+debug_times[1]: 1069
+debug_times[2]: 1130
+debug_times[3]: 2002
+debug_op_times[op = 0]: 683
+debug_op_times[op = 1]: 898
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1247
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2021
+debug_trees_rate: 0.400463 / 0.4
+debug_curve_rate: 0.451452 / 0.45
+debug_spread_rate: 0.992278 / 1
+debug_sg: 168
+debug_loop: 2
+debug_vis_rate: 4.6965 / 4.8
+system_score (n=36) : 3622
+処理中: 0031.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T...TTTT.T.TT.ST..T.T..TT..T
+TT.T..T..T....TT..T.TT.T..TT
+T..T.T..T..T.T..T...T....TTT
+T.TT...TTTT..T.T...T..TT..TT
+T...TT.T..T.T..TTT...T..T.TT
+TT..T..TT.T...TTTT.T...TT.TT
+T.....TT..TT.TT.T...T.T....T
+T..T.T...T...T....T.TT..TT.T
+TTT...T.T..T...TT.T...T..T.T
+T.T.T....T..TT.T.T.T...TTTTT
+T....TTT..T..T...T..TTT....T
+TTTT...TT..T.TT..TT....T.T.T
+T....T...T..T...T.T.TT....TT
+T.TTT..TT.....T....T..T.T..T
+T...TT....TTTT.T.T...T..TT.T
+T.T...T.T..T.T.TT.TT...T...T
+T.TTT..T...TBBBB...T.T..TTTT
+T....TT..T.BTTTTBT...T.T...T
+TTT..TTTT.BTRRRRTBT...T..T.T
+T..T..T.TBTRRTTRTB.TT.T.T.TT
+TT...TT.BTRRTRRRTBTTT...T..T
+T..T....BTRTGRTTB..T..T...TT
+TT..T..T.BRBTTBB.TTTT..T.TTT
+TTTT..TTT.T.BB.T...T.T..T..T
+TTT.T..T..T.TT..TT.T.T...T.T
+TTT...T..TT...T.T..T...T...T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 9736
+debug_update: 191
+debug_elapsed: 1901
+debug_score: 10.845
+------------detailed information------------
+debug_times[0]: 1441
+debug_times[1]: 2216
+debug_times[2]: 2268
+debug_times[3]: 3811
+debug_op_times[op = 0]: 1425
+debug_op_times[op = 1]: 1825
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2501
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 3985
+debug_trees_rate: 0.402367 / 0.4
+debug_curve_rate: 0.482649 / 0.45
+debug_spread_rate: 1 / 1
+debug_sg: 73
+debug_loop: 1
+debug_vis_rate: 4.32178 / 4.8
+system_score (n=26) : 2575
+処理中: 0032.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T..TT...T....T..S.T..T..T...T...T
+T.T...T...T.TT.T....TTT.T.T...TTT
+T...TT...T.T.T..T.TTT...TT..T...T
+TTT.T..T....T.TT....T.TT.T.TT.T.T
+TT..T...T.T...TT.T.TT..T..T...T.T
+T.TT.T.T...T.TT.T..T.T..T..T...TT
+T.TT....T...T....T....T..T...T..T
+T...T.T..TT.T..T..TTT...T.T.TTT.T
+T.TTTT..T..TTT..T...T..T....T..TT
+T...TTT..T....TT..T...T...TTT...T
+TT.T.T....TTT....T.T.TT.T...TTT.T
+TT.T...TT.TT..T.T.....T.T.T.....T
+T....T.T...T.TT.T.T....TTT..T.TTT
+T.TT.T.T..TTT..T.T..TT.....T.TTTT
+T.T.TT..T.....T.....TTT..T....T.T
+T...T..TTTT.T...T.TT...TTTT.T...T
+TT.T...TT..TTT.T...T.T....T..TT.T
+T..TT.TT..T..T.T.T...T.T...T...TT
+TTT...TT.T..T..T..T.T.T..T..T.TTT
+T.T..TT...T.T.TTT.T..T..T.TT...TT
+T...T.......TT...TTT..TTT...TT..T
+T.T...T.TTT....T....T.T.TTT..T.TT
+TT..TTT..TTTTT..TTT.T.T...TT...TT
+T..T...T...T..T...T..TT.T...T.T.T
+TTTT...TT.T.BB..T..TTTT..T..T...T
+TT...TT.TT.BTTBTT...T..T..TT..TTT
+T..T.T....TRRRTB..T.T....T...TT.T
+T...T..TT..BTRRTBTT..TTT..T.TTT.T
+TTT....T.TBTGTRTB.T....T.TT..T..T
+T....TT...BTRRRTB..T.T.T...T.T.TT
+T.TT...TT..BTTTBT.T..T...T.T...TT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 6521
+debug_update: 217
+debug_elapsed: 1901
+debug_score: 8.6574
+------------detailed information------------
+debug_times[0]: 960
+debug_times[1]: 1453
+debug_times[2]: 1436
+debug_times[3]: 2672
+debug_op_times[op = 0]: 943
+debug_op_times[op = 1]: 1279
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1652
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2647
+debug_trees_rate: 0.400624 / 0.4
+debug_curve_rate: 0.457287 / 0.45
+debug_spread_rate: 0.994792 / 1
+debug_sg: 86
+debug_loop: 0
+debug_vis_rate: 4.46248 / 4.8
+system_score (n=31) : 3464
+処理中: 0033.txt
+TTTTTTTTTTTTTTTTTTTTTTTT
+T...TTTT...TS.T..TT..TTT
+T.T..TTTT.TTT..T....TT.T
+TT.T..T...TTTT...TT....T
+T...T...TT..TT..T...TT.T
+T.T..TT...T..TTTT.TTT..T
+T..T....T...TTT.T.T...TT
+T.T..T.TT.TT.T..T..TT..T
+TT....T.T..T...T.T...T.T
+TT.TT.T...T.T.T....T.T.T
+T..TT..TT...BBBBTTT..TTT
+T.T...T..T.TTTTTB...TT.T
+TTT..T..TTBTRRRRTBTT...T
+T...TT.T..BTRTTRRTB...TT
+T..T....T.BTRRRTRRTBT..T
+T.TT.TT..T.BTTRGTRTB.T.T
+T..T..T.TT..BBTTBRBT...T
+T....T...TTTT.BB.T...TTT
+TTT.T..T...TTT.T..TTTTTT
+TT..T.TT.T..T.T.T...T.TT
+T..T..T...T.T....TT.T..T
+T.T..T..TT...T.T...T...T
+TT..T..T...T...T.T...T.T
+TTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 14301
+debug_update: 162
+debug_elapsed: 1901
+debug_score: 11.7449
+------------detailed information------------
+debug_times[0]: 2401
+debug_times[1]: 3115
+debug_times[2]: 3263
+debug_times[3]: 5522
+debug_op_times[op = 0]: 1952
+debug_op_times[op = 1]: 2980
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 3565
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 5804
+debug_trees_rate: 0.400826 / 0.4
+debug_curve_rate: 0.497242 / 0.45
+debug_spread_rate: 1 / 1
+debug_sg: 59
+debug_loop: 1
+debug_vis_rate: 4.24828 / 4.8
+system_score (n=22) : 61
+処理中: 0034.txt
+TTTTTTTTTTTTTTTTTTTTTTT
+TTTT.T...TTS.T..T..T..T
+TT.T.T.T.T..T..T..T...T
+T..T....T..T..TTT...T.T
+T.T..TT..T..T..T.T.T..T
+T...TTTT.BBTTT....T..TT
+T..T..T.TTTB..T.T...TTT
+TT...T..RRRTB...TT...TT
+T..TT..TBTRRTBT..T.T..T
+T.TT...BTGTRRTB.TT..TTT
+T....T.BTRRTRTBTTTT...T
+TT..T.T.BTRTRTB..T..T.T
+TT.T....BTRRRTBT..TT..T
+T.T..T.TTBTTTB..T..TTTT
+T.TT..TT..BBBTT..T...TT
+T..T.....T.T....T.T.TTT
+TT...T..TT..T.T...T.TTT
+T.T.T..TT..T..TTT..TTTT
+T...TT.T..T.T..T.T...TT
+TTTT.T..T...TTT..T.T.TT
+TTT...T..T.T.T..T...T.T
+TT..T...TT...TT...T...T
+TTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 15365
+debug_update: 140
+debug_elapsed: 1901
+debug_score: 13.3123
+------------detailed information------------
+debug_times[0]: 2552
+debug_times[1]: 3351
+debug_times[2]: 3539
+debug_times[3]: 5923
+debug_op_times[op = 0]: 2294
+debug_op_times[op = 1]: 3038
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 3842
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 6191
+debug_trees_rate: 0.399093 / 0.4
+debug_curve_rate: 0.500498 / 0.45
+debug_spread_rate: 1 / 1
+debug_sg: 48
+debug_loop: 0
+debug_vis_rate: 4.18491 / 4.8
+system_score (n=21) : 514
+処理中: 0035.txt
+TTTTTTTTTTTTTTTTTTTTTT
+TTT.T..T..TSTT.TTT...T
+TT...T...TT.T...TT.T.T
+T..T..T.T.T...T..T..TT
+T.T.T...T.TT...TTTT..T
+TT...TT....TTT...T...T
+TT.T..TT.T.T...T.T.T.T
+T...T...T...T.T.T..TTT
+T.T.TT.T..T.T...T.TTTT
+TT.TT.....T..TT.T..T.T
+TT.T..T.TT....T..T...T
+T..T.T...T.TT..T..T.TT
+T.T..T.T.TT...T.T....T
+T...TTT...T.T....T.T.T
+TT.T.T..TT.BT.TT..T..T
+T.T....T..BTTB.T.T.T.T
+T...T.T..TTRRRTT.....T
+TT.T.T..BTRRTB.TTTT.TT
+T....T.TBTRTGTB.TT...T
+T.T.T.T.BTRRRTT.T..T.T
+T.T.T...TBTTTBTT..T..T
+TTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 16824
+debug_update: 125
+debug_elapsed: 1901
+debug_score: 16.0628
+------------detailed information------------
+debug_times[0]: 2647
+debug_times[1]: 3700
+debug_times[2]: 3953
+debug_times[3]: 6524
+debug_op_times[op = 0]: 2525
+debug_op_times[op = 1]: 3310
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 4198
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 6791
+debug_trees_rate: 0.4 / 0.4
+debug_curve_rate: 0.483245 / 0.45
+debug_spread_rate: 0.991667 / 1
+debug_sg: 48
+debug_loop: 0
+debug_vis_rate: 4.11765 / 4.8
+system_score (n=20) : 72
+処理中: 0036.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T.TBTTTBT..T..STTT...TT...TT
+T.BTRRRTBT..T....T.TT.T.T.TT
+T.BTGTRTB.T...TT...TT..T...T
+TT.BTTRTB..TTT...T.T..T.TT.T
+TTTRRRRTBT.T...TT....T..T..T
+T..BTTTTT...TT.T..T..TT...TT
+T.T.BBT...T.....T..T...T...T
+TT......T..T..T..T.T.TT..T.T
+T..T.T.T.T..T..T.TT...T...TT
+T.T.T...T....T.T.T..T.T.T..T
+TT...T..T.TT..T...TTT...TTTT
+TTTT...T.TTTT.T.T.T..T.T...T
+T...T.TTTTT.TT.T..T.TT...T.T
+TT.TT....TTTT....T.....TT.TT
+T....TT.TTTT..TTT..TT.T...TT
+T.TT..T.TTT.TT..T....T..T.TT
+TTT..TT..T...TT..TTT..T..T.T
+T...T...T..T...T..T..T.T...T
+TTT...TT..T..T..T...T....T.T
+T..TT....T.T..TT.T...TT...TT
+T.TT..T.T...T.T..TTT....T.TT
+T..T.TT...T.T...T..TT..TT..T
+TT....T.T.T..TT..T.T.T...TTT
+T.T.T.TT...T...T....TTT.T.TT
+T....T.T.T..T..TTTT...T....T
+T..T.T...T.TTT.....TT..TTT.T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 9834
+debug_update: 174
+debug_elapsed: 1901
+debug_score: 13.9575
+------------detailed information------------
+debug_times[0]: 1528
+debug_times[1]: 2221
+debug_times[2]: 2242
+debug_times[3]: 3843
+debug_op_times[op = 0]: 1445
+debug_op_times[op = 1]: 1963
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2461
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 3965
+debug_trees_rate: 0.403846 / 0.4
+debug_curve_rate: 0.453924 / 0.45
+debug_spread_rate: 0.985112 / 1
+debug_sg: 36
+debug_loop: 0
+debug_vis_rate: 4.24433 / 4.8
+system_score (n=26) : 2666
+処理中: 0037.txt
+TTTTTTTTTTTTTTTTTTTTTT
+T...T.TT...S..T.T....T
+TT.B..T..T.TT...T.TT.T
+T.BTBTT.T..T..TT..T..T
+TBTRR...T.TT.T...T..TT
+TTRRTB.TTT..TTT.T...TT
+TGRTTT..T..T.T...TTT.T
+TTTTTT.T..TT...T..T..T
+TTB.TT......TTT.T.T.TT
+T.T.TTT.TTT.T...T...TT
+T....T.T..T...TT.T.TTT
+TT.T.T..T...T....T...T
+T..T..T...T..T.TT.T..T
+TTT.T.TTT..T...T...T.T
+T.T...T...T..TT..T...T
+T...T...TTTT...T..T.TT
+T..TTT.TTT...T...T...T
+TT..T..TT..TT..TT..T.T
+T....TT...TT..T.TT..TT
+T.TT.T..T...TT...TT.TT
+T..TT..T..T....T..T..T
+TTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 17046
+debug_update: 159
+debug_elapsed: 1901
+debug_score: 17.0172
+------------detailed information------------
+debug_times[0]: 2874
+debug_times[1]: 3727
+debug_times[2]: 3813
+debug_times[3]: 6632
+debug_op_times[op = 0]: 2462
+debug_op_times[op = 1]: 3400
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 4268
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 6916
+debug_trees_rate: 0.4 / 0.4
+debug_curve_rate: 0.464828 / 0.45
+debug_spread_rate: 1 / 1
+debug_sg: 15
+debug_loop: 1
+debug_vis_rate: 4.18333 / 4.8
+system_score (n=20) : 219
+処理中: 0038.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T...T....T...TS.T.T.TTTT...TT
+T.T...TT...T...T.....T...T..T
+TT..TT..T.TT.T...T.T..T.T..TT
+T..T...TT...TTTTT.T.T....T..T
+TT..TT....T.T.T.T....TTT..T.T
+T.T...T..TTT..T.T..T.....T..T
+T...T..T..T..T...TT..T.T..TTT
+TT.T.TT..T..TT.T.....T.TT..TT
+T.T...TTT..TT...T.TTTTT..T..T
+T...T...TT...TTT....T...TT..T
+TT.T.TT...T....T..T...TTT..TT
+T..T..TTT..TT.T...TTT..TT...T
+T...T..T.TTT..T.TTT...T..TT.T
+T.T.....T.T..TT..T..T..T...TT
+TT.T.TT....T..T...T..T..T.TTT
+TT.T...T.T......T..T.TTT..T.T
+T.BBBT.T...TTT.T.T.T.....T..T
+TBTTTB..TT....TT...TTT.T.T.TT
+TTRRRTBTTTT.T..TTT..TT.T....T
+TTRTRRTB.T...TT...TT..T..TTTT
+TTRGTRTBT..T.T.TT....TT.T..TT
+TBTTBRB..T..T..T.TTT....T.TTT
+T.BB.TTT..T...T...TTTT.T....T
+T.T.TT...T...T..TT.T.T...TT.T
+TTTT...T..T.T.T....T...TT...T
+T.T..T.T....T..T.T...TT...T.T
+T...T..TTT.T.T....T.TTTT.T..T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 8943
+debug_update: 163
+debug_elapsed: 1901
+debug_score: 13.9742
+------------detailed information------------
+debug_times[0]: 1310
+debug_times[1]: 1992
+debug_times[2]: 2109
+debug_times[3]: 3532
+debug_op_times[op = 0]: 1288
+debug_op_times[op = 1]: 1637
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2303
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 3715
+debug_trees_rate: 0.399177 / 0.4
+debug_curve_rate: 0.458178 / 0.45
+debug_spread_rate: 0.995434 / 1
+debug_sg: 73
+debug_loop: 1
+debug_vis_rate: 4.2844 / 4.8
+system_score (n=27) : 1813
+処理中: 0039.txt
+TTTTTTTTTTTTTTTTTTTTTTT
+T...T....TTS..BTGTB.TTT
+T.T...TT...T.TBTRRTB.TT
+T..T.T.T..T...TBTRRTB.T
+TT..T..TT...T..TBTRB.TT
+T.TT..T..TT..TT..B.TTTT
+T...T..T....T.T.T.T...T
+TT.TTT...T......TT..T.T
+T...T.T.TT.T.T.TTT.T..T
+T.T....T...TTT..TTTT.TT
+TT..TT...T...TT.T.T...T
+T.TTTTT.TTT..T.TT..TT.T
+T....T...T.T.T..TT....T
+TT.T.TTT...T..T....T.TT
+T.T...TTT.T..T..TTT...T
+T...T...TT..TTT...T.T.T
+T..T..T.....T..TT..TT.T
+TTTT.TTT.TT.T..T.T...TT
+TT.TTT...T....T....T..T
+T...T..TTT.T.T..T.TT.TT
+T.T...T..T.T.TT..TT...T
+TT..T..T...T....T...T.T
+TTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 15157
+debug_update: 155
+debug_elapsed: 1901
+debug_score: 18.0946
+------------detailed information------------
+debug_times[0]: 2465
+debug_times[1]: 3345
+debug_times[2]: 3481
+debug_times[3]: 5866
+debug_op_times[op = 0]: 2177
+debug_op_times[op = 1]: 3023
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 3808
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 6149
+debug_trees_rate: 0.401361 / 0.4
+debug_curve_rate: 0.465127 / 0.45
+debug_spread_rate: 0.996212 / 1
+debug_sg: 23
+debug_loop: 0
+debug_vis_rate: 4.12548 / 4.8
+system_score (n=21) : 871
+処理中: 0040.txt
+
+T..T.T...T...T....TT...T.T..T
+TTT...T..T..TT.T...T.T.T..T.T
+T.T.T..T..T....TT....TTTT...T
+T...TT..T..TTTTT..TT....TT.TT
+TT.TT..TT.TTTT...T.TT.T..T.TT
+TTTT...T...T..T.T...T..T.T..T
+T..T.T...T...TTT..T..T.T..T.T
+T..T..T.T.T.TT.T...TT..TT...T
+T.T..T.TT...T..T.T.TT.TT.TTTT
+T...TT...TT...T.T.....T.....T
+TT.T...T....TT..T.T.T...T..TT
+TTT..TT..TTT.T.....T.TTTTT..T
+T......TTT.T..TTTT...T.T..TTT
+T..TT....T..T..TT..T.T..T...T
+T.T...TT..T..T...T.TTTT...T.T
+T.TT.T..T..T..TT......TT.T..T
+T..T.T.T....T.T.T.T.T....T.TT
+TT..TT..TT.T.....T.T..T...T.T
+T..T......T.TT.T.......TTT..T
+TT.T..TTT....B.TTTTT.T..T..TT
+T....TT.T..TBTBRB.TT..T...TTT
+T.T.TT....TBTGTRTB..TT...T..T
+TT...T.TT.BTRRTRTBT..T.T...TT
+T..T.TTT.TBTRTRRTB.TT..TTT..T
+T.TT..T...BTRRRTB.T.TT..TTT.T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 8663
+debug_update: 173
+debug_elapsed: 1901
+debug_score: 7.24777
+------------detailed information------------
+debug_times[0]: 1288
+debug_times[1]: 1911
+debug_times[2]: 1934
+debug_times[3]: 3530
+debug_op_times[op = 0]: 1208
+debug_op_times[op = 1]: 1705
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2191
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 3559
+debug_trees_rate: 0.399177 / 0.4
+debug_curve_rate: 0.481405 / 0.45
+debug_spread_rate: 0.995434 / 1
+debug_sg: 70
+debug_loop: 0
+debug_vis_rate: 4.43119 / 4.8
+system_score (n=27) : 1884
+処理中: 0044.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T...T...T..T..T..T.S.TT.....T..T..TT.T
+T.T...TTT....TT.TT.T.T..T..T.T.T.TT..T
+TT.T..T...T.T.T....T.....T......T...TT
+T....T..T.T.T.T.TT..T.T..T.TTTTTT.T..T
+T.TT.T...T.T....T.T.T..TT...TT....TT.T
+TT....TT.....T.TT..T..T..T.....T.TT..T
+TT.T..T..T.T..T...T..T..T..TT..T...T.T
+T...T..T.TT......T.T..T...TTT...T..T.T
+T..T...T..T..T.TT....T.T.T..TTTT.TT..T
+T.T..T.TT...T....T..T..T..T...T..TT.TT
+T.T...TT.T.T..T.T.TT.T...T....T.T....T
+T..TTTT..T..TT..T..T...TT..TT.....T..T
+TT.T.T.T..T...T...T.T.T...T..TTTT..TTT
+T....T..T...T..TTTT...TTT....T....T.TT
+T.T.T..TT.TT..TTT..TTT.TTTT.TT.T.TT..T
+T.TTT.T..T.TT...TT...T...T..T.TT..TT.T
+T..T..T.T.....T.....T....TTT.....TT..T
+TT...T....T.T..TTT.TT.T....T...T..T.TT
+T..TTT.TT..TT.T.T.T.T..TTT....T.TTT..T
+TT....TT..TTTT....T..T....TTT...T...TT
+T.T.T.....T....T.T....T.T...TT.T..T..T
+T..T..TTT...TT.T...T.TTT.T.T.T.....T.T
+T.T..TTT.TT...T..T..T.TT.T.T..T.TTT..T
+T...T.TT..TT...TTTT.T..T..T.T...T.TT.T
+TTT..T...T.T.T....T...TTT..T...T...TTT
+TTTBBBB.T.....T..TTTTT..TT....T..T...T
+TTTTTTTBTTT.T..TTT.T.....TT.T..T..T..T
+TBTRRRRTT....TTT...T.TT....TTT...TT.TT
+TBTRTTRRTBT...T..TTT..T.TT.....TTT...T
+TBTRRRTRTB..T..T..T.T..T...T..TT..TT.T
+TTBTTGTRTBT.T.T.T..T..TT.TT.T....T...T
+T..BBTBRB..TT....T.TTT.T....TT..TTT.TT
+T.TT.B.T.T..T.TTTT.T...TTTT...T.TT...T
+TT.T..T..TTT....T...T.T....T...TT..T.T
+T....TT....T.TT.T.T.....TTT..T..T..TTT
+T.T..TTT.T..TT.....TT..TT...TT..TT...T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 4842
+debug_update: 217
+debug_elapsed: 1901
+debug_score: 1.95805
+------------detailed information------------
+debug_times[0]: 681
+debug_times[1]: 1101
+debug_times[2]: 1088
+debug_times[3]: 1972
+debug_op_times[op = 0]: 660
+debug_op_times[op = 1]: 937
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1343
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 1902
+debug_trees_rate: 0.400463 / 0.4
+debug_curve_rate: 0.454899 / 0.45
+debug_spread_rate: 0.988417 / 1
+debug_sg: 68
+debug_loop: 2
+debug_vis_rate: 4.66667 / 4.8
+system_score (n=36) : 3864
+処理中: 0045.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T.T...T..T.BBBS...T..T.T..TT
+T..TT...T.BTTTTBT...TT...T.T
+TT.....T.BTRRRRTTT.T...T...T
+T.T.TT.TBTRRTTRTB....T..T.TT
+T...T..TTRRTRRRTB.TT..T.TT.T
+T..T.TTBTRTGRTTBT...T.TT...T
+TT...T..BRBTTBB..TT..TT..T.T
+TTT....TT.TBB..T...T..T.T.TT
+T..TTT..TTT.TT..TTT..T..T..T
+T.T..T..TT.T..T.....T..TT.TT
+T..T...TTTT..T.T.TT.....T..T
+TT.T.TTTTT..T..T...TTTT..T.T
+TT...T.T...TT...T.T....T...T
+T.TT.....TT...TTT....TTTT.TT
+T..TT.T..TT.T......TT..T.T.T
+TT....TT.....TT.TT.T..T..T.T
+TTT.TT..TT.T..T..T...T..T..T
+TTT.T..TT..T.TT.TTTT...T..TT
+T.T..T..T.T.T....T...T.T.TTT
+T..T..T...T...TT.TT.TT....TT
+TT...TT..TTT..T.T....TTTT..T
+T...T..T..T.T...T..T..TT..TT
+TTT..T...TT..TT.T.T..T..TTTT
+T..T..TT...T...T.T..TT.TT..T
+T.T..TTTTT..TT....T.....TT.T
+T...TTT.T..T....T...T.T....T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 9790
+debug_update: 183
+debug_elapsed: 1901
+debug_score: 8.74287
+------------detailed information------------
+debug_times[0]: 1506
+debug_times[1]: 2197
+debug_times[2]: 2176
+debug_times[3]: 3911
+debug_op_times[op = 0]: 1407
+debug_op_times[op = 1]: 1884
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2490
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 4009
+debug_trees_rate: 0.402367 / 0.4
+debug_curve_rate: 0.487799 / 0.45
+debug_spread_rate: 0.99505 / 1
+debug_sg: 72
+debug_loop: 0
+debug_vis_rate: 4.35323 / 4.8
+system_score (n=26) : 1742
+処理中: 0046.txt
+TTTTTTTTTTTTTTTTTTTTTTTTT
+T...T...TT..STT..TT.TT..T
+T.T...T.TT.T..TT..T..TT.T
+TTTTT.T.....T.T.T..T.T..T
+T.....TT..T..T...T....T.T
+T.TT.TT..TT....T..T.T...T
+T...T...T...T.T..T...T.TT
+TTT..T.T..TT...T...T.T..T
+T...T..TTTT.TT.TT.T..TT.T
+T.TT..T.T.T.TT...T..T..TT
+T.T..TT...T..TT.T..TTT..T
+T.T.T..TT..TBBBB.T..T..TT
+T..T..T..T.BTTTTB.T...T.T
+T.T.....T.BTRRRRTB.TT...T
+T...TTT..TBTRTTRRTB..T.TT
+TTTTT...T.BTRRRTRRTBT...T
+TTTT..T....BTTRGTRTBT.T.T
+TT...TTT.TT.BBTTBRBTTTTTT
+T..TT..TTTT...BB.T.....TT
+TT...T...T..TT.T..T.TT.TT
+T..T...T.TT...TT.T.TT...T
+T.T.T.TT..TT.TTT....T.T.T
+T.T.T...T..T....T.T.T..TT
+T...TTTT..T..T.T..T..T..T
+TTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 12597
+debug_update: 176
+debug_elapsed: 1901
+debug_score: 13.8734
+------------detailed information------------
+debug_times[0]: 1896
+debug_times[1]: 2827
+debug_times[2]: 2967
+debug_times[3]: 4907
+debug_op_times[op = 0]: 1849
+debug_op_times[op = 1]: 2427
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 3255
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 5066
+debug_trees_rate: 0.400756 / 0.4
+debug_curve_rate: 0.477639 / 0.45
+debug_spread_rate: 1 / 1
+debug_sg: 70
+debug_loop: 0
+debug_vis_rate: 4.2429 / 4.8
+system_score (n=23) : 858
+処理中: 0047.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T.TTTT.....T.T...TS..T...T.TT...T..TT
+T.T....T..TT..TT..T.T..T...T..TT.T..T
+T..T..T..T.T....T.....TTTTT....T.T.TT
+TT.TT..T...TT.T...TT.T.TT...TT.T...TT
+T...T...TT....TTT.T..T..TTT.TTT.T.T.T
+TTT...T..TT.T...T..T.TT..T....T.....T
+T.T..T.TT.TT.TTT..TTT..T...T.T..TTTTT
+T..TTT..T..TTT...T..TT...TT....T.T..T
+TT...TT...T....T.T.....TT...T.T..T.TT
+TT.T...T.TTT.T.TT.TT.T....TT....T...T
+T.T..TBBB.T..TT.T...TTT..T..T..TT.TTT
+TT..BTTTTB.T.....TT.TT.T....TTTTT...T
+T..TTRRRRTB.T.TT.T.....TT.T....T..T.T
+T.BTRRTTRTB.T..T.T.TT..T.TTTTT...TT.T
+TTTRRTRRRTBT.TT....TTT..TT.....TT.T.T
+TTTRTGRTTB......T....TT..T.T..T...TTT
+T.BRBTTBB.TT..T..TT..T..TT..T...T..TT
+T.T..BB...T.TT.T...T..T....TTTT..T..T
+T.TTT..T.T...T..TT..TTTT.T..TT..TTT.T
+T....TT...TT..T..T..T...T.TT...T..T.T
+TTT.T...T..TT..T...TT.T.T...TT.TT..TT
+T.T.T..T..T.TT.TT.T...TT.TT..T....TTT
+T..T..T.TT..T...T.TT.T....T.T...TTTTT
+TT.TTT...T.T..TT.T...T.TT.....T....TT
+TT.T..TT.T...T....T.TT.T...T...T.T..T
+T....T.T...T...T.T..T..T..T.T..TT.T.T
+T.TT.....TT..TT..T....T...T...T...T.T
+T.TTT...T..TT...TT.TTT...TT..T..TT..T
+TTT...T.T.TTT..T..T...T.T...T..T..TTT
+T...T.TTT..T....T...T...TTT..T...T..T
+TTTT..T...T.TTT...T..T.TTTT....T...TT
+T....T...T.T..T..T..T..T...T....T.T.T
+T.TT.T..TT...T..TT.T..T..TT..TT..T..T
+TT.....TT.T....TT...T..T..TT..T.T..TT
+TT...T....T.T.T...T...T.T....T....T.T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 5124
+debug_update: 197
+debug_elapsed: 1901
+debug_score: 6.91016
+------------detailed information------------
+debug_times[0]: 822
+debug_times[1]: 1045
+debug_times[2]: 1099
+debug_times[3]: 2158
+debug_op_times[op = 0]: 698
+debug_op_times[op = 1]: 1035
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1308
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2083
+debug_trees_rate: 0.4 / 0.4
+debug_curve_rate: 0.45185 / 0.45
+debug_spread_rate: 0.991837 / 1
+debug_sg: 58
+debug_loop: 2
+debug_vis_rate: 4.52812 / 4.8
+system_score (n=35) : 4598
+処理中: 0048.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T..T....T...T..T.T..ST.TT...T.T...T....T
+T....TT..T.TT..TT...T...TTT.T..T.T..TT.T
+T.T..T..T....T.T...T..T......T...T....TT
+TT...T.T.TT....T.T.T.T..T..TT...T.T..TTT
+T.T.T.T..T.T.T..T..TT..T..T...T...TT...T
+TT.....T....T..T..T.BBTB.T..TT...T...TTT
+T..T.T.TTT....T....BTTTTB..T...T..T....T
+T...T.T.TT.TT..T.TBTRRRRTBT...T...T.TT.T
+T.TT.TT....T...TTBTTRTTRTTT.T.T.T..T...T
+T...T......T...TTTRRRTTRTBTT...TT.T..T.T
+TT..T.TTTTTTTT...RRTTTRRTB..T.TT.TT.TTTT
+T..T...T.TT.T....TTGRTRTB..T.....T..T.TT
+TT..T.T..T...TTT..BTRRRTB.TT.TT..T.T...T
+TT.....T...T....T.TBTTTB.T.T.T...T...T.T
+T..T.T.TT.TTT..T.T..BBB.TTTTT..T..T.T..T
+T.T.TT..T...TT.....T.T.T..T..TT.T....T.T
+TT...T....T.TT.T...T.TT.T.TT..TT..T...TT
+T..T.TTT.T.T...TT.T..T....TT...T...TTT.T
+T..T..T...T...T....TT...T..TTT.T.T.....T
+TT..T...TT...T...T..TT.TT.TTTT....TTTTTT
+T.TT..TT...T.T.TT..TTT..TT.....TTTTT.T.T
+T....T..T.T..TTTTT..TT...T.T.T....T....T
+T.T..T....T.....T.T...T....TT..TT..TT.TT
+TTTTTTTT..TTTTT..T.TT..TT...TTTT.......T
+TT...TT..TT....T.....T.T.TT...T..T.T.T.T
+TTT...T.TT..TT.T.TT..TT.....TT.T.T.TTT.T
+T...T....TT..TT....T....T..TT...T..TTTTT
+TT.TTT.T....T...T.T.TT.T..T...TT..T....T
+T..TT.TTTT.T..T.T....T.T......T..T.T.T.T
+TT....T.T.TT..T..T.T..T..T.T.T..T..T.TTT
+T..T.TT....T.TTT.TT...T.TT..T..TTT....TT
+T.TT.T.T.T...TT..T..T.T...T..T..T..T.T.T
+TT..T.....TTTT.T.T...T..T.TT..T...T.T..T
+T..TT.T.T...T...T..T..T..TTTTT..T.....TT
+TT....T.T.T..T.T.T..T.TT..T.T...T.T.T.TT
+T.T..T...T..T..T.T...T.TT.T...T..TT....T
+TTTTT..T..TT..T...T.T....T..TT..TTTT.T.T
+T.T.T..T.TT.....T.....T.T..T...TT.T.T..T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 4355
+debug_update: 214
+debug_elapsed: 1901
+debug_score: 0.77992
+------------detailed information------------
+debug_times[0]: 599
+debug_times[1]: 932
+debug_times[2]: 974
+debug_times[3]: 1850
+debug_op_times[op = 0]: 594
+debug_op_times[op = 1]: 825
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1102
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 1834
+debug_trees_rate: 0.400277 / 0.4
+debug_curve_rate: 0.452457 / 0.45
+debug_spread_rate: 0.983834 / 1
+debug_sg: 162
+debug_loop: 1
+debug_vis_rate: 4.69484 / 4.8
+system_score (n=38) : 5408
+処理中: 0049.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTT
+TBBB.T.T...T.STT.T..T...TTT
+TTTTB..TTT..T....T....T..TT
+TRRRTT..T....T..T..TT..T..T
+TRTRTBT...TT...T....TT..TTT
+TRTRRTBT.TT.T.TT.TT.TTT...T
+TRRTGTB..T...TT...TT..T.TTT
+TTRTTB.TT..T..T.TT...TT..TT
+TTRRRRTT..T.TT..T..T...T..T
+TBTTTB...T...T.T...TT..TTTT
+T.BBB.TT...TT....T..TT....T
+TTT.TT.T.T..T.T...TTTTT.TTT
+T...TT..T.TT...TTT..T.....T
+T.T.TTT.T.T..T....T...TT.TT
+TTT.TT....T.TTT.T..TTT..T.T
+T...T..TTT...TTT.T.T.T.T..T
+T..T..T.T..T..T..TT....TT.T
+T.T..T...TTT...T....TTTT..T
+T...T.TT.....T.T.T.TT....TT
+T..T..T.T.T.T.T.T..T..TT..T
+T.T..TT..T..T.T...TT.TT.T.T
+T...T..T.T.T...T.TT...T.TTT
+TT.T.T.T.....T...T..T...T.T
+T..T...T..TT.T.TTT.T...T..T
+TT....T.T...T....T.T.T..T.T
+TT..T.....T..T.T...T..T...T
+TTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 10221
+debug_update: 161
+debug_elapsed: 1901
+debug_score: 13.8657
+------------detailed information------------
+debug_times[0]: 1542
+debug_times[1]: 2260
+debug_times[2]: 2327
+debug_times[3]: 4092
+debug_op_times[op = 0]: 1478
+debug_op_times[op = 1]: 2017
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2541
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 4185
+debug_trees_rate: 0.4 / 0.4
+debug_curve_rate: 0.466058 / 0.45
+debug_spread_rate: 0.997333 / 1
+debug_sg: 34
+debug_loop: 0
+debug_vis_rate: 4.27273 / 4.8
+system_score (n=25) : 2202
+処理中: 0050.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTT
+TT..T...TT..TS..T...T....T
+T.T...T..TT...T...T...T.TT
+T.TT.T..TT.TT..T.T.TT..TTT
+T..T..T.T....T.TT..TTTT..T
+TT...T..T.TT.T....T....T.T
+TT..T..TT.T...T.T...TT...T
+T..T.T.....T.....T.T...TTT
+TT...TT.TT..T.TT..T..TT..T
+TTT.TTTT..TT..TT..TT...T.T
+T.T....TT..T.T.T.T..TTT..T
+TT.TTB.T..T..T...T.T....TT
+T...TTBRBT..T...TT...T.TTT
+T.TBTGTRTB.T..T..TTTTT.T.T
+T.BTRRTRTTT..TTT.T..T....T
+T.BTRTTRRTT.T.T..TT...T..T
+T.TTRRRTRRTT...T....TT..TT
+T..BTTRRTRRTBT.TT.TT.TT..T
+TTT.BBTRRTRTBT...T....TT.T
+TT..T.BTRRRTBTT..T..T.T..T
+TTT..T.BTTTB...T...T.....T
+T..TT..TBBB.T.T..TT.TT.TTT
+T.TT.T....T..T..T...T..T.T
+T.....T.T.T.TT.TT.T.T...TT
+TT..T...T.T..T...T....T..T
+TTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 12883
+debug_update: 178
+debug_elapsed: 1901
+debug_score: 6.694
+------------detailed information------------
+debug_times[0]: 1929
+debug_times[1]: 2915
+debug_times[2]: 2878
+debug_times[3]: 5161
+debug_op_times[op = 0]: 1807
+debug_op_times[op = 1]: 2538
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 3312
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 5226
+debug_trees_rate: 0.395833 / 0.4
+debug_curve_rate: 0.529919 / 0.45
+debug_spread_rate: 0.994253 / 1
+debug_sg: 74
+debug_loop: 0
+debug_vis_rate: 4.27168 / 4.8
+system_score (n=24) : 686
+処理中: 0051.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T.T...T...T.T.STTT..T.TT.T.TT
+T...T...T.....T.T..TT.TT....T
+T.TTT.T.T..TT.....T...T..TT.T
+TT..T.TT.TT.TT.T.TTT.T.T....T
+TT.T.....T..T.TT..T.....TTT.T
+T....TT.T..TTBBB.TT.T..TT...T
+T.TT.TT...TTBTTTB....TT.T..TT
+T..TT...TTTBTRRRTB.T.T....TTT
+TT.T..T..T.BTRTRTBT....T.TT.T
+T.T..T.T...BTRTRRTB..T..TT..T
+T.T.TT...TTBTRRTGTBT.TTT...TT
+T..T...T.T..BTRRTBTT....TT..T
+TT...TT...TT.BTRRRT...T...T.T
+T..TT...T...TTBTTBTT.T.TT...T
+T.TTT..T.T.T...TB....T.T..TTT
+T.T.T.T..T..T.T..TT.T......TT
+TT..T...TTT.T....T..T.T.TT..T
+T..T.TT..T...T..T..T..TT...TT
+TT.T....T..TT.T..TTT.T...T..T
+T....T.TTT.....T.T..T..T..T.T
+T.T.T.T.T.TT.T..T.T.TT..T.TTT
+T..T....T...T..T..T...TT....T
+TT...T.TTTT..T...T.T..TT.T..T
+T.T.TT...T.T.TT.T..TT.TTTT.TT
+T..T...T...T....T.TT...T.TT.T
+TT....T.TTT...T.T....T...TT.T
+TTT.T....TT.T.T...T.T..T....T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 9000
+debug_update: 220
+debug_elapsed: 1901
+debug_score: 10.0885
+------------detailed information------------
+debug_times[0]: 1392
+debug_times[1]: 1982
+debug_times[2]: 2056
+debug_times[3]: 3570
+debug_op_times[op = 0]: 1292
+debug_op_times[op = 1]: 1783
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2258
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 3667
+debug_trees_rate: 0.399177 / 0.4
+debug_curve_rate: 0.456948 / 0.45
+debug_spread_rate: 0.997717 / 1
+debug_sg: 42
+debug_loop: 1
+debug_vis_rate: 4.42792 / 4.8
+system_score (n=27) : 1602
+処理中: 0052.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T.TT.T..TTTTTT...S.T.T.TTT..TT....T
+TT.....T...T..T.T......TT..TT.T.T.T
+T...TT.TT.T.T..T..T...TT...TT...T.T
+T.T.T.TT....T..T.T.T.T.T..T...TT.TT
+TT.....T.TT..T...TTTT....T...T....T
+TT.T.T..T...T.TT..T...TTT...T..TT.T
+T...T..T..TT..T.T...T.T....T.TT...T
+TT...T..T....T....T.T.TT.TTT....TTT
+TTTTTTT..T.T...T...TT..T...TT.T.TTT
+TT...TTT.T.T..TT.T.T.T...TT.T..T..T
+T..TT.TT....TT..T...T..T..T..T..T.T
+TT.....T..TT..T..TT.T.T.TTTT..T...T
+T.TT.T.....T.T..T.T..TT...TTT..TT.T
+TT...TT.TTT....T..T.T.TT.T.T..T...T
+T.T..T.T....T.T..TT...TT.....T...TT
+T...T...T.TT....T...T.T.T.TT...T..T
+TT..T.T.....TT.T..TTT...T...TT..T.T
+TT.T..T.TT.TTTT......T.T....T..T..T
+T.TT.T.TT....T..TTTT..T..T.T....TTT
+T..T..T...TT....TTTT......T..TT..TT
+TT..T.T.T...TT.T..T.TTT.TTT.T..T.TT
+T.T...TT..T..T..T...T.T...T....T..T
+TT..T..T.TT...T.T.TT...T.TT.TTT.T.T
+T.T..T.T..TT...TT....TT.TTT...T..TT
+T...TT.TTT...T..TTT...T...T..T..T.T
+T.TTT...T...T..T....T..TT...T..T..T
+T.T...TB.TTT..TTT..T.T.TT..TT.T..TT
+TT.T.TBTTT...T..T....TT..T....T.T.T
+TTT..TTGTB..TT.T...T.......TTT....T
+T..T.BTRRTTTT.....T..T.TT...T..T.TT
+T..T..BTRRTB..T.TT..T.T...T...T...T
+T.TT.T.BTRB.T..T...TT...TT...TTTT.T
+T.....TTBT...T..TT..T.T.TT.T....T.T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 5858
+debug_update: 183
+debug_elapsed: 1901
+debug_score: 3.52689
+------------detailed information------------
+debug_times[0]: 797
+debug_times[1]: 1307
+debug_times[2]: 1323
+debug_times[3]: 2431
+debug_op_times[op = 0]: 793
+debug_op_times[op = 1]: 1108
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1538
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2419
+debug_trees_rate: 0.399449 / 0.4
+debug_curve_rate: 0.473965 / 0.45
+debug_spread_rate: 0.986239 / 1
+debug_sg: 88
+debug_loop: 0
+debug_vis_rate: 4.54109 / 4.8
+system_score (n=33) : 340
+処理中: 0053.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTT
+T..T.T.T...T.ST...T.T..T..T
+TT.T.T.T.T..T...T.T...TT.TT
+T..T....T....T.TTT..T.....T
+T...T.T...TT.T..T...TTT.T.T
+T.T...TTTTT...T...TTTT..T.T
+T..TTTT...T.T..T.T...T.T..T
+TT.T...TT...TTT..T.T.TT..TT
+T...T.T....TT...T..T.....TT
+T.T...T..T...TTTTT..TT.TTTT
+TT.TT..TTT.T....T..T....TTT
+T...T.TT....TT....T.T.T..TT
+T.T..TTT..T...T.T....T.T.TT
+T..T....TTTT.TT..T.T.T.T..T
+TT..T..TT..TT..T.T..T...T.T
+T.T.TT....T.T.T...TTT.T.T.T
+T.T..TT.TT...BBB.T...T...TT
+T..T...T...TBTTTTT.T...T..T
+TT...T...TTBTRRRTBTTT.T..TT
+TT..TT.T...BTRTRGTRB..TT..T
+TTTTT..TTT.BTRRTTTRTBT.TT.T
+T.....TT...TBTRRRTRTB..T.TT
+T.T.T..T.T..TBTTRRRTBT....T
+T..T.T.T.T....BBTTTB..T.T.T
+T.T....T..TT.TT.BBB..T...TT
+T..TTT..T..T...T..T.T..TTTT
+TTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 10654
+debug_update: 155
+debug_elapsed: 1901
+debug_score: 11.9162
+------------detailed information------------
+debug_times[0]: 1574
+debug_times[1]: 2401
+debug_times[2]: 2429
+debug_times[3]: 4250
+debug_op_times[op = 0]: 1563
+debug_op_times[op = 1]: 2043
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2645
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 4403
+debug_trees_rate: 0.4 / 0.4
+debug_curve_rate: 0.4505 / 0.45
+debug_spread_rate: 0.994667 / 1
+debug_sg: 99
+debug_loop: 0
+debug_vis_rate: 4.37802 / 4.8
+system_score (n=25) : 2001
+処理中: 0054.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T..T.T.TTTT...T.T.T..ST...TT....T.T.....TT
+T.T.....T...T...T..T.T..T..TTT.....T..T.TT
+TTT..TTTT..T...TTT....TT.T....TT.TT..T...T
+T.T...T...T..T..T..TT....T..T.T.....T..T.T
+TT..T....TTT..TT..TTTT.TT..T....TTTT.T.TTT
+T.TT..TT..T.TTT.TT..T...T...T.TT.....T..TT
+T..TTT..T.T.T...T..TT.T...T.TT....T...TTTT
+TT...T..T...T.TTTT.T.TTT.T.T...TTT....T.TT
+T..T..T...TT..T.T.....TT.....T...T.TT...TT
+T...T...T....T....T..T..T.T.T.T...T.TTT..T
+T.T.T.TT.T.T.T.T.T..T.T...TT...TT......T.T
+T.TT....T..T...TT...T..T.T...T...T.TTT.T.T
+TTT.T...T.TTT.T....T.T.....TT.TT..T...T.TT
+TTTTT.T..T...TT.BTBB....TT..T...T...T.T..T
+TTT..T.....T.T.BTTTTB.TTT.T.TTT.T.T..T..TT
+T..T.....TTTT.BTRRRRTB....T..T..T...T..TTT
+T....T.TT..TTBTRRTTRTB.TTT...T.TT.T...T..T
+T..T.T.T...TBTRRTRRRTBT..T.TT...TT.TT....T
+TTT..TT..T..BTRTGRTTB..T..T...TT...TT.T.TT
+TT.TTT.T..TTTBRBTTBBT....T..T....T..T..T.T
+T..T...TT.....T.BBT..T..T..T..TTTT.T.T...T
+T....TT...T..TT.TT....T...TTTT..T....TTT.T
+T.T.....TT.TT.T.T..TT.TT..T.T.T.T.TT..T..T
+T.TTTTT...T.....T..T....T.T.T....TT.T..TTT
+TT.....T...T..TT..T..T.TT.TT...T.T...TT..T
+T..T.T..TTTT..T..TT..T.T...T.TT....T...T.T
+T....TT......TTT...TT..TT....T..TTTTT..T.T
+T.T.T..T.T..T..T..T...TT.T.T...T.T..T....T
+TT..TT..T..TT....T..T....TT..T...TT...T.TT
+TTT.T.T....T.T.T..TT.T.TT...T...T..T.T...T
+TT..TTTT.TTT....T.T...TT.T..T.TT.T.T..T.TT
+T..T.TT....TT....T..T.....T.TTT..T....T..T
+TTT....T..T...TT...T..TTTT......T...T..T.T
+TTTTT....TT.TT.TT.TT.T...T.TTTT...T..T..TT
+TTT.TTTT....T....TT.T..T..T..T..TTT.TT.T.T
+TTTT....TT....T.TTT...TT.T.TT...T.T...T..T
+T....T...T.T...T..TT....TT....T...TT.T..TT
+T.T...TT...TT..TT...T.T..T...T.T....T..TTT
+T..TTT....T.T.....T.TT...T..T.TTT..T....TT
+T.....T.T...TTT..TT....T...TTTTTTT...TT.TT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 3696
+debug_update: 227
+debug_elapsed: 1901
+debug_score: 0.875424
+------------detailed information------------
+debug_times[0]: 435
+debug_times[1]: 872
+debug_times[2]: 843
+debug_times[3]: 1546
+debug_op_times[op = 0]: 518
+debug_op_times[op = 1]: 631
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1011
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 1536
+debug_trees_rate: 0.4 / 0.4
+debug_curve_rate: 0.454902 / 0.45
+debug_spread_rate: 0.984375 / 1
+debug_sg: 131
+debug_loop: 4
+debug_vis_rate: 4.68677 / 4.8
+system_score (n=40) : 5551
+処理中: 0055.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T.TT...TTTTT..TT.S..TTT...TT..TTTT
+T.TT.T...T..T.T..T..T.TT.T...T...T
+T.....TT....T..T..T......T.T...T.T
+TT..T.T..T...T.T.TT..T.TT..TT....T
+T..T..T.T.TTT......T.T.TTTTT...TTT
+T...T..TT...T.T.T...T...T....TT..T
+TTT..T..T..TT.T.TT.T...T....TT..TT
+T.TT..TTTT.....TT..T.TTT.TT...T..T
+T....T.T..BBTT..TTT..T..T.T.TTTT.T
+TT.T...BRBTTBB.TT..T...TT....T.T.T
+TT.TTTBTRTGRTTTT..T..TT...TT..T..T
+T.T...BTRRTRRRTB.T..TT..TT..T...TT
+T...TT.BTRRTTRTBTTT....T...T..T..T
+T..T..TTBTRRRRTBTTTT...T.TT..T..TT
+TTT..TT..TTTTTB..T..T.TT.....TTTTT
+T..T.T..TTBBBBTT.TT.T..T.T.TT..TTT
+TT...T.TTT.T...T....T.T.TTT..T.T.T
+T...T...T.T.T..TT.....T...T.T....T
+T.T...T.T...TT.TT.TTT..T.T....T.TT
+T..T...T...TT..T...T.T....TT..T..T
+T.TT.T..TT....T..T...TT.TT..T..TTT
+TT.TT..T..T.T..T..T.T.T..T.T.T.T.T
+T..T..TT..TT....T.TT....T..T.....T
+T....T...T..TTT.T.T..T.T..T.TTT.TT
+T.T...T.T....T....T.T.....T.....TT
+TT..T.T..TT.T..T.T...TT.T..T.T.TTT
+T..TT...T....T.T...T.TTT.T.T.T...T
+T..T..TT...T...T..TT..T.T....TT.TT
+T.TT.....T.T..TTT...T...TTTTT....T
+T..TTT..TT..T..T..T..T..T...T.T..T
+TT...TT...T..T.T.T...TTT..T..T.T.T
+TTTT.T..TT...T.T.TTT.....T..T....T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 6206
+debug_update: 212
+debug_elapsed: 1901
+debug_score: 5.96756
+------------detailed information------------
+debug_times[0]: 894
+debug_times[1]: 1350
+debug_times[2]: 1423
+debug_times[3]: 2539
+debug_op_times[op = 0]: 930
+debug_op_times[op = 1]: 1132
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1615
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2529
+debug_trees_rate: 0.401367 / 0.4
+debug_curve_rate: 0.461213 / 0.45
+debug_spread_rate: 0.996737 / 1
+debug_sg: 33
+debug_loop: 2
+debug_vis_rate: 4.54501 / 4.8
+system_score (n=32) : 3155
+処理中: 0056.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+TT.T...T...T...TS..T.T...TT...TTT
+T...T.T..T...TT..T.T...T....T.T.T
+T.T.....T..TTT..T.T..TT...T.T...T
+T..TTT.T..T..TT....T...TT.T.TT.TT
+TT....T.TT...T...T..T.TT..TTTT.TT
+T.T.T.T..T.TT..T..T....T.T.TT.TTT
+T...T...TT.T..T...TT.T..T..T....T
+TTT..T.TT..T..T.TT...T.T..T...T.T
+T.TT.T....TTTTTT..T.TT...TT.T.T.T
+T...T...T...TT...TT...T...T..T.TT
+TT.T..TT.TTT..T.T.T.T..T...T....T
+T...T.TT...TT.....TT..T.T.T..TT.T
+T.T.....T..TT..TT.T.T...TT..TT..T
+TTT..T...T..T.T.......T.T.T..TTTT
+T...TT.T...T..T.TTBBTT..T...TTT.T
+T.TT....T.T..T...BTTTB...TT..T..T
+T...T.T..T..T.TTBTRRRTBT...T...TT
+TTT..TT.T.T.T..BBTRTRTB.TT.T.T.TT
+T..T..T......TBTTRRTRTBTT.T.T...T
+T..T.T.T...TTBTRRRTTRTB.T....TT.T
+T.TTT...TT..TBTRTTRRRTB....T.TT.T
+T...T.T....T.BTRTTRTTB.TT.TT....T
+TT.T..TT..TT.BTRTGRTB.TT.TT.TT.TT
+T....T.T..T..TBRBTTB.T......TT..T
+TTT.TTT..T.....T.BTT...T..T..TT.T
+T..T...T.T..T.TT...TT.T....T...TT
+T..TTT.T...TT..TTT.TTT.TTT.TTT.TT
+T.T......TT..TT..T...T...TT..T..T
+T...TTT.TT..T..T..TT.TTT...T....T
+TT.TTTT....T.T...TT...T..T.TT..TT
+T..TT...T....T.T....T.T.T.....TTT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 6845
+debug_update: 188
+debug_elapsed: 1901
+debug_score: 6.99071
+------------detailed information------------
+debug_times[0]: 1044
+debug_times[1]: 1537
+debug_times[2]: 1591
+debug_times[3]: 2673
+debug_op_times[op = 0]: 975
+debug_op_times[op = 1]: 1335
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1743
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2792
+debug_trees_rate: 0.400624 / 0.4
+debug_curve_rate: 0.45182 / 0.45
+debug_spread_rate: 0.998264 / 1
+debug_sg: 83
+debug_loop: 0
+debug_vis_rate: 4.5513 / 4.8
+system_score (n=31) : 261
+処理中: 0057.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T.T....TT.TTT....TS..TTT..TT.T....TT
+TT..T.T.T...T.TT...T....T......T...T
+T.T.T.....T.TTT..T...T.T..TT.TTT.T.T
+T..T.T...T.....T..TTT....T...TT..TTT
+TT....TT..TTTT..TTT..T..T..TT..T...T
+TTT.T..T...T.T..T...T..T..TT..T.TT.T
+T...T.T..T....T.T..TT.T.T...T..T...T
+T.TTTT..TTT.T..TTT.....T.TT..T....TT
+T.....T.TTT..T..TT..TTBBB..T.TT.T..T
+TT..T.T..T..T.T.T.T..BTTTBT.T..T..TT
+TTT.T...T..T..TTT.T.BTRRRTB.....T..T
+T.T.TT.T.TT..T....TTBTRTRGTB.TT...TT
+T.....T...TT..T.TT..TTRTTTRBT.T..TTT
+T.TTT...T...T....T..BTRRTTRTBT..T.TT
+TT..T..T....TT.T..TT.BTRRTRTB.T.T..T
+T..T.T.T.TT....TT..TT.BTRRRTT...T..T
+T.T.....T.TTTTTT..T.T..BTTTB.T....TT
+T...T.T..T...T..TT.T.TT.TBBT...T..TT
+TTT..T..T..T..T....T.....T.T..TT...T
+T.T.TT..TT.T....T.TT.TTTT....T..TT.T
+TT..T.T....T.T.TT.........TT.T..T..T
+T..T...T.T..TTT..TT...TTT..T..T.TTTT
+TT...TT...TTT.T..T.T..T...T.TT..T..T
+T..TTT.TT.T...TT....T..T.TT....T.T.T
+T.......TT..T.T...T..TT...T.TTT....T
+T...T.T...T.T.T.TTT...TTTT..TT.T.TTT
+TTTTTTTT...T....T...T..T...T..T...TT
+TT.TTT..T.T..T...TTTTTT..T..T.T.T..T
+TT.T...T...T..TT...T...T..T...TT...T
+T..T...T.T.TT..T.T..TT..TT..T....T.T
+T.T..T...T..T..TT..T..T....TTTT.T..T
+T...T.T.T.T...T...T.T...T..TT..T..TT
+T.T..T.....T.TT.T...TT.TT.TTTT..T..T
+TTT.T...T..T.T..T.T....TT......T...T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 5474
+debug_update: 190
+debug_elapsed: 1901
+debug_score: 1.78618
+------------detailed information------------
+debug_times[0]: 820
+debug_times[1]: 1217
+debug_times[2]: 1201
+debug_times[3]: 2236
+debug_op_times[op = 0]: 795
+debug_op_times[op = 1]: 1059
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1402
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2218
+debug_trees_rate: 0.397924 / 0.4
+debug_curve_rate: 0.454562 / 0.45
+debug_spread_rate: 0.987069 / 1
+debug_sg: 60
+debug_loop: 1
+debug_vis_rate: 4.6623 / 4.8
+system_score (n=34) : 5734
+処理中: 0058.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T...T..T....T..T.TS....T..TTTT...TTT
+TTT....TT.TT..T..T.T.T..T..TT..T.T.T
+T.TTT.TT...T....TT.T..T..T....TTTT.T
+T...T..T.T.TT.T...T..T.....TT..BB..T
+T.T..T.TT....TT.T.T.TT..T.TTT.BTTBTT
+TT..T..T.TTT...T...TT..TT.TT.BTRRRTT
+TT.T.T.T..T..T...T..T..T...TTTTRTB.T
+T..T.....T..T.TT.T..T..T.T.TBTRRTBTT
+T.T.T.T...TT....T..TT...TT..BTRTGTBT
+T.....TTT..T.T....T..T..T..TBTRRRTBT
+TTTTT....T...TT..T.....T..T..BTTTB.T
+T....TT..T.TT...T...TTT..T...TBBB.TT
+T.TT...T..T..T.T...TTTT.T.TTTTT..T.T
+T...T...T...TTT.T..T.TTT...T....T..T
+TTTT..TT..T.....T.TT...TTT..T.T...TT
+TT.....T.TTT.T.T....T.TT.T.T...T.TTT
+T..T.T.....T.T..TTT....T.....T.T..TT
+T...T...TT..T..TT.T..T.T.T..TTT...TT
+T.T..TT..T.T.TT.....T....TTTT...T..T
+TT..T..T..T..T...T.T.TTTT...TT...T.T
+TT.T..T...T....T..TT....TTT..T.T.T.T
+TT..T...T.TTTT.TT...T.T...TT..TTTT.T
+T..TTTTT..T.T.T...TT.T..T...T..TT..T
+T.T...TTT.......TTT...TT...T..T..TTT
+T.T.T..T.T.TT.T..T..T.T..T...T...T.T
+T..T..T.T...TTTT...TTT...TT....TTT.T
+T.T....T..TT..T..TTT...T...TT...T..T
+T..T.T..T...T...T....TTTT..T.T.....T
+TT....TTT.T..TT...T.TT..T.T..TT..TTT
+T.T.T.TT.T..T..T.T....T.T....T..T..T
+TT.T...T.TTTT....TTTT...T..TT..T...T
+T....T.....TTT.T....TT.T.T.T.T...T.T
+T.T.TTT.T...T..TT.T...TT...T...TT..T
+TT.....T..T..TT.....T.T...TT..TTT.TT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 5686
+debug_update: 175
+debug_elapsed: 1901
+debug_score: 6.25987
+------------detailed information------------
+debug_times[0]: 833
+debug_times[1]: 1274
+debug_times[2]: 1282
+debug_times[3]: 2297
+debug_op_times[op = 0]: 817
+debug_op_times[op = 1]: 1080
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1505
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2284
+debug_trees_rate: 0.399654 / 0.4
+debug_curve_rate: 0.450813 / 0.45
+debug_spread_rate: 0.995677 / 1
+debug_sg: 32
+debug_loop: 1
+debug_vis_rate: 4.56874 / 4.8
+system_score (n=34) : 50
+処理中: 0059.txt
+TTTTTTTTTTTTTTTTTTTTTTTTT
+T..TT..T..T.ST.TT...T...T
+T...T.TT...T....T.T...T.T
+TTT.BBBB.T..T.T..T.T.TT.T
+TT.BTTTTB.TTTT..TT...T..T
+T.BTRRRRTB..TTT...T.TT.TT
+TBTRRTTRTBT..T.T.T....TTT
+TTRRTRRRTB.TT.....TT...TT
+TTRTGRTTBT....TTT..T.T..T
+TBRBTTBBTT..T...TT.T..T.T
+T..TBB....TT..T.T....T..T
+TT...TTTT..TT..T..T.T..TT
+TTTTT...T.....TTT.TT....T
+T...T.TT..T.TT....TT.TTTT
+T.T....T.T..TT..TTT.T...T
+TT.T.T.TT.TTT..TTT....T.T
+T...T...T..T.T...T.T.T..T
+T.T...T...TT..TT...TT..TT
+T..T.T..TT..T....TT..T..T
+TT.T..T.....TTT.T...TTT.T
+T...TTTT.TT...T..TT...T.T
+T.T...T..TTT..T.....T..TT
+TTTT.T..T...T...T.TT.T..T
+TTT..TT...T..T.T...T...TT
+TTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 12943
+debug_update: 176
+debug_elapsed: 1901
+debug_score: 15.0882
+------------detailed information------------
+debug_times[0]: 2103
+debug_times[1]: 2896
+debug_times[2]: 2930
+debug_times[3]: 5014
+debug_op_times[op = 0]: 1893
+debug_op_times[op = 1]: 2606
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 3211
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 5233
+debug_trees_rate: 0.400756 / 0.4
+debug_curve_rate: 0.452615 / 0.45
+debug_spread_rate: 0.996845 / 1
+debug_sg: 49
+debug_loop: 0
+debug_vis_rate: 4.27215 / 4.8
+system_score (n=23) : 1625
+処理中: 0060.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T...TT...T....T.TS....T....T....T.T
+T.T..T.T..TTT...T.T.TT..T..TT.T...T
+T..T...TT...T.T....T.T...T..T.T.T.T
+T...TTT...T...TT.T..T...T...T.TTTTT
+TTTTT...TT.T....T.T.TTTT..TT....T.T
+T..T.T.T..T..TT.T...T...T....TT...T
+T.T....TT...T.TTT.T..TT....T..TTTTT
+T..TT.TTT.T...T...T.T..TTT..T....TT
+TT....T..T...TTTTTT........T..T.TTT
+T.T..T..T..T..T.T..T.TT.T...T.T.T.T
+T...T..TTT.T..T..T...TT.TT....T...T
+T.TTTT..TTTTT..T.T.T...T..T..T..T.T
+TTTTT..T..T..T.T....TT.T....T..T..T
+T...T.T..TT.T.T.T.TTT..T.TTTT..T.TT
+TTT...TT.T..T....TT...T.T..TTT.T..T
+T...TTT....T..TT.BBBBTT...TT...TT.T
+TT...T..T.T..T..BTTTTB.T.T..T.TT.TT
+TT.T..T.T...T..BTRRRRTBT...T.....TT
+T...T....T.TT.BTRRTTRTBTT.TT.T.T.TT
+T.T....T.T...BTRRTRRRTB.T.T..TT...T
+TT.T.T.T.TT.TBTRTGRTTBT...TT.TT.T.T
+T..T.T..TT...TBRBTTBB.T.TTT...T..TT
+TT....T...TT.T...BB.TTT......TT.T.T
+TTTT.T.T....T...TT....T.T..TTT....T
+T.TT....TT.T..TT...T..TTT.T.T..T.TT
+T...T..T..TTT...TT.TT.TT..T...T...T
+TT...T.TT.T...T..TT.T.....TT.TT.TTT
+T..TT..T...T..TTT...TT..TT..T...T.T
+T.TT..T.TT...TT...T...T..TT...T...T
+T....TT....TT...T.T.T...T....T.T..T
+TTT....TT.TT...TT..T.T.TT.T...T.T.T
+TTT...TT...TT.T..T...TT...TT.T....T
+TT..T..T.TT.....T..T.TT.T...T..T.TT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 5496
+debug_update: 226
+debug_elapsed: 1901
+debug_score: 4.02887
+------------detailed information------------
+debug_times[0]: 810
+debug_times[1]: 1230
+debug_times[2]: 1209
+debug_times[3]: 2247
+debug_op_times[op = 0]: 764
+debug_op_times[op = 1]: 1086
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1370
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2276
+debug_trees_rate: 0.400367 / 0.4
+debug_curve_rate: 0.448628 / 0.45
+debug_spread_rate: 0.995406 / 1
+debug_sg: 82
+debug_loop: 3
+debug_vis_rate: 4.64 / 4.8
+system_score (n=33) : 4004
+処理中: 0061.txt
+TT.T...TT.T...T.....TT.....T..T...T
+T...T...T..TT..TT.T..T..T.T...TT.TT
+T.T...TT.T..TT....TT.T.TT.TTTT..TTT
+T..T.TT...TT.TT.T...T..T.T.T...TT.T
+T.T..T..T..T.T...T..T.T......T....T
+TTTT....TTT....T.T...TTTT...T...T.T
+T.T...TT...TTT..T.T.....TTT.T.TT..T
+T.T.T..T.T.T....T...T.T.T...TT...TT
+T..TTT.T..T..TT..T.T.TT....T..TT.TT
+TT..T....TTT..T.T..T...T.T.....TTTT
+TT....T.T...T.T..T.T.TT...T.TT.T..T
+TTTT..T...T..TTT..TT....TT...T.T.TT
+T.T.TT.T..T..T..TT.TTTT..T.TT..T..T
+T.....T..T..T..TTBBBB.TT..T.TT....T
+TT.TT....TT..T.TBTTTTB.T..T....TTTT
+T....T.T..TT...BTRRRRR..TT.T..T..TT
+T.T.T..TT...T.TBTRTTTTB.T....TTT.TT
+T.T..T..TT...T.BTRRTTGTB..T.TT.T..T
+TT..T..T...T.TT.BTRTTRRTB..TT...T.T
+T..T..TTT.T...TTBTRRRTRTBTTTTTT...T
+T.TT.T....TTTT...BTTRRRTB..TT.T..TT
+TT..T.T.T..T...T..BBTTTB.T.....T..T
+T.T.....TTTTT.T.T.T.BBBT..T.T..T.TT
+T..T..TTT.T....TTT..TT...TT..T...TT
+TT..T..TTT...T.T.T.T..T.T...T..T..T
+T..T.T..T..T.T...T..T...TT.T.TT.T.T
+TT.....T..T.T.....T..T.T.TT....TT.T
+T.T.TTTTTTT...T.T..TT.TT.....T....T
+TTT....TTT..TT...T....T..T.T..TT.TT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 5680
+debug_update: 219
+debug_elapsed: 1901
+debug_score: 4.83484
+------------detailed information------------
+debug_times[0]: 849
+debug_times[1]: 1262
+debug_times[2]: 1250
+debug_times[3]: 2319
+debug_op_times[op = 0]: 805
+debug_op_times[op = 1]: 1123
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1450
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2302
+debug_trees_rate: 0.400367 / 0.4
+debug_curve_rate: 0.461951 / 0.45
+debug_spread_rate: 0.990812 / 1
+debug_sg: 65
+debug_loop: 0
+debug_vis_rate: 4.55796 / 4.8
+system_score (n=33) : 2417
+処理中: 0083.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T.TT..T..T...TST..TTTTTT...T
+T.TT..TT...T.....T...TTTT..T
+T..TT..T.T.T..TT...T..TTTT.T
+TT..TT..T...T..T.TT..T.T...T
+T.T...T.T.T.TTT.T...TT..T.TT
+T.TTT...TT...T....T...T....T
+T.T...TT...T..TT.TTT.T...T.T
+T...TTT..TT.T.T.T....T.T..TT
+TTT...T.T.T..T.....T....T..T
+TTTT..T...TT.T.T.T..TTT..TTT
+TT..T..TT.T...T.T.TT.T...T.T
+TTT..T...T..T.....T....T..TT
+TTTT...T..T.T..T.T..T.T.T..T
+TTT..TT.TTTT..TT.....T..T..T
+TT....T..T...TT.T.TT...T..TT
+TT.TT..T..TT..T.T...T.T.T..T
+T...TT.....T.TT...TT.TT..TBT
+T.T.T...TT....TTT..T..T.TTTT
+T.T.T.TTT...T..T.....T..BTGT
+T..T.T.T..T..TT..T..TT.TTRRT
+TT.T....T..T..TTT.T....TTRTT
+TT...T...T..T...T...T.TBTRRT
+T.T.TTT...TTT..TTT.TT...TTRT
+T.....TTT....TT...TTT.T.TB.T
+TT.TT...T.TT...T.T....T..T.T
+T....TT..T...T...T...TT....T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 9681
+debug_update: 186
+debug_elapsed: 1901
+debug_score: 12.3312
+------------detailed information------------
+debug_times[0]: 1502
+debug_times[1]: 2058
+debug_times[2]: 2161
+debug_times[3]: 3960
+debug_op_times[op = 0]: 1419
+debug_op_times[op = 1]: 1914
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2426
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 3922
+debug_trees_rate: 0.403846 / 0.4
+debug_curve_rate: 0.468572 / 0.45
+debug_spread_rate: 0.997519 / 1
+debug_sg: 62
+debug_loop: 0
+debug_vis_rate: 4.30348 / 4.8
+system_score (n=26) : 1748
+処理中: 0084.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T...T.T..T.T..T.ST.TT..T...TT.TT
+T.T.....T....TT.T..T..T.T......T
+TT...T.T..T.TTT.T....T....T..T.T
+T..T.TT..T...T...TTT...T.T....TT
+T.T...TTT.TT.T.TTT..TT..T...TTTT
+TT..T...T..T...T...T...TTTT....T
+T..T..T...T.T.T..T.T.T..T..TT..T
+TT..TT...TT....T.T...TT...T..T.T
+T.T..T.T....T.T...TTT...T.T.T..T
+T...T...TTTTT...T...TT.TT...T..T
+TTT.T.T..TTT.T..TT.TT...TTT.TT.T
+T.T..T..TTT..T.T...T..T.TT.T...T
+T...TTT..T..T.T..TT...TT....T.TT
+TT.T...T..T.....TT.TTT..T..T..TT
+TTT..T....TTT..T...TTT.T..T....T
+TT..T.T.TTT..TTT.T..T...T....T.T
+T.T....T..T....T..T.T.T..TT.T..T
+T.T.T.T.T...T...T.TTT..T.T...T.T
+T..T.T..TT.T.T.TT..TT.TT......TT
+TT.TT....T...T..TT...T..TT.T...T
+T.....TT...TTTT..TTT...T..TTT.TT
+T.T.T...T.TT.TTTT...T.T...T....T
+TT..TTTT..T....T...T....TTT..T.T
+T.T....TT...TT...T....T..BB.TTTT
+TT.T.T...T.T...T..TT.TBRBTTBTTTT
+T....TT.T..T.T.T.TT..BTRTGRTB..T
+T.TTT..TT.T...T...T.TBTRRTRTBT.T
+T.T.T...T..TTT..T.T.T.BTRRRTB.TT
+T...T.T...TT..T..T..TT.BTTTB.TTT
+TT.T..T.T...T...T..TT.T.BBBTT.TT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 7400
+debug_update: 197
+debug_elapsed: 1901
+debug_score: 6.53828
+------------detailed information------------
+debug_times[0]: 1139
+debug_times[1]: 1701
+debug_times[2]: 1669
+debug_times[3]: 2891
+debug_op_times[op = 0]: 1016
+debug_op_times[op = 1]: 1454
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1828
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 3102
+debug_trees_rate: 0.4 / 0.4
+debug_curve_rate: 0.456129 / 0.45
+debug_spread_rate: 0.975926 / 1
+debug_sg: 84
+debug_loop: 0
+debug_vis_rate: 4.45731 / 4.8
+system_score (n=30) : 2116
+処理中: 0085.txt
+TTTTTTTTTTTTTTTTTTTTTTT
+TTT...T..T.S.TT...T..TT
+T...T...T..T..T.T...TTT
+T.TT...T..TTT.T..T.TTTT
+TT...T..T.TTTT..T..TT.T
+T..T..T....T...TT.TT..T
+TT..TT.T.T...T...TT..TT
+T..T.BBBT..T..TT....T.T
+T.T.BTTTTBT..T..T.T...T
+T..BTRRRRTBT.TT...TT..T
+TTBTRRTTRTB...TT.T..TTT
+TBTRRTRRRTBTT..T..T.TTT
+TBTRTGRTTB.T..T.T.....T
+T.BRBTTBB.T.T....T.TT.T
+TTT..BBT.T.....T..TT..T
+TT...T.TT..T.TT..T.T..T
+T..TT..T.T..T.T.T..T.TT
+T.TTTT.....T...T..T...T
+T..T...TT.T..T...T..T.T
+TT.T.TTT....T.T.T..T..T
+TT.TTTT..T...T.TT.T..TT
+T..TT...TTTT...T..T.TTT
+TTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 15743
+debug_update: 165
+debug_elapsed: 1901
+debug_score: 16.9656
+------------detailed information------------
+debug_times[0]: 2792
+debug_times[1]: 3475
+debug_times[2]: 3628
+debug_times[3]: 5848
+debug_op_times[op = 0]: 2393
+debug_op_times[op = 1]: 3177
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 3850
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 6323
+debug_trees_rate: 0.399093 / 0.4
+debug_curve_rate: 0.478168 / 0.45
+debug_spread_rate: 0.996226 / 1
+debug_sg: 51
+debug_loop: 0
+debug_vis_rate: 4.12121 / 4.8
+system_score (n=21) : 1171
+処理中: 0086.txt
+TTTTTTTTTTTTTTTTTTTTTT
+TTTT..T...TS.T.T...T.T
+T...T.T.T...TT...T...T
+TTT...T..T...TT.TTT.TT
+T..T...T.T.T...TT...TT
+TT...TT...T..TT...T..T
+T..TT...TT.TT.T.TT.T.T
+TT....T..T..T...T....T
+T.T..T.T..T..TTT.TT.TT
+T...T..TT..T..TT.T..TT
+T.T..T..TT.T.TT....T.T
+TTTT..T...T.....T.T..T
+T.T..T.T.TT.T.T..TT.TT
+T..T......T..TTT.BBB.T
+TT..T.T.T...TT..BTTTBT
+TT.T..TTT.TTT.TBTRRRTT
+T....TTTT.....BTRRTRTT
+T.TT..T..TT..TBTRTGRTT
+T...T.TT...T.T.BRBTTBT
+TTT..T...TT...T.T.BB.T
+TTTT...T..T.T.TT..T..T
+TTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 17964
+debug_update: 159
+debug_elapsed: 1901
+debug_score: 16.9946
+------------detailed information------------
+debug_times[0]: 3442
+debug_times[1]: 4224
+debug_times[2]: 3811
+debug_times[3]: 6487
+debug_op_times[op = 0]: 2633
+debug_op_times[op = 1]: 3881
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 4368
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 7082
+debug_trees_rate: 0.4 / 0.4
+debug_curve_rate: 0.475054 / 0.45
+debug_spread_rate: 1 / 1
+debug_sg: 51
+debug_loop: 0
+debug_vis_rate: 4.15 / 4.8
+system_score (n=20) : 1087
+処理中: 0087.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T.T....T...TTTS.TT..TT..TTT.T
+T...TT...T.T...TT..T..T...TTT
+TT.T...T..TT.T.T.T...T..T.T.T
+T.T.T.TTT..T.T.....T...TT...T
+T.T.T..TTTT...T.TT.TT.T..T.TT
+T...TT....T.T..TT...TT..T.TTT
+TT.TT.T.T..T..T...T..TT..T.TT
+T..T..T.T....TTT.T.T..TT...TT
+T.T..T..TTT.T...T...TTTT.T..T
+T..T...TT...T.T.T.T.T..T..T.T
+TT..T.T.T.T....TTT...T..T..TT
+TTT...T....TT..TT...TTT.TT..T
+T..T.T.TTT.TTT.T..T...T....TT
+T.T.T...TTT......T.T.T..T...T
+T...T.T..T..T.TT...T..TT..TTT
+TT.....T.TT..T..T...TT...T..T
+TBBBTT..T...TT....T..T.T...TT
+TTTTB.T.T..T...T.T..T...T.TTT
+TRRRTB....T..T.TT..T..T..TT.T
+TRTRRTBT.T...TT..T.T.T..T..TT
+TRGTRTB.T..T....T.T...T..T..T
+TTTBRB..T...T.T......TTT..T.T
+TBB.T.T..TTTTT.TTT.TT...T...T
+TT.T..T..TT.T..T.T....T.T.TTT
+T..TT..TT.T...T...T.T..TT..TT
+TT..TT....TT...TT....T.T.T..T
+TTT..T.T.T...T....TT.T....TTT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 8744
+debug_update: 208
+debug_elapsed: 1901
+debug_score: 13.7642
+------------detailed information------------
+debug_times[0]: 1473
+debug_times[1]: 1932
+debug_times[2]: 1965
+debug_times[3]: 3374
+debug_op_times[op = 0]: 1273
+debug_op_times[op = 1]: 1801
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2157
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 3513
+debug_trees_rate: 0.400549 / 0.4
+debug_curve_rate: 0.482056 / 0.45
+debug_spread_rate: 0.993135 / 1
+debug_sg: 48
+debug_loop: 0
+debug_vis_rate: 4.20276 / 4.8
+system_score (n=27) : 1732
+処理中: 0088.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+TBTRRRTB.T......S.T.T..TT..T..TT
+TBTGTRTBTT..TTT.T....T...T.TT..T
+T.BTRRTB...TT.TTT..T..TT.....T.T
+TTRRRTBT.TT...TTT..T.TT.T.T.T..T
+T.BTTB....T.TT....T...T...T...TT
+T..BB.T.TT.....T.TT.T...TT.T...T
+TTTT.TTT.T..T.TT..T..T.T...TT..T
+T....T.....T...T.T.T.TT..TT...TT
+T.T.T..T.TT..T.TT..TT.T.T..T.T.T
+T..T...T.TTT.TTT....T...T.T.T..T
+T.T..T.T.T..TT...TT...T...T...TT
+TT.TT...T.T.....T...TT..T..T.TTT
+T..T..T....T..TT.T..T.TT.T...T.T
+TT.T.T...T.T.T...TT...T...T....T
+T...TT.T.T.....T...T.T...TT.TTTT
+TTT..T..TTT.TT.T.TTTTT.T....T..T
+T.T...T..T.T.T..TT..T...TT....TT
+T...T..TT..T..T.T..T..T..TTT...T
+TT...TT.T.T..TT...T.T.TT..T.TT.T
+T..TT.T....T.T..TTT.T..TTTT....T
+T.T....T.T.T...TT....T....T.T.TT
+T...TT...T.TTT.....T.TTT...T.T.T
+T.T..T.TTTT.T.TT.T.T..T..T....TT
+TT..TT......T....T..T..TTTTTT..T
+T..T..T.TT...T..TTT..T..T.T.T.TT
+T.T...TT.TTT...T.T..T..TT...T..T
+T.T.T..T.T...TT...TT..TT...T.T.T
+T....TT....T..T.T.T..T.T.T.....T
+TT.T..T.T.TTT..T....TT...TT.T.TT
+TTT..T..TTT...T..TT...T.TTT.T..T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 7081
+debug_update: 174
+debug_elapsed: 1901
+debug_score: 10.9965
+------------detailed information------------
+debug_times[0]: 989
+debug_times[1]: 1600
+debug_times[2]: 1632
+debug_times[3]: 2860
+debug_op_times[op = 0]: 1030
+debug_op_times[op = 1]: 1338
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1795
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2918
+debug_trees_rate: 0.4 / 0.4
+debug_curve_rate: 0.44983 / 0.45
+debug_spread_rate: 0.998148 / 1
+debug_sg: 30
+debug_loop: 0
+debug_vis_rate: 4.42486 / 4.8
+system_score (n=30) : 1206
+処理中: 0089.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T..T..T..T..T..T.TS.TT..T.TT....TT.T
+TT...TT.T...TT...T.T..T.T....TTT...T
+TT.T.....T.TTT..T...T....T.TTTT..T.T
+TT..T..T....T..T..T.TTTT.T...T..TT.T
+T..T.T..TTT.T.T..T..TT.....T...T..TT
+T.TT...T..T....T.T.....TT...TT....TT
+T..TT.T..T...T..T.TT.T.T..TT..T.T..T
+T....T..T.T.T....TTTT...T....T.T..TT
+TTT..T..T.TT..TT..T...T..TT..T.TT..T
+T...TT.T...T..T..T...T....T.T..T.T.T
+T.T......T.T.T.T..T.T..T...TTT.....T
+T.TTT.TT.TT..TT..T.T.TT..TT..TT.T..T
+TT.T...T..TT.T..T..T..T.T.TT.T...T.T
+T..T.T.TTT...TT.....T..T..T....T..TT
+TT..T..T.TT.T..T.TT..T..T...T.T..T.T
+TTT.BBT...T...T...TT..T.T...TTTT...T
+T..BTTTBT...TT...TT.TT....T.T...T.TT
+T.TTRRRTB..T....TTT..T...T.TT..TT..T
+T.BTRTRTT.T..T.T..T.TT.TT..T.T.....T
+TBTGRTRTB.TT..TT........T.T..T..TT.T
+TTBTTRRTBTTT..T..T.TT.T.T.TT..TT.TTT
+T.RRRRTB.TT..T..TTT....T...TT....TTT
+T.BTTTT.T.TT.....TTT.T...T.....TT..T
+TT.BBBT...TTTTTT..T.T.T.TTT..T...T.T
+TT.TT.T...TT....T...T...T..T.TTT...T
+T.T...T.T.....T..T.T.T.T..TT..T..TTT
+TT..T...TT..T..T..TT..TT..T..TT.TT.T
+TTTTT.TT..T..TT.TT..T...T...TTT..T.T
+T..TT...T...TTT.T.....T..T.T...T...T
+T.TT.T...TT...T...TT...TT...TT..TTTT
+T......T..TT.TTT.TTT.T.T..T....T..TT
+TT.TT.T..T...TT..TTTTTT....TT...T..T
+T..T.T...T.T...T.....T..T..T..T..T.T
+TT....T.T..TT....T.T..T..TT..TT....T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 5491
+debug_update: 182
+debug_elapsed: 1901
+debug_score: 5.60277
+------------detailed information------------
+debug_times[0]: 763
+debug_times[1]: 1229
+debug_times[2]: 1218
+debug_times[3]: 2281
+debug_op_times[op = 0]: 746
+debug_op_times[op = 1]: 1062
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1385
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2298
+debug_trees_rate: 0.399654 / 0.4
+debug_curve_rate: 0.452175 / 0.45
+debug_spread_rate: 0.995677 / 1
+debug_sg: 136
+debug_loop: 0
+debug_vis_rate: 4.58611 / 4.8
+system_score (n=34) : 1764
+処理中: 0090.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T..T.T.T.TT.TTT..S.TT....T.T......T
+T.....T...T..T...T..T..T.TTT.TT.T.T
+T.T.T...T..T...TTTT..T.T..T...TT..T
+TT.T..TTTT..TTT....T...T.T..T..T.TT
+TT..T..TT.T..T..TT..TTT..TT..T..T.T
+T..T.T....T.T..T...T.T.T....T..T..T
+T.T....T.T...T..T........T..TT...TT
+T..T.TTT..TT.T.TTTTTBTBBTT.T..TT.TT
+TT..T...T...T...T..BTTTTBT..T...T.T
+TTT...T...T...TTT.BTRRRRTB.T.T....T
+T.T..T.T.TT.T.T.TTBTRTTRRTB...T.TTT
+T.TT...T..T.T.T..TBTRRRTRRTB..T..TT
+TT.TT.T.T.TT...T...BTTRGTRTBT..T..T
+T..T.TT..T....T.T.T.BBTTBRB....TT.T
+T.TT...T...TT.....T.TTTBT..T...T..T
+T...TT...T..TTTTT.T....TTTT.TT....T
+TTT.T..TT.T..T..T..T.T..T...T.TTT.T
+TT....T...T.T..T..T.T..TT.T...T..TT
+TTT.TT..TT...T...T...T.....TTT...TT
+T...T....T.T..TT.TTT.TTT...TT..T..T
+T.TT..TT...T..T...T....T.T.T..T.TTT
+TTT.T.TT..T..T.TT...T..TTT.T..T...T
+T...T..TTT..TT...TTTTTT....T....T.T
+T.T..T..TT.T.T.TTT..T.T..TT.TT.T.TT
+TTT...T..T.....T.TT.....T..T...T..T
+T...T...T.T.T.T...TT.TT..T....TTT.T
+T.T.TTTTT..T..T.T...TT...T.TT..T..T
+T.TTT....T....TT.T.T...T.T...T...TT
+T...T.T...TTTTT......TT....T..T.TTT
+TTTT...T...T....T.T.T...T.TT..TTT.T
+TT...TT..T...T.TT..T.T.T..T.T...TTT
+TT..T..T..TTTT...TTT...TT....T..T.T
+T.T...TTT..T....T....TT...T.TT....T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 5766
+debug_update: 219
+debug_elapsed: 1901
+debug_score: 4.3685
+------------detailed information------------
+debug_times[0]: 853
+debug_times[1]: 1308
+debug_times[2]: 1271
+debug_times[3]: 2334
+debug_op_times[op = 0]: 824
+debug_op_times[op = 1]: 1125
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1472
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2345
+debug_trees_rate: 0.401286 / 0.4
+debug_curve_rate: 0.450257 / 0.45
+debug_spread_rate: 0.986196 / 1
+debug_sg: 46
+debug_loop: 1
+debug_vis_rate: 4.58942 / 4.8
+system_score (n=33) : 3112
+処理中: 0091.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTT
+TT....T.T..T.S.T.T....T..T
+T..TT.T...T..T.T...TT..T.T
+T.TT..T.T.T.TT..T.TT.T...T
+TT.T.T..T..TT..TT.T.T..T.T
+T..T...T..TTT.T.TT....T.TT
+T.T.T.T..T.T.....T.T..T..T
+T...T..T...T.T.T...TT..T.T
+TTT..TT.T....T..TT..TT...T
+TT..T.....T.TTT...T.TTTT.T
+T..T..TTTT..T.T..T.TT...TT
+TT...T.T..TT...T....T.T..T
+T..T.....T..TT.TT.T....TTT
+T.T...T.T......TT..T.T.T.T
+TTTT.TTTT.TT..TT..T.T....T
+T..T..TTT...T.TTTT....T..T
+TT..T.TTT.T.T..T.TTT.T..TT
+T.T....TT.T.T.BBB...T.T..T
+T..TTT.....TTBTTTBB.T..T.T
+TT...T.T.T..BTRRRTTB.T..TT
+TT.T.T.TT.T.TTRTRRRTB..T.T
+T..T...T....BTRRTTRRRT...T
+T.TTT.T..T.T.BTRRTTTBTT.TT
+T.TT.TT.TTT.T.BTRTRGTB...T
+T....TT...T...BTRRRTB..T.T
+TTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 12147
+debug_update: 157
+debug_elapsed: 1901
+debug_score: 8.13839
+------------detailed information------------
+debug_times[0]: 1867
+debug_times[1]: 2660
+debug_times[2]: 2763
+debug_times[3]: 4857
+debug_op_times[op = 0]: 1722
+debug_op_times[op = 1]: 2415
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 3097
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 4913
+debug_trees_rate: 0.399306 / 0.4
+debug_curve_rate: 0.483295 / 0.45
+debug_spread_rate: 0.99711 / 1
+debug_sg: 76
+debug_loop: 0
+debug_vis_rate: 4.4029 / 4.8
+system_score (n=24) : 1612
+処理中: 0092.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T...T.T.T..TTT...TT.S..T..TT....TT.T...TT
+T.T.....T..T.TT....TTT...T..T.T...T..TTTT
+TT.T..T...T..T..TT...TT....TTTT.T.TT..T.T
+TTTTT.TT.T...TTT...T.T...T...T.T....T...T
+T.TT..T.....T....TTTT...T.T.TT...TT...TTT
+TTTT.TT.T....T.TT.....TT...T.....TTTT..TT
+T.T...T...TT......T.T....T.T.TTT..T...TTT
+T..T.TTT.T..T...T.T..T.TT..T....TTT.T...T
+TT....TTTT....TTT..TT.TT.T..T.T.TT..TT.TT
+T...T.T..TT..T...TT......TTT..T..TT...TTT
+T.TT...T...T..T.T.T.TTTTT.TT.T..T.TTTT..T
+TT.TT...T.T...T...T...TT..T..T..T.T.....T
+TT...TT.....T...T..T...TT.TTTT.T....TTT.T
+TTTT.T..T.T..T.TTT.T.T..T..TT...TTT...TTT
+T..T..T.T..T.T..T....TT...T...T.....T.T.T
+T...T.TT.T..T....TT.T.T.TT.T.T...T.TT...T
+TTT.T.....TTT...TT..T..TT.....TTT..T.T.TT
+TTT..TTTT..T...T..TT.T....TT..T..TTT..T.T
+TT..T....T.T..T.T....T..T..TT...T...T...T
+TTT...TTTT...T...T.T..T..TT.T.T..T.T...TT
+T..TT....T....T...T..T....T..T..T....TTTT
+TT...TT..TT...T.T...TTT.T..T...T..TT..T.T
+T..T...T.TT.T.TT...T.T....TTT...T.T.T.TTT
+T.BBT......T....TT.....TT.....TT.....T.TT
+TBTTBRBT...T.T.TTT.TT.T.TTTT.T...T.T....T
+TTRGTRTB.T.T.T.....TT...T.....TT.T..T.T.T
+TTRTRRTBT....TT..TT.TT...T.T....TT.TT..TT
+TTRRRTBT..T.TT..T..T...T..T.T.T..T..T...T
+TBTTTBT...T...T...TTTTTTT.T.T..T..T..TT.T
+T.BBBT..T..T..TTT...T...T....T..T..T..T.T
+TT.T...TTTTTTT....T.T.T..T.T.TT.T.T.TT..T
+T..T..T...T....T.TT..T..T.T....T....TT.TT
+T...T..TT..T.T..T.T.T...T.TT..T..TTTT...T
+TT..TT..T.T.T....T..T.TT.....T.......TT.T
+T.T..TT...TT...T..TT..T...T.T..TTT..T...T
+T....T.TTT..TT..T..T.T.TT.TTT.T.T.....TTT
+TT.T....T...T.T.T.T....T...TTT....TT..T.T
+T...TT..T.T.T.....T.TTT..T.T...TTTT.T...T
+TT....T....TT.T.T......TT..T.T...T.T....T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 3894
+debug_update: 234
+debug_elapsed: 1901
+debug_score: -0.215836
+------------detailed information------------
+debug_times[0]: 526
+debug_times[1]: 881
+debug_times[2]: 913
+debug_times[3]: 1574
+debug_op_times[op = 0]: 568
+debug_op_times[op = 1]: 706
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 981
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 1639
+debug_trees_rate: 0.399737 / 0.4
+debug_curve_rate: 0.451399 / 0.45
+debug_spread_rate: 0.987952 / 1
+debug_sg: 66
+debug_loop: 5
+debug_vis_rate: 4.74945 / 4.8
+system_score (n=39) : 3500
+処理中: 0093.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T..TT..T..T.T...TTST...T...TTT....T.T
+T....T...TT.T.TT.....TTTT.T...T..T..T
+T..TT..TT...T...T.TT...T.....TTT...TT
+TT..T.T...TTTTT.....TT....TT.T..T...T
+TTT....TT...T.TT.TT..T..TT.T..T...T.T
+T.T.TT.T..T..TT...T.TTT..TTTT.TTTT..T
+TT...T...TT.T..TT.T..T.TT..T..T....TT
+T..T.TT....TT...TTT..T...T.T....T.T.T
+TT.T.T..TT..TTT...T....T.T...T.T....T
+T..T..TT...T.T.TT..T.T..T.TT.TT..T.TT
+T.TT....TT..T..TT...T.T.T...TT..TTTTT
+T..TTTT...T...T...T.....T.T.TT.T....T
+T..T.T.BBB.TT..T.T.T.T...T..TTT..T.TT
+TTT...BTTTB..TT...T.TTT....T.TT.T...T
+T..T.BTRRRTB...TTTT..T..T.T..T...TT.T
+T.T.BTRRTRRTBT.T.TT..TTTT...T..TTT..T
+T.T.BTRTTTRTBT......TT.....T..T..T..T
+T..BTRRTRRRTBTTTT..T.T..TT...TT...TTT
+TT.BTRTGRTTBT..TTT...T.T..T.T..TT...T
+T.TBTRTTTBB...T.T......T.TT..T..T.T.T
+T..BTRRRB.T..TT...TTT.TT..TT...T...TT
+TT.TBTTBTTT.TTT...T.T....T..TTT...T.T
+TT...TBT....T..T....TT..T..T...T.T..T
+T..T.TT.T.T...TTT..T..T...TT.T.....TT
+T.TTTT....TTT.....T.T...T...T.T.T...T
+T.T....T.T.T..T.TT..T..T..TT.T...TT.T
+TT..T.T..T...T..T.T..T.TT....T.T.TTTT
+TT..TT..T..T.TTT.TTT.....T.T...T....T
+TTT.T.T..T..T.T...T...TT..T.TT..T..TT
+T...T.....TT...T..TTTT.T....T.T..T..T
+T....TTT.....T..T....T...T.TT..T..T.T
+T.T.TT..T.T..T.T.TT..T..TT..T.T.T..TT
+TT.T...T...T..T.T.TT..T..TT....T....T
+TT.T.T.T.T.TT.......T.T.TT...T...TT.T
+TT...T...TTT..T..T.T....T..TT..T.TTTT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 5307
+debug_update: 196
+debug_elapsed: 1901
+debug_score: 1.95629
+------------detailed information------------
+debug_times[0]: 820
+debug_times[1]: 1197
+debug_times[2]: 1187
+debug_times[3]: 2103
+debug_op_times[op = 0]: 745
+debug_op_times[op = 1]: 1061
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1348
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2153
+debug_trees_rate: 0.4 / 0.4
+debug_curve_rate: 0.466957 / 0.45
+debug_spread_rate: 0.986395 / 1
+debug_sg: 77
+debug_loop: 1
+debug_vis_rate: 4.61931 / 4.8
+system_score (n=35) : 5103
+処理中: 0094.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T...T.T...T...T..S.T..T..T..T.T..T
+T..T...TT..TT....T..T...TT..T....T
+T.T..T...T....TTTTTTT.T...T.TTT.TT
+T.T.T...TT.T.T...TT....TT...TT...T
+T...TTTTT.T..T.T...T.TT...TT...T.T
+TT.T...T..T.T.T.T.T..T..T.T..T..TT
+T..T.TT..T..T..T...T...TTT..T.T..T
+T.T..TTT...TTT...T..T.T....T...T.T
+T.T...TT.T......TT.TT.T..TT..T.TTT
+T...T...T..TT.T..TTT..TT....T....T
+TT.T...T..TTT..T..T..T..T.T.T.TT.T
+T...T.T...T..TT..T.T......T.T..T.T
+T.T..T.TT...TT.T....T.TTTT...T.T.T
+T..T......TTT..TT.T.T.T....T....TT
+TT.TT...TT..T.TT..T.T.T.T..T.TT..T
+T.T...TT...TT.TTTT.....T.TT...TTTT
+T.T.T..T..T...T.T..TT..T.T..T..T.T
+T...T....T...TT.TT...T....T..TT..T
+TT...T..T..T..T..T.TTTT.T..T....TT
+T..T...TTTT..TTT.BBBB.TT.T.TTT.T.T
+T..TT.T...TT....BTTTTB.T...TT....T
+TTT...T.T.T..TTBTRRRRTB.T.T...TT.T
+T...T....T.TT.TBTRTTRRTBTT..T.T..T
+T..TTT.T...T...BTRRRTRRTBT.T...TTT
+TT..T.T..T.T.TTTBTTRGTRTB.T..T...T
+T..T....TTT......BBTTBRB.T..T..T.T
+T.TT.T.T...T.TTT.TTBB..TT.TTT.TT.T
+TT...TT..TT..T...T.T.TTT..TT.TT..T
+TTT.T..T...TTTTT.....TT..T.T....TT
+T.T..T..T.T.T.T..TT.TT.T...TT.TTTT
+T..T....T...T...T...T....T..T.TTTT
+T....TT...T..T.T..T...T.T..T..TTTT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 6275
+debug_update: 211
+debug_elapsed: 1901
+debug_score: 8.80124
+------------detailed information------------
+debug_times[0]: 870
+debug_times[1]: 1439
+debug_times[2]: 1500
+debug_times[3]: 2466
+debug_op_times[op = 0]: 899
+debug_op_times[op = 1]: 1161
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1644
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2571
+debug_trees_rate: 0.399414 / 0.4
+debug_curve_rate: 0.461503 / 0.45
+debug_spread_rate: 0.998374 / 1
+debug_sg: 79
+debug_loop: 3
+debug_vis_rate: 4.45928 / 4.8
+system_score (n=32) : 3755
+処理中: 0095.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T...TT...TT.T..TTT.S.T.TT..T....T..TTTT
+T..T...T.T..T.T....T....TTT..T....TT..T
+TT...TTTTT.TT...T.T.TTT.T.T..TTT.T....T
+T.T....T...TTTT..T..TT....T.T.T..T.T..T
+T..T.T.T....TTT.T..TTT...T.T..T....TT.T
+T..T.TT..TT.T.....T....TT.T.....T.TT..T
+TT.....T.TT...TT.T.TTT.T..T..T.TTT....T
+T.T.TT.T..TT....T...TT...T.T.TT..T..TTT
+T....T...T...TTTT.T...TT....T...T.T...T
+TTTT..T.TT.T..T.T.T.T..TTTT...TTT...TTT
+T.T.T...TT..T.....T..TT....T.T.T...T..T
+T.T.T..T..T.TT.TTT..T.BBBTT......TTTT.T
+T....T...TTT..T.T....BTTTTB..T.T..T...T
+TTT.....T....T..TT.TBTRRRRTBT...T...T.T
+T.T..TT...TT...T.T..BTRTTRRTB.T..T...TT
+T..TT..T...TTTTT..TTBTRRRTRRTB.T..TT..T
+TT...T...T...T..T....BTTRGTRTB.TTT...TT
+T.T.TTT...TT.T...T.T..BBTTBRBT..T..TT.T
+T....T..T.TT...T.T..T.TTBB.T..TT.T.T..T
+T.TT...T.TT...T..T..TT.T.T.TTT.T.T...TT
+T..T..TT...T.T.T.T.T.......T.T....T...T
+TTTT.T...T......T..TT.T.TT..T.T.T.T..TT
+TT..T....TTTT.TT.T.....T...T.T..T..T..T
+TTT...TT....T...T.T.T.T..TT....T.T..T.T
+T..TT...T.T.TTT...T..TTTT.TT.TT...T...T
+T.T..T.TT.T.T..T.TTT.T....TTT..TT..T.TT
+T...T..TTTT.T..TTTT......TT.T...T..T.TT
+TT.T..TT.T...T..TTTTT..T.TT..T.T..T...T
+T...T.T....T..T......T..TT..T....T..T.T
+T.T.TT..TTTT....T.TT.TT.T..T.T.T...TT.T
+T.T...T.....T.T..T..T.T...T....TTTT...T
+TT..T..T.T..TT.T...T.TTT.TT..TT...TT.TT
+T..TT....TTT...T.TTT....TTT.T.TTT..T..T
+T.T..TT....TT.T..TT.T.T.T..T...TT.T...T
+TT..T.TTT..T....T....T...T...T.TT...T.T
+TTT....T.TT..T.T...T...T.T..T...TTTT..T
+T....T......T....T.T.T.T....TT....TT.TT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 4397
+debug_update: 219
+debug_elapsed: 1901
+debug_score: 2.4187
+------------detailed information------------
+debug_times[0]: 610
+debug_times[1]: 993
+debug_times[2]: 1001
+debug_times[3]: 1793
+debug_op_times[op = 0]: 629
+debug_op_times[op = 1]: 786
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1132
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 1850
+debug_trees_rate: 0.399562 / 0.4
+debug_curve_rate: 0.460316 / 0.45
+debug_spread_rate: 0.991484 / 1
+debug_sg: 74
+debug_loop: 3
+debug_vis_rate: 4.64663 / 4.8
+system_score (n=37) : 2116
+処理中: 0096.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T.T.T..T...TT..S.T..TT...T..TT
+T....BTBBT.T..T.TT...T.TT.T.TT
+TT.TBTTTTB....TT..TT...TT....T
+TT.BTRRRRRT.TTTT..T..T...T.T.T
+T.TBTRTTTBT..T..T...TTTT.T..TT
+T..BTRTTGTBT.....TT...T...T..T
+T.TBTRTRRTB..TTT...T....TT..TT
+TTTBTRTRTB.T..T.T....TT...T..T
+TT.BTRTRTB..T....TT.T..T..TT.T
+TTTBTRTRTBT..TT..TT.T.T.T....T
+TT.BTRRRTT..TTTT...T..T...T..T
+TT.TBTTTB.T....TT.T..T..T..TTT
+T....BBB.T.T.T..TT...T.TTT.TTT
+T.T.TT.T...TTT.T...T..T..T...T
+TT..TT..T.T.T....T.TTT...TT..T
+T.T..T...TT...TT..T....T.T..TT
+T...T.TT...TT...T.T.TTTTT.TT.T
+TT.TT....T.T..T.TTT....T.....T
+T...T..TT....TT..T...T.T.T.TTT
+T.T..T..T.T.T..T...T..T..T.T.T
+TTTT..T..TT...T..T..TTT.T....T
+T.T..T.T...T.TT...T.TT..T.T.TT
+T...T....TT...T.T.T....T.T...T
+TT.T..TTT...T.TT...TT.....TT.T
+T..TTT...T...T..TTT.T.T.T.TT.T
+TT..TT..T..T..T..T.....TTT...T
+T.T....T..T....T...T.T...T.TTT
+T...T.T..T..TT.TT.T..T.T.T..TT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 8602
+debug_update: 218
+debug_elapsed: 1901
+debug_score: 10.3155
+------------detailed information------------
+debug_times[0]: 1606
+debug_times[1]: 1853
+debug_times[2]: 1839
+debug_times[3]: 3304
+debug_op_times[op = 0]: 1246
+debug_op_times[op = 1]: 1847
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2109
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 3400
+debug_trees_rate: 0.40051 / 0.4
+debug_curve_rate: 0.452293 / 0.45
+debug_spread_rate: 1 / 1
+debug_sg: 28
+debug_loop: 1
+debug_vis_rate: 4.44681 / 4.8
+system_score (n=28) : 2812
+処理中: 0097.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+TTT...T.T..T.TTT.T.TSBBBTT...T...TTT..T.T
+T.TT..T.T.T....TT.T.BTTTT..TT..T...T....T
+T..T....T.TT.T.TT..BTRRRTBT..T.T.T.T.T.TT
+TT...TT...TTTT..TTBTRRTRTB..T...T.....T.T
+T.TTTT.TT...T.T...BTRTRRTBT....T..TTT...T
+T....T.T..T....TT.BTRTGTBTTT.T..TT...TTTT
+T..T....TTT.T.TT.T.BRBTBTT..T..T...T.TT.T
+TTT.T.....T.T....TT.TTB.T..T..T..TT.....T
+TT.T..T.T..T.T..TT...T.TT...T..TT...TT.TT
+TT...T....T.T...T...T..T..TT....T.T..T..T
+T..T...T.T.....T..TT..T..TT.TTT..T..TT..T
+T.T..T.TTT.T.T..T.T.T....T.T....T.....T.T
+TT.TT..T.T.T.TT...T...T.....T.TT..TT.T.TT
+T.....T....TT.TT...T.TTTT.TT....T..T....T
+T.T.T...TTT...T..T.T..T..TTT.T.....TTTT.T
+T.T.TT...T..T...T..T..TT...TT....T..T.T.T
+TTT...TT.T.T..TTT..TT....T...TT.TT.T..T.T
+T.TT..T.T....T..TTT..T..T.TT......TTT..TT
+T.T..T....T.TT.T..TT...TT....T.TT..T.T..T
+T...T..TT.TT.T...T...TTT..TTT..T..T....TT
+TT...T..TTT..TTT.T.TT..T.T...TT...T..T..T
+T.T...TTT...T.T...T..T.....T..T..T..TTT.T
+T...T.....T.T...TTTT..T.T...TT.T.T....T.T
+TT.T..T.T..T..T..TTTT.T.T.T.T...T..T...TT
+TT.TT.T..T...TTT.TTT.....T....TTT.T..T..T
+T.T....T...TT...TT...T.TT...T..T..T.T.T.T
+T.T.....T.T..TT....TTT...T.TTTT..TTT..T.T
+T...TTT.TT.T....T.T...TT...T...TTT..T...T
+TTT..T..TT....T..T..T..T.TTT.T...T.T..TTT
+TT.T.TT.T...TT.TTTT.T.....TTT.T.T....T.TT
+T...TT...T.T...T.....TTTT.T.T....TT.T...T
+T.T..T.T..TT.TTT..TTTT..T...TT.T.T...TT.T
+TT...T.TTTTT....T..T......T....T...T....T
+TT..TT...TT.T.TT.T.T.TT..T.T..T..T..T..TT
+T..T...T.T.....T..T....TT..TT.T.T.TT...TT
+T.T...T..T..TT..T....T...T.T..T....T.T..T
+T...T..TTT..T....T.T..TT.T..T.TT.TT.TT.TT
+TTT.T......T....T...T..T..T..T...TT.....T
+T....T.T..T..T......T.TTT...T..TTTTTT.T.T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 4152
+debug_update: 195
+debug_elapsed: 1901
+debug_score: 3.82876
+------------detailed information------------
+debug_times[0]: 601
+debug_times[1]: 907
+debug_times[2]: 946
+debug_times[3]: 1698
+debug_op_times[op = 0]: 560
+debug_op_times[op = 1]: 788
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1069
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 1735
+debug_trees_rate: 0.39908 / 0.4
+debug_curve_rate: 0.448711 / 0.45
+debug_spread_rate: 0.993435 / 1
+debug_sg: 21
+debug_loop: 5
+debug_vis_rate: 4.63656 / 4.8
+system_score (n=39) : 3935
+処理中: 0098.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T.T..TT..T..T..ST.TTTT..TT...T
+T...T...T..T..T....TT..T.T.TTT
+TT.TT.T..T...T.T.T..T....T...T
+T...T..T...T....TTT.TTTT..T..T
+T.T.TTT..TTTT.T....TTT...T..TT
+TTT..T..T...T..TT...TTT.T.T..T
+TTTT..T..TT...T...TT.T....TT.T
+T.T...TTT..T.T..TTT....TT..T.T
+T...T..TTT..T.T...T...T.TT...T
+TT...T....T.T..TT...T.....TT.T
+TT.T.TT.T....T.TT.TT.T.TT.T.TT
+TTT.T..T...T....T....T...TT..T
+T.....T..TT.T.T...T.TTT.....TT
+T.TT...TT...T..T.TTTTT.T.T.T.T
+T.T..T.T.TT...T....T.T..TT...T
+TT...T...T.T.T.TTTT...T..TTT.T
+T..TT..TT.TT....T...T..T.T.T.T
+TT..TT........T.T..TTT....T.TT
+T..T..TT.T..T.T...TTT...T.T..T
+TBBB...T..TT.TTT.T.T..T..T.T.T
+TTTTBT.TT.T....T.T.T.TTT.....T
+TRRRTTB.T...T...T...TT...TTTTT
+TRTRRRTB.T...TT...TT.T.T...TTT
+TRGTTRTB..TT..T..T.T...TT..T.T
+TTTBBRB.T...T..TTT..TTTT.T...T
+TBB..T.T....TT..T...T..T..T.TT
+T.TT.TT..TT...T.T.T...T.T....T
+T..T...T.T..T.T....T....TT.T.T
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 8462
+debug_update: 201
+debug_elapsed: 1901
+debug_score: 13.2058
+------------detailed information------------
+debug_times[0]: 1327
+debug_times[1]: 1939
+debug_times[2]: 1958
+debug_times[3]: 3238
+debug_op_times[op = 0]: 1186
+debug_op_times[op = 1]: 1671
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 2141
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 3464
+debug_trees_rate: 0.399235 / 0.4
+debug_curve_rate: 0.45123 / 0.45
+debug_spread_rate: 0.995754 / 1
+debug_sg: 78
+debug_loop: 0
+debug_vis_rate: 4.33475 / 4.8
+system_score (n=28) : 2054
+処理中: 0099.txt
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T...TT...TT.....S.TT....T..T....T
+T.T...T.T...T.TT..TT.T...T...TT.T
+TTT..T..T..T....T.....T..T.T.T..T
+T.TT...TTTTTTTTTTTTTT..T...T..TTT
+T.T..TT..T.B....T...T.TTT.T.....T
+T...T..TBRBTBTT...T..TT.T..TTTT.T
+TTT..T.BTRTGTBT.TTTT.TT...T...TTT
+TT.T...BTRTRRTB..T..TT..T...T...T
+T....TTBTRRTRTBT......TT.TT..TT.T
+T.TT..TBTRRTRTBTT.T.T..T....T...T
+T.TT.TTBTRTRRTB.TT...TT..TTTTT.TT
+T...T..BTRRRTB.TT..T...T.TT.T...T
+T.T.T..TBTTTB.TT..T.T.T...T..T..T
+TT.TTT.T.BTB...T.T.....T...T..TTT
+TT..T...T...TT..T...TT.TTT..T...T
+T.T...TT..T...T..T.T....T...TTT.T
+T..TT..T.TT..TT...T..TT.T.T.T...T
+TT...T.....T..T.TT.TT..T...T.T.TT
+T.TT.T.T.T.TT..T....TT..T.T....TT
+TT....T...TTT.TT..T.T..T....T.T.T
+T..TT...T..TT.TT.TT.....TT...T.TT
+TTT...TT.T..T....T.T.TT....T....T
+T...TT....T.TT..T...T.T.T.TTT.T.T
+T.TT.T.TT..T.TT..T.T...T.TT...TTT
+TT.....TTT......TT..T.TT.TT..T.TT
+TT.T.T.T...T.T.T..T...T..T.T....T
+T...T..TTT..TT...T...TT.T....TT.T
+T.TT..TT..T...TTT..T....T.T.T.TTT
+T...T....T..T...TTT...TT.T....T.T
+TT.TT..TT..T.TT.T...T..T..TT....T
+T....T..T..TTTT...T..T..T....T.TT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+------------main information------------
+debug_all_times: 6729
+debug_update: 174
+debug_elapsed: 1901
+debug_score: 6.87347
+------------detailed information------------
+debug_times[0]: 889
+debug_times[1]: 1532
+debug_times[2]: 1562
+debug_times[3]: 2746
+debug_op_times[op = 0]: 1000
+debug_op_times[op = 1]: 1218
+debug_op_times[op = 2]: 0
+debug_op_times[op = 3]: 1745
+debug_op_times[op = 4]: 0
+debug_op_times[op = 5]: 2766
+debug_trees_rate: 0.399584 / 0.4
+debug_curve_rate: 0.458434 / 0.45
+debug_spread_rate: 0.993068 / 1
+debug_sg: 107
+debug_loop: 0
+debug_vis_rate: 4.51134 / 4.8
+system_score (n=31) : 3483
+220661
+0

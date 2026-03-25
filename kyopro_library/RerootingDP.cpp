@@ -1,11 +1,12 @@
 struct Rerooting {
   struct DP {
+    // edit here (必要なメンバ変数を追加すること)
     DP() {}
     DP operator+(const DP& a) const {
-      // edit here
+      // edit here (結合則に基づいて実装すること)
     }
     DP addRoot() const {
-      // edit here
+      // edit here (**添字の情報が必要なら引数に追加すること->それに伴いdfs, bfsのaddRoot()も変更すること**)
     }
   };
   

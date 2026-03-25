@@ -4,6 +4,7 @@ bool equal(double a, double b) { return abs(a-b) < eps;}
 struct V {
   double x, y;
   V(double x=0, double y=0): x(x), y(y) {}
+  V operator-() const { return V(-x, -y); }
   V& operator+=(const V& v) { x += v.x; y += v.y; return *this;}
   V operator+(const V& v) const { return V(*this) += v;}
   V& operator-=(const V& v) { x -= v.x; y -= v.y; return *this;}

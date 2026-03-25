@@ -5,12 +5,12 @@ template <class S,
             S (*mapping)(F, S),
             F (*composition)(F, F),
             F (*id)()>
-struct SegtreeTreeBeats {
+struct SegmentTreeBeats {
     public:
     SegmentTreeBeats() : SegmentTreeBeats(0) {}
     SegmentTreeBeats(int n) : SegmentTreeBeats(std::vector<S>(n, e())) {}
     SegmentTreeBeats(const std::vector<S>& v) : _n(int(v.size())) {
-        log = internal::ceil_pow2(_n);
+        log = ceil_pow2(_n);
         size = 1 << log;
         d = std::vector<S>(2 * size, e());
         lz = std::vector<F>(size, id());
@@ -173,22 +173,41 @@ struct SegtreeTreeBeats {
         all_apply(2 * k + 1, lz[k]);
         lz[k] = id();
     }
+    static int ceil_pow2(int n) {
+        int x = 0;
+        while ((1U << x) < (unsigned int)(n)) x++;
+        return x;
+    }
 };
 
 struct S{
     bool fail;
     // Edit here
+    S(bool fail=false,,,){}
 };
 S e(){return S();}
 S op(S a, S b){
+    S res;
     // Edit here
+    res.fail = false;
+    return res;
 }
 struct F{
+    // Edit here
+    F(,,,){}
 };
 F id(){return F();}
-F mapping(F f, S x){
+S mapping(F f, S x){
+    S res;
+    if (){ // fail condition
+        x.fail = true;
+        return x;
+    }
     // Edit here
+    return res;
 }
 F composition(F f, F g){
+    F res;
     // Edit here
+    return res;
 }

@@ -9,6 +9,7 @@ struct CC {
         xs.erase(unique(xs.begin(),xs.end()),xs.end());
         initialized = true;
     }
+    // x以下の登録されている値のうち最大のもののインデックスを返す. 見つからなければ-1を返す.
     int operator()(T x) {
         if (!initialized) init();
         return upper_bound(xs.begin(), xs.end(), x) - xs.begin() - 1;
