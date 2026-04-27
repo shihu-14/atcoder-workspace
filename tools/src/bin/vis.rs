@@ -18,13 +18,10 @@ fn main() {
         std::process::exit(1)
     });
     let input = parse_input(&input);
-    let (out, parse_err) = parse_output_partial(&input, &output);
-    let (mut score, vis_err, svg) = vis_default(&input, &out);
-    let err = if !parse_err.is_empty() {
-        score = 0;
-        parse_err
-    } else {
-        vis_err
+    let out = parse_output(&input, &output);
+    let (score, err, svg) = match out {
+        Ok(out) => vis_default(&input, &out),
+        Err(err) => (0, err, String::new()),
     };
     if err.len() > 0 {
         println!("{}", err);

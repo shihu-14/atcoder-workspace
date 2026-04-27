@@ -11,15 +11,18 @@ struct Cli {
     /// Path to input directory
     #[clap(short = 'd', long = "dir", default_value = "in")]
     dir: PathBuf,
+    /// Fix N to the specified value
+    #[clap(short = 'N', long = "N")]
+    N: Option<usize>,
+    /// Fix M to the specified value
+    #[clap(short = 'M', long = "M")]
+    M: Option<usize>,
+    /// Fix C to the specified value
+    #[clap(short = 'C', long = "C")]
+    C: Option<usize>,
     #[clap(short, long)]
     /// Print input details in csv format
     verbose: bool,
-    /// Fix M to the specified value
-    #[clap(long = "M")]
-    M: Option<usize>,
-    /// Fix U to the specified value
-    #[clap(long = "U")]
-    U: Option<usize>,
 }
 
 fn main() {
@@ -34,7 +37,7 @@ fn main() {
     let f = std::io::BufReader::new(f);
     let mut id = 0;
     if cli.verbose {
-        println!("file,seed,M,U");
+        println!("file,seed,N,M,C");
     }
     for line in f.lines() {
         let line = line.unwrap();
@@ -46,11 +49,13 @@ fn main() {
             eprintln!("parse failed: {}", line);
             std::process::exit(1)
         });
-        let input = gen(seed, cli.M, cli.U);
+        let input = gen(seed, cli.N, cli.M, cli.C);
         if cli.verbose {
-            println!("{:04},{},{},{}", id, seed, input.M, input.U);
+            println!("{:04},{},{},{},{}", id, seed, input.N, input.M, input.C);
         }
-        let mut w = std::io::BufWriter::new(std::fs::File::create(cli.dir.join(format!("{:04}.txt", id))).unwrap());
+        let mut w = std::io::BufWriter::new(
+            std::fs::File::create(cli.dir.join(format!("{:04}.txt", id))).unwrap(),
+        );
         write!(w, "{}", input).unwrap();
         id += 1;
     }
