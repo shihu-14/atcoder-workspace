@@ -88,37 +88,11 @@ const ll dyy[] = {0, 1, 1, 1, 0, -1, -1, -1};
 const ll LINF = 3001002003004005006ll;
 const int INF = 1001001001;
 
-// const int D = 300010;
 void solve()
 {
-    int n; cin >> n;
-    vector<int> t(n), x(n);
-    rep(i, n) cin >> t[i] >> x[i];
-    vector<int> u(n), v(n);
-    rep(i, n)
-    {
-        u[i] = t[i] - x[i];
-        v[i] = t[i] + x[i];
-    }
-    vector<pii> pos;
-    rep(i, n)
-    {
-        pos.emplace_back(u[i], v[i]);
-    }   
-    sort(rng(pos));
-    multiset<int> now;
-    for (auto [u, v]: pos)
-    {
-        auto it = now.upper_bound(v);
-        if (it != now.begin())
-        {
-            it--;
-            now.erase(it);
-        }
-        now.emplace(v);
-    }
-    cout << now.size() << endl;
+    
 }
+
 int main()
 {
     ios::sync_with_stdio(false);
