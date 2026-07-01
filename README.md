@@ -5,7 +5,6 @@ AtCoderでの活動履歴をまとめているリポジトリ.
 - Profile: [eiich](https://atcoder.jp/users/eiich)
 - Progress: [AtCoder Problems](https://kenkoooo.com/atcoder/#/table/eiich)
 
-
 ## kyopro_library
 
 競技プログラミング用ライブラリ.
@@ -17,5 +16,7 @@ AtCoderでの活動履歴をまとめているリポジトリ.
 
 ## ICPC 活動履歴
 
-- https://icpc.jp/2024/domestic/
-
+- [ICPC 2025 国内予選](https://icpc.jp/2025/domestic/results/): `INTING`, 33位 / 355チーム, 7完, Award
+  - Teammates: [firex](https://atcoder.jp/users/firex), [breso](https://atcoder.jp/users/breso)
+- [ICPC 2024 国内予選](https://icpc.jp/2024/domestic/results/): `TokyoKogyoSwallows`, 142位 / 363チーム, 4完
+  - Teammates: [abap](https://atcoder.jp/users/abap), [ikura_hamu](https://atcoder.jp/users/ikura_hamu)
