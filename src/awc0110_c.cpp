@@ -90,18 +90,18 @@ const int INF = 1001001001;
 
 void solve()
 {
-    int n; cin >> n;
+    int n, W; cin >> n >> W;
+    vector<ll> dp(W+1);
     rep(i, n)
     {
-        int x; cin >> x;
-        if (x >= 0)
+        int w, v; cin >> w >> v;
+        for (int j = W; j >= w; j--)
         {
-            cout << "No" << endl;
-            return;
-        } 
+            chmax(dp[j], dp[j-w] + v);
+        }
     }
-    cout << "Yes" << endl;
-}
+    cout << dp[W] << endl;
+}   
 
 int main()
 {
@@ -114,4 +114,4 @@ int main()
         solve();
     }
     return 0;
-}   
+}

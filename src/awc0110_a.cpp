@@ -90,17 +90,17 @@ const int INF = 1001001001;
 
 void solve()
 {
-    int n; cin >> n;
-    rep(i, n)
+    int n, m; cin >> n >> m;
+    vector<ll> s(n);
+    rep(i, n) cin >> s[i];
+    rep(i, m)
     {
-        int x; cin >> x;
-        if (x >= 0)
-        {
-            cout << "No" << endl;
-            return;
-        } 
+        ll t, v; cin >> t >> v; t--;
+        s[t] += v;
+        if (s[t] < 0) s[t] = 0;
     }
-    cout << "Yes" << endl;
+    rep(i, n) cout << s[i] << " ";
+    cout << endl;
 }
 
 int main()
@@ -114,4 +114,4 @@ int main()
         solve();
     }
     return 0;
-}   
+}

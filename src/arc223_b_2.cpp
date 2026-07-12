@@ -88,19 +88,111 @@ const ll dyy[] = {0, 1, 1, 1, 0, -1, -1, -1};
 const ll LINF = 3001002003004005006ll;
 const int INF = 1001001001;
 
+struct Combination
+{
+    vector<mint> fact, factinv;
+    Combination(int n): fact(n+1), factinv(n+1)
+    {
+        fact[0] = 1;
+        for(int i=1; i<=n; i++) fact[i] = fact[i-1]*i;
+        factinv[n] = fact[n].inv();
+        for(int i=n; i>0; i--) factinv[i-1] = factinv[i]*i;
+    }
+
+    mint operator()(int n, int k)
+    {
+        if(n < 0 || k < 0 || k > n) return 0;
+        return fact[n]*factinv[k]*factinv[n-k];
+    }
+
+    mint power(mint a, ll b)
+    {
+        mint res = 1;
+        for(; b; b>>=1, a*=a) if(b&1) res *= a;
+        return res;
+    }
+};
+
 void solve()
 {
-    int n; cin >> n;
-    rep(i, n)
+    int n, K; cin >> n >> K;
+    vector<int> a(n), a2(n);
+    rep(i, n) cin >> a[i], a2[i] = a[i], a2[i] %= K;
+    mint ans = 1;
+    int cnt = 0, cnt2 = 0;
+    Combination C(n);
+    int num = -1;
+    vector<int> vs1, vs2;
+    rep(i, n-1)
     {
-        int x; cin >> x;
-        if (x >= 0)
+        if (a2[i] == a2[i+1] || a2[i]+a2[i+1] == K)
         {
-            cout << "No" << endl;
-            return;
-        } 
+            if (num == -1) num = a2[i];
+            if (num == a2[i])
+            {
+                cnt2++;
+                vs2.emplace_back(i);
+            }
+            else
+            {
+                vs1.emplace_back(i);
+            }
+            cnt++;
+        }
+        else
+        {
+            if (num != -1)
+            {
+                cnt++;
+                if (num == a2[i]) cnt2++;
+                if (num+num == K)
+                {
+                    ans *= C.fact[cnt];
+                    map<int, int> mp;
+                    for (int j: vs1) mp[a[j]]++;
+                    for (int j: vs2) mp[a[j]]++;
+                    for (auto [k, v]: mp) ans /= C.fact[v];
+                }
+                else
+                {
+                    ans *= C(cnt, cnt2);
+                    map<int, int> mp1, mp2;
+                    for (int j: vs1) mp1[a[j]]++;
+                    for (int j: vs2) mp2[a[j]]++;
+                    for (auto [k, v]: mp1) ans /= C.fact[v];
+                    for (auto [k, v]: mp2) ans /= C.fact[v];
+                }
+            }
+            cnt = 0;
+            cnt2 = 0;
+            num = -1;
+            vs1.clear();
+            vs2.clear();    
+        }
     }
-    cout << "Yes" << endl;
+    if (num != -1)
+    {
+        cnt++;
+        if (num == a2[n-1]) cnt2++;
+        if (num+num == K)
+        {
+            ans *= C.fact[cnt];
+            map<int, int> mp;
+            for (int j: vs1) mp[a[j]]++;
+            for (int j: vs2) mp[a[j]]++;
+            for (auto [k, v]: mp) ans /= C.fact[v];
+        }
+        else
+        {
+            ans *= C(cnt, cnt2);
+            map<int, int> mp1, mp2;
+            for (int j: vs1) mp1[a[j]]++;
+            for (int j: vs2) mp2[a[j]]++;
+            for (auto [k, v]: mp1) ans /= C.fact[v];
+            for (auto [k, v]: mp2) ans /= C.fact[v];    
+        }
+    }
+    cout << ans.val() << "\n";
 }
 
 int main()
@@ -108,10 +200,10 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     int t = 1;
-    // cin >> t;
+    cin >> t;
     while(t--)
     {
         solve();
     }
     return 0;
-}   
+}

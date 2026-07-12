@@ -90,17 +90,37 @@ const int INF = 1001001001;
 
 void solve()
 {
-    int n; cin >> n;
+    int n; cin >> n; 
+    vector<string> s(n);
+    rep(i, n) cin >> s[i];
+    if (n == 1)
+    {
+        cout << 1 << endl;
+        return;
+    }
+    sort(rng(s));
+    vector<int> sz(n);
+    int ans = 0;
+    rep(i, n-1)
+    {
+        int lcp = 0;
+        while (s[i][lcp] == s[i+1][lcp])
+        {
+            lcp++;
+            if (lcp == s[i].size() || lcp == s[i+1].size())
+            {
+                cout << -1 << endl;
+                return;
+            }
+        }
+        chmax(sz[i], lcp+1);
+        chmax(sz[i+1], lcp+1);
+    }
     rep(i, n)
     {
-        int x; cin >> x;
-        if (x >= 0)
-        {
-            cout << "No" << endl;
-            return;
-        } 
+        ans += sz[i];
     }
-    cout << "Yes" << endl;
+    cout << ans << endl;
 }
 
 int main()
@@ -114,4 +134,4 @@ int main()
         solve();
     }
     return 0;
-}   
+}

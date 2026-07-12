@@ -90,17 +90,66 @@ const int INF = 1001001001;
 
 void solve()
 {
-    int n; cin >> n;
+    int n; ll K; cin >> n >> K;
+    vector<pii> vsn, vsp;  
     rep(i, n)
     {
-        int x; cin >> x;
-        if (x >= 0)
-        {
-            cout << "No" << endl;
-            return;
-        } 
+        ll x, d; cin >> x >> d;
+        if (x < 0) vsn.emplace_back(x, d);
+        else vsp.emplace_back(x, d);
     }
-    cout << "Yes" << endl;
+    sort(rng(vsn));
+    sort(rrng(vsp));
+    ll ans = 0;
+    rep(i, vsn.size())
+    {
+        auto [x, d] = vsn[i];
+        ll q = (d+K-1)/K;
+        ll r = q*K-d;
+        // cout << x << " " << d << " " << q << " " << r << endl;
+        ans += q*(-x)*2;
+        int j = i+1;
+        while(j < vsn.size() && r > 0)
+        {
+            auto [_, nd] = vsn[j];
+            if (nd <= r)
+            {
+                r -= nd;
+                vsn[j].se = 0;
+                j++;
+            }
+            else
+            {
+                vsn[j].se -= r;
+                r = 0;
+            }
+        }
+    }
+    rep(i, vsp.size())
+    {
+        auto [x, d] = vsp[i];
+        ll q = (d+K-1)/K;
+        ll r = q*K-d;
+        // cout << x << " " << d << " " << q << " " << r << endl;
+        ans += q*x*2;
+        int j = i+1;
+        while(j < vsp.size() && r > 0)
+        {
+            auto [_, nd] = vsp[j];
+            if (nd <= r)
+            {
+                r -= nd;
+                vsp[j].se = 0;
+                j++;
+            }
+            else
+            {
+                vsp[j].se -= r;
+                r = 0;
+            }
+        }
+    }
+    cout << ans << endl;
 }
 
 int main()
@@ -114,4 +163,4 @@ int main()
         solve();
     }
     return 0;
-}   
+}

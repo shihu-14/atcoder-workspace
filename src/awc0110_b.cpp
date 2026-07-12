@@ -90,17 +90,39 @@ const int INF = 1001001001;
 
 void solve()
 {
-    int n; cin >> n;
-    rep(i, n)
+    int n, k; cin >> n >> k;
+    vector<int> s(n);
+    rep(i, n) cin >> s[i];
+    map<int, vector<int>> mp;
+    rep(i, n) mp[s[i]].emplace_back(i);
+    vector<int> ans;
+    for (auto [_, vs]: mp)
     {
-        int x; cin >> x;
-        if (x >= 0)
+        int m = vs.size();
+        if (m < k) continue;
+        vector<int> tmp;
+        tmp.emplace_back(vs[0]);
+        for (int i = 0; i < vs.size()-1; i++)
         {
-            cout << "No" << endl;
-            return;
-        } 
+            if (vs[i+1]-vs[i] == 1) tmp.emplace_back(vs[i+1]);
+            else
+            {
+                if (tmp.size() >= k)
+                {
+                    rep(j, tmp.size()) ans.emplace_back(tmp[j]);
+                }
+                tmp.clear();
+                tmp.emplace_back(vs[i+1]);
+            }
+        }
+        if (tmp.size() >= k)
+        {
+            rep(j, tmp.size()) ans.emplace_back(tmp[j]);
+        }
     }
-    cout << "Yes" << endl;
+    sort(rng(ans));
+    rep(i, ans.size()) cout << s[ans[i]] << " ";
+    cout << endl;
 }
 
 int main()
@@ -114,4 +136,4 @@ int main()
         solve();
     }
     return 0;
-}   
+}
