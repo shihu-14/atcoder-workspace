@@ -1,0 +1,23 @@
+# External libraries
+/atcoder/
+/boost/
+
+# Editor and OS metadata
+.DS_Store
+/.vscode/
+
+# Build outputs and executables
+*.out
+*.o
+*.obj
+*.exe
+*.dll
+*.dylib
+*.so
+*.dSYM/
+/src/main
+/target/
+/tools/target/
+
+# Local contest/problem cache
+/problems/
