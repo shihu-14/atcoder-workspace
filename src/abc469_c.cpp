@@ -80,11 +80,11 @@ using G = vector<vector<int>>;
 template<class T> bool chmin(T &a,T b){if(a>b){a=b;return 1;}else return 0;}
 template<class T> bool chmax(T &a,T b){if(a<b){a=b;return 1;}else return 0;}
 template<class T> void printv(vector<T> &v){rep(i,v.size())cout<<v[i]<<" \n"[i==v.size()-1];}
-template<class T> void printvv(vector<vector<T>> &v){rep(i,v.size())rep(j,v[i].size())cout<<v[i][j]<<" \n"[j==v[i].size()-1];cout<<endl;}
+template<class T> void printvv(vector<vector<T>> &v){rep(i,v.size())rep(j,v[i].size())cout<<v[i][j]<<" \n"[j==v[i].size()-1];cout<<'\n';}
 const ll dx[] = {-1, 0, 1, 0};
 const ll dy[] = {0, 1, 0, -1};
 const ll dxx[] = {-1, -1, 0, 1, 1, 1, 0, -1};
-const ll dyy[] = {0, 1, 1, 1, 0, -1, -1, -1};
+const array<ll,8> dyy = {0, 1, 1, 1, 0, -1, -1, -1};
 const ll LINF = 3001002003004005006ll;
 const int INF = 1001001001;
 
@@ -104,7 +104,7 @@ void solve()
         // cout << "r: " << r << endl;
         r -= i+1;
         ans += r;
-        cout << ans << endl;
+        cout << ans << '\n';
     }
 }
 
