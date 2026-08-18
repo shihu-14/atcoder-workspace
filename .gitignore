@@ -6,6 +6,7 @@
 .DS_Store
 /.vscode/
 
+
 # Build outputs and executables
 *.out
 *.o
@@ -21,3 +22,11 @@
 
 # Local contest/problem cache
 /problems/
+
+# input, output dir
+icpc2025_testcase
+
+# others
+.clang-format
+.clang-tidy
+test.cpp
