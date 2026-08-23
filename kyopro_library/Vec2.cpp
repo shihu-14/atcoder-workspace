@@ -1,4 +1,4 @@
-// ベクトル演算を行うライブラリ。誤差で落ちる場合は適宜ll->longlong, exp->0に変更すること。
+// ベクトル演算を行うライブラリ. 誤差で落ちる場合は適宜double->longlongに変更すること.
 const double eps = 1e-10;
 bool equal(double a, double b) { return abs(a-b) < eps;}
 struct V {
@@ -14,20 +14,20 @@ struct V {
   V& operator/=(double s) { x /= s; y /= s; return *this;}
   V operator/(double s) const { return V(*this) /= s;}
   double dot(const V& v) const { return x*v.x + y*v.y;} // 内積
-  double cross(const V& v) const { return x*v.y - v.x*y;} // 外積 
-  double norm1() const { return abs(x) + abs(y);} // L1ノルム
-  double norm2() const { return sqrt(norm2s());} // L2ノルム
-  double norm2s() const { return x*x + y*y;} // L2ノルムの二乗
+  double cross(const V& v) const { return x*v.y - v.x*y;} // 外積: A.cross(B)でAxBの意味
+  double norm1() const { return abs(x) + abs(y);} 
+  double norm2() const { return sqrt(norm2s());} 
+  double norm2s() const { return x*x + y*y;} 
   V normalize() const { return *this/norm2();} // 正規化(ノルムを1にスケールする)
   V rotate90c() const { return V(-y, x);} // 反時計回りに90度回転
   V rotate90() const { return V(y, -x);} // 時計回りに90度回転
-  // Vがどの象限に属するかの判定を行う関数
+  // Vがどの象限に属するかを返す関数．
   int ort() const {
     if (abs(x) < eps && abs(y) < eps) return 0;
     if (y > 0) return x>0 ? 1 : 2;
     else return x>0 ? 4 : 3;
   }
-  // 偏角の大小関係を定義するための<演算子オーバーロード
+  // 偏角の大小関係を定義するための<演算子override
   bool operator<(const V& v) const {
     int o = ort(), vo = v.ort();
     if (o != vo) return o < vo;
