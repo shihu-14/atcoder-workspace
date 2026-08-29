@@ -49,58 +49,49 @@ constexpr ll dyy[] = {0, 1, 1, 1, 0, -1, -1, -1};
 constexpr ll LINF = 3001002003004005006LL;
 constexpr int INF = 1001001001;
 
+int op(int a, int b)
+{
+    return min(a, b);
+}
+int e()
+{
+    return INF;
+}
+
 void solve()
 {
-    int n, k; cin >> n >> k;
-    vector<vector<int>> ans;
-    vector<int> stk;
-    auto f = [&](auto f, int cnt=1, int sum=0) -> void
+    int n, q; cin >> n;
+    string s; cin >> s;
+    cin >> q;
+    lazy_segtree<int, op, e, int, mapping, composition, id> seg(n+1);
+    seg.set(0, 0);
+    rep(i, n)
     {
-        if (cnt > n)
+        seg.set(i+1, seg.get(i)+(s[i] == 'A' ? 1: -1));
+    }
+    rep(qi, q)
+    {
+        int type; cin >> type;
+        if (type == 1)
         {
-            if (sum == k)
-            {
-                ans.emplace_back(stk);
-            }
-            return;
+            int i; char c; cin >> i >> c; i--;
+            if (s[i] == c) continue;
+            seg.apply(i+1, n+1, (c == 'A' ? 2: -2));
+            s[i] = c;
         }
-        for (int a = 0;;a++)
+        else
         {
-            if (cnt == n)
+            int l, r; cin >> l >> r;
+            int m = seg.prod(l, r+1)-seg.get(l-1);
+            if (m < 0)
             {
-                int rem = k-sum;
-                if (rem < 0 || rem%cnt) break;
-                rem /= cnt;
-                stk.emplace_back(rem);
-                f(f, cnt+1, k);
-                stk.pop_back();
-                break;
+                cout << "No" << '\n';
             }
             else
             {
-                if (sum+a*cnt > k) break;
-                stk.emplace_back(a);
-                f(f, cnt+1, sum+a*cnt);
-                stk.pop_back();
+                cout << "Yes" << '\n';
             }
         }
-    };
-    f(f);
-    sort(rng(ans), [](vector<int> a, vector<int> b)
-        {
-            int m = min(a.size(), b.size());
-            rep(i, m)
-            {
-                if (a[i] == b[i]) continue;
-                return a[i] < b[i];
-            }    
-            return a.size() < b.size();
-        }
-    );
-    // cerr << ans.size() << '\n';
-    for (auto vs: ans)
-    {
-        printv(vs);
     }
 }
 

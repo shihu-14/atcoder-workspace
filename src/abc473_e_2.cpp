@@ -52,56 +52,27 @@ constexpr int INF = 1001001001;
 void solve()
 {
     int n, k; cin >> n >> k;
-    vector<vector<int>> ans;
-    vector<int> stk;
-    auto f = [&](auto f, int cnt=1, int sum=0) -> void
+    vector<int> a(n+1);
+    rep(i, n)
     {
-        if (cnt > n)
-        {
-            if (sum == k)
-            {
-                ans.emplace_back(stk);
-            }
-            return;
-        }
-        for (int a = 0;;a++)
-        {
-            if (cnt == n)
-            {
-                int rem = k-sum;
-                if (rem < 0 || rem%cnt) break;
-                rem /= cnt;
-                stk.emplace_back(rem);
-                f(f, cnt+1, k);
-                stk.pop_back();
-                break;
-            }
-            else
-            {
-                if (sum+a*cnt > k) break;
-                stk.emplace_back(a);
-                f(f, cnt+1, sum+a*cnt);
-                stk.pop_back();
-            }
-        }
-    };
-    f(f);
-    sort(rng(ans), [](vector<int> a, vector<int> b)
-        {
-            int m = min(a.size(), b.size());
-            rep(i, m)
-            {
-                if (a[i] == b[i]) continue;
-                return a[i] < b[i];
-            }    
-            return a.size() < b.size();
-        }
-    );
-    // cerr << ans.size() << '\n';
-    for (auto vs: ans)
-    {
-        printv(vs);
+        cin >> a[i+1];
     }
+    rep(i, n)
+    {
+        a[i+1] = (a[i+1]+a[i])%k;
+    }
+    set<int> s;
+    int ans = 0;
+    rep(i, n+1)
+    {
+        if (s.count(a[i]))
+        {
+            ans++;
+            s.clear();
+        }
+        s.emplace(a[i]);
+    }
+    cout << ans << '\n';
 }
 
 int main()
