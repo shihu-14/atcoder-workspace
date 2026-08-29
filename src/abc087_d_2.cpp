@@ -51,16 +51,35 @@ constexpr int INF = 1001001001;
 
 void solve()
 {
-    int n, k; cin >> n >> k;
-    ll ans = 0;
-    rep2(b, k+1, n+1)
+    int n, m; cin >> n >> m;
+    vector<vector<pii>> g(n);
+    vector<int> dist(n, -1);
+    rep(i, m)
     {
-        // ll res = floor_sum(b, b, -1, n)-floor_sum(k, b, -1, n)+(b-k); 
-        // cout << b << " " << floor_sum(b, b, -1, n) << " " << floor_sum(k, b, -1, n) << " " << res << '\n';
-        ll res = n/b*(b-k)+max(0LL, n%b-k+(k != 0));
-        ans += res;
+        int u, v, w; cin >> u >> v >> w; u--, v--;
+        if (dist[u] != -1 && dist[v] != -1)
+        {
+            if (dist[u]+w != dist[v])
+            {
+                cout << "No" << '\n';
+                return;
+            }
+        }
+        else if (dist[v] == -1 && dist[u] == -1)
+        {
+            dist[u] = 0;
+            dist[v] = dist[u]+w; 
+        }
+        else if (dist[v] == -1)
+        {
+            dist[v] = dist[u]+w;
+        }
+        else
+        {
+            dist[u] = dist[v]-w;
+        }
     }
-    cout << ans << '\n';
+    cout << "Yes" << '\n';
 }
 
 int main()

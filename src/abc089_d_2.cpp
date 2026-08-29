@@ -51,16 +51,62 @@ constexpr int INF = 1001001001;
 
 void solve()
 {
-    int n, k; cin >> n >> k;
-    ll ans = 0;
-    rep2(b, k+1, n+1)
+    int h, w, d; cin >> h >> w >> d;
+    int n = h*w;
+    vector<vector<int>> a(h, vector<int>(w));
+    vector<pii> id(n);
+    rep(i, h)rep(j, w)
     {
-        // ll res = floor_sum(b, b, -1, n)-floor_sum(k, b, -1, n)+(b-k); 
-        // cout << b << " " << floor_sum(b, b, -1, n) << " " << floor_sum(k, b, -1, n) << " " << res << '\n';
-        ll res = n/b*(b-k)+max(0LL, n%b-k+(k != 0));
-        ans += res;
+        cin >> a[i][j], a[i][j]--;
+        id[a[i][j]] = {i, j};
     }
-    cout << ans << '\n';
+    int q; cin >> q;
+    const int D = sqrt(q);
+    vector<vector<vector<int>>> g(D);
+    vector<vector<int>> id2(D);
+    if (d < D)
+    {
+        rep2(i, d, d+1)
+        {
+            id2[i] = vector<int>(n);
+            rep(j, i)
+            {
+                vector<int> vs(1);
+                rep3(k, j, n, i)
+                {
+                    auto [x, y] = id[k];
+                    auto [nx, ny] = id[(k+i)%n];
+                    id2[i][k] = vs.size();
+                    vs.emplace_back(abs(x-nx)+abs(y-ny));
+                }
+                rep(k, vs.size()-1) vs[k+1] += vs[k];
+                g[i].emplace_back(vs);
+            }
+        }
+    }
+    rep(qi, q)
+    {
+        int l, r; cin >> l >> r; l--, r--;
+        if (d < D)
+        {
+            int li = id2[d][l], ri = id2[d][r];
+            int i = l%d;
+            cout << g[d][i][ri-1]-g[d][i][li-1] << '\n';
+        }
+        else
+        {
+            ll ans = 0;
+            while(l != r)
+            {
+                int nl = l + d;
+                auto [x, y] = id[l];
+                auto [nx, ny] = id[nl];
+                ans += abs(x-nx)+abs(y-ny);
+                l = nl;
+            }
+            cout << ans << '\n';
+        }
+    }
 }
 
 int main()

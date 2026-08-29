@@ -55,18 +55,16 @@ void solve()
     rep(qi, q)
     {
         ll a, b; cin >> a >> b;
-        ll ans = 0;
-        for (ll i = 1; i*i <= a*b; i++)
+        ll n = a*b;
+        ll k = sqrtl(n-1);
+        ll ans = 2*k;
+        if (a != b)
         {
-            if (a*b%i == 0) ans--;
-            cerr << i << " " << a*b/i << '\n';
-            ans += a*b/i;
+            ans--;
         }
-        for (ll i = 1; i*i < a*b; i++)
+        if (n-1 < k*(k+1))
         {
-            if (a*b%i == 0) ans--;
-            cerr << i << " " << a*b/i << " " << a*b/(i+1) << '\n';
-            ans += (a*b/i-a*b/(i+1))*i;
+            ans--;
         }
         cout << ans << '\n';
     }
