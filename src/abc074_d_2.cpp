@@ -51,35 +51,34 @@ constexpr int INF = 1001001001;
 
 void solve()
 {
-    string s, t; cin >> s >> t;
-    int n = s.size(), m = t.size();
-    vector<string> stk;
-    rep(i, n-m+1)
-    {   
-        bool flag = true;
-        string ans = s;
-        rep(j, m)
-        {
-            if (s[i+j] != '?' && s[i+j] != t[j])
-            {
-                flag = false;
-                break;
-            }
-            ans[i+j] = t[j];
-        }
-        if (flag)
-        {
-            replace(rng(ans), '?', 'a');
-            stk.emplace_back(ans);
-        }
-    }
-    if (stk.size() == 0)
+    int n; cin >> n;
+    vector<vector<ll>> a(n, vector<ll>(n));
+    rep(i, n)rep(j, n)
     {
-        cout << "UNRESTORABLE" << '\n';
-        return;
+        cin >> a[i][j];
     }
-    sort(rng(stk));
-    cout << stk[0] << '\n';
+    ll ans = 0;
+    rep(i, n)rep(j, n)
+    {
+        if (i >= j) continue;
+        ll res = LINF;
+        rep(k, n)
+        {
+            if (i == k || j == k) continue;
+            chmin(res, a[i][k]+a[k][j]);
+        }
+        if (res == a[i][j]) continue;
+        else if (res < a[i][j])
+        {
+            cout << -1 << '\n';
+            return;
+        }
+        else
+        {
+            ans += a[i][j];
+        }
+    }
+    cout << ans << '\n';
 }
 
 int main()
