@@ -20,5 +20,5 @@ struct Trie {
         g[v].cnt++;
         // return v; // void -> int
     }
-    // Edit here (DFS on the trie)
+    // Edit here (DFS on the trie or erase method)
 };

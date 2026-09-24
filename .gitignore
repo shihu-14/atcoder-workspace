@@ -20,6 +20,10 @@
 /target/
 /tools/target/
 
+# .NET build outputs
+**/bin/
+**/obj/
+
 # Local contest/problem cache
 /problems/
 
