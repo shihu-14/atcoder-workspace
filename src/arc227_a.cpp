@@ -1,31 +1,36 @@
 #include <iostream>
-#include <bitset>
 #include <string>
+#include <vector>
+#include <algorithm>
 
+#define rep(i, n) for (int i = 0; i < (n); i++) 
 using namespace std;
 
-const int D = 200010;
 int main()
 {
     int n; cin >> n;
-    string a, b, c; cin >> a >> b >> c;
-    bitset<D> s;
-    s ^= bitset<D>(a);
-    s ^= bitset<D>(b);
-    s ^= bitset<D>(c);
-    bool flag = false;
-    for (int i = D-1; i>=0; i--)
+    vector<string> s(3);
+    rep(i, 3) cin >> s[i];
+    vector<vector<int>> pos(3);
+    
+    rep(i, 3)
     {
-        if (s[i] == 1)
-        {
-            flag = true;
-            s.flip(i);
-        }
-        else if (flag)
-        {
-            s.flip(i);
-        }
+        rep(j, 2*n) if (s[i][j] == '1') pos[i].emplace_back(j);
     }
-    cout << s.to_string() << '\n';
+    
+    string ans(2*n, '0');
+    // cout << ans << '\n';
+    long long dist = 0;
+    rep(i, n)
+    {
+        vector<int> tmp;
+        rep(j, 3) tmp.emplace_back(pos[j][i]);
+        sort(tmp.begin(), tmp.end());
+        ans[tmp[1]] = '1';
+        rep(j, 3) dist += abs(tmp[1]-tmp[j]);
+    }
+
+    cout << dist << '\n';
+    cout << ans << '\n';
     return 0;
 }
