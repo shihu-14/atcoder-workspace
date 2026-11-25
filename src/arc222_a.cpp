@@ -52,26 +52,15 @@ constexpr int INF = 1001001001;
 void solve()
 {
     int n, m; cin >> n >> m;
-    vector<vector<pii>> query(n+1);
+    int ans = 0;
     rep(i, m)
     {
         int s, t; cin >> s >> t; s--;
-        query[s].emplace_back(1, i);
-        query[t].emplace_back(0, i);
+        chmax(ans, t-s);
     } 
-    rep(i, n+1) sort(rng(query[i]));
-    vector<int> ans(n);
-    set<int> in, out;
-    rep(i, n) in.emplace(i+1);
-
-    rep(i, n)
-    {
-        for (auto [type, id]: query[i])
-        {
-            
-        } 
-    }
-    printv(ans);
+    // cout << ans << '\n';
+    rep(i, n) cout << i%ans+1 << ' ';
+    cout << '\n';
 }
 
 int main()
